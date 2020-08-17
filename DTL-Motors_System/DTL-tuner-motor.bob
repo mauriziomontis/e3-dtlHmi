@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Motor Status</name>
+  <width>280</width>
+  <height>200</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>280</width>
+    <height>200</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_4</name>
+    <x>5</x>
+    <y>5</y>
+    <width>270</width>
+    <height>190</height>
+    <style>3</style>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>${subsec}:${device}-MsgTxt</pv_name>
+      <x>15</x>
+      <y>415</y>
+      <width>490</width>
+      <visible>false</visible>
+      <background_color>
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+        <action type="command">
+          <command>scripts/camonitor_string.sh ${pv_name}</command>
+          <description>Execute Camonitor -S</description>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_44</name>
+      <text>Motor ${tank_num} ${motor_num}</text>
+      <width>270</width>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="11.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_49</name>
+      <text>Switch</text>
+      <x>10</x>
+      <y>25</y>
+      <width>51</width>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_24</name>
+      <pv_name>${subsec}:${device}-BO1</pv_name>
+      <x>80</x>
+      <y>20</y>
+      <width>80</width>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_47</name>
+      <pv_name>${subsec}:${device}-BO1-RB</pv_name>
+      <x>186</x>
+      <y>20</y>
+      <width>80</width>
+      <height>30</height>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_50</name>
+      <pv_name>${subsec}:${device}-Err</pv_name>
+      <bit>0</bit>
+      <x>185</x>
+      <y>58</y>
+      <width>80</width>
+      <off_label>Error</off_label>
+      <on_label>Error</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <text>Pot</text>
+      <x>10</x>
+      <y>125</y>
+      <width>51</width>
+      <height>60</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)</name>
+      <pv_name>${subsec}:${device}-online</pv_name>
+      <x>61</x>
+      <y>125</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>Not Online</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>Online</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_2</name>
+      <pv_name>${subsec}:${device}-operational</pv_name>
+      <x>61</x>
+      <y>155</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>Not Operational</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>Operational</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_44</name>
+      <pv_name>${subsec}:${device}-AI${channel}-Err-Alrm</pv_name>
+      <bit>0</bit>
+      <x>185</x>
+      <y>125</y>
+      <width>80</width>
+      <off_label>Error</off_label>
+      <on_label>Error</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_45</name>
+      <pv_name>${subsec}:${device}-AI${channel}-OverLim-Alrm</pv_name>
+      <bit>13</bit>
+      <x>185</x>
+      <y>145</y>
+      <width>80</width>
+      <off_label>Over Lim</off_label>
+      <on_label>Over Lim</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_46</name>
+      <pv_name>${subsec}:${device}-AI${channel}-UnderLim-Alrm</pv_name>
+      <bit>2</bit>
+      <x>185</x>
+      <y>165</y>
+      <width>80</width>
+      <off_label>Under Lim</off_label>
+      <on_label>Under Lim</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <text>Motor</text>
+      <x>10</x>
+      <y>58</y>
+      <width>51</width>
+      <height>60</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>10</x>
+      <y>54</y>
+      <width>250</width>
+      <height>1</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_51</name>
+      <pv_name>${subsec}:${device}.MSTA</pv_name>
+      <bit>2</bit>
+      <x>185</x>
+      <y>78</y>
+      <width>80</width>
+      <off_label>HLS</off_label>
+      <on_label>HLS</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>10</x>
+      <y>121</y>
+      <width>250</width>
+      <height>1</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_52</name>
+      <pv_name>${subsec}:${device}.MSTA</pv_name>
+      <bit>13</bit>
+      <x>185</x>
+      <y>98</y>
+      <width>80</width>
+      <off_label>LLS</off_label>
+      <on_label>LLS</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button_5</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>$(pv_name)</pv_name>
+          <value>1</value>
+          <description>Write PV</description>
+        </action>
+      </actions>
+      <pv_name>${subsec}:${device}-ErrRst</pv_name>
+      <text>Reset</text>
+      <x>61</x>
+      <y>58</y>
+      <width>120</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+</display>

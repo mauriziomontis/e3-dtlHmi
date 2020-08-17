@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DiagState</name>
+  <width>40</width>
+  <height>150</height>
+  <widget type="picture" version="2.0.0">
+    <name>WID_IOErrorIcon_2</name>
+    <file>./custom/ConnectedPNG.png</file>
+    <x>5</x>
+    <y>36</y>
+    <width>30</width>
+    <height>30</height>
+    <rules>
+      <rule name="VisibilityRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == true">
+          <value>true</value>
+        </exp>
+        <exp bool_exp="pv0 == false">
+          <value>false</value>
+        </exp>
+        <pv_name>${PVConnected}</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Siemens module connected</tooltip>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>WID_IOErrorIcon_3</name>
+    <file>./custom/warning.svg</file>
+    <x>5</x>
+    <y>82</y>
+    <width>30</width>
+    <height>30</height>
+    <rules>
+      <rule name="VisibilityRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == true">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="pv0 == false">
+          <value>true</value>
+        </exp>
+        <pv_name>${PVModuleError}</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Siemens card error! Open TIA Portal!</tooltip>
+  </widget>
+  <widget type="picture" version="2.0.0">
+    <name>WID_IOErrorIcon_4</name>
+    <file>./custom/DisconnectedPNG.png</file>
+    <x>5</x>
+    <y>36</y>
+    <width>30</width>
+    <height>30</height>
+    <rules>
+      <rule name="VisibilityRule" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == true">
+          <value>false</value>
+        </exp>
+        <exp bool_exp="pv0 == false">
+          <value>true</value>
+        </exp>
+        <pv_name>${PVConnected}</pv_name>
+      </rule>
+    </rules>
+    <tooltip>Siemens module disconnected!</tooltip>
+  </widget>
+</display>

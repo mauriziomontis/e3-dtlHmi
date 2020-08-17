@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DTL Main</name>
+  <width>1920</width>
+  <height>1080</height>
+  <scripts>
+    <script file="EmbeddedPy">
+      <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+print 'Hello'
+# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))]]></text>
+      <pv_name>new-PV</pv_name>
+    </script>
+  </scripts>
+  <widget type="rectangle" version="2.0.0">
+    <name>TITLE-BAR</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1920</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>TITLE</class>
+    <text>DTL Main Control System</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>1500</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>SUBTITLE</class>
+    <text>DTL Control System</text>
+    <x>1700</x>
+    <y use_class="true">20</y>
+    <width>200</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Navigation</name>
+    <x>10</x>
+    <y>60</y>
+    <height>900</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Vacuum System</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <target>replace</target>
+          <description>Vacuum System</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>393</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Cooling System</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <target>replace</target>
+          <description>Cooling System</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>307</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Temperature System</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Temperature_System/DTL-Temperature_Main.bob</file>
+          <target>replace</target>
+          <description>Temperature System</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>49</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Steering System</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <target>replace</target>
+          <description>Steering System</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>135</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Tuners System</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <target>replace</target>
+          <description>Tuners System</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>221</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Arc Detectors</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <target>replace</target>
+          <description>Arc Detectors</description>
+        </action>
+      </actions>
+      <x>9</x>
+      <y>479</y>
+      <width>240</width>
+      <height>60</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="digital_clock" version="2.0.0">
+      <name>Digital Clock</name>
+      <lcd_font>3</lcd_font>
+      <x>9</x>
+      <y>779</y>
+      <width>240</width>
+      <height>80</height>
+      <date_visible>true</date_visible>
+      <locale>en-EN</locale>
+      <shadows_enabled>false</shadows_enabled>
+      <lcd_crystal_enabled>true</lcd_crystal_enabled>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Temperature</name>
+    <x>330</x>
+    <y>60</y>
+    <height>900</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Vacuum</name>
+    <x>650</x>
+    <y>70</y>
+    <height>900</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Tuners</name>
+    <x>950</x>
+    <y>70</y>
+    <height>900</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Cooling</name>
+    <x>1250</x>
+    <y>60</y>
+    <height>900</height>
+  </widget>
+</display>

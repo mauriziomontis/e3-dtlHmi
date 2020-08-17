@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>TANK V</name>
+  <width>50</width>
+  <height>100</height>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>5</x>
+    <y>5</y>
+    <width>40</width>
+    <height>20</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse_1</name>
+    <x>5</x>
+    <y>75</y>
+    <width>40</width>
+    <height>20</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>5</x>
+    <y>15</y>
+    <width>40</width>
+    <height>70</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>8</x>
+    <y>15</y>
+    <width>34</width>
+    <height>70</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Background" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+  </widget>
+</display>

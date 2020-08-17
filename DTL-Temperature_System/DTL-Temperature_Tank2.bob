@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Temperature Tank2</name>
+  <width>3450</width>
+  <height>2050</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle Template</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>3450</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <line_color>
+      <color name="IO Line" red="0" green="32" blue="92">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <class>TITLE</class>
+    <text>Tank 2 - Thermo Sensors</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>376</width>
+    <height use_class="true">46</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+    </macros>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+    </macros>
+    <x>345</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>003</INDEX>
+    </macros>
+    <x>690</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>004</INDEX>
+    </macros>
+    <x>1035</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>005</INDEX>
+    </macros>
+    <x>1380</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_5</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>006</INDEX>
+    </macros>
+    <x>1725</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_6</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>007</INDEX>
+    </macros>
+    <x>2070</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_7</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>008</INDEX>
+    </macros>
+    <x>2415</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_8</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>009</INDEX>
+    </macros>
+    <x>2760</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_9</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>009</INDEX>
+    </macros>
+    <x>3105</x>
+    <y>60</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_10</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>011</INDEX>
+    </macros>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_11</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>012</INDEX>
+    </macros>
+    <x>345</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_12</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>013</INDEX>
+    </macros>
+    <x>690</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_13</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>014</INDEX>
+    </macros>
+    <x>1035</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_14</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>015</INDEX>
+    </macros>
+    <x>1380</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_15</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>016</INDEX>
+    </macros>
+    <x>1725</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_16</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>017</INDEX>
+    </macros>
+    <x>2070</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_17</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>018</INDEX>
+    </macros>
+    <x>2415</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_18</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>019</INDEX>
+    </macros>
+    <x>2760</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_19</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>020</INDEX>
+    </macros>
+    <x>3105</x>
+    <y>390</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_20</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>021</INDEX>
+    </macros>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_21</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>022</INDEX>
+    </macros>
+    <x>345</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_22</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>023</INDEX>
+    </macros>
+    <x>690</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_23</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>024</INDEX>
+    </macros>
+    <x>1035</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_24</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>025</INDEX>
+    </macros>
+    <x>1380</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_25</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>026</INDEX>
+    </macros>
+    <x>1725</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_26</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>027</INDEX>
+    </macros>
+    <x>2070</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_27</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>028</INDEX>
+    </macros>
+    <x>2415</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_28</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>029</INDEX>
+    </macros>
+    <x>2760</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_29</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>030</INDEX>
+    </macros>
+    <x>3105</x>
+    <y>720</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_30</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>031</INDEX>
+    </macros>
+    <y>1050</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_31</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>032</INDEX>
+    </macros>
+    <x>345</x>
+    <y>1050</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_32</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>033</INDEX>
+    </macros>
+    <x>690</x>
+    <y>1050</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_33</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>100</INDEX>
+    </macros>
+    <x>1035</x>
+    <y>1050</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_34</name>
+    <file>Templates/Temperature-sensor-details.bob</file>
+    <macros>
+      <INDEX>200</INDEX>
+    </macros>
+    <x>1380</x>
+    <y>1050</y>
+    <width>345</width>
+    <height>340</height>
+  </widget>
+</display>

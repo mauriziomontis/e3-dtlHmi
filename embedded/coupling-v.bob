@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>COUPLING V</name>
+  <width>30</width>
+  <height>20</height>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>5</x>
+    <y>5</y>
+    <width>20</width>
+    <height>5</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+      <point x="20.0" y="5.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>5</x>
+    <y>10</y>
+    <width>20</width>
+    <height>5</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="20.0" y="5.0">
+      </point>
+      <point x="0.0" y="5.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+</display>

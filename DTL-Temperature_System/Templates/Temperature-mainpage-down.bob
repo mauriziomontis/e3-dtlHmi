@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Template Temperature Down</name>
+  <width>40</width>
+  <height>150</height>
+  <widget type="label" version="2.0.0">
+    <name>TT-001</name>
+    <text>${sensor_name}</text>
+    <y>124</y>
+    <width>40</width>
+    <height>16</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Progress Bar</name>
+    <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+    <x>10</x>
+    <y>30</y>
+    <width>20</width>
+    <height>70</height>
+    <fill_color>
+      <color name="PRIMARY" red="0" green="148" blue="202">
+      </color>
+    </fill_color>
+    <horizontal>false</horizontal>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+    <y>104</y>
+    <width>40</width>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <width>40</width>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_label>Err</on_label>
+    <on_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Bypass</name>
+    <text>Bypassed</text>
+    <y>30</y>
+    <width>40</width>
+    <height>70</height>
+    <visible>false</visible>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rotation_step>1</rotation_step>
+    <rules>
+      <rule name="Bypass" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == 1">
+          <value>true</value>
+        </exp>
+        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TmpDis</pv_name>
+      </rule>
+    </rules>
+  </widget>
+</display>

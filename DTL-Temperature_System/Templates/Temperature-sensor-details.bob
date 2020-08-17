@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Temperature Sensor</name>
+  <width>345</width>
+  <height>340</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <x>10</x>
+    <y>10</y>
+    <width>325</width>
+    <height>320</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <x>460</x>
+    <y>90</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_2</name>
+    <x>20</x>
+    <y>80</y>
+    <width>305</width>
+    <height>110</height>
+    <style>3</style>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_5</name>
+      <text>Temperature:</text>
+      <x>10</x>
+      <y>10</y>
+      <width>125</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Spinner Template_22</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+      <x>145</x>
+      <y>11</y>
+      <width>150</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Write_Background" red="224" green="217" blue="202">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <horizontal_alignment>1</horizontal_alignment>
+      <actions>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_6</name>
+      <text>High Lim:</text>
+      <x>10</x>
+      <y>50</y>
+      <width>125</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_7</name>
+      <text>Low Lim:</text>
+      <x>10</x>
+      <y>80</y>
+      <width>125</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIGH</pv_name>
+      <x>85</x>
+      <y>50</y>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HSV</pv_name>
+      <x>195</x>
+      <y>50</y>
+      <height>20</height>
+      <items>
+        <item>NO_ALARM</item>
+        <item>MINOR</item>
+        <item>MAJOR</item>
+        <item>INVALID</item>
+      </items>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_1</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LOW</pv_name>
+      <x>85</x>
+      <y>80</y>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_1</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LSV</pv_name>
+      <x>195</x>
+      <y>80</y>
+      <height>20</height>
+      <items>
+        <item>NO_ALARM</item>
+        <item>MINOR</item>
+        <item>MAJOR</item>
+        <item>INVALID</item>
+      </items>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>10</x>
+      <y>40</y>
+      <width>285</width>
+      <height>1</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_3</name>
+    <x>20</x>
+    <y>20</y>
+    <width>305</width>
+    <height>50</height>
+    <style>3</style>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>TT-${INDEX}</text>
+      <x>10</x>
+      <y>10</y>
+      <width>70</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp-Desc</pv_name>
+      <x>125</x>
+      <y>10</y>
+      <width>175</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="16.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <show_units>false</show_units>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_4</name>
+    <x>20</x>
+    <y>200</y>
+    <width>305</width>
+    <height>120</height>
+    <style>3</style>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_4</name>
+      <pv_name>${subsec}:${device}-online</pv_name>
+      <x>10</x>
+      <y>45</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>Not Online</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>Online</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_5</name>
+      <pv_name>${subsec}:${device}-operational</pv_name>
+      <x>175</x>
+      <y>45</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>Not Operational</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>Operational</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwOverLimAlrm</pv_name>
+      <x>10</x>
+      <y>10</y>
+      <width>80</width>
+      <height>30</height>
+      <off_label>Over Lim</off_label>
+      <on_label>Over Lim</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_6</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
+      <x>112</x>
+      <y>10</y>
+      <width>80</width>
+      <height>30</height>
+      <off_label>Error</off_label>
+      <on_label>Error</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwUnderLimAlrm</pv_name>
+      <x>215</x>
+      <y>10</y>
+      <width>80</width>
+      <height>30</height>
+      <off_label>Under Lim</off_label>
+      <on_label>Under Lim</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+      <x>10</x>
+      <y>80</y>
+      <width>285</width>
+      <off_label>Bypass</off_label>
+      <on_label>Bypass</on_label>
+    </widget>
+  </widget>
+</display>

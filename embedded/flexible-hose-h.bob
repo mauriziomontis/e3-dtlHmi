@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>FLEXIBLE HOSE H</name>
+  <width>85</width>
+  <height>30</height>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>3</x>
+    <y>104</y>
+    <width>1</width>
+    <height>1</height>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_1</name>
+    <x>5</x>
+    <y>5</y>
+    <width>75</width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="10.0">
+      </point>
+      <point x="5.0" y="10.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="15.0" y="0.0">
+      </point>
+      <point x="20.0" y="20.0">
+      </point>
+      <point x="25.0" y="20.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+      <point x="35.0" y="0.0">
+      </point>
+      <point x="40.0" y="20.0">
+      </point>
+      <point x="45.0" y="20.0">
+      </point>
+      <point x="50.0" y="0.0">
+      </point>
+      <point x="55.0" y="0.0">
+      </point>
+      <point x="60.0" y="20.0">
+      </point>
+      <point x="65.0" y="20.0">
+      </point>
+      <point x="70.0" y="10.0">
+      </point>
+      <point x="75.0" y="10.0">
+      </point>
+    </points>
+  </widget>
+</display>

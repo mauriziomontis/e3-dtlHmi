@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>PLATE HEAT EXCHANGER V</name>
+  <width>40</width>
+  <height>100</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>5</x>
+    <y>5</y>
+    <width>30</width>
+    <height>90</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_2</name>
+    <x>5</x>
+    <y>50</y>
+    <width>30</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_3</name>
+    <x>5</x>
+    <y>30</y>
+    <width>30</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_4</name>
+    <x>5</x>
+    <y>70</y>
+    <width>30</width>
+    <height>1</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="30.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>6</x>
+    <y>17</y>
+    <width>28</width>
+    <height>66</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="28.0" y="66.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_6</name>
+    <x>6</x>
+    <y>17</y>
+    <width>28</width>
+    <height>66</height>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="66.0">
+      </point>
+      <point x="28.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+</display>

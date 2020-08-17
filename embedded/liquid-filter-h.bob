@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>LIQUID FILTER H</name>
+  <width>70</width>
+  <height>30</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>5</x>
+    <y>5</y>
+    <width>60</width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>35</x>
+    <y>5</y>
+    <width>1</width>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.000001907348633">
+      </point>
+    </points>
+  </widget>
+</display>

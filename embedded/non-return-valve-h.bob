@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>NON RETURN VALVE H</name>
+  <width>50</width>
+  <height>30</height>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon</name>
+    <x>5</x>
+    <y>5</y>
+    <width>40</width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="40.0" y="20.0">
+      </point>
+      <point x="40.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="ellipse" version="2.0.0">
+    <name>Ellipse</name>
+    <x>1</x>
+    <y>1</y>
+    <width>10</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </background_color>
+  </widget>
+</display>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>SPRING LOADED SAFETY VALVE R</name>
+  <width>50</width>
+  <height>65</height>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>25</x>
+    <y>30</y>
+    <width>20</width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="10.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+      <point x="20.0" y="20.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_2</name>
+    <x>15</x>
+    <y>40</y>
+    <width>20</width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="20.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+      <point x="20.0" y="20.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline_5</name>
+    <x>15</x>
+    <y>5</y>
+    <width>20</width>
+    <height>35</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="10.0" y="35.0">
+      </point>
+      <point x="10.0" y="30.0">
+      </point>
+      <point x="0.0" y="25.0">
+      </point>
+      <point x="20.0" y="20.0">
+      </point>
+      <point x="0.0" y="15.0">
+      </point>
+      <point x="20.0" y="10.0">
+      </point>
+      <point x="10.0" y="5.0">
+      </point>
+      <point x="10.0" y="0.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="polyline" version="2.0.0">
+    <name>Polyline</name>
+    <x>40</x>
+    <y>30</y>
+    <width>1</width>
+    <line_width>2</line_width>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="20.0">
+      </point>
+    </points>
+  </widget>
+</display>

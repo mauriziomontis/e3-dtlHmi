@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>REDUCER L</name>
+  <width>30</width>
+  <height>30</height>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon</name>
+    <x>5</x>
+    <y>10</y>
+    <width>20</width>
+    <height>10</height>
+    <line_color>
+      <color name="Text" red="25" green="25" blue="25">
+      </color>
+    </line_color>
+    <background_color>
+      <color red="220" green="225" blue="221" alpha="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="5.0">
+      </point>
+      <point x="20.0" y="0.0">
+      </point>
+      <point x="20.0" y="10.0">
+      </point>
+    </points>
+  </widget>
+</display>
