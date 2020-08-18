@@ -13,6 +13,13 @@
       </font>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
+    <actions execute_as_one="true">
+      <action type="open_display">
+        <file>Temperature-sensor-details.bob</file>
+        <target>standalone</target>
+        <description>Open Sensor Details</description>
+      </action>
+    </actions>
   </widget>
   <widget type="progressbar" version="2.0.0">
     <name>Progress Bar</name>

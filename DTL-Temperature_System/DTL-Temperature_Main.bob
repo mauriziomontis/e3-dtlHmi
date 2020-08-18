@@ -237,23 +237,6 @@ print 'Hello'
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>All Tanks Details</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Temperature_Tank5.bob</file>
-          <macros>
-            <PREFIX>DTL-050</PREFIX>
-          </macros>
-          <target>tab</target>
-          <description>All Tanks Details</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>320</y>
-      <height>80</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Tank 1</name>
@@ -261,7 +244,7 @@ print 'Hello'
     <x>195</x>
     <y>60</y>
     <width>61</width>
-    <height>27</height>
+    <height>28</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1433,7 +1416,7 @@ print 'Hello'
     <x>195</x>
     <y>405</y>
     <width>61</width>
-    <height>27</height>
+    <height>28</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1908,7 +1891,7 @@ print 'Hello'
     <x>1150</x>
     <y>405</y>
     <width>61</width>
-    <height>27</height>
+    <height>28</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2299,7 +2282,7 @@ print 'Hello'
     <x>195</x>
     <y>745</y>
     <width>61</width>
-    <height>27</height>
+    <height>28</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2676,7 +2659,7 @@ print 'Hello'
     <x>950</x>
     <y>745</y>
     <width>61</width>
-    <height>27</height>
+    <height>28</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>

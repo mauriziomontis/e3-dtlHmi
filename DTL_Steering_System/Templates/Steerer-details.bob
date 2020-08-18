@@ -1,0 +1,609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Steerer Details</name>
+  <width>750</width>
+  <height>510</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>750</width>
+    <height>510</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>10</x>
+    <y>20</y>
+    <width>360</width>
+    <height>50</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Dev</pv_name>
+      <x>14</x>
+      <y>6</y>
+      <width>324</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="BACKGROUND" red="220" green="225" blue="221">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <x>460</x>
+    <y>90</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_1</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>10</x>
+    <y>80</y>
+    <width>360</width>
+    <height>220</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>LGGrey02-title_7</name>
+      <text>Enable</text>
+      <x>10</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Power Source:</name>
+      <text>Chassis:</text>
+      <x>10</x>
+      <y>40</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Line</name>
+      <text>Line:</text>
+      <x>10</x>
+      <y>80</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Power Supply</name>
+      <text>Power Supply:</text>
+      <x>10</x>
+      <y>120</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:EnCmd</pv_name>
+      <x>120</x>
+      <y>120</y>
+      <width>120</width>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>${PREFIX}:PwrC-PSC${STEERER_POS}-${INDEX}:OnEnCmd</pv_name>
+      <x>120</x>
+      <y>80</y>
+      <width>120</width>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_3</name>
+      <pv_name>${PREFIX}ROW:PwrC-${INDEX}:OnEnCmd</pv_name>
+      <x>120</x>
+      <y>40</y>
+      <width>120</width>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>${PREFIX}ROW:PwrC-${INDEX}:OnEnCmd-RB</pv_name>
+      <x>260</x>
+      <y>40</y>
+      <width>85</width>
+      <height>30</height>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>${PREFIX}:PwrC-PSC${STEERER_POS}-${INDEX}:OnEnCmd-RB</pv_name>
+      <x>260</x>
+      <y>80</y>
+      <width>85</width>
+      <height>30</height>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Action Button Template_12</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset PS</description>
+        </action>
+      </actions>
+      <pv_name>${subsec}:${device}:Clr</pv_name>
+      <text>Reset</text>
+      <x>120</x>
+      <y>170</y>
+      <width>225</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Reset</name>
+      <text>Reset:</text>
+      <x>14</x>
+      <y>170</y>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_2</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>380</x>
+    <y>20</y>
+    <width>360</width>
+    <height>280</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Current</name>
+      <text>Current</text>
+      <x>10</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Setpoint</name>
+      <text>Setpoint:</text>
+      <x>10</x>
+      <y>40</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Setpoint RB</name>
+      <text>Setpoint RB:</text>
+      <x>10</x>
+      <y>140</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="scaledslider" version="2.0.0">
+      <name>Scaled Slider</name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet</pv_name>
+      <x>10</x>
+      <y>80</y>
+      <width>335</width>
+      <show_minor_ticks>false</show_minor_ticks>
+      <show_hihi>false</show_hihi>
+      <show_high>false</show_high>
+      <show_low>false</show_low>
+      <show_lolo>false</show_lolo>
+      <rules>
+        <rule name="Slider-Wheels" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://slider</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Current Serpoint</name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet</pv_name>
+      <x>110</x>
+      <y>40</y>
+      <width>235</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Current Measured</name>
+      <text>Measured:</text>
+      <x>10</x>
+      <y>175</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Setpoint RB</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet-RB</pv_name>
+      <x>110</x>
+      <y>140</y>
+      <width>235</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Current Measured</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Cur</pv_name>
+      <x>110</x>
+      <y>175</y>
+      <width>235</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Control wheel/slider</name>
+      <pv_name>loc://slider(0)</pv_name>
+      <x>250</x>
+      <y>10</y>
+      <width>95</width>
+      <height>20</height>
+      <off_label>Slider</off_label>
+      <on_label>Wheels</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="thumbwheel" version="2.0.0">
+      <name>Thumb Wheel</name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet</pv_name>
+      <decimal_digits>2</decimal_digits>
+      <integer_digits>3</integer_digits>
+      <x>10</x>
+      <y>70</y>
+      <width>335</width>
+      <height>55</height>
+      <visible>false</visible>
+      <rules>
+        <rule name="Slider-Wheels" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>true</value>
+          </exp>
+          <pv_name>loc://slider</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Setpoint RB_5</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet.DRVL</pv_name>
+      <x>190</x>
+      <y>220</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Current working range</name>
+      <text>Current working range:</text>
+      <x>10</x>
+      <y>220</y>
+      <width>180</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Setpoint RB_6</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet.DRVH</pv_name>
+      <x>280</x>
+      <y>220</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Current working range_1</name>
+      <text>-</text>
+      <x>260</x>
+      <y>220</y>
+      <width>10</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_3</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>380</x>
+    <y>310</y>
+    <width>360</width>
+    <height>179</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Voltage</name>
+      <text>Voltage</text>
+      <x>10</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Votage Measured</name>
+      <text>Measured:</text>
+      <x>10</x>
+      <y>40</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Current Measured_3</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol</pv_name>
+      <x>110</x>
+      <y>40</y>
+      <width>235</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Max Voltage</name>
+      <text>Max Voltage:</text>
+      <x>10</x>
+      <y>80</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Current Measured_4</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol.HOPR</pv_name>
+      <x>110</x>
+      <y>80</y>
+      <width>235</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name> Min Voltage</name>
+      <text>Min Voltage:</text>
+      <x>10</x>
+      <y>125</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>MinVoltage</name>
+      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol.LOPR</pv_name>
+      <x>110</x>
+      <y>125</y>
+      <width>235</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_4</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>10</x>
+    <y>310</y>
+    <width>360</width>
+    <height>179</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Status</text>
+      <x>10</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Power Supply</name>
+      <text>Power Supply:</text>
+      <x>10</x>
+      <y>40</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Ok State</name>
+      <text>Ok State:</text>
+      <x>10</x>
+      <y>80</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <pv_name>${subsec}:${device}:En</pv_name>
+      <x>120</x>
+      <y>40</y>
+      <width>225</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>Off</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>On</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label>Warning</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>${PREFIX}:PwrC-PSC${STEERER_POS}-${INDEX}:OkStat</pv_name>
+      <x>120</x>
+      <y>80</y>
+      <width>225</width>
+      <height>30</height>
+      <off_label>ERROR</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Thermal Switch</name>
+      <text>Thermal Sw:</text>
+      <x>10</x>
+      <y>120</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>${PREFIX}:PwrC-PSC${STEERER_POS}-${INDEX}:TS_OkStat</pv_name>
+      <x>120</x>
+      <y>120</y>
+      <width>225</width>
+      <height>30</height>
+      <off_label>ERROR</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+  </widget>
+</display>
