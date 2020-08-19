@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DTL Steering Tank 3</name>
+  <width>1780</width>
+  <height>700</height>
+  <scripts>
+    <script file="EmbeddedPy">
+      <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+print 'Hello'
+# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))]]></text>
+      <pv_name>new-PV</pv_name>
+    </script>
+  </scripts>
+  <widget type="rectangle" version="2.0.0">
+    <name>TITLE-BAR</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1780</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>TITLE</class>
+    <text>Tank 3 - Steerers</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>1500</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>SUBTITLE</class>
+    <text>DTL Control System</text>
+    <x>1570</x>
+    <y use_class="true">20</y>
+    <width>200</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Chassis</name>
+    <x>10</x>
+    <y>60</y>
+    <width>150</width>
+    <height>630</height>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 3</name>
+      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>9</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 3</name>
+      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>19</y>
+      <width>85</width>
+      <off_label>Chassis 3</off_label>
+      <on_label>Chassis 3</on_label>
+      <show_led>false</show_led>
+    </widget>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tank1</name>
+    <tabs>
+      <tab>
+        <name>Steerer 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>Templates/Steerer-details.bob</file>
+            <macros>
+              <INDEX>${INDEX_CH1}</INDEX>
+              <STEERER_POS>V</STEERER_POS>
+            </macros>
+            <x>20</x>
+            <y>40</y>
+            <width>750</width>
+            <height>510</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <file>Templates/Steerer-details.bob</file>
+            <macros>
+              <INDEX>${INDEX_CH1}</INDEX>
+              <STEERER_POS>H</STEERER_POS>
+            </macros>
+            <x>810</x>
+            <y>40</y>
+            <width>750</width>
+            <height>510</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Steerer 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_2</name>
+            <file>Templates/Steerer-details.bob</file>
+            <macros>
+              <INDEX>${INDEX_CH2}</INDEX>
+              <STEERER_POS>V</STEERER_POS>
+            </macros>
+            <x>20</x>
+            <y>40</y>
+            <width>750</width>
+            <height>510</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_3</name>
+            <file>Templates/Steerer-details.bob</file>
+            <macros>
+              <INDEX>${INDEX_CH2}</INDEX>
+              <STEERER_POS>H</STEERER_POS>
+            </macros>
+            <x>810</x>
+            <y>40</y>
+            <width>750</width>
+            <height>510</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>180</x>
+    <y>60</y>
+    <width>1585</width>
+    <height>630</height>
+    <active_tab>1</active_tab>
+  </widget>
+</display>

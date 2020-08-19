@@ -120,8 +120,8 @@ print 'Hello'
       <name>Steering System</name>
       <actions>
         <action type="open_display">
-          <file></file>
-          <target>replace</target>
+          <file>DTL_Steering_System/DTL-Steering_Main.bob</file>
+          <target>window</target>
           <description>Steering System</description>
         </action>
       </actions>
