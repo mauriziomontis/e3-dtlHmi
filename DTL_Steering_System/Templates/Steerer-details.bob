@@ -178,7 +178,7 @@
           <description>Reset PS</description>
         </action>
       </actions>
-      <pv_name>${subsec}:${device}:Clr</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Clr</pv_name>
       <text>Reset</text>
       <x>120</x>
       <y>170</y>
