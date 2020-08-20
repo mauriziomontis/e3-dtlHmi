@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DTL Vacuum System</name>
+  <width>1920</width>
+  <height>1080</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>TITLE-BAR</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1920</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>TITLE</class>
+    <text>Vacuum System</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>1500</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>SUBTITLE</class>
+    <text>DTL Control System</text>
+    <x>1700</x>
+    <y use_class="true">20</y>
+    <width>200</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Navigation</name>
+    <x>10</x>
+    <y>60</y>
+    <width>150</width>
+    <height>670</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Tank 1 Details</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <macros>
+            <INDEX_CH1>001</INDEX_CH1>
+            <INDEX_CH2>002</INDEX_CH2>
+            <INDEX_CH3>003</INDEX_CH3>
+            <INDEX_CH4>004</INDEX_CH4>
+            <INDEX_CH5>005</INDEX_CH5>
+            <INDEX_CH6>006</INDEX_CH6>
+            <PREFIX>DTL-010</PREFIX>
+          </macros>
+          <target>tab</target>
+          <description>Tank 1 Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>20</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Tank 2 Details</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <macros>
+            <INDEX_CH1>001</INDEX_CH1>
+            <INDEX_CH2>002</INDEX_CH2>
+            <INDEX_CH3>003</INDEX_CH3>
+            <PREFIX>DTL-020</PREFIX>
+          </macros>
+          <target>tab</target>
+          <description>Tank 2 Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>80</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Tank 4 Details</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <macros>
+            <INDEX_CH1>001</INDEX_CH1>
+            <INDEX_CH2>002</INDEX_CH2>
+            <PREFIX>DTL-040</PREFIX>
+          </macros>
+          <target>tab</target>
+          <description>Tank 4 Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>200</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Tank 3 Details</name>
+      <actions>
+        <action type="open_display">
+          <file></file>
+          <macros>
+            <INDEX_CH1>001</INDEX_CH1>
+            <INDEX_CH2>002</INDEX_CH2>
+            <PREFIX>DTL-030</PREFIX>
+          </macros>
+          <target>tab</target>
+          <description>Tank 3 Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>140</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Tank 5 Details</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Steering_Tank5.bob</file>
+          <macros>
+            <INDEX_CH1>001</INDEX_CH1>
+            <INDEX_CH2>002</INDEX_CH2>
+            <PREFIX>DTL-050</PREFIX>
+          </macros>
+          <target>tab</target>
+          <description>Tank 5 Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>260</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle</name>
+    <x>231</x>
+    <y>142</y>
+    <width>400</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_1</name>
+    <x>651</x>
+    <y>142</y>
+    <width>200</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_2</name>
+    <x>871</x>
+    <y>142</y>
+    <width>150</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_3</name>
+    <x>1041</x>
+    <y>142</y>
+    <width>150</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_4</name>
+    <x>1211</x>
+    <y>142</y>
+    <width>150</width>
+    <height>40</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_5</name>
+    <x>631</x>
+    <y>158</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_6</name>
+    <x>851</x>
+    <y>158</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_7</name>
+    <x>1191</x>
+    <y>158</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_8</name>
+    <x>1021</x>
+    <y>158</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_9</name>
+    <x>1361</x>
+    <y>158</y>
+    <width>20</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>1371</x>
+    <y>148</y>
+    <width>45</width>
+    <height>30</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+      <point x="30.0" y="15.0">
+      </point>
+    </points>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 1</name>
+    <text>Tank 1</text>
+    <x>241</x>
+    <y>112</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 2</name>
+    <text>Tank 2</text>
+    <x>661</x>
+    <y>112</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 3</name>
+    <text>Tank 3</text>
+    <x>881</x>
+    <y>112</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 4</name>
+    <text>Tank 4</text>
+    <x>1051</x>
+    <y>112</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 5</name>
+    <text>Tank 5</text>
+    <x>1221</x>
+    <y>112</y>
+    <width>60</width>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State</name>
+    <x>241</x>
+    <y>152</y>
+    <width>75</width>
+    <off_label>OK STATE</off_label>
+    <on_label>OK STATE</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 2 Ok State</name>
+    <x>661</x>
+    <y>152</y>
+    <width>75</width>
+    <off_label>OK STATE</off_label>
+    <on_label>OK STATE</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_2</name>
+    <x>881</x>
+    <y>152</y>
+    <width>75</width>
+    <off_label>OK STATE</off_label>
+    <on_label>OK STATE</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 4 Ok State</name>
+    <x>1051</x>
+    <y>152</y>
+    <width>75</width>
+    <off_label>OK STATE</off_label>
+    <on_label>OK STATE</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 5 Ok State</name>
+    <x>1221</x>
+    <y>152</y>
+    <width>75</width>
+    <off_label>OK STATE</off_label>
+    <on_label>OK STATE</on_label>
+    <square>true</square>
+  </widget>
+</display>

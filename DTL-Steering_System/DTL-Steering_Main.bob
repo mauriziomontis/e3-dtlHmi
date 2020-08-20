@@ -3,15 +3,6 @@
   <name>DTL Steering System</name>
   <width>1920</width>
   <height>1080</height>
-  <scripts>
-    <script file="EmbeddedPy">
-      <text><![CDATA[# Embedded python script
-from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
-print 'Hello'
-# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))]]></text>
-      <pv_name>new-PV</pv_name>
-    </script>
-  </scripts>
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
