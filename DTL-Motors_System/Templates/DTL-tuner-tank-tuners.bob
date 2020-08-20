@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Tank Tuners</name>
+  <width>360</width>
+  <height>410</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Tank 1</name>
+    <y>190</y>
+    <width>280</width>
+    <height>30</height>
+    <line_width>1</line_width>
+    <line_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </line_color>
+    <background_color>
+      <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+      </color>
+    </background_color>
+    <corner_width>5</corner_width>
+    <corner_height>5</corner_height>
+  </widget>
+  <widget type="linear-meter" version="2.0.0">
+    <name>Drift Freq</name>
+    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM1}:Drift</pv_name>
+    <x>25</x>
+    <y>175</y>
+    <width>70</width>
+    <height>50</height>
+    <level_low>-80.0</level_low>
+    <level_lolo>-90.0</level_lolo>
+    <minimum>-100.0</minimum>
+    <limits_from_pv>false</limits_from_pv>
+    <value_visible>false</value_visible>
+    <bar_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </bar_color>
+  </widget>
+  <widget type="linear-meter" version="2.0.0">
+    <name>Drift Freq_1</name>
+    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
+    <x>109</x>
+    <y>175</y>
+    <width>70</width>
+    <height>50</height>
+    <level_low>-80.0</level_low>
+    <level_lolo>-90.0</level_lolo>
+    <minimum>-100.0</minimum>
+    <limits_from_pv>false</limits_from_pv>
+    <value_visible>false</value_visible>
+    <bar_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </bar_color>
+  </widget>
+  <widget type="linear-meter" version="2.0.0">
+    <name>Drift Freq_2</name>
+    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
+    <x>203</x>
+    <y>175</y>
+    <width>70</width>
+    <height>50</height>
+    <level_low>-80.0</level_low>
+    <level_lolo>-90.0</level_lolo>
+    <minimum>-100.0</minimum>
+    <limits_from_pv>false</limits_from_pv>
+    <value_visible>false</value_visible>
+    <bar_color>
+      <color name="ActiveText" red="254" green="194" blue="81">
+      </color>
+    </bar_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tank 1_1</name>
+    <text>${TANK}</text>
+    <x>114</x>
+    <y>160</y>
+    <width>74</width>
+    <height>27</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank</name>
+    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM1}:Pos</pv_name>
+    <x>25</x>
+    <y>33</y>
+    <width>50</width>
+    <height>150</height>
+    <fill_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </fill_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Position</name>
+    <text>Position</text>
+    <x>9</x>
+    <y>32</y>
+    <width>20</width>
+    <height>150</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rotation_step>1</rotation_step>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Position_1</name>
+    <text>Position</text>
+    <x>201</x>
+    <y>32</y>
+    <width>20</width>
+    <height>150</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rotation_step>1</rotation_step>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank_1</name>
+    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM3}:Pos</pv_name>
+    <x>221</x>
+    <y>33</y>
+    <width>50</width>
+    <height>150</height>
+    <fill_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </fill_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tuner 3</name>
+    <text>${TUNER_NUM3}</text>
+    <x>202</x>
+    <width>150</width>
+    <height>27</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tuner 1</name>
+    <text>${TUNER_NUM1}</text>
+    <x>10</x>
+    <width>150</width>
+    <height>27</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Position_2</name>
+    <text>Position</text>
+    <x>100</x>
+    <y>226</y>
+    <width>20</width>
+    <height>150</height>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rotation_step>1</rotation_step>
+  </widget>
+  <widget type="tank" version="2.0.0">
+    <name>Tank_2</name>
+    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM2}:Pos</pv_name>
+    <x>121</x>
+    <y>226</y>
+    <width>50</width>
+    <height>150</height>
+    <fill_color>
+      <color name="GREEN" red="61" green="216" blue="61">
+      </color>
+    </fill_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Tuner 2</name>
+    <text>${TUNER_NUM2}</text>
+    <x>106</x>
+    <y>376</y>
+    <width>150</width>
+    <height>27</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <auto_size>true</auto_size>
+  </widget>
+</display>

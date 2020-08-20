@@ -135,8 +135,8 @@ print 'Hello'
       <name>Tuners System</name>
       <actions>
         <action type="open_display">
-          <file></file>
-          <target>replace</target>
+          <file>DTL-Motors_System/DTL-Motors_Main.bob</file>
+          <target>window</target>
           <description>Tuners System</description>
         </action>
       </actions>

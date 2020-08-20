@@ -37,7 +37,7 @@ $(pv_value)</tooltip>
     <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>235</width>
-    <height use_class="true">48</height>
+    <height use_class="true">46</height>
     <font use_class="true">
       <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
@@ -64,7 +64,7 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>dtl-tuner-motor.bob</file>
+    <file>Templates/DTL-tuner-motor.bob</file>
     <macros>
       <device>${device-ch1}</device>
       <motor_num>1</motor_num>

@@ -48,7 +48,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_44</name>
-      <text>Motor ${tank_num} ${motor_num}</text>
+      <text>Motor ${TANK_NUM}-${MOTOR_NUM}</text>
       <width>270</width>
       <font>
         <font family="Digital Readout Thick Upright Regular" style="BOLD" size="11.0">
@@ -68,16 +68,16 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_24</name>
-      <pv_name>${subsec}:${device}-BO1</pv_name>
-      <x>80</x>
+      <pv_name>$[PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd</pv_name>
+      <x>61</x>
       <y>20</y>
-      <width>80</width>
+      <width>120</width>
       <off_label></off_label>
       <on_label></on_label>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_47</name>
-      <pv_name>${subsec}:${device}-BO1-RB</pv_name>
+      <pv_name>$[PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd-RB</pv_name>
       <x>186</x>
       <y>20</y>
       <width>80</width>
@@ -86,7 +86,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_50</name>
-      <pv_name>${subsec}:${device}-Err</pv_name>
+      <pv_name>$[PREFIX}:EMR-SM-${INDEX}:Err</pv_name>
       <bit>0</bit>
       <x>185</x>
       <y>58</y>
@@ -111,7 +111,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)</name>
-      <pv_name>${subsec}:${device}-online</pv_name>
+      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:ConnStat</pv_name>
       <x>61</x>
       <y>125</y>
       <width>120</width>
@@ -143,7 +143,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_2</name>
-      <pv_name>${subsec}:${device}-operational</pv_name>
+      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:HwOp</pv_name>
       <x>61</x>
       <y>155</y>
       <width>120</width>
@@ -175,7 +175,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_44</name>
-      <pv_name>${subsec}:${device}-AI${channel}-Err-Alrm</pv_name>
+      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:Err-Alrm</pv_name>
       <bit>0</bit>
       <x>185</x>
       <y>125</y>
@@ -190,7 +190,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_45</name>
-      <pv_name>${subsec}:${device}-AI${channel}-OverLim-Alrm</pv_name>
+      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:HLim-Alrm</pv_name>
       <bit>13</bit>
       <x>185</x>
       <y>145</y>
@@ -205,7 +205,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_46</name>
-      <pv_name>${subsec}:${device}-AI${channel}-UnderLim-Alrm</pv_name>
+      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:LLim-Alrm</pv_name>
       <bit>2</bit>
       <x>185</x>
       <y>165</y>
@@ -245,7 +245,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_51</name>
-      <pv_name>${subsec}:${device}.MSTA</pv_name>
+      <pv_name>$[PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>2</bit>
       <x>185</x>
       <y>78</y>
@@ -275,7 +275,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_52</name>
-      <pv_name>${subsec}:${device}.MSTA</pv_name>
+      <pv_name>$[PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>13</bit>
       <x>185</x>
       <y>98</y>
@@ -297,7 +297,7 @@
           <description>Write PV</description>
         </action>
       </actions>
-      <pv_name>${subsec}:${device}-ErrRst</pv_name>
+      <pv_name>$[PREFIX}:EMR-SM-${INDEX}:Err-Rst</pv_name>
       <text>Reset</text>
       <x>61</x>
       <y>58</y>
