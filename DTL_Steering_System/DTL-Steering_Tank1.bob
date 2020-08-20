@@ -273,7 +273,6 @@ print 'Hello'
     <x>180</x>
     <y>60</y>
     <width>1585</width>
-    <height>630</height>
-    <active_tab>5</active_tab>
+    <height>620</height>
   </widget>
 </display>

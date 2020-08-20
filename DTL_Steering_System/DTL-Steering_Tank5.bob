@@ -158,6 +158,5 @@ print 'Hello'
     <y>60</y>
     <width>1585</width>
     <height>630</height>
-    <active_tab>1</active_tab>
   </widget>
 </display>

@@ -93,7 +93,7 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="tabs" version="2.0.0">
-    <name>Tank1</name>
+    <name>Tank3</name>
     <tabs>
       <tab>
         <name>Steerer 1</name>
@@ -158,6 +158,5 @@ print 'Hello'
     <y>60</y>
     <width>1585</width>
     <height>630</height>
-    <active_tab>1</active_tab>
   </widget>
 </display>
