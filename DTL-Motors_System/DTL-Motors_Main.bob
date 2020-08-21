@@ -12,6 +12,96 @@ print 'Hello'
       <pv_name>new-PV</pv_name>
     </script>
   </scripts>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_15</name>
+    <file>Templates/Tuner-tank-tuners.bob</file>
+    <macros>
+      <INDEX_NUM1>001</INDEX_NUM1>
+      <INDEX_NUM2>002</INDEX_NUM2>
+      <INDEX_NUM3>003</INDEX_NUM3>
+      <PREFIX>DTL-010</PREFIX>
+      <TANK>Tank 1</TANK>
+      <TUNER_NUM1>Tuner 1</TUNER_NUM1>
+      <TUNER_NUM2>Tuner 2</TUNER_NUM2>
+      <TUNER_NUM3>Tuner 3</TUNER_NUM3>
+    </macros>
+    <x>185</x>
+    <y>60</y>
+    <width>351</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_16</name>
+    <file>Templates/Tuner-tank-tuners.bob</file>
+    <macros>
+      <INDEX_NUM1>001</INDEX_NUM1>
+      <INDEX_NUM2>002</INDEX_NUM2>
+      <INDEX_NUM3>003</INDEX_NUM3>
+      <PREFIX>DTL-020</PREFIX>
+      <TANK>Tank 2</TANK>
+      <TUNER_NUM1>Tuner 4</TUNER_NUM1>
+      <TUNER_NUM2>Tuner 5</TUNER_NUM2>
+      <TUNER_NUM3>Tuner 6</TUNER_NUM3>
+    </macros>
+    <x>475</x>
+    <y>60</y>
+    <width>351</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_17</name>
+    <file>Templates/Tuner-tank-tuners.bob</file>
+    <macros>
+      <INDEX_NUM1>001</INDEX_NUM1>
+      <INDEX_NUM2>002</INDEX_NUM2>
+      <INDEX_NUM3>003</INDEX_NUM3>
+      <PREFIX>DTL-030</PREFIX>
+      <TANK>Tank 3</TANK>
+      <TUNER_NUM1>Tuner 7</TUNER_NUM1>
+      <TUNER_NUM2>Tuner 8</TUNER_NUM2>
+      <TUNER_NUM3>Tuner 9</TUNER_NUM3>
+    </macros>
+    <x>765</x>
+    <y>60</y>
+    <width>351</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_18</name>
+    <file>Templates/Tuner-tank-tuners.bob</file>
+    <macros>
+      <INDEX_NUM1>001</INDEX_NUM1>
+      <INDEX_NUM2>002</INDEX_NUM2>
+      <INDEX_NUM3>003</INDEX_NUM3>
+      <PREFIX>DTL-040</PREFIX>
+      <TANK>Tank 4</TANK>
+      <TUNER_NUM1>Tuner 10</TUNER_NUM1>
+      <TUNER_NUM2>Tuner 11</TUNER_NUM2>
+      <TUNER_NUM3>Tuner 12</TUNER_NUM3>
+    </macros>
+    <x>1055</x>
+    <y>60</y>
+    <width>351</width>
+    <height>410</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_19</name>
+    <file>Templates/Tuner-tank-tuners.bob</file>
+    <macros>
+      <INDEX_NUM1>001</INDEX_NUM1>
+      <INDEX_NUM2>002</INDEX_NUM2>
+      <INDEX_NUM3>003</INDEX_NUM3>
+      <PREFIX>DTL-050</PREFIX>
+      <TANK>Tank 5</TANK>
+      <TUNER_NUM1>Tuner 13</TUNER_NUM1>
+      <TUNER_NUM2>Tuner 14</TUNER_NUM2>
+      <TUNER_NUM3>Tuner 15</TUNER_NUM3>
+    </macros>
+    <x>1345</x>
+    <y>60</y>
+    <width>351</width>
+    <height>410</height>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
@@ -66,28 +156,12 @@ print 'Hello'
     <vertical_alignment use_class="true">2</vertical_alignment>
     <wrap_words use_class="true">false</wrap_words>
   </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Tank 1</name>
-    <x>185</x>
-    <y>252</y>
-    <width>280</width>
-    <height>30</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </background_color>
-  </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>60</y>
+    <y>466</y>
     <width>150</width>
-    <height>1020</height>
+    <height>614</height>
     <widget type="action_button" version="3.0.0">
       <name>Motors Tank 1</name>
       <actions>
@@ -104,86 +178,10 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="rectangle" version="2.0.0">
-    <name>Tank 2</name>
-    <x>490</x>
-    <y>252</y>
-    <width>280</width>
-    <height>30</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Tank 3</name>
-    <x>795</x>
-    <y>252</y>
-    <width>280</width>
-    <height>30</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Tank 4</name>
-    <x>1100</x>
-    <y>252</y>
-    <width>280</width>
-    <height>30</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Tank 5</name>
-    <x>1405</x>
-    <y>252</y>
-    <width>280</width>
-    <height>30</height>
-    <line_width>1</line_width>
-    <line_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </line_color>
-    <background_color>
-      <color name="GROUP-BORDER" red="150" green="155" blue="151">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>
-    <x>465</x>
-    <y>261</y>
-    <width>25</width>
-    <height>10</height>
-    <line_width>0</line_width>
-    <background_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_2</name>
-    <x>1075</x>
-    <y>262</y>
-    <width>25</width>
+    <x>755</x>
+    <y>260</y>
+    <width>10</width>
     <height>10</height>
     <line_width>0</line_width>
     <background_color>
@@ -193,9 +191,9 @@ print 'Hello'
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_3</name>
-    <x>1380</x>
-    <y>261</y>
-    <width>25</width>
+    <x>1335</x>
+    <y>260</y>
+    <width>10</width>
     <height>10</height>
     <line_width>0</line_width>
     <background_color>
@@ -205,8 +203,8 @@ print 'Hello'
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_4</name>
-    <x>1685</x>
-    <y>261</y>
+    <x>1625</x>
+    <y>260</y>
     <width>45</width>
     <height>10</height>
     <line_width>0</line_width>
@@ -217,8 +215,8 @@ print 'Hello'
   </widget>
   <widget type="polygon" version="2.0.0">
     <name>Polygon</name>
-    <x>1712</x>
-    <y>251</y>
+    <x>1652</x>
+    <y>250</y>
     <width>45</width>
     <height>30</height>
     <line_width>0</line_width>
@@ -237,876 +235,19 @@ print 'Hello'
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle_5</name>
-    <x>160</x>
-    <y>261</y>
-    <width>25</width>
+    <x>465</x>
+    <y>260</y>
+    <width>10</width>
     <height>10</height>
     <line_width>0</line_width>
     <background_color>
       <color name="BLACK" red="0" green="0" blue="0">
       </color>
     </background_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tank 1</name>
-    <text>Tank 1</text>
-    <x>299</x>
-    <y>222</y>
-    <width>61</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tank 2</name>
-    <text>Tank 2</text>
-    <x>610</x>
-    <y>222</y>
-    <width>61</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tank 3</name>
-    <text>Tank 3</text>
-    <x>910</x>
-    <y>222</y>
-    <width>61</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tank 4</name>
-    <text>Tank 4</text>
-    <x>1215</x>
-    <y>222</y>
-    <width>61</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tank 5</name>
-    <text>Tank 5</text>
-    <x>1515</x>
-    <y>222</y>
-    <width>61</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank</name>
-    <pv_name>$[PREFIX}:EMR-GT-${INDEX}:Pos</pv_name>
-    <x>210</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position</name>
-    <text>Position</text>
-    <x>194</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position</name>
-    <text>Position</text>
-    <x>386</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_1</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>406</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 3</name>
-    <text>Tuner 3</text>
-    <x>387</x>
-    <y>62</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 1</name>
-    <text>Tuner 1</text>
-    <x>195</x>
-    <y>62</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position</name>
-    <text>Position</text>
-    <x>285</x>
-    <y>288</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_2</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>306</x>
-    <y>288</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 2</name>
-    <text>Tuner 2</text>
-    <x>291</x>
-    <y>438</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="rectangle" version="2.0.0">
-    <name>Rectangle_6</name>
-    <x>770</x>
-    <y>261</y>
-    <width>25</width>
-    <height>10</height>
-    <line_width>0</line_width>
-    <background_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </background_color>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_3</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>514</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_1</name>
-    <text>Position</text>
-    <x>498</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_2</name>
-    <text>Position</text>
-    <x>690</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_4</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>710</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 6</name>
-    <text>Tuner 6</text>
-    <x>691</x>
-    <y>62</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 4</name>
-    <text>Tuner 4</text>
-    <x>499</x>
-    <y>62</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_3</name>
-    <text>Position</text>
-    <x>589</x>
-    <y>288</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_5</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>610</x>
-    <y>288</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 5</name>
-    <text>Tuner 5</text>
-    <x>595</x>
-    <y>438</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_6</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>819</x>
-    <y>93</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_4</name>
-    <text>Position</text>
-    <x>803</x>
-    <y>92</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_5</name>
-    <text>Position</text>
-    <x>995</x>
-    <y>92</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_7</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1015</x>
-    <y>93</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 9</name>
-    <text>Tuner 9</text>
-    <x>996</x>
-    <y>60</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 7</name>
-    <text>Tuner 7</text>
-    <x>804</x>
-    <y>60</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_6</name>
-    <text>Position</text>
-    <x>894</x>
-    <y>288</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_8</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>915</x>
-    <y>288</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 8</name>
-    <text>Tuner 8</text>
-    <x>900</x>
-    <y>438</y>
-    <width>68</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_9</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1125</x>
-    <y>94</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_7</name>
-    <text>Position</text>
-    <x>1109</x>
-    <y>93</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_8</name>
-    <text>Position</text>
-    <x>1301</x>
-    <y>93</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_10</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1321</x>
-    <y>94</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 12</name>
-    <text>Tuner 12</text>
-    <x>1302</x>
-    <y>61</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 10</name>
-    <text>Tuner 10</text>
-    <x>1110</x>
-    <y>61</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_9</name>
-    <text>Position</text>
-    <x>1200</x>
-    <y>288</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_11</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1221</x>
-    <y>288</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 11</name>
-    <text>Tuner 11</text>
-    <x>1206</x>
-    <y>438</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_12</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1430</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_10</name>
-    <text>Position</text>
-    <x>1414</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_11</name>
-    <text>Position</text>
-    <x>1606</x>
-    <y>94</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_13</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1626</x>
-    <y>95</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 15</name>
-    <text>Tuner 15</text>
-    <x>1607</x>
-    <y>62</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 13</name>
-    <text>Tuner 13</text>
-    <x>1415</x>
-    <y>62</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Position_12</name>
-    <text>Position</text>
-    <x>1505</x>
-    <y>288</y>
-    <width>20</width>
-    <height>150</height>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-  </widget>
-  <widget type="tank" version="2.0.0">
-    <name>Tank_14</name>
-    <pv_name>${subsec}:${device}-AI${channel}</pv_name>
-    <x>1526</x>
-    <y>288</y>
-    <width>50</width>
-    <height>150</height>
-    <fill_color>
-      <color name="GREEN" red="61" green="216" blue="61">
-      </color>
-    </fill_color>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Tuner 14</name>
-    <text>Tuner 14</text>
-    <x>1511</x>
-    <y>438</y>
-    <width>79</width>
-    <height>28</height>
-    <font>
-      <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-      </font>
-    </font>
-    <auto_size>true</auto_size>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq</name>
-    <x>210</x>
-    <y>237</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_1</name>
-    <x>294</x>
-    <y>237</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_2</name>
-    <x>388</x>
-    <y>237</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_3</name>
-    <x>514</x>
-    <y>234</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_4</name>
-    <x>598</x>
-    <y>234</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_5</name>
-    <x>692</x>
-    <y>234</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_6</name>
-    <x>819</x>
-    <y>237</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_7</name>
-    <x>903</x>
-    <y>237</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_8</name>
-    <x>997</x>
-    <y>237</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_9</name>
-    <x>1125</x>
-    <y>236</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_10</name>
-    <x>1209</x>
-    <y>236</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_11</name>
-    <x>1303</x>
-    <y>236</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_12</name>
-    <x>1430</x>
-    <y>235</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_13</name>
-    <x>1514</x>
-    <y>235</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_14</name>
-    <x>1608</x>
-    <y>235</y>
-    <width>70</width>
-    <height>60</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
-      </color>
-    </bar_color>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
+    <file>Templates/Tuner-motor.bob</file>
     <x>185</x>
     <y>466</y>
     <width>280</width>
@@ -1114,7 +255,7 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
+    <file>Templates/Tuner-motor.bob</file>
     <x>185</x>
     <y>668</y>
     <width>280</width>
@@ -1122,7 +263,7 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
+    <file>Templates/Tuner-motor.bob</file>
     <x>185</x>
     <y>871</y>
     <width>280</width>
@@ -1130,134 +271,538 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_3</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>490</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>475</x>
     <y>466</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_4</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>490</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>475</x>
     <y>668</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_5</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>490</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>475</x>
     <y>871</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>795</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>765</x>
     <y>466</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_7</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>795</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>765</x>
     <y>668</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_8</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>795</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>765</x>
     <y>871</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1100</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1055</x>
     <y>466</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1100</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1055</x>
     <y>668</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1100</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1055</x>
     <y>871</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1405</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1345</x>
     <y>466</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1405</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1345</x>
     <y>668</y>
     <width>280</width>
     <height>200</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_14</name>
-    <file>Templates/DTL-tuner-motor.bob</file>
-    <x>1405</x>
+    <file>Templates/Tuner-motor.bob</file>
+    <x>1345</x>
     <y>871</y>
     <width>280</width>
     <height>200</height>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_15</name>
-    <file>Templates/DTL-tuner-tank-tuners.bob</file>
-    <macros>
-      <INDEX_NUM1>001</INDEX_NUM1>
-      <INDEX_NUM2>002</INDEX_NUM2>
-      <INDEX_NUM3>003</INDEX_NUM3>
-      <PREFIX>DTL-010</PREFIX>
-      <TANK>Tank 1</TANK>
-      <TUNER_NUM1>Tuner 1</TUNER_NUM1>
-      <TUNER_NUM2>Tuner 2</TUNER_NUM2>
-      <TUNER_NUM3>Tuner 3</TUNER_NUM3>
-    </macros>
-    <x>1757</x>
-    <y>330</y>
-    <width>360</width>
-    <height>410</height>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle_6</name>
+    <x>1045</x>
+    <y>260</y>
+    <width>10</width>
+    <height>10</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_16</name>
-    <file>Templates/DTL-tuner-tank-tuners.bob</file>
-    <macros>
-      <INDEX_NUM1>004</INDEX_NUM1>
-      <INDEX_NUM2>005</INDEX_NUM2>
-      <INDEX_NUM3>006</INDEX_NUM3>
-      <PREFIX>DTL-020</PREFIX>
-      <TANK>Tank 2</TANK>
-      <TUNER_NUM1>Tuner 4</TUNER_NUM1>
-      <TUNER_NUM2>Tuner 5</TUNER_NUM2>
-      <TUNER_NUM3>Tuner 6</TUNER_NUM3>
-    </macros>
-    <x>2050</x>
-    <y>330</y>
-    <width>360</width>
-    <height>410</height>
+  <widget type="group" version="2.0.0">
+    <name>Positions Setpoint</name>
+    <x>1640</x>
+    <y>450</y>
+    <width>280</width>
+    <height>626</height>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_34</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>003</INDEX>
+        <MOTOR_NUM>3</MOTOR_NUM>
+        <PREFIX>DTL-050</PREFIX>
+        <TANK_NUM>5</TANK_NUM>
+      </macros>
+      <y>533</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_33</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <MOTOR_NUM>2</MOTOR_NUM>
+        <PREFIX>DTL-050</PREFIX>
+        <TANK_NUM>5</TANK_NUM>
+      </macros>
+      <y>498</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_32</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <MOTOR_NUM>1</MOTOR_NUM>
+        <PREFIX>DTL-050</PREFIX>
+        <TANK_NUM>5</TANK_NUM>
+      </macros>
+      <y>463</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_31</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>003</INDEX>
+        <MOTOR_NUM>3</MOTOR_NUM>
+        <PREFIX>DTL-040</PREFIX>
+        <TANK_NUM>4</TANK_NUM>
+      </macros>
+      <y>428</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_30</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <MOTOR_NUM>2</MOTOR_NUM>
+        <PREFIX>DTL-040</PREFIX>
+        <TANK_NUM>4</TANK_NUM>
+      </macros>
+      <y>393</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_29</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <MOTOR_NUM>1</MOTOR_NUM>
+        <PREFIX>DTL-040</PREFIX>
+        <TANK_NUM>4</TANK_NUM>
+      </macros>
+      <y>358</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_28</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>003</INDEX>
+        <MOTOR_NUM>3</MOTOR_NUM>
+        <PREFIX>DTL-030</PREFIX>
+        <TANK_NUM>3</TANK_NUM>
+      </macros>
+      <y>323</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_27</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <MOTOR_NUM>2</MOTOR_NUM>
+        <PREFIX>DTL-030</PREFIX>
+        <TANK_NUM>3</TANK_NUM>
+      </macros>
+      <y>288</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_26</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <MOTOR_NUM>1</MOTOR_NUM>
+        <PREFIX>DTL-030</PREFIX>
+        <TANK_NUM>3</TANK_NUM>
+      </macros>
+      <y>253</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_25</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>003</INDEX>
+        <MOTOR_NUM>3</MOTOR_NUM>
+        <PREFIX>DTL-020</PREFIX>
+        <TANK_NUM>2</TANK_NUM>
+      </macros>
+      <y>218</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_24</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <MOTOR_NUM>2</MOTOR_NUM>
+        <PREFIX>DTL-020</PREFIX>
+        <TANK_NUM>2</TANK_NUM>
+      </macros>
+      <y>183</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_23</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <MOTOR_NUM>1</MOTOR_NUM>
+        <PREFIX>DTL-020</PREFIX>
+        <TANK_NUM>2</TANK_NUM>
+      </macros>
+      <y>148</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_22</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>003</INDEX>
+        <MOTOR_NUM>3</MOTOR_NUM>
+        <PREFIX>DTL-010</PREFIX>
+        <TANK_NUM>1</TANK_NUM>
+      </macros>
+      <y>113</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_21</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <MOTOR_NUM>2</MOTOR_NUM>
+        <PREFIX>DTL-010</PREFIX>
+        <TANK_NUM>1</TANK_NUM>
+      </macros>
+      <y>78</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_20</name>
+      <file>Templates/Motor-mainpage-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <MOTOR_NUM>1</MOTOR_NUM>
+        <PREFIX>DTL-010</PREFIX>
+        <TANK_NUM>1</TANK_NUM>
+      </macros>
+      <y>43</y>
+      <width>235</width>
+      <height>35</height>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>loc://slider(0)</pv_name>
+      <y>5</y>
+      <width>235</width>
+      <off_label>Slider</off_label>
+      <on_label>Wheel</on_label>
+      <show_led>false</show_led>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Status</name>
+    <x>10</x>
+    <y>60</y>
+    <width>150</width>
+    <height>406</height>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <x>10</x>
+      <y>10</y>
+      <width>90</width>
+      <height>40</height>
+      <off_label>OK Operate</off_label>
+      <on_label>OK Operate</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <x>10</x>
+      <y>60</y>
+      <width>50</width>
+      <height>60</height>
+      <off_label>Tank 1</off_label>
+      <on_label>Tank 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <x>10</x>
+      <y>120</y>
+      <width>50</width>
+      <height>60</height>
+      <off_label>Tank 2</off_label>
+      <on_label>Tank 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <x>10</x>
+      <y>180</y>
+      <width>50</width>
+      <height>60</height>
+      <off_label>Tank 3</off_label>
+      <on_label>Tank 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <x>10</x>
+      <y>240</y>
+      <width>50</width>
+      <height>60</height>
+      <off_label>Tank 4</off_label>
+      <on_label>Tank 4</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_5</name>
+      <x>10</x>
+      <y>300</y>
+      <width>50</width>
+      <height>60</height>
+      <off_label>Tank 5</off_label>
+      <on_label>Tank 5</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_6</name>
+      <x>60</x>
+      <y>60</y>
+      <width>40</width>
+      <off_label>Mot 1</off_label>
+      <on_label>Mot 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_7</name>
+      <x>60</x>
+      <y>80</y>
+      <width>40</width>
+      <off_label>Mot 2</off_label>
+      <on_label>Mot 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_8</name>
+      <x>60</x>
+      <y>100</y>
+      <width>40</width>
+      <off_label>Mot 3</off_label>
+      <on_label>Mot 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_9</name>
+      <x>60</x>
+      <y>120</y>
+      <width>40</width>
+      <off_label>Mot 1</off_label>
+      <on_label>Mot 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_10</name>
+      <x>60</x>
+      <y>140</y>
+      <width>40</width>
+      <off_label>Mot 2</off_label>
+      <on_label>Mot 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_11</name>
+      <x>60</x>
+      <y>160</y>
+      <width>40</width>
+      <off_label>Mot 3</off_label>
+      <on_label>Mot 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_12</name>
+      <x>60</x>
+      <y>180</y>
+      <width>40</width>
+      <off_label>Mot 1</off_label>
+      <on_label>Mot 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_13</name>
+      <x>60</x>
+      <y>200</y>
+      <width>40</width>
+      <off_label>Mot 2</off_label>
+      <on_label>Mot 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_14</name>
+      <x>60</x>
+      <y>220</y>
+      <width>40</width>
+      <off_label>Mot 3</off_label>
+      <on_label>Mot 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_15</name>
+      <x>60</x>
+      <y>240</y>
+      <width>40</width>
+      <off_label>Mot 1</off_label>
+      <on_label>Mot 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_16</name>
+      <x>60</x>
+      <y>260</y>
+      <width>40</width>
+      <off_label>Mot 2</off_label>
+      <on_label>Mot 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_17</name>
+      <x>60</x>
+      <y>280</y>
+      <width>40</width>
+      <off_label>Mot 3</off_label>
+      <on_label>Mot 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_18</name>
+      <x>60</x>
+      <y>300</y>
+      <width>40</width>
+      <off_label>Mot 1</off_label>
+      <on_label>Mot 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_19</name>
+      <x>60</x>
+      <y>320</y>
+      <width>40</width>
+      <off_label>Mot 2</off_label>
+      <on_label>Mot 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_20</name>
+      <x>60</x>
+      <y>340</y>
+      <width>40</width>
+      <off_label>Mot 3</off_label>
+      <on_label>Mot 3</on_label>
+      <square>true</square>
+    </widget>
   </widget>
 </display>

@@ -39,7 +39,7 @@
     <limits_from_pv>false</limits_from_pv>
     <value_visible>false</value_visible>
     <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
+      <color name="ATTENTION" red="252" green="242" blue="17">
       </color>
     </bar_color>
   </widget>
@@ -56,7 +56,7 @@
     <limits_from_pv>false</limits_from_pv>
     <value_visible>false</value_visible>
     <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
+      <color name="ATTENTION" red="252" green="242" blue="17">
       </color>
     </bar_color>
   </widget>
@@ -73,7 +73,7 @@
     <limits_from_pv>false</limits_from_pv>
     <value_visible>false</value_visible>
     <bar_color>
-      <color name="ActiveText" red="254" green="194" blue="81">
+      <color name="ATTENTION" red="252" green="242" blue="17">
       </color>
     </bar_color>
   </widget>
