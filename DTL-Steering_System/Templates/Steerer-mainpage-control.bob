@@ -22,6 +22,7 @@
   </widget>
   <widget type="scaledslider" version="2.0.0">
     <name>Steerer Slider</name>
+    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet</pv_name>
     <x>100</x>
     <width>210</width>
     <height>32</height>
@@ -40,6 +41,7 @@
   </widget>
   <widget type="thumbwheel" version="2.0.0">
     <name>Steerer Wheel</name>
+    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet</pv_name>
     <decimal_digits>2</decimal_digits>
     <integer_digits>3</integer_digits>
     <x>100</x>

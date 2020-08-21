@@ -166,7 +166,7 @@ print 'Hello'
       <name>Motors Tank 1</name>
       <actions>
         <action type="open_display">
-          <file></file>
+          <file>dtl-tuner-tank1.bob</file>
           <target>tab</target>
           <description>Motors Tank 1</description>
         </action>
