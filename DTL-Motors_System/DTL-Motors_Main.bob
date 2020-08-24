@@ -252,6 +252,20 @@ print 'Hello'
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Ok comands</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_EnableConfig.bob</file>
+          <target>standalone</target>
+          <description>Enable Config</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>272</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle</name>

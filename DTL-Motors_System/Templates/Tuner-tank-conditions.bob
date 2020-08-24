@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Configuration Status</name>
+  <width>280</width>
+  <height>250</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>280</width>
+    <height>250</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_4</name>
+    <x>5</x>
+    <y>5</y>
+    <width>270</width>
+    <height>240</height>
+    <style>3</style>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>${subsec}:${device}-MsgTxt</pv_name>
+      <x>15</x>
+      <y>415</y>
+      <width>490</width>
+      <visible>false</visible>
+      <background_color>
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <actions>
+        <action type="command">
+          <command>scripts/camonitor_string.sh ${pv_name}</command>
+          <description>Execute Camonitor -S</description>
+        </action>
+      </actions>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_44</name>
+      <text>Tank ${TANK_NUM}</text>
+      <width>270</width>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="11.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_49</name>
+      <text>Cumulative Tank OK Status</text>
+      <x>10</x>
+      <y>25</y>
+      <width>90</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_24</name>
+      <pv_name>${PREFIX}:MC-MCU:OkStat</pv_name>
+      <x>100</x>
+      <y>20</y>
+      <width>80</width>
+      <height>40</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENALBE</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_47</name>
+      <pv_name>${PREFIX}:MC-MCU:OkStat-RB</pv_name>
+      <x>186</x>
+      <y>20</y>
+      <width>80</width>
+      <height>40</height>
+      <square>true</square>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>10</x>
+      <y>75</y>
+      <width>250</width>
+      <height>1</height>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_50</name>
+      <text>Cumulative Tuner1 OK Status</text>
+      <x>10</x>
+      <y>95</y>
+      <width>90</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_25</name>
+      <pv_name>${PREFIX}:MC-MCU-001:OkStat</pv_name>
+      <x>100</x>
+      <y>95</y>
+      <width>80</width>
+      <height>40</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENALBE</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_48</name>
+      <pv_name>${PREFIX}:MC-MCU-001:OkStat-RB</pv_name>
+      <x>186</x>
+      <y>95</y>
+      <width>80</width>
+      <height>40</height>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_51</name>
+      <text>Cumulative Tuner2 OK Status</text>
+      <x>10</x>
+      <y>140</y>
+      <width>90</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_26</name>
+      <pv_name>${PREFIX}:MC-MCU-002:OkStat</pv_name>
+      <x>100</x>
+      <y>140</y>
+      <width>80</width>
+      <height>40</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENALBE</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_49</name>
+      <pv_name>${PREFIX}:MC-MCU-002:OkStat-RB</pv_name>
+      <x>186</x>
+      <y>140</y>
+      <width>80</width>
+      <height>40</height>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_52</name>
+      <text>Cumulative Tuner3 OK Status</text>
+      <x>10</x>
+      <y>185</y>
+      <width>90</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_27</name>
+      <pv_name>${PREFIX}:MC-MCU-003:OkStat</pv_name>
+      <x>100</x>
+      <y>185</y>
+      <width>80</width>
+      <height>40</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENALBE</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_50</name>
+      <pv_name>${PREFIX}:MC-MCU-003:OkStat-RB</pv_name>
+      <x>186</x>
+      <y>185</y>
+      <width>80</width>
+      <height>40</height>
+      <square>true</square>
+    </widget>
+  </widget>
+</display>

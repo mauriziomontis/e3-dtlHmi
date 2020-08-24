@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Enable Configuration System</name>
+  <width>600</width>
+  <height>870</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>Rectangle Template</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>600</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <line_color>
+      <color name="IO Line" red="0" green="32" blue="92">
+      </color>
+    </line_color>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+    <actions>
+    </actions>
+    <tooltip>$(pv_name)
+$(pv_value)</tooltip>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label Template</name>
+    <class>TITLE</class>
+    <text>Enable Configuration System </text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>457</width>
+    <height use_class="true">46</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <background_color>
+      <color name="IO Background" red="255" green="255" blue="205">
+      </color>
+    </background_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <auto_size>true</auto_size>
+    <wrap_words use_class="true">false</wrap_words>
+    <actions>
+    </actions>
+    <border_color>
+      <color name="IO Border" red="215" green="215" blue="215">
+      </color>
+    </border_color>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display</name>
+    <file>Templates/Tuner-tank-conditions.bob</file>
+    <macros>
+      <PREFIX>DTL-010</PREFIX>
+      <TANK_NUM>1</TANK_NUM>
+    </macros>
+    <x>20</x>
+    <y>60</y>
+    <width>280</width>
+    <height>250</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_1</name>
+    <file>Templates/Tuner-tank-conditions.bob</file>
+    <macros>
+      <PREFIX>DTL-020</PREFIX>
+      <TANK_NUM>2</TANK_NUM>
+    </macros>
+    <x>310</x>
+    <y>60</y>
+    <width>280</width>
+    <height>250</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_2</name>
+    <file>Templates/Tuner-tank-conditions.bob</file>
+    <macros>
+      <PREFIX>DTL-030</PREFIX>
+      <TANK_NUM>3</TANK_NUM>
+    </macros>
+    <x>20</x>
+    <y>320</y>
+    <width>280</width>
+    <height>250</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_3</name>
+    <file>Templates/Tuner-tank-conditions.bob</file>
+    <macros>
+      <PREFIX>DTL-040</PREFIX>
+      <TANK_NUM>4</TANK_NUM>
+    </macros>
+    <x>310</x>
+    <y>320</y>
+    <width>280</width>
+    <height>250</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_4</name>
+    <file>Templates/Tuner-tank-conditions.bob</file>
+    <macros>
+      <PREFIX>DTL-050</PREFIX>
+      <TANK_NUM>5</TANK_NUM>
+    </macros>
+    <x>20</x>
+    <y>580</y>
+    <width>280</width>
+    <height>250</height>
+  </widget>
+</display>
