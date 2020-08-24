@@ -99,14 +99,14 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Enable</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).CNEN</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.CNEN</pv_name>
       <x>120</x>
       <y>40</y>
       <width>190</width>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Set</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).SET</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.SET</pv_name>
       <x>120</x>
       <y>78</y>
       <width>190</width>
@@ -127,7 +127,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Stop</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).STOP</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.STOP</pv_name>
       <x>120</x>
       <y>116</y>
       <width>190</width>
@@ -145,7 +145,7 @@
     <style>3</style>
     <widget type="led" version="2.0.0">
       <name>LED_28</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).HLS</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.HLS</pv_name>
       <bit>0</bit>
       <x>615</x>
       <y>10</y>
@@ -161,7 +161,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_29</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).LLS</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.LLS</pv_name>
       <bit>0</bit>
       <x>220</x>
       <y>10</y>
@@ -177,7 +177,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Motor Position</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).VAL</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.VAL</pv_name>
       <x>312</x>
       <y>10</y>
       <width>250</width>
@@ -200,7 +200,7 @@
           <description>Write PV</description>
         </action>
       </actions>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).TWF</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.TWF</pv_name>
       <text>&gt;&gt;</text>
       <x>570</x>
       <y>10</y>
@@ -217,7 +217,7 @@
           <description>Write PV</description>
         </action>
       </actions>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).TWR</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.TWR</pv_name>
       <text>&lt;&lt;</text>
       <x>265</x>
       <y>10</y>
@@ -236,7 +236,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_22</name>
-      <pv_name>${subsec}:${device}.DIR</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.DIR</pv_name>
       <x>120</x>
       <y>10</y>
       <width>80</width>
@@ -267,7 +267,7 @@
     </widget>
     <widget type="thumbwheel" version="2.0.0">
       <name>Position</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).VAL</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.VAL</pv_name>
       <decimal_digits>2</decimal_digits>
       <integer_digits>3</integer_digits>
       <x>312</x>
@@ -302,7 +302,7 @@
           <description>Write PV</description>
         </action>
       </actions>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):ErrRst</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:Err-Rst</pv_name>
       <text>Reset</text>
       <x>312</x>
       <y>80</y>
@@ -321,7 +321,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).OFF</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.OFF</pv_name>
       <x>120</x>
       <y>135</y>
       <height>30</height>
@@ -342,7 +342,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_13</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).DVAL</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.DVAL</pv_name>
       <x>330</x>
       <y>135</y>
       <height>30</height>
@@ -363,7 +363,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_14</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).DRBV</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.DRBV</pv_name>
       <x>550</x>
       <y>135</y>
       <height>30</height>
@@ -413,19 +413,18 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_19</name>
-      <pv_name>${PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-00${INDEX_POS}:24VPS_OnCmd</pv_name>
       <x>120</x>
       <y>40</y>
       <width>80</width>
       <height>60</height>
       <off_label>ENABLE</off_label>
-      <off_image>ENABLE</off_image>
-      <on_label></on_label>
+      <on_label>ENABLE</on_label>
       <show_led>false</show_led>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_30</name>
-      <pv_name>${PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd-RB</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-00${INDEX_POS}:24VPS_OnCmd-RB</pv_name>
       <x>200</x>
       <y>40</y>
       <width>60</width>
@@ -434,7 +433,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_32</name>
-      <pv_name>${PREFIX}:EMR-GS-00${INDEX_SW}:LimStat</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-00${INDEX_POS}:NCLimStat</pv_name>
       <x>265</x>
       <y>40</y>
       <width>60</width>
@@ -445,7 +444,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_33</name>
-      <pv_name>${PREFIX}:EMR-GS-01${INDEX_SW}:LimStat</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-01${INDEX_POS}:NCLimStat</pv_name>
       <x>265</x>
       <y>70</y>
       <width>60</width>
@@ -465,19 +464,18 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_21</name>
-      <pv_name>${subsec-En-BO}:${device-En-BO}-${BO-NC}</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-01${INDEX_POS}:24VPS_OnCmd</pv_name>
       <x>120</x>
       <y>105</y>
       <width>80</width>
       <height>60</height>
       <off_label>ENABLE</off_label>
-      <off_image>ENABLE</off_image>
-      <on_label></on_label>
+      <on_label>ENABLE</on_label>
       <show_led>false</show_led>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_36</name>
-      <pv_name>${subsec-En-BO}:${device-En-BO}-${BO-NC}-RB</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-01${INDEX_POS}:24VPS_OnCmd-RB</pv_name>
       <x>200</x>
       <y>105</y>
       <width>60</width>
@@ -486,7 +484,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_37</name>
-      <pv_name>${subsec-En-BI}:${device-En-BI-NC}-${BI-NC}</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-01${INDEX_POS}:NOLimStat</pv_name>
       <x>265</x>
       <y>105</y>
       <width>60</width>
@@ -497,7 +495,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_38</name>
-      <pv_name>${subsec-En-BO}:${device-En-BI-NC}-${BI-NCLow}</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-00${INDEX_POS}:NOLimStat</pv_name>
       <x>265</x>
       <y>135</y>
       <width>60</width>
@@ -537,7 +535,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):Err</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:Err</pv_name>
       <bit>0</bit>
       <x>30</x>
       <y>40</y>
@@ -553,7 +551,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>13</bit>
       <x>30</x>
       <y>90</y>
@@ -569,7 +567,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_3</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>2</bit>
       <x>30</x>
       <y>65</y>
@@ -585,7 +583,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_4</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).DMOV</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.DMOV</pv_name>
       <bit>0</bit>
       <x>186</x>
       <y>40</y>
@@ -601,7 +599,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_12</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>3</bit>
       <x>186</x>
       <y>65</y>
@@ -617,7 +615,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_8</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).STAT</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.STAT</pv_name>
       <x>186</x>
       <y>90</y>
       <width>150</width>
@@ -632,7 +630,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_5</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MOVN</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MOVN</pv_name>
       <bit>0</bit>
       <x>342</x>
       <y>40</y>
@@ -648,7 +646,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_6</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).LVIO</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.LVIO</pv_name>
       <bit>0</bit>
       <x>342</x>
       <y>65</y>
@@ -664,7 +662,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_7</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MISS</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MISS</pv_name>
       <bit>0</bit>
       <x>342</x>
       <y>90</y>
@@ -680,7 +678,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_41</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>14</bit>
       <x>500</x>
       <y>40</y>
@@ -696,7 +694,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_42</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>6</bit>
       <x>500</x>
       <y>65</y>
@@ -712,7 +710,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_43</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).MSTA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.MSTA</pv_name>
       <bit>9</bit>
       <x>500</x>
       <y>90</y>
@@ -767,7 +765,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Control wheel/slider_1</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID-En</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID-En</pv_name>
       <x>100</x>
       <y>40</y>
       <width>80</width>
@@ -787,7 +785,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Proportional Factor</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KP</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID.KP</pv_name>
       <x>230</x>
       <y>10</y>
       <height>30</height>
@@ -812,7 +810,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Integrative Factor</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KI</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID.KI</pv_name>
       <x>230</x>
       <y>40</y>
       <height>30</height>
@@ -837,7 +835,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Derivative Factor</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KD</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID.KD</pv_name>
       <x>230</x>
       <y>70</y>
       <height>30</height>
@@ -852,7 +850,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Integrative Factor_2</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.HOPR</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID.HOPR</pv_name>
       <x>400</x>
       <y>10</y>
       <height>30</height>
@@ -867,7 +865,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Derivative Factor_1</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.LOPR</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPID.LOPR</pv_name>
       <x>400</x>
       <y>40</y>
       <height>30</height>
@@ -912,7 +910,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Integrative Factor_3</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPIDLim.INPB</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPIDLim.INPB</pv_name>
       <x>575</x>
       <y>10</y>
       <height>30</height>
@@ -937,7 +935,7 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Integrative Factor_4</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPIDLim.INPA</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}:CtrlPIDLim.INPA</pv_name>
       <x>575</x>
       <y>40</y>
       <height>30</height>
@@ -990,7 +988,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_15</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).OFF</pv_name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.OFF</pv_name>
       <x>120</x>
       <y>40</y>
       <width>150</width>
@@ -1003,7 +1001,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)</name>
-      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:ConnStat</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:ConnStat</pv_name>
       <x>320</x>
       <y>10</y>
       <width>165</width>
@@ -1035,7 +1033,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_2</name>
-      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:HwOp</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:HwOp</pv_name>
       <x>485</x>
       <y>10</y>
       <width>165</width>
@@ -1067,7 +1065,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_56</name>
-      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:Err-Alrm</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:Err-Alrm</pv_name>
       <bit>0</bit>
       <x>430</x>
       <y>40</y>
@@ -1083,7 +1081,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_57</name>
-      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:HLim-Alrm</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:HLim-Alrm</pv_name>
       <bit>13</bit>
       <x>320</x>
       <y>40</y>
@@ -1099,7 +1097,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_58</name>
-      <pv_name>$[PREFIX}:EMR-GT-${INDEX}:LLim-Alrm</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:LLim-Alrm</pv_name>
       <bit>2</bit>
       <x>540</x>
       <y>40</y>

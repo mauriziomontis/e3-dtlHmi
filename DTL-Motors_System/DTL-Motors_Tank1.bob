@@ -66,10 +66,10 @@ $(pv_value)</tooltip>
     <name>Embedded Display</name>
     <file>Templates/Tuner-details.bob</file>
     <macros>
-      <device>${device-ch1}</device>
-      <motor_num>1</motor_num>
-      <subsec>${subsec-ch1}</subsec>
-      <tank_num>1</tank_num>
+      <INDEX>001</INDEX>
+      <INDEX_POS>1</INDEX_POS>
+      <MOTOR_NUM>1</MOTOR_NUM>
+      <TANK_NUM>1</TANK_NUM>
     </macros>
     <x>10</x>
     <y>60</y>
@@ -80,10 +80,10 @@ $(pv_value)</tooltip>
     <name>Embedded Display_1</name>
     <file>Templates/Tuner-details.bob</file>
     <macros>
-      <device>${device-ch1}</device>
-      <motor_num>1</motor_num>
-      <subsec>${subsec-ch1}</subsec>
-      <tank_num>1</tank_num>
+      <INDEX>002</INDEX>
+      <INDEX_POS>2</INDEX_POS>
+      <MOTOR_NUM>2</MOTOR_NUM>
+      <TANK_NUM>1</TANK_NUM>
     </macros>
     <x>720</x>
     <y>60</y>
@@ -94,10 +94,10 @@ $(pv_value)</tooltip>
     <name>Embedded Display_2</name>
     <file>Templates/Tuner-details.bob</file>
     <macros>
-      <device>${device-ch1}</device>
-      <motor_num>1</motor_num>
-      <subsec>${subsec-ch1}</subsec>
-      <tank_num>1</tank_num>
+      <INDEX>003</INDEX>
+      <INDEX_POS>3</INDEX_POS>
+      <MOTOR_NUM>3</MOTOR_NUM>
+      <TANK_NUM>1</TANK_NUM>
     </macros>
     <x>1430</x>
     <y>60</y>

@@ -169,6 +169,7 @@ print 'Hello'
           <file>DTL-Motors_Tank1.bob</file>
           <macros>
             <PREFIX>DTL-010</PREFIX>
+            <TANK_NUM>1</TANK_NUM>
           </macros>
           <target>tab</target>
           <description>Motors Tank 1</description>
@@ -176,6 +177,78 @@ print 'Hello'
       </actions>
       <x>5</x>
       <y>20</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 2</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank2.bob</file>
+          <macros>
+            <PREFIX>DTL-020</PREFIX>
+            <TANK_NUM>2</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 2</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>70</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 3</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank3.bob</file>
+          <macros>
+            <PREFIX>DTL-030</PREFIX>
+            <TANK_NUM>3</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 3</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>120</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 4</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank4.bob</file>
+          <macros>
+            <PREFIX>DTL-040</PREFIX>
+            <TANK_NUM>4</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 4</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>170</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 5</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank5.bob</file>
+          <macros>
+            <PREFIX>DTL-050</PREFIX>
+            <TANK_NUM>5</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 5</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>220</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -312,7 +385,7 @@ print 'Hello'
     <name>Embedded Display_5</name>
     <file>Templates/Tuner-motor.bob</file>
     <macros>
-      <INDEX>002</INDEX>
+      <INDEX>003</INDEX>
       <PREFIX>DTL-020</PREFIX>
     </macros>
     <x>475</x>
