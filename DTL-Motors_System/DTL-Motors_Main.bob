@@ -166,7 +166,10 @@ print 'Hello'
       <name>Motors Tank 1</name>
       <actions>
         <action type="open_display">
-          <file>dtl-tuner-tank1.bob</file>
+          <file>DTL-Motors_Tank1.bob</file>
+          <macros>
+            <PREFIX>DTL-010</PREFIX>
+          </macros>
           <target>tab</target>
           <description>Motors Tank 1</description>
         </action>
@@ -248,6 +251,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>DTL-010</PREFIX>
+    </macros>
     <x>185</x>
     <y>466</y>
     <width>280</width>
@@ -256,6 +263,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-010</PREFIX>
+    </macros>
     <x>185</x>
     <y>668</y>
     <width>280</width>
@@ -264,6 +275,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>003</INDEX>
+      <PREFIX>DTL-010</PREFIX>
+    </macros>
     <x>185</x>
     <y>871</y>
     <width>280</width>
@@ -272,6 +287,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_3</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>DTL-020</PREFIX>
+    </macros>
     <x>475</x>
     <y>466</y>
     <width>280</width>
@@ -280,6 +299,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_4</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-020</PREFIX>
+    </macros>
     <x>475</x>
     <y>668</y>
     <width>280</width>
@@ -288,6 +311,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_5</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-020</PREFIX>
+    </macros>
     <x>475</x>
     <y>871</y>
     <width>280</width>
@@ -296,6 +323,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>DTL-030</PREFIX>
+    </macros>
     <x>765</x>
     <y>466</y>
     <width>280</width>
@@ -304,6 +335,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_7</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-030</PREFIX>
+    </macros>
     <x>765</x>
     <y>668</y>
     <width>280</width>
@@ -312,6 +347,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_8</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>003</INDEX>
+      <PREFIX>DTL-030</PREFIX>
+    </macros>
     <x>765</x>
     <y>871</y>
     <width>280</width>
@@ -320,6 +359,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>DTL-040</PREFIX>
+    </macros>
     <x>1055</x>
     <y>466</y>
     <width>280</width>
@@ -328,6 +371,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-040</PREFIX>
+    </macros>
     <x>1055</x>
     <y>668</y>
     <width>280</width>
@@ -336,6 +383,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>003</INDEX>
+      <PREFIX>DTL-040</PREFIX>
+    </macros>
     <x>1055</x>
     <y>871</y>
     <width>280</width>
@@ -344,6 +395,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>DTL-050</PREFIX>
+    </macros>
     <x>1345</x>
     <y>466</y>
     <width>280</width>
@@ -352,6 +407,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>002</INDEX>
+      <PREFIX>DTL-050</PREFIX>
+    </macros>
     <x>1345</x>
     <y>668</y>
     <width>280</width>
@@ -360,6 +419,10 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_14</name>
     <file>Templates/Tuner-motor.bob</file>
+    <macros>
+      <INDEX>003</INDEX>
+      <PREFIX>DTL-050</PREFIX>
+    </macros>
     <x>1345</x>
     <y>871</y>
     <width>280</width>

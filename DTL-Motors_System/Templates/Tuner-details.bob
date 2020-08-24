@@ -730,7 +730,7 @@
   <widget type="group" version="2.0.0">
     <name>Motor Title_5</name>
     <x>10</x>
-    <y>685</y>
+    <y>690</y>
     <width>680</width>
     <height>105</height>
     <style>3</style>
@@ -754,6 +754,201 @@
       </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PID Enable</name>
+      <text>Enable PID:</text>
+      <x>10</x>
+      <y>40</y>
+      <width>80</width>
+      <height>40</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Control wheel/slider_1</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID-En</pv_name>
+      <x>100</x>
+      <y>40</y>
+      <width>80</width>
+      <height>40</height>
+      <off_label>OFF</off_label>
+      <on_label>ON</on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>KP</name>
+      <text>KP:</text>
+      <x>180</x>
+      <y>10</y>
+      <width>40</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Proportional Factor</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KP</pv_name>
+      <x>230</x>
+      <y>10</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>KI</name>
+      <text>KI:</text>
+      <x>180</x>
+      <y>40</y>
+      <width>40</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Integrative Factor</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KI</pv_name>
+      <x>230</x>
+      <y>40</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>KD</name>
+      <text>KD:</text>
+      <x>180</x>
+      <y>70</y>
+      <width>40</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Derivative Factor</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.KD</pv_name>
+      <x>230</x>
+      <y>70</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Integrative Factor_2</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.HOPR</pv_name>
+      <x>400</x>
+      <y>10</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Derivative Factor_1</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID.LOPR</pv_name>
+      <x>400</x>
+      <y>40</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>High operator range</name>
+      <text>Hi Op:</text>
+      <x>330</x>
+      <y>10</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Low operator range</name>
+      <text>Lo Op:</text>
+      <x>330</x>
+      <y>40</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PID High Limit</name>
+      <text>Hi Lim:</text>
+      <x>505</x>
+      <y>10</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Integrative Factor_3</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPIDLim.INPB</pv_name>
+      <x>575</x>
+      <y>10</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PID Low Limit</name>
+      <text>Lo Lim:</text>
+      <x>505</x>
+      <y>40</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Integrative Factor_4</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPIDLim.INPA</pv_name>
+      <x>575</x>
+      <y>40</y>
+      <height>30</height>
+      <rules>
+        <rule name="Wheel" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>loc://wheel</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -788,7 +983,7 @@
       <name>Offset_3</name>
       <text>Position:</text>
       <x>10</x>
-      <y>30</y>
+      <y>35</y>
       <height>40</height>
       <horizontal_alignment>2</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>

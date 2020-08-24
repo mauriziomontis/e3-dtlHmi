@@ -28,7 +28,7 @@
   </widget>
   <widget type="linear-meter" version="2.0.0">
     <name>Drift Freq</name>
-    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM1}:Drift</pv_name>
+    <pv_name>${PREFIX}:RFLS-${INDEX_NUM1}:Drift</pv_name>
     <x>25</x>
     <y>175</y>
     <width>70</width>
@@ -45,7 +45,7 @@
   </widget>
   <widget type="linear-meter" version="2.0.0">
     <name>Drift Freq_1</name>
-    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
+    <pv_name>${PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
     <x>109</x>
     <y>175</y>
     <width>70</width>
@@ -62,7 +62,7 @@
   </widget>
   <widget type="linear-meter" version="2.0.0">
     <name>Drift Freq_2</name>
-    <pv_name>$[PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
+    <pv_name>${PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
     <x>203</x>
     <y>175</y>
     <width>70</width>
@@ -92,7 +92,7 @@
   </widget>
   <widget type="tank" version="2.0.0">
     <name>Tank</name>
-    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM1}:Pos</pv_name>
+    <pv_name>${PREFIX}:EMR-GT-${INDEX_NUM1}:Pos</pv_name>
     <x>25</x>
     <y>33</y>
     <width>50</width>
@@ -126,7 +126,7 @@
   </widget>
   <widget type="tank" version="2.0.0">
     <name>Tank_1</name>
-    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM3}:Pos</pv_name>
+    <pv_name>${PREFIX}:EMR-GT-${INDEX_NUM3}:Pos</pv_name>
     <x>221</x>
     <y>33</y>
     <width>50</width>
@@ -173,7 +173,7 @@
   </widget>
   <widget type="tank" version="2.0.0">
     <name>Tank_2</name>
-    <pv_name>$[PREFIX}:EMR-GT-${INDEX_NUM2}:Pos</pv_name>
+    <pv_name>${PREFIX}:EMR-GT-${INDEX_NUM2}:Pos</pv_name>
     <x>121</x>
     <y>226</y>
     <width>50</width>
