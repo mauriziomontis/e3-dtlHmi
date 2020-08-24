@@ -103,6 +103,14 @@
       <x>120</x>
       <y>40</y>
       <width>190</width>
+      <rules>
+        <rule name="Enable" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
+          <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Set</name>
@@ -110,6 +118,14 @@
       <x>120</x>
       <y>78</y>
       <width>190</width>
+      <rules>
+        <rule name="Enable" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
+          <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Stop</name>

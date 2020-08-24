@@ -159,45 +159,9 @@ print 'Hello'
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>466</y>
+    <y>724</y>
     <width>150</width>
-    <height>614</height>
-    <widget type="action_button" version="3.0.0">
-      <name>Motors Tank 1</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Motors_Tank1.bob</file>
-          <macros>
-            <PREFIX>DTL-010</PREFIX>
-            <TANK_NUM>1</TANK_NUM>
-          </macros>
-          <target>tab</target>
-          <description>Motors Tank 1</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>20</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Motors Tank 2</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Motors_Tank2.bob</file>
-          <macros>
-            <PREFIX>DTL-020</PREFIX>
-            <TANK_NUM>2</TANK_NUM>
-          </macros>
-          <target>tab</target>
-          <description>Motors Tank 2</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>70</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
+    <height>356</height>
     <widget type="action_button" version="3.0.0">
       <name>Motors Tank 3</name>
       <actions>
@@ -263,6 +227,42 @@ print 'Hello'
       </actions>
       <x>5</x>
       <y>272</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 2</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank2.bob</file>
+          <macros>
+            <PREFIX>DTL-020</PREFIX>
+            <TANK_NUM>2</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 2</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>65</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Motors Tank 1</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Motors_Tank1.bob</file>
+          <macros>
+            <PREFIX>DTL-010</PREFIX>
+            <TANK_NUM>1</TANK_NUM>
+          </macros>
+          <target>tab</target>
+          <description>Motors Tank 1</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>14</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -758,9 +758,10 @@ print 'Hello'
     <x>10</x>
     <y>60</y>
     <width>150</width>
-    <height>406</height>
+    <height>400</height>
     <widget type="led" version="2.0.0">
       <name>LED</name>
+      <pv_name>DTL:MC-MCU:OkStat</pv_name>
       <x>10</x>
       <y>10</y>
       <width>90</width>
@@ -771,6 +772,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_1</name>
+      <pv_name>DTL-010:MC-MCU:OkStat-RB</pv_name>
       <x>10</x>
       <y>60</y>
       <width>50</width>
@@ -781,6 +783,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_2</name>
+      <pv_name>DTL-020:MC-MCU:OkStat-RB</pv_name>
       <x>10</x>
       <y>120</y>
       <width>50</width>
@@ -791,6 +794,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_3</name>
+      <pv_name>DTL-030:MC-MCU:OkStat-RB</pv_name>
       <x>10</x>
       <y>180</y>
       <width>50</width>
@@ -801,6 +805,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_4</name>
+      <pv_name>DTL-040:MC-MCU:OkStat-RB</pv_name>
       <x>10</x>
       <y>240</y>
       <width>50</width>
@@ -811,6 +816,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_5</name>
+      <pv_name>DTL-050:MC-MCU:OkStat-RB</pv_name>
       <x>10</x>
       <y>300</y>
       <width>50</width>
@@ -821,6 +827,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_6</name>
+      <pv_name>DTL-010:MC-MCU-001:OkStat-RB</pv_name>
       <x>60</x>
       <y>60</y>
       <width>40</width>
@@ -830,6 +837,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_7</name>
+      <pv_name>DTL-010:MC-MCU-002:OkStat-RB</pv_name>
       <x>60</x>
       <y>80</y>
       <width>40</width>
@@ -839,6 +847,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_8</name>
+      <pv_name>DTL-010:MC-MCU-003:OkStat-RB</pv_name>
       <x>60</x>
       <y>100</y>
       <width>40</width>
@@ -848,6 +857,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_9</name>
+      <pv_name>DTL-020:MC-MCU-001:OkStat-RB</pv_name>
       <x>60</x>
       <y>120</y>
       <width>40</width>
@@ -857,6 +867,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_10</name>
+      <pv_name>DTL-020:MC-MCU-002:OkStat-RB</pv_name>
       <x>60</x>
       <y>140</y>
       <width>40</width>
@@ -866,6 +877,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_11</name>
+      <pv_name>DTL-020:MC-MCU-003:OkStat-RB</pv_name>
       <x>60</x>
       <y>160</y>
       <width>40</width>
@@ -875,6 +887,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_12</name>
+      <pv_name>DTL-030:MC-MCU-001:OkStat-RB</pv_name>
       <x>60</x>
       <y>180</y>
       <width>40</width>
@@ -884,6 +897,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_13</name>
+      <pv_name>DTL-030:MC-MCU-002:OkStat-RB</pv_name>
       <x>60</x>
       <y>200</y>
       <width>40</width>
@@ -893,6 +907,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_14</name>
+      <pv_name>DTL-030:MC-MCU-003:OkStat-RB</pv_name>
       <x>60</x>
       <y>220</y>
       <width>40</width>
@@ -902,6 +917,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_15</name>
+      <pv_name>DTL-040:MC-MCU-001:OkStat-RB</pv_name>
       <x>60</x>
       <y>240</y>
       <width>40</width>
@@ -911,6 +927,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_16</name>
+      <pv_name>DTL-040:MC-MCU-002:OkStat-RB</pv_name>
       <x>60</x>
       <y>260</y>
       <width>40</width>
@@ -920,6 +937,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_17</name>
+      <pv_name>DTL-040:MC-MCU-003:OkStat-RB</pv_name>
       <x>60</x>
       <y>280</y>
       <width>40</width>
@@ -929,6 +947,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_18</name>
+      <pv_name>DTL-050:MC-MCU-001:OkStat-RB</pv_name>
       <x>60</x>
       <y>300</y>
       <width>40</width>
@@ -938,6 +957,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_19</name>
+      <pv_name>DTL-050:MC-MCU-002:OkStat-RB</pv_name>
       <x>60</x>
       <y>320</y>
       <width>40</width>
@@ -947,12 +967,64 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_20</name>
+      <pv_name>DTL-050:MC-MCU-003:OkStat-RB</pv_name>
       <x>60</x>
       <y>340</y>
       <width>40</width>
       <off_label>Mot 3</off_label>
       <on_label>Mot 3</on_label>
       <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Controls</name>
+    <x>10</x>
+    <y>450</y>
+    <width>150</width>
+    <height>274</height>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control</name>
+      <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+      <x>5</x>
+      <y>43</y>
+      <height>40</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENABLE</on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Enable System Control</name>
+      <text>Enable System Control</text>
+      <x>5</x>
+      <y>5</y>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Automatic Control_2</name>
+      <text>Man/Auto Tuning</text>
+      <x>5</x>
+      <y>99</y>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_3</name>
+      <pv_name>DTL:EMR-SM:AutoCmd</pv_name>
+      <x>5</x>
+      <y>137</y>
+      <height>40</height>
+      <off_label>MANUAL</off_label>
+      <on_label>AUTO</on_label>
     </widget>
   </widget>
 </display>
