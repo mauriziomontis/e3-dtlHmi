@@ -183,7 +183,6 @@ print 'Hello'
     <y>80</y>
     <width>900</width>
     <height>445</height>
-    <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
@@ -199,7 +198,6 @@ print 'Hello'
     <y>565</y>
     <width>370</width>
     <height>495</height>
-    <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
@@ -215,7 +213,6 @@ print 'Hello'
     <y>565</y>
     <width>370</width>
     <height>495</height>
-    <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
@@ -231,7 +228,6 @@ print 'Hello'
     <y>565</y>
     <width>370</width>
     <height>495</height>
-    <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
@@ -247,7 +243,6 @@ print 'Hello'
     <y>565</y>
     <width>370</width>
     <height>495</height>
-    <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
@@ -263,6 +258,19 @@ print 'Hello'
     <y>565</y>
     <width>370</width>
     <height>495</height>
-    <border_width>1</border_width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PLC Communication</name>
+    <x>160</x>
+    <y>60</y>
+    <width>250</width>
+    <height>240</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>State Machine</name>
+    <x>420</x>
+    <y>60</y>
+    <width>250</width>
+    <height>240</height>
   </widget>
 </display>

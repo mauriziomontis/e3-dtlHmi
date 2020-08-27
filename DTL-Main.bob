@@ -90,7 +90,7 @@ print 'Hello'
       <name>Cooling System</name>
       <actions>
         <action type="open_display">
-          <file></file>
+          <file>DTL-Cooling_System/DTL-Cooling-Main.bob</file>
           <target>replace</target>
           <description>Cooling System</description>
         </action>
@@ -120,7 +120,7 @@ print 'Hello'
       <name>Steering System</name>
       <actions>
         <action type="open_display">
-          <file>DTL_Steering_System/DTL-Steering_Main.bob</file>
+          <file>DTL-Steering_System/DTL-Steering_Main.bob</file>
           <target>window</target>
           <description>Steering System</description>
         </action>
