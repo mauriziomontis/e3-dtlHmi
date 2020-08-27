@@ -175,10 +175,10 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
-    <x>850</x>
+    <file>Templates/Main-line-mainpage.bob</file>
+    <x>870</x>
     <y>60</y>
-    <width>1045</width>
+    <width>900</width>
     <height>495</height>
     <border_width>1</border_width>
   </widget>
