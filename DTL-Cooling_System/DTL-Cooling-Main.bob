@@ -176,10 +176,13 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
     <file>Templates/Main-line-mainpage.bob</file>
-    <x>870</x>
-    <y>60</y>
+    <macros>
+      <PREFIX>CWM-CWS04</PREFIX>
+    </macros>
+    <x>990</x>
+    <y>80</y>
     <width>900</width>
-    <height>495</height>
+    <height>445</height>
     <border_width>1</border_width>
   </widget>
   <widget type="embedded" version="2.0.0">

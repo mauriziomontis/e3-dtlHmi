@@ -82,7 +82,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_86</name>
       <x>868</x>
-      <y>70</y>
+      <y>50</y>
       <width>1</width>
       <height>165</height>
       <line_width>2</line_width>
@@ -102,14 +102,14 @@
       <name>Embedded Display_32</name>
       <file>../../embedded/arrow-up.bob</file>
       <x>853</x>
-      <y>95</y>
+      <y>75</y>
       <width>15</width>
       <height>15</height>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_121</name>
       <x>636</x>
-      <y>213</y>
+      <y>193</y>
       <width>1</width>
       <height>27</height>
       <line_width>2</line_width>
@@ -127,7 +127,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_120</name>
       <x>607</x>
-      <y>289</y>
+      <y>269</y>
       <width>1</width>
       <height>17</height>
       <line_width>2</line_width>
@@ -146,14 +146,14 @@
       <name>Embedded Display_31</name>
       <file>../../embedded/3way-valve-v.bob</file>
       <x>404</x>
-      <y>244</y>
+      <y>224</y>
       <width>40</width>
       <height>50</height>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_119</name>
       <x>119</x>
-      <y>238</y>
+      <y>218</y>
       <width>750</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -172,7 +172,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_118</name>
       <x>79</x>
-      <y>304</y>
+      <y>284</y>
       <width>600</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -191,7 +191,7 @@
       <name>Chiller Weter ESS</name>
       <text>Chiller Weter ESS</text>
       <x>39</x>
-      <y>181</y>
+      <y>161</y>
       <width>120</width>
       <height>25</height>
       <font>
@@ -209,7 +209,7 @@
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_39</name>
       <x>69</x>
-      <y>214</y>
+      <y>194</y>
       <width>60</width>
       <height>2</height>
       <line_width>0</line_width>
@@ -221,7 +221,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_110</name>
       <x>119</x>
-      <y>214</y>
+      <y>194</y>
       <width>1</width>
       <height>25</height>
       <line_width>2</line_width>
@@ -240,7 +240,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_108</name>
       <x>79</x>
-      <y>214</y>
+      <y>194</y>
       <width>1</width>
       <height>90</height>
       <line_width>2</line_width>
@@ -259,7 +259,7 @@
       <name>PLATE HEAT EXCHANGER V_1</name>
       <file>../../embedded/plate-heat-exchanger-v.bob</file>
       <x>284</x>
-      <y>219</y>
+      <y>199</y>
       <width>40</width>
       <height>100</height>
       <resize>2</resize>
@@ -269,7 +269,7 @@
       <name>TCV-001_1</name>
       <text>TCV-001</text>
       <x>159</x>
-      <y>181</y>
+      <y>154</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -285,9 +285,9 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TCV-001</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-TCV-001:Pos</pv_name>
       <x>162</x>
-      <y>199</y>
+      <y>179</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -295,7 +295,7 @@
       <name>Embedded Display_29</name>
       <file>../../embedded/valve-h.bob</file>
       <x>184</x>
-      <y>222</y>
+      <y>202</y>
       <width>50</width>
       <height>30</height>
     </widget>
@@ -303,15 +303,15 @@
       <name>Embedded Display_26</name>
       <file>../../embedded/valve-h.bob</file>
       <x>351</x>
-      <y>222</y>
+      <y>202</y>
       <width>50</width>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>YSV-001_1</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-001:Pos-Def-RB</pv_name>
       <x>329</x>
-      <y>199</y>
+      <y>179</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -319,7 +319,7 @@
       <name>YSV-001</name>
       <text>YSV-001</text>
       <x>329</x>
-      <y>174</y>
+      <y>154</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -336,7 +336,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_107</name>
       <x>419</x>
-      <y>239</y>
+      <y>219</y>
       <width>1</width>
       <height>12</height>
       <line_width>2</line_width>
@@ -354,7 +354,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_106</name>
       <x>419</x>
-      <y>292</y>
+      <y>272</y>
       <width>1</width>
       <height>12</height>
       <line_width>2</line_width>
@@ -372,18 +372,18 @@
     <widget type="symbol" version="2.0.0">
       <name>Pump_5</name>
       <symbols>
-        <symbol>../symbols/custom/waterpump.svg</symbol>
-        <symbol>../symbols/custom/waterpump-error.svg</symbol>
+        <symbol>../../symbols/custom/waterpump.svg</symbol>
+        <symbol>../../symbols/custom/waterpump-error.svg</symbol>
       </symbols>
       <x>679</x>
-      <y>294</y>
+      <y>274</y>
       <width>50</width>
       <height>50</height>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_103</name>
       <x>729</x>
-      <y>334</y>
+      <y>314</y>
       <width>69</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -400,9 +400,9 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>YSV-002_1</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-002:Pos-Def-RB</pv_name>
       <x>444</x>
-      <y>269</y>
+      <y>249</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -410,7 +410,7 @@
       <name>YSV-002</name>
       <text>YSV-002</text>
       <x>444</x>
-      <y>244</y>
+      <y>224</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -427,7 +427,7 @@
       <name>P-001</name>
       <text>P-001</text>
       <x>659</x>
-      <y>339</y>
+      <y>319</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -445,7 +445,7 @@
       <name>PT-023_1</name>
       <text>PT-023</text>
       <x>559</x>
-      <y>244</y>
+      <y>224</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -460,25 +460,17 @@
       <wrap_words>false</wrap_words>
     </widget>
     <widget type="textupdate" version="2.0.0">
-      <name>P-001_1</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
-      <x>659</x>
-      <y>364</y>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
       <name>PT-023</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-023:Prs</pv_name>
       <x>559</x>
-      <y>269</y>
+      <y>249</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_99</name>
       <x>559</x>
-      <y>290</y>
+      <y>270</y>
       <height>1</height>
       <line_width>2</line_width>
       <line_color>
@@ -496,7 +488,7 @@
       <name>PT-024_1</name>
       <text>PT-024</text>
       <x>740</x>
-      <y>244</y>
+      <y>224</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -513,7 +505,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_98</name>
       <x>788</x>
-      <y>291</y>
+      <y>271</y>
       <width>1</width>
       <height>40</height>
       <line_width>2</line_width>
@@ -530,16 +522,16 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>PT-024</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-024:Prs</pv_name>
       <x>740</x>
-      <y>269</y>
+      <y>249</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_97</name>
       <x>740</x>
-      <y>290</y>
+      <y>270</y>
       <height>1</height>
       <line_width>2</line_width>
       <line_color>
@@ -555,9 +547,9 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TT-022_1</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-TT-022:AITmp</pv_name>
       <x>588</x>
-      <y>191</y>
+      <y>171</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -565,7 +557,7 @@
       <name>TT-022</name>
       <text>TT-022</text>
       <x>588</x>
-      <y>166</y>
+      <y>146</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -582,7 +574,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_95</name>
       <x>588</x>
-      <y>212</y>
+      <y>192</y>
       <height>1</height>
       <line_width>2</line_width>
       <line_color>
@@ -599,7 +591,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_93</name>
       <x>833</x>
-      <y>206</y>
+      <y>186</y>
       <width>35</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -617,7 +609,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_92</name>
       <x>832</x>
-      <y>171</y>
+      <y>151</y>
       <width>1</width>
       <height>45</height>
       <line_width>2</line_width>
@@ -634,9 +626,9 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>FIT-001_1</name>
-      <pv_name>CWL-CWS01:WtrC-TT-KF114:MeasValue</pv_name>
+      <pv_name>${PREFIX}:WtrC-FIT-001:Flw</pv_name>
       <x>727</x>
-      <y>191</y>
+      <y>171</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -644,7 +636,7 @@
       <name>FIT-001</name>
       <text>FIT-001</text>
       <x>727</x>
-      <y>166</y>
+      <y>146</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -661,7 +653,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_91</name>
       <x>12</x>
-      <y>123</y>
+      <y>103</y>
       <width>15</width>
       <height>58</height>
       <line_width>1</line_width>
@@ -679,7 +671,7 @@
     <widget type="ellipse" version="2.0.0">
       <name>Ellipse_1</name>
       <x>874</x>
-      <y>151</y>
+      <y>131</y>
       <width>10</width>
       <height>10</height>
       <line_width>1</line_width>
@@ -696,7 +688,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_89</name>
       <x>16</x>
-      <y>156</y>
+      <y>136</y>
       <width>862</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -715,7 +707,7 @@
     <widget type="ellipse" version="2.0.0">
       <name>Ellipse</name>
       <x>853</x>
-      <y>75</y>
+      <y>55</y>
       <width>10</width>
       <height>10</height>
       <line_width>1</line_width>
@@ -732,7 +724,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_88</name>
       <x>782</x>
-      <y>79</y>
+      <y>59</y>
       <width>105</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -750,7 +742,7 @@
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_37</name>
       <x>857</x>
-      <y>79</y>
+      <y>59</y>
       <width>2</width>
       <height>70</height>
       <line_width>0</line_width>
@@ -762,7 +754,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_87</name>
       <x>10</x>
-      <y>149</y>
+      <y>129</y>
       <width>848</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -781,7 +773,7 @@
       <name>Embedded Display_33</name>
       <file>../../embedded/arrow-down.bob</file>
       <x>863</x>
-      <y>95</y>
+      <y>75</y>
       <width>15</width>
       <height>15</height>
     </widget>
@@ -789,14 +781,14 @@
       <name>Embedded Display_34</name>
       <file>../../embedded/arrow-up.bob</file>
       <x>874</x>
-      <y>95</y>
+      <y>75</y>
       <width>15</width>
       <height>15</height>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_38</name>
       <x>878</x>
-      <y>79</y>
+      <y>59</y>
       <width>2</width>
       <height>255</height>
       <line_width>0</line_width>
@@ -804,6 +796,14 @@
         <color name="BLACK" red="0" green="0" blue="0">
         </color>
       </background_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>${PREFIX}:WtrC-P-001:Enb-RB</pv_name>
+      <x>659</x>
+      <y>344</y>
+      <width>100</width>
+      <square>true</square>
     </widget>
   </widget>
 </display>
