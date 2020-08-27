@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Tank Line</name>
+  <width>370</width>
+  <height>495</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>370</width>
+    <height>495</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>5</y>
+    <width>360</width>
+    <height>30</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Loop Tank ${TANK}</text>
+      <x>10</x>
+      <y>5</y>
+      <width>325</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="textupdate" version="2.0.0">
+    <name>Text Update</name>
+    <x>460</x>
+    <y>90</y>
+    <width>1</width>
+    <height>1</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_3</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>40</y>
+    <width>360</width>
+    <height>450</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <file>../../embedded/arrow-down.bob</file>
+      <x>155</x>
+      <y>72</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_20</name>
+      <x>160</x>
+      <y>12</y>
+      <width>1</width>
+      <height>268</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
+      <points>
+        <point x="0.0" y="268.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="symbol" version="2.0.0">
+      <name>Pump_1</name>
+      <symbols>
+        <symbol>../../symbols/custom/waterpump.svg</symbol>
+        <symbol>../../symbols/custom/waterpump-error.svg</symbol>
+      </symbols>
+      <x>150</x>
+      <y>352</y>
+      <width>50</width>
+      <height>50</height>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_22</name>
+      <x>200</x>
+      <y>393</y>
+      <width>17</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="15.866666666666667" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>FIT-201</name>
+      <text>FIT-${INDEX}</text>
+      <y>30</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>FIT-201_1</name>
+      <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
+      <y>55</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_23</name>
+      <x>105</x>
+      <y>35</y>
+      <width>1</width>
+      <height>45</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="45.00000000000001">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_24</name>
+      <x>106</x>
+      <y>289</y>
+      <width>35</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="35.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TT-202</name>
+      <text>TT-${INDEX}</text>
+      <y>249</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TT-202_1</name>
+      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:AITmp</pv_name>
+      <y>274</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_25</name>
+      <x>105</x>
+      <y>254</y>
+      <width>1</width>
+      <height>45</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="45.00000000000001">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_26</name>
+      <x>106</x>
+      <y>354</y>
+      <width>35</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="35.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PT-201</name>
+      <text>PT-${INDEX_PT1}</text>
+      <y>314</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>PT-201_1</name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX_PT1}:Prs</pv_name>
+      <y>339</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_27</name>
+      <x>105</x>
+      <y>319</y>
+      <width>1</width>
+      <height>45</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="45.00000000000001">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_28</name>
+      <x>216</x>
+      <y>354</y>
+      <width>35</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="35.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>PT-200</name>
+      <text>PT-${INDEX_PT2}</text>
+      <x>256</x>
+      <y>314</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>PT-200_1</name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX_PT2}:Prs</pv_name>
+      <x>256</x>
+      <y>339</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_29</name>
+      <x>251</x>
+      <y>319</y>
+      <width>1</width>
+      <height>45</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="45.00000000000001">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>P-201_1</name>
+      <text>P-${INDEX}</text>
+      <x>130</x>
+      <y>402</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TCV-201</name>
+      <text>TCV-${INDEX}</text>
+      <x>256</x>
+      <y>255</y>
+      <height>25</height>
+      <font>
+        <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </foreground_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>TCV-201_1</name>
+      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:Pos</pv_name>
+      <x>256</x>
+      <y>280</y>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_30</name>
+      <x>106</x>
+      <y>70</y>
+      <width>35</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
+      <points>
+        <point x="35.0" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <file>../../embedded/arrow-down.bob</file>
+      <x>210</x>
+      <y>233</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_9</name>
+      <file>../../embedded/arrow-down.bob</file>
+      <x>155</x>
+      <y>240</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>112</x>
+      <y>10</y>
+      <width>80</width>
+      <height>2</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_18</name>
+      <x>170</x>
+      <y>129</y>
+      <width>30</width>
+      <height>15</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_19</name>
+      <x>200</x>
+      <y>199</y>
+      <width>30</width>
+      <height>15</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <background_color>
+        <color name="GROUP-BACKGROUND" red="200" green="205" blue="201">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_32</name>
+      <x>160</x>
+      <y>222</y>
+      <width>25</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
+      <points>
+        <point x="23.333333333333336" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_11</name>
+      <file>../../embedded/3way-valve-v.bob</file>
+      <x>200</x>
+      <y>255</y>
+      <width>40</width>
+      <height>50</height>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_33</name>
+      <x>215</x>
+      <y>213</y>
+      <width>1</width>
+      <height>45</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
+      <points>
+        <point x="0.0" y="45.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_34</name>
+      <x>161</x>
+      <y>280</y>
+      <width>55</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
+      <points>
+        <point x="51.33333333333334" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_35</name>
+      <x>215</x>
+      <y>300</y>
+      <width>1</width>
+      <height>92</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="92.00000000000001">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_36</name>
+      <x>185</x>
+      <y>142</y>
+      <width>1</width>
+      <height>80</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
+      <points>
+        <point x="0.0" y="80.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_12</name>
+      <file>../../embedded/arrow-up.bob</file>
+      <x>136</x>
+      <y>50</y>
+      <width>15</width>
+      <height>15</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_20</name>
+      <x>140</x>
+      <y>12</y>
+      <width>2</width>
+      <height>350</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="polyline" version="2.0.0">
+      <name>Polyline_37</name>
+      <x>140</x>
+      <y>362</y>
+      <width>10</width>
+      <height>1</height>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <points>
+        <point x="9.333333333333334" y="0.0">
+        </point>
+        <point x="0.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Enb-RB</pv_name>
+      <x>130</x>
+      <y>427</y>
+      <width>100</width>
+      <square>true</square>
+    </widget>
+  </widget>
+</display>

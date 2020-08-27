@@ -308,12 +308,16 @@
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
       <pv_name>$(PREFIX):EMR-SM-$(INDEX):CtrlPID-En</pv_name>
-      <x>61</x>
+      <x>120</x>
       <y>78</y>
-      <width>120</width>
+      <width>60</width>
       <height>20</height>
       <off_label>PID</off_label>
       <on_label>PID</on_label>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry</name>
@@ -322,6 +326,29 @@
       <y>98</y>
       <width>120</width>
       <precision>2</precision>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Enable</name>
+      <pv_name>${PREFIX}:EMR-SM-${INDEX}.CNEN</pv_name>
+      <x>61</x>
+      <y>78</y>
+      <width>60</width>
+      <height>20</height>
+      <off_label>ENABLE</off_label>
+      <on_label>ENABLE</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <rules>
+        <rule name="Enable" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
+          <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
 </display>
