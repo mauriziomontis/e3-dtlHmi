@@ -109,8 +109,8 @@
     <widget type="symbol" version="2.0.0">
       <name>Pump_1</name>
       <symbols>
-        <symbol>../../symbols/custom/waterpump.svg</symbol>
-        <symbol>../../symbols/custom/waterpump-error.svg</symbol>
+        <symbol>../symbols/custom/waterpump.svg</symbol>
+        <symbol>../symbols/custom/waterpump-error.svg</symbol>
       </symbols>
       <x>150</x>
       <y>352</y>

@@ -372,8 +372,8 @@
     <widget type="symbol" version="2.0.0">
       <name>Pump_5</name>
       <symbols>
-        <symbol>../../symbols/custom/waterpump.svg</symbol>
-        <symbol>../../symbols/custom/waterpump-error.svg</symbol>
+        <symbol>../symbols/custom/waterpump.svg</symbol>
+        <symbol>../symbols/custom/waterpump-error.svg</symbol>
       </symbols>
       <x>679</x>
       <y>274</y>

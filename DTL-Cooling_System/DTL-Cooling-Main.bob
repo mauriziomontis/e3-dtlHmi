@@ -264,13 +264,216 @@ print 'Hello'
     <x>160</x>
     <y>60</y>
     <width>250</width>
-    <height>240</height>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>State Machine</name>
-    <x>420</x>
-    <y>60</y>
-    <width>250</width>
-    <height>240</height>
+    <height>340</height>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Status</text>
+      <y>5</y>
+      <width>125</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Countdown</name>
+      <text>Countdown:</text>
+      <y>240</y>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>TBD</pv_name>
+      <x>90</x>
+      <y>240</y>
+      <width>120</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Syncronization</name>
+      <text>Data Sync</text>
+      <y>200</y>
+      <width>125</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)</name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSCommMsg</pv_name>
+      <x>100</x>
+      <y>45</y>
+      <width>105</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>-8926</value>
+          <label>ACK</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-8909</value>
+          <label>DONE</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7117</value>
+          <label>START SYNC</label>
+          <color>
+            <color name="Attention" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7227</value>
+          <label>COMM RESET</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7337</value>
+          <label>COMM RESET</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:PLCCommMsg</pv_name>
+      <x>100</x>
+      <y>109</y>
+      <width>105</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>-256</value>
+          <label>INIT</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-239</value>
+          <label>CHECK CONN</label>
+          <color>
+            <color name="OFF" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-222</value>
+          <label>DATA ALIGN</label>
+          <color>
+            <color name="Attention" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-205</value>
+          <label>ALIGN DONE</label>
+          <color>
+            <color name="ON" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-188</value>
+          <label>REMOTE</label>
+          <color>
+            <color name="ON" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>../Images/epics-logo.png</file>
+      <y>45</y>
+      <width>88</width>
+      <height>45</height>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_1</name>
+      <file>../Images/siemens-logo-200.png</file>
+      <y>109</y>
+      <width>90</width>
+      <height>29</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
   </widget>
 </display>
