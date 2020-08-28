@@ -91,7 +91,7 @@ print 'Hello'
       <actions>
         <action type="open_display">
           <file>DTL-Cooling_System/DTL-Cooling-Main.bob</file>
-          <target>replace</target>
+          <target>window</target>
           <description>Cooling System</description>
         </action>
       </actions>

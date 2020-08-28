@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>DTL Cooling Maintenance</name>
+  <width>1920</width>
+  <height>1080</height>
+  <scripts>
+    <script file="EmbeddedPy">
+      <text><![CDATA[# Embedded python script
+from org.csstudio.display.builder.runtime.script import PVUtil, ScriptUtil
+print 'Hello'
+# widget.setPropertyValue('text', PVUtil.getString(pvs[0]))]]></text>
+      <pv_name>new-PV</pv_name>
+    </script>
+  </scripts>
+  <widget type="rectangle" version="2.0.0">
+    <name>TITLE-BAR</name>
+    <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
+    <width>1920</width>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
+      <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
+      </color>
+    </background_color>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>TITLE</name>
+    <class>TITLE</class>
+    <text>Water Cooling System</text>
+    <x use_class="true">20</x>
+    <y use_class="true">0</y>
+    <width>1500</width>
+    <height use_class="true">50</height>
+    <font use_class="true">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <transparent use_class="true">true</transparent>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <class>SUBTITLE</class>
+    <text>DTL Control System</text>
+    <x>1700</x>
+    <y use_class="true">20</y>
+    <width>200</width>
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+      </font>
+    </font>
+    <foreground_color use_class="true">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      </color>
+    </foreground_color>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Temperatures 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>022</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_1</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>101</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_2</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>201</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Temperatures 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_6</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>501</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_7</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>401</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_8</name>
+            <file>Templates/Tank-temperature-device.bob</file>
+            <macros>
+              <INDEX>301</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Fluxes 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_9</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>201</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_10</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>101</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_11</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>001</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Fluxes 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_12</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>301</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_13</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>401</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_14</name>
+            <file>Templates/Tank-flux-device.bob</file>
+            <macros>
+              <INDEX>501</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Pressures 1</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_15</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>023</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_16</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>024</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_17</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>101</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_18</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>102</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>1140</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Pressures 2</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_19</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>302</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>1140</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_20</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>301</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_21</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>202</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_22</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>201</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Pressure 3</name>
+        <children>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_23</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>502</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>1140</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_24</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>501</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>760</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_25</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>402</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <x>380</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_26</name>
+            <file>Templates/Tank-pressure-device.bob</file>
+            <macros>
+              <INDEX>401</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>10</x>
+    <y>60</y>
+    <width>1530</width>
+    <height>940</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <active_tab>6</active_tab>
+  </widget>
+</display>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Temperature Device</name>
+  <name>Pressure Device</name>
   <width>370</width>
   <height>740</height>
   <background_color>
@@ -37,7 +37,7 @@
     </background_color>
     <widget type="label" version="2.0.0">
       <name>Status</name>
-      <text>TT-${INDEX}</text>
+      <text>PT-${INDEX}</text>
       <x>10</x>
       <y>5</y>
       <width>325</width>
@@ -117,7 +117,7 @@
           <description>Reset PS</description>
         </action>
       </actions>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-RstCmd</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-RstCmd</pv_name>
       <text>Reset</text>
       <x>100</x>
       <y>110</y>
@@ -137,7 +137,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-NotEnb</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-NotEnb</pv_name>
       <x>100</x>
       <y>40</y>
       <width>120</width>
@@ -147,7 +147,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_1</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-NotEnb-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-NotEnb-RB</pv_name>
       <x>230</x>
       <y>40</y>
       <width>120</width>
@@ -178,7 +178,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_1</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-Hold</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-Hold</pv_name>
       <x>100</x>
       <y>75</y>
       <width>120</width>
@@ -188,7 +188,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_2</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-Hold-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-Hold-RB</pv_name>
       <x>230</x>
       <y>75</y>
       <width>120</width>
@@ -288,35 +288,35 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLim</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiHiLim</pv_name>
       <x>150</x>
       <y>40</y>
       <height>30</height>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_2</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiLim</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiLim</pv_name>
       <x>150</x>
       <y>70</y>
       <height>30</height>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_3</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLim</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLim</pv_name>
       <x>150</x>
       <y>100</y>
       <height>30</height>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_4</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLim</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLoLim</pv_name>
       <x>150</x>
       <y>130</y>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_1</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
       <x>250</x>
       <y>40</y>
       <height>30</height>
@@ -324,7 +324,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_2</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiLim-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiLim-RB</pv_name>
       <x>250</x>
       <y>70</y>
       <height>30</height>
@@ -332,7 +332,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_3</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLim-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLim-RB</pv_name>
       <x>250</x>
       <y>100</y>
       <height>30</height>
@@ -340,7 +340,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_4</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
       <x>250</x>
       <y>130</y>
       <height>30</height>
@@ -381,21 +381,21 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_7</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLimHyst</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiHiLimHyst</pv_name>
       <x>150</x>
       <y>170</y>
       <height>30</height>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_10</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLimHyst</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLoLimHyst</pv_name>
       <x>150</x>
       <y>200</y>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_5</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLimHyst-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-HiHiLimHyst-RB</pv_name>
       <x>250</x>
       <y>170</y>
       <height>30</height>
@@ -403,7 +403,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_8</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLimHyst-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LoLoLimHyst-RB</pv_name>
       <x>250</x>
       <y>200</y>
       <height>30</height>
@@ -443,7 +443,7 @@
           <description>Reset PS</description>
         </action>
       </actions>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:UploadParametersS</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:UploadParametersS</pv_name>
       <text>Upload</text>
       <x>116</x>
       <y>340</y>
@@ -463,14 +463,14 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_11</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-DlyTim</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-DlyTim</pv_name>
       <x>150</x>
       <y>240</y>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_10</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-DlyTim-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-DlyTim-RB</pv_name>
       <x>250</x>
       <y>240</y>
       <height>30</height>
@@ -513,14 +513,14 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_12</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LimTyp</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LimTyp</pv_name>
       <x>150</x>
       <y>270</y>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_11</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LimTyp-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LimTyp-RB</pv_name>
       <x>250</x>
       <y>270</y>
       <height>30</height>
@@ -539,14 +539,14 @@
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>HH Lim_13</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LgcCmb</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LgcCmb</pv_name>
       <x>150</x>
       <y>300</y>
       <height>30</height>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-LgcCmb-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-LgcCmb-RB</pv_name>
       <x>250</x>
       <y>300</y>
       <height>30</height>
@@ -590,7 +590,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_9</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:AITmp</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Prs</pv_name>
       <x>100</x>
       <y>40</y>
       <width>120</width>
@@ -610,7 +610,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_1</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:ErrReg</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:ErrReg</pv_name>
       <x>100</x>
       <y>75</y>
       <width>120</width>
@@ -661,7 +661,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_2</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-ErrReg</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-ErrReg</pv_name>
       <x>230</x>
       <y>75</y>
       <width>120</width>
@@ -712,7 +712,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>OK status</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:OkStat</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:OkStat</pv_name>
       <x>100</x>
       <y>110</y>
       <width>120</width>
@@ -728,7 +728,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:Ilck-OkStat</pv_name>
+      <pv_name>${PREFIX}:WtrC-PT-${INDEX}:Ilck-OkStat</pv_name>
       <x>230</x>
       <y>110</y>
       <width>120</width>

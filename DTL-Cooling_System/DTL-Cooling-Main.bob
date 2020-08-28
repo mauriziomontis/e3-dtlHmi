@@ -73,102 +73,19 @@ print 'Hello'
     <width>150</width>
     <height>490</height>
     <widget type="action_button" version="3.0.0">
-      <name>Tank 1 Details</name>
+      <name>Maintenance</name>
       <actions>
         <action type="open_display">
-          <file>DTL-Steering_Tank1.bob</file>
+          <file>DTL-Cooling-Maintenance.bob</file>
           <macros>
-            <INDEX_CH1>001</INDEX_CH1>
-            <INDEX_CH2>002</INDEX_CH2>
-            <INDEX_CH3>003</INDEX_CH3>
-            <INDEX_CH4>004</INDEX_CH4>
-            <INDEX_CH5>005</INDEX_CH5>
-            <INDEX_CH6>006</INDEX_CH6>
-            <PREFIX>DTL-010</PREFIX>
+            <PREFIX>CWM-CWS04</PREFIX>
           </macros>
           <target>tab</target>
-          <description>Tank 1 Details</description>
+          <description>Maintenance</description>
         </action>
       </actions>
       <x>5</x>
       <y>20</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Tank 2 Details</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Steering_Tank2.bob</file>
-          <macros>
-            <INDEX_CH1>001</INDEX_CH1>
-            <INDEX_CH2>002</INDEX_CH2>
-            <INDEX_CH3>003</INDEX_CH3>
-            <PREFIX>DTL-020</PREFIX>
-          </macros>
-          <target>tab</target>
-          <description>Tank 2 Details</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>80</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Tank 4 Details</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Steering_Tank4.bob</file>
-          <macros>
-            <INDEX_CH1>001</INDEX_CH1>
-            <INDEX_CH2>002</INDEX_CH2>
-            <PREFIX>DTL-040</PREFIX>
-          </macros>
-          <target>tab</target>
-          <description>Tank 4 Details</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>200</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Tank 3 Details</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Steering_Tank3.bob</file>
-          <macros>
-            <INDEX_CH1>001</INDEX_CH1>
-            <INDEX_CH2>002</INDEX_CH2>
-            <PREFIX>DTL-030</PREFIX>
-          </macros>
-          <target>tab</target>
-          <description>Tank 3 Details</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>140</y>
-      <height>40</height>
-      <tooltip>$(actions)</tooltip>
-    </widget>
-    <widget type="action_button" version="3.0.0">
-      <name>Tank 5 Details</name>
-      <actions>
-        <action type="open_display">
-          <file>DTL-Steering_Tank5.bob</file>
-          <macros>
-            <INDEX_CH1>001</INDEX_CH1>
-            <INDEX_CH2>002</INDEX_CH2>
-            <PREFIX>DTL-050</PREFIX>
-          </macros>
-          <target>tab</target>
-          <description>Tank 5 Details</description>
-        </action>
-      </actions>
-      <x>5</x>
-      <y>260</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
