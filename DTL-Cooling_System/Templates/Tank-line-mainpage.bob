@@ -106,17 +106,6 @@
         </point>
       </points>
     </widget>
-    <widget type="symbol" version="2.0.0">
-      <name>Pump_1</name>
-      <symbols>
-        <symbol>../symbols/custom/waterpump.svg</symbol>
-        <symbol>../symbols/custom/waterpump-error.svg</symbol>
-      </symbols>
-      <x>150</x>
-      <y>352</y>
-      <width>50</width>
-      <height>50</height>
-    </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_22</name>
       <x>200</x>
@@ -626,6 +615,59 @@
       <y>427</y>
       <width>100</width>
       <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:ErrReg</pv_name>
+      <x>150</x>
+      <y>352</y>
+      <width>50</width>
+      <height>50</height>
+      <off_color>
+        <color name="Background" red="220" green="225" blue="221">
+        </color>
+      </off_color>
+      <on_label>ERROR</on_label>
+      <on_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>../../Images/waterpump.png</file>
+      <x>150</x>
+      <y>352</y>
+      <width>50</width>
+      <height>50</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Flux Exeeded</name>
+      <text>Exeeded Flux</text>
+      <y>78</y>
+      <width>120</width>
+      <height>50</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 &gt; pv1">
+            <value>false</value>
+          </exp>
+          <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
+          <pv_name>loc://(10)</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
 </display>

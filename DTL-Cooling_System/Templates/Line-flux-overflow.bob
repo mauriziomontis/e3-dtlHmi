@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Flux Overflow</name>
+  <width>200</width>
+  <height>32</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="label" version="2.0.0">
+    <name>Steerer name</name>
+    <text>Line FIT${INDEX}</text>
+    <height>32</height>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="14.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+  </widget>
+  <widget type="thumbwheel" version="2.0.0">
+    <name>Steerer Wheel</name>
+    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet</pv_name>
+    <decimal_digits>2</decimal_digits>
+    <integer_digits>3</integer_digits>
+    <x>100</x>
+    <width>210</width>
+    <height>32</height>
+    <visible>false</visible>
+    <font>
+      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      </font>
+    </font>
+    <rules>
+      <rule name="Slider-Wheel" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == 1">
+          <value>true</value>
+        </exp>
+        <pv_name>loc://slider</pv_name>
+      </rule>
+    </rules>
+  </widget>
+  <widget type="label" version="2.0.0">
+    <name>Label</name>
+    <text>Normal</text>
+    <x>100</x>
+    <y>2</y>
+    <width>98</width>
+    <height>28</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="16.0">
+      </font>
+    </font>
+    <horizontal_alignment>1</horizontal_alignment>
+    <vertical_alignment>1</vertical_alignment>
+    <rules>
+      <rule name="Flux color" prop_id="background_color" out_exp="false">
+        <exp bool_exp="pv0 &gt;= pv1 || pv0 &lt;= pv4">
+          <value>
+            <color name="ERROR" red="252" green="13" blue="27">
+            </color>
+          </value>
+        </exp>
+        <exp bool_exp="pv0 &gt;= pv2 || pv0 &lt;= pv3">
+          <value>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </value>
+        </exp>
+        <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:HiHiLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:HiLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:LoLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:LoLoLim</pv_name>
+      </rule>
+      <rule name="Flux info" prop_id="text" out_exp="false">
+        <exp bool_exp="pv0 &gt;= pv1 || pv0 &lt;= pv4">
+          <value>ERROR</value>
+        </exp>
+        <exp bool_exp="pv0 &gt;= pv2 || pv0 &lt;= pv3">
+          <value>ERROR</value>
+        </exp>
+        <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:HiHiLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:HiLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:LoLim</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:LoLoLim</pv_name>
+      </rule>
+    </rules>
+    <border_width>1</border_width>
+  </widget>
+</display>
