@@ -71,7 +71,7 @@ print 'Hello'
     <x>10</x>
     <y>60</y>
     <width>150</width>
-    <height>490</height>
+    <height>250</height>
     <widget type="action_button" version="3.0.0">
       <name>Maintenance</name>
       <actions>
@@ -105,6 +105,7 @@ print 'Hello'
     <name>Embedded Display_6</name>
     <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
+      <DTL_PREFIX>DTL-010</DTL_PREFIX>
       <INDEX>101</INDEX>
       <INDEX_PT1>101</INDEX_PT1>
       <INDEX_PT2>102</INDEX_PT2>
@@ -120,6 +121,7 @@ print 'Hello'
     <name>Embedded Display_9</name>
     <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
+      <DTL_PREFIX>020</DTL_PREFIX>
       <INDEX>201</INDEX>
       <INDEX_PT1>201</INDEX_PT1>
       <INDEX_PT2>202</INDEX_PT2>
@@ -135,6 +137,7 @@ print 'Hello'
     <name>Embedded Display_10</name>
     <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
+      <DTL_PREFIX>030</DTL_PREFIX>
       <INDEX>301</INDEX>
       <INDEX_PT1>301</INDEX_PT1>
       <INDEX_PT2>302</INDEX_PT2>
@@ -150,6 +153,7 @@ print 'Hello'
     <name>Embedded Display_11</name>
     <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
+      <DTL_PREFIX>040</DTL_PREFIX>
       <INDEX>401</INDEX>
       <INDEX_PT1>401</INDEX_PT1>
       <INDEX_PT2>402</INDEX_PT2>
@@ -165,6 +169,7 @@ print 'Hello'
     <name>Embedded Display_12</name>
     <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
+      <DTL_PREFIX>050</DTL_PREFIX>
       <INDEX>501</INDEX>
       <INDEX_PT1>501</INDEX_PT1>
       <INDEX_PT2>502</INDEX_PT2>
@@ -181,7 +186,7 @@ print 'Hello'
     <x>160</x>
     <y>60</y>
     <width>250</width>
-    <height>270</height>
+    <height>250</height>
     <widget type="label" version="2.0.0">
       <name>Status</name>
       <text>Status</text>
@@ -206,7 +211,7 @@ print 'Hello'
     <widget type="label" version="2.0.0">
       <name>Countdown</name>
       <text>Countdown:</text>
-      <y>199</y>
+      <y>178</y>
       <width>80</width>
       <height>30</height>
       <font>
@@ -221,7 +226,7 @@ print 'Hello'
       <name>Text Update_11</name>
       <pv_name>TBD</pv_name>
       <x>90</x>
-      <y>199</y>
+      <y>178</y>
       <width>120</width>
       <height>30</height>
       <vertical_alignment>1</vertical_alignment>
@@ -229,7 +234,7 @@ print 'Hello'
     <widget type="label" version="2.0.0">
       <name>Syncronization</name>
       <text>Data Sync</text>
-      <y>159</y>
+      <y>138</y>
       <width>125</width>
       <height>40</height>
       <font>
@@ -396,9 +401,9 @@ print 'Hello'
   <widget type="group" version="2.0.0">
     <name>PLC State Machine</name>
     <x>170</x>
-    <y>340</y>
+    <y>310</y>
     <width>240</width>
-    <height>210</height>
+    <height>149</height>
     <widget type="label" version="2.0.0">
       <name>Status_1</name>
       <text>Status</text>
@@ -459,16 +464,16 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Pumps</name>
-    <x>420</x>
-    <y>60</y>
-    <width>240</width>
-    <height>270</height>
+    <name>Temperatures_1</name>
+    <x>451</x>
+    <y>1150</y>
+    <width>600</width>
+    <height>255</height>
     <widget type="label" version="2.0.0">
-      <name>Remote control popup_2</name>
+      <name>Remote control popup_4</name>
       <text>REMOTE CONTROL</text>
       <y>131</y>
-      <width>205</width>
+      <width>140</width>
       <height>30</height>
       <visible>false</visible>
       <font>
@@ -492,69 +497,50 @@ print 'Hello'
       <border_width>1</border_width>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_1</name>
-      <file>Templates/Line-flux-overflow.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
-      </macros>
-      <y>5</y>
-      <width>200</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_2</name>
-      <file>Templates/Line-flux-overflow.bob</file>
-      <macros>
-        <INDEX>101</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
-      </macros>
-      <y>37</y>
-      <width>200</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_3</name>
-      <file>Templates/Line-flux-overflow.bob</file>
+      <name>Embedded Display_32</name>
+      <file>Templates/Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>201</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
+        <PREFIX>DTL-010</PREFIX>
       </macros>
-      <y>69</y>
-      <width>200</width>
+      <y>5</y>
+      <width>140</width>
       <height>32</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_4</name>
-      <file>Templates/Line-flux-overflow.bob</file>
+      <name>Embedded Display_33</name>
+      <file>Templates/Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>202</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>140</x>
+      <y>5</y>
+      <width>140</width>
+      <height>32</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_52</name>
+      <file>Templates/Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>302</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>420</x>
+      <y>5</y>
+      <width>140</width>
+      <height>32</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_53</name>
+      <file>Templates/Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>301</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
+        <PREFIX>DTL-010</PREFIX>
       </macros>
-      <y>101</y>
-      <width>200</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_5</name>
-      <file>Templates/Line-flux-overflow.bob</file>
-      <macros>
-        <INDEX>401</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
-      </macros>
-      <y>133</y>
-      <width>200</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_7</name>
-      <file>Templates/Line-flux-overflow.bob</file>
-      <macros>
-        <INDEX>501</INDEX>
-        <PREFIX>CWM-CWS04</PREFIX>
-      </macros>
-      <y>165</y>
-      <width>200</width>
+      <x>280</x>
+      <y>5</y>
+      <width>140</width>
       <height>32</height>
     </widget>
   </widget>

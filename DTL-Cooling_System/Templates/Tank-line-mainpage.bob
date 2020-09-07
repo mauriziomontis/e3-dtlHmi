@@ -58,20 +58,13 @@
       <wrap_words>false</wrap_words>
     </widget>
   </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update</name>
-    <x>460</x>
-    <y>90</y>
-    <width>1</width>
-    <height>1</height>
-  </widget>
   <widget type="group" version="2.0.0">
     <name>H1_3</name>
     <macros>
       <str>PwrC-PSCH-01</str>
     </macros>
     <x>5</x>
-    <y>40</y>
+    <y>35</y>
     <width>360</width>
     <height>450</height>
     <style>3</style>
@@ -668,6 +661,130 @@
           <pv_name>loc://(10)</pv_name>
         </rule>
       </rules>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display</name>
+      <file>Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>201</INDEX>
+        <PREFIX>${DTL_PREFIX}</PREFIX>
+      </macros>
+      <x>230</x>
+      <y>10</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_1</name>
+      <file>Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>202</INDEX>
+        <PREFIX>${DTL_PREFIX}</PREFIX>
+      </macros>
+      <x>230</x>
+      <y>30</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <file>Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>302</INDEX>
+        <PREFIX>${DTL_PREFIX}</PREFIX>
+      </macros>
+      <x>230</x>
+      <y>70</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <file>Line-temperature-overflow.bob</file>
+      <macros>
+        <INDEX>301</INDEX>
+        <PREFIX>${DTL_PREFIX}</PREFIX>
+      </macros>
+      <x>230</x>
+      <y>50</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>DTL</name>
+      <text>DTL</text>
+      <x>205</x>
+      <y>10</y>
+      <width>40</width>
+      <height>80</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_23</name>
+      <x>245</x>
+      <y>10</y>
+      <width>2</width>
+      <height>80</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_4</name>
+      <file>Line-temperature-overflow.bob</file>
+      <x>230</x>
+      <y>105</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <file>Line-temperature-overflow.bob</file>
+      <x>230</x>
+      <y>125</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_6</name>
+      <file>Line-temperature-overflow.bob</file>
+      <x>230</x>
+      <y>145</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>SKID</name>
+      <text>SKID</text>
+      <x>205</x>
+      <y>105</y>
+      <width>40</width>
+      <height>60</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_10</name>
+      <file>Line-flux-overflow.bob</file>
+      <x>230</x>
+      <y>175</y>
+      <width>120</width>
+      <height>20</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_24</name>
+      <x>245</x>
+      <y>105</y>
+      <width>2</width>
+      <height>90</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </background_color>
     </widget>
   </widget>
 </display>

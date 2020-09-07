@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Flux Overflow</name>
+  <name>Temperature Overflow</name>
   <width>120</width>
   <height>25</height>
   <background_color>
@@ -11,7 +11,7 @@
   </actions>
   <widget type="label" version="2.0.0">
     <name>Steerer name</name>
-    <text>FIT${INDEX}</text>
+    <text>TT${INDEX}</text>
     <width>60</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="14.0">
@@ -67,11 +67,11 @@
             </color>
           </value>
         </exp>
-        <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-HiLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-LoLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
+        <pv_name>${PREFIX}:WtrC-TT-${INDEX}:AITmp</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
       </rule>
       <rule name="Flux info" prop_id="text" out_exp="false">
         <exp bool_exp="pv0 &gt;= pv1 || pv0 &lt;= pv4">
@@ -80,11 +80,11 @@
         <exp bool_exp="pv0 &gt;= pv2 || pv0 &lt;= pv3">
           <value>WARNING</value>
         </exp>
-        <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-HiLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-LoLim-RB</pv_name>
-        <pv_name trigger="false">${PREFIX}:WtrC-FIT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
+        <pv_name>${PREFIX}:WtrC-TT-${INDEX}:AITmp</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiHiLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-HiLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLim-RB</pv_name>
+        <pv_name trigger="false">${PREFIX}:WtrC-TT-${INDEX}:Ilck-LoLoLim-RB</pv_name>
       </rule>
     </rules>
   </widget>
