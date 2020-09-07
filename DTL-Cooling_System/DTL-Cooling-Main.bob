@@ -399,10 +399,10 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>PLC State Machine</name>
-    <x>170</x>
+    <name> State Machine</name>
+    <x>10</x>
     <y>310</y>
-    <width>240</width>
+    <width>150</width>
     <height>149</height>
     <widget type="label" version="2.0.0">
       <name>Status_1</name>
@@ -457,23 +457,23 @@ print 'Hello'
       <pv_name>TBD</pv_name>
       <x>10</x>
       <y>45</y>
-      <width>180</width>
+      <width>90</width>
       <height>50</height>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Temperatures_1</name>
-    <x>451</x>
-    <y>1150</y>
-    <width>600</width>
-    <height>255</height>
+    <name>Pumps Controls</name>
+    <x>410</x>
+    <y>60</y>
+    <width>570</width>
+    <height>250</height>
     <widget type="label" version="2.0.0">
-      <name>Remote control popup_4</name>
+      <name>Remote control popup_2</name>
       <text>REMOTE CONTROL</text>
-      <y>131</y>
-      <width>140</width>
+      <y>159</y>
+      <width>205</width>
       <height>30</height>
       <visible>false</visible>
       <font>
@@ -497,51 +497,109 @@ print 'Hello'
       <border_width>1</border_width>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_32</name>
-      <file>Templates/Line-temperature-overflow.bob</file>
+      <name>Embedded Display_1</name>
+      <file>Templates/Line-pump-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_2</name>
+      <file>Templates/Line-pump-control.bob</file>
+      <macros>
+        <INDEX>101</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
+      <x>90</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_3</name>
+      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>201</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <x>180</x>
       <y>5</y>
-      <width>140</width>
-      <height>32</height>
+      <width>80</width>
+      <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_33</name>
-      <file>Templates/Line-temperature-overflow.bob</file>
-      <macros>
-        <INDEX>202</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-      </macros>
-      <x>140</x>
-      <y>5</y>
-      <width>140</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_52</name>
-      <file>Templates/Line-temperature-overflow.bob</file>
-      <macros>
-        <INDEX>302</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-      </macros>
-      <x>420</x>
-      <y>5</y>
-      <width>140</width>
-      <height>32</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_53</name>
-      <file>Templates/Line-temperature-overflow.bob</file>
+      <name>Embedded Display_4</name>
+      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>301</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>CWM-CWS04</PREFIX>
       </macros>
-      <x>280</x>
+      <x>270</x>
       <y>5</y>
-      <width>140</width>
-      <height>32</height>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_5</name>
+      <file>Templates/Line-pump-control.bob</file>
+      <macros>
+        <INDEX>401</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
+      <x>360</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_7</name>
+      <file>Templates/Line-pump-control.bob</file>
+      <macros>
+        <INDEX>501</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
+      <x>450</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Valves Controls</name>
+    <x>170</x>
+    <y>310</y>
+    <width>810</width>
+    <height>250</height>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup_3</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
     </widget>
   </widget>
 </display>

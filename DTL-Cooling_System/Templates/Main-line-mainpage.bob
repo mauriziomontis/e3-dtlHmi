@@ -855,6 +855,7 @@
         <INDEX>011</INDEX>
       </macros>
       <x>65</x>
+      <y>20</y>
       <width>120</width>
       <height>20</height>
     </widget>
@@ -865,7 +866,7 @@
         <INDEX>012</INDEX>
       </macros>
       <x>65</x>
-      <y>20</y>
+      <y>40</y>
       <width>120</width>
       <height>20</height>
     </widget>
@@ -875,8 +876,8 @@
       <macros>
         <INDEX>022</INDEX>
       </macros>
-      <x>65</x>
-      <y>60</y>
+      <x>180</x>
+      <y>20</y>
       <width>120</width>
       <height>20</height>
     </widget>
@@ -886,7 +887,7 @@
       <macros>
         <INDEX>021</INDEX>
       </macros>
-      <x>65</x>
+      <x>180</x>
       <y>40</y>
       <width>120</width>
       <height>20</height>
@@ -897,8 +898,8 @@
       <macros>
         <INDEX>031</INDEX>
       </macros>
-      <x>65</x>
-      <y>80</y>
+      <x>295</x>
+      <y>20</y>
       <width>120</width>
       <height>20</height>
     </widget>
@@ -906,8 +907,9 @@
       <name>SKID</name>
       <text>SKID</text>
       <x>40</x>
+      <y>20</y>
       <width>40</width>
-      <height>100</height>
+      <height>80</height>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
@@ -918,15 +920,16 @@
         <INDEX>001</INDEX>
       </macros>
       <x>65</x>
-      <y>103</y>
+      <y>70</y>
       <width>120</width>
       <height>20</height>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_23</name>
       <x>80</x>
+      <y>20</y>
       <width>2</width>
-      <height>120</height>
+      <height>80</height>
       <line_width>0</line_width>
       <background_color>
         <color name="PRIMARY" red="0" green="148" blue="202">

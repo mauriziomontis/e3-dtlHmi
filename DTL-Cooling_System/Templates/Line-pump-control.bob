@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Pump Control</name>
+  <width>80</width>
+  <height>205</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>80</width>
+    <height>205</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_3</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>150</y>
+    <width>70</width>
+    <height>50</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="bool_button" version="2.0.0">
+      <name>start_2</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:ErrRstCmd</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>60</width>
+      <height>20</height>
+      <off_label>Error Reset</off_label>
+      <on_label>Error Reset</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>stop_1</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:CntRstCmd</pv_name>
+      <x>5</x>
+      <y>24</y>
+      <width>60</width>
+      <height>20</height>
+      <off_label>Counter Reset</off_label>
+      <on_label>Counter Reset</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_1</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>5</y>
+    <width>70</width>
+    <height>20</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>PUMP</name>
+      <text>P-${INDEX}</text>
+      <x>5</x>
+      <width>60</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_2</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>30</y>
+    <width>70</width>
+    <height>70</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="bool_button" version="2.0.0">
+      <name>enable</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Enb</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>40</width>
+      <height>20</height>
+      <off_label>Enable</off_label>
+      <on_label>Enable</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>enable</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Enb-RB</pv_name>
+      <x>45</x>
+      <y>7</y>
+      <height>18</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>start</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:StartCmd</pv_name>
+      <x>5</x>
+      <y>25</y>
+      <width>40</width>
+      <height>20</height>
+      <off_label>Start</off_label>
+      <on_label>Start</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>stop</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:StopCmd</pv_name>
+      <x>5</x>
+      <y>45</y>
+      <width>40</width>
+      <height>20</height>
+      <off_label>Stop</off_label>
+      <on_label>Stop</on_label>
+      <show_led>false</show_led>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>enable_5</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:OnStat</pv_name>
+      <x>45</x>
+      <y>26</y>
+      <height>38</height>
+      <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_4</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>105</y>
+    <width>70</width>
+    <height>40</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:StartNm</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>60</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>${PREFIX}:WtrC-P-${INDEX}:ErrStopNm</pv_name>
+      <x>5</x>
+      <y>20</y>
+      <width>60</width>
+      <height>15</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+</display>
