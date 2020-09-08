@@ -89,6 +89,23 @@ print 'Hello'
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Pumps Details</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Cooling-Pump-Details.bob</file>
+          <macros>
+            <PREFIX>CWM-CWS04</PREFIX>
+          </macros>
+          <target>standalone</target>
+          <description>Pumps Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>75</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
