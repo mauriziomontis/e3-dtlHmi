@@ -618,5 +618,60 @@ print 'Hello'
       </rules>
       <border_width>1</border_width>
     </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <x>97</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>194</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>291</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_4</name>
+      <x>388</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_5</name>
+      <x>485</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_6</name>
+      <x>582</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_7</name>
+      <x>680</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
   </widget>
 </display>
