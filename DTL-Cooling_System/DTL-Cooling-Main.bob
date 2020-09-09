@@ -420,7 +420,7 @@ print 'Hello'
     <x>10</x>
     <y>310</y>
     <width>150</width>
-    <height>149</height>
+    <height>250</height>
     <widget type="label" version="2.0.0">
       <name>Status_1</name>
       <text>Status</text>
@@ -618,60 +618,112 @@ print 'Hello'
       </rules>
       <border_width>1</border_width>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_8</name>
+      <file>Templates/Line-valve-ysv-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_1</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_13</name>
+      <file>Templates/Line-valve-ysv-control.bob</file>
+      <macros>
+        <INDEX>002</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>97</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_2</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_14</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>001</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>194</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_3</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_15</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>101</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>291</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_4</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_16</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>201</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>388</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_5</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_17</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>301</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>485</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_6</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_18</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>401</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>582</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_7</name>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_20</name>
+      <file>Templates/Line-valve-tcv-control.bob</file>
+      <macros>
+        <INDEX>501</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
       <x>680</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Embedded Display_19</name>
+    <file>Templates/Line-valve-control.bob</file>
+    <macros>
+      <INDEX>001</INDEX>
+      <PREFIX>CWM-CWS04</PREFIX>
+    </macros>
+    <x>1053</x>
+    <y>835</y>
+    <width>80</width>
+    <height>205</height>
   </widget>
 </display>

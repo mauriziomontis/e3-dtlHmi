@@ -27,9 +27,9 @@
       <str>PwrC-PSCH-01</str>
     </macros>
     <x>5</x>
-    <y>150</y>
+    <y>135</y>
     <width>70</width>
-    <height>50</height>
+    <height>65</height>
     <style>3</style>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
@@ -39,7 +39,7 @@
       <name>start_2</name>
       <pv_name>${PREFIX}:WtrC-P-${INDEX}:ErrRstCmd</pv_name>
       <x>5</x>
-      <y>5</y>
+      <y>24</y>
       <width>60</width>
       <height>20</height>
       <off_label>Error Reset</off_label>
@@ -54,7 +54,7 @@
       <name>stop_1</name>
       <pv_name>${PREFIX}:WtrC-P-${INDEX}:CntRstCmd</pv_name>
       <x>5</x>
-      <y>24</y>
+      <y>44</y>
       <width>60</width>
       <height>20</height>
       <off_label>Counter Reset</off_label>
@@ -64,6 +64,26 @@
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>enable_7</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutCloseCmd-RB</pv_name>
+      <x>5</x>
+      <y>5</y>
+      <width>60</width>
+      <height>18</height>
+      <off_label>Status</off_label>
+      <off_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>Status</on_label>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        </font>
+      </font>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -81,8 +101,8 @@
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
-      <name>PUMP</name>
-      <text>P-${INDEX}</text>
+      <name>VALVE</name>
+      <text>YSV-${INDEX}</text>
       <x>5</x>
       <width>60</width>
       <font>
@@ -118,7 +138,7 @@
     </background_color>
     <widget type="bool_button" version="2.0.0">
       <name>enable</name>
-      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:Enb</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb</pv_name>
       <x>5</x>
       <y>5</y>
       <width>40</width>
@@ -133,54 +153,73 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>enable</name>
-      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:Enb-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb-RB</pv_name>
       <x>45</x>
       <y>7</y>
       <height>18</height>
       <square>true</square>
     </widget>
     <widget type="bool_button" version="2.0.0">
-      <name>start</name>
-      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:FBL-ManOn</pv_name>
+      <name>Open</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpenCmd</pv_name>
       <x>5</x>
       <y>25</y>
       <width>40</width>
       <height>20</height>
-      <off_label>Man</off_label>
-      <on_label>Man</on_label>
+      <off_label>Open</off_label>
+      <on_label>Open</on_label>
       <show_led>false</show_led>
       <font>
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+      <rules>
+        <rule name="Enable" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb-RB</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="led" version="2.0.0">
-      <name>enable_5</name>
-      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:FBL-ManOn</pv_name>
+      <name>Open</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutOpenCmd-RB</pv_name>
       <x>45</x>
       <y>26</y>
       <height>18</height>
       <square>true</square>
     </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Manual Position</name>
-      <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:FBL-ManPos</pv_name>
+    <widget type="bool_button" version="2.0.0">
+      <name>Close</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseCmd</pv_name>
       <x>5</x>
-      <y>50</y>
-      <width>60</width>
-      <height>15</height>
+      <y>45</y>
+      <width>40</width>
+      <height>20</height>
+      <off_label>Close</off_label>
+      <on_label>Close</on_label>
+      <show_led>false</show_led>
       <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
       <rules>
-        <rule name="Enable Manual" prop_id="enabled" out_exp="false">
+        <rule name="enable" prop_id="enabled" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>false</value>
           </exp>
-          <pv_name>${PREFIX}:WtrC-TCV-${INDEX}:FBL-ManOn</pv_name>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb-RB</pv_name>
         </rule>
       </rules>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>enable_6</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutCloseCmd-RB</pv_name>
+      <x>45</x>
+      <y>46</y>
+      <height>18</height>
+      <square>true</square>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -191,39 +230,71 @@
     <x>5</x>
     <y>105</y>
     <width>70</width>
-    <height>40</height>
+    <height>25</height>
     <style>3</style>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:StartNm</pv_name>
+    <widget type="label" version="2.0.0">
+      <name>Label</name>
+      <text>Valve Status</text>
       <x>5</x>
       <y>5</y>
       <width>60</width>
       <height>15</height>
       <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
+        <font family="Source Sans Pro" style="BOLD" size="12.0">
         </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:ErrStopNm</pv_name>
-      <x>5</x>
-      <y>20</y>
-      <width>60</width>
-      <height>15</height>
-      <font>
-        <font family="Source Sans Pro" style="REGULAR" size="12.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Valve text status" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 0">
+            <value>CLOSED</value>
+          </exp>
+          <exp bool_exp="pv0 == 0 &amp;&amp; pv1 == 1">
+            <value>OPENED</value>
+          </exp>
+          <exp bool_exp="pv0 == 0 &amp;&amp; pv1 == 0">
+            <value>Moving</value>
+          </exp>
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 1">
+            <value>ERROR</value>
+          </exp>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Closed</pv_name>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Opened</pv_name>
+        </rule>
+        <rule name="Valve background status" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 0">
+            <value>
+              <color name="RED" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 0 &amp;&amp; pv1 == 1">
+            <value>
+              <color name="GREEN" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 0 &amp;&amp; pv1 == 0">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 1 &amp;&amp; pv1 == 1">
+            <value>
+              <color name="ERROR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Closed</pv_name>
+          <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Opened</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
 </display>
