@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Arc Detector</name>
+  <width>300</width>
+  <height>120</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>300</width>
+    <height>120</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_1</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>5</y>
+    <width>290</width>
+    <height>20</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>PUMP</name>
+      <text>ARC-${INDEX}</text>
+      <x>10</x>
+      <width>265</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_2</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>105</x>
+    <y>30</y>
+    <width>190</width>
+    <height>85</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Number of event</name>
+      <text>Num. Events:</text>
+      <x>5</x>
+      <y>10</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>number of events</name>
+      <pv_name>${PREFIX}:RFS-ADTT-${INDEX}:</pv_name>
+      <x>110</x>
+      <y>10</y>
+      <width>70</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Number of event_1</name>
+      <text>Arc Freq:</text>
+      <x>5</x>
+      <y>45</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>arc frequency</name>
+      <pv_name>${PREFIX}:RFS-ADTT-${INDEX}:</pv_name>
+      <x>110</x>
+      <y>45</y>
+      <width>70</width>
+      <height>30</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title_3</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>30</y>
+    <width>95</width>
+    <height>85</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>PUMP_1</name>
+      <text>${POSITION}</text>
+      <x>5</x>
+      <y>10</y>
+      <width>85</width>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>OK status</name>
+      <pv_name>${PREFIX}:RFS-ADTT-${INDEX}:</pv_name>
+      <x>5</x>
+      <y>40</y>
+      <width>85</width>
+      <height>40</height>
+      <off_label>Status</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>Status</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+  </widget>
+</display>

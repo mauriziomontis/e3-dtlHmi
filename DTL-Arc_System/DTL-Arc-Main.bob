@@ -68,7 +68,7 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Test System - Tank 1</name>
-    <x>600</x>
+    <x>1290</x>
     <y>60</y>
     <width>580</width>
     <height>170</height>
@@ -149,7 +149,7 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Test System - Tank 2</name>
-    <x>600</x>
+    <x>1290</x>
     <y>230</y>
     <width>580</width>
     <height>170</height>
@@ -222,7 +222,7 @@ print 'Hello'
         <INDEX>00012</INDEX>
         <PREFIX>DTL-020</PREFIX>
       </macros>
-      <x>300</x>
+      <x>418</x>
       <y>5</y>
       <width>120</width>
       <height>120</height>
@@ -230,7 +230,7 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Test System - Tank 3</name>
-    <x>600</x>
+    <x>1290</x>
     <y>400</y>
     <width>580</width>
     <height>170</height>
@@ -303,7 +303,7 @@ print 'Hello'
         <INDEX>00012</INDEX>
         <PREFIX>DTL-030</PREFIX>
       </macros>
-      <x>300</x>
+      <x>418</x>
       <y>5</y>
       <width>120</width>
       <height>120</height>
@@ -311,7 +311,7 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Test System - Tank 4</name>
-    <x>600</x>
+    <x>1290</x>
     <y>570</y>
     <width>580</width>
     <height>170</height>
@@ -392,7 +392,7 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Test System - Tank 5</name>
-    <x>600</x>
+    <x>1290</x>
     <y>740</y>
     <width>580</width>
     <height>170</height>
@@ -465,7 +465,7 @@ print 'Hello'
         <INDEX>00012</INDEX>
         <PREFIX>DTL-050</PREFIX>
       </macros>
-      <x>300</x>
+      <x>418</x>
       <y>5</y>
       <width>120</width>
       <height>120</height>
@@ -475,7 +475,7 @@ print 'Hello'
     <name>Arc Detection - Tank 1</name>
     <x>10</x>
     <y>60</y>
-    <width>580</width>
+    <width>1255</width>
     <height>170</height>
     <widget type="label" version="2.0.0">
       <name>Remote control popup_8</name>
@@ -506,49 +506,373 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
-      <file>Templates/Arc-test-control.bob</file>
+      <file>Templates/Arc-detectot-control.bob</file>
       <macros>
         <INDEX>00001</INDEX>
         <PREFIX>DTL-010</PREFIX>
       </macros>
       <y>5</y>
-      <width>120</width>
+      <width>300</width>
       <height>120</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_30</name>
-      <file>Templates/Arc-test-control.bob</file>
+      <name>Embedded Display_33</name>
+      <file>Templates/Arc-detectot-control.bob</file>
       <macros>
-        <INDEX>00002</INDEX>
+        <INDEX>00001</INDEX>
         <PREFIX>DTL-010</PREFIX>
       </macros>
-      <x>139</x>
+      <x>305</x>
       <y>5</y>
-      <width>120</width>
+      <width>300</width>
       <height>120</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_31</name>
-      <file>Templates/Arc-test-control.bob</file>
+      <name>Embedded Display_34</name>
+      <file>Templates/Arc-detectot-control.bob</file>
       <macros>
-        <INDEX>00011</INDEX>
+        <INDEX>00001</INDEX>
         <PREFIX>DTL-010</PREFIX>
       </macros>
-      <x>279</x>
+      <x>610</x>
       <y>5</y>
-      <width>120</width>
+      <width>300</width>
       <height>120</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_32</name>
-      <file>Templates/Arc-test-control.bob</file>
+      <name>Embedded Display_35</name>
+      <file>Templates/Arc-detectot-control.bob</file>
       <macros>
-        <INDEX>00012</INDEX>
+        <INDEX>00001</INDEX>
         <PREFIX>DTL-010</PREFIX>
       </macros>
-      <x>418</x>
+      <x>915</x>
       <y>5</y>
-      <width>120</width>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Arc Detection - Tank 2</name>
+    <x>10</x>
+    <y>230</y>
+    <width>1255</width>
+    <height>170</height>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup_9</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_36</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_37</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>305</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_38</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>610</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_39</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>915</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Arc Detection - Tank 4</name>
+    <x>10</x>
+    <y>570</y>
+    <width>1255</width>
+    <height>170</height>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup_10</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_40</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_41</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>305</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_42</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>610</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_43</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>915</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Arc Detection - Tank 3</name>
+    <x>10</x>
+    <y>400</y>
+    <width>1255</width>
+    <height>170</height>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup_11</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_44</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_45</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>305</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_46</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>610</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_47</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>915</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Arc Detection - Tank 5</name>
+    <x>10</x>
+    <y>740</y>
+    <width>1255</width>
+    <height>170</height>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup_12</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_48</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_49</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>305</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_50</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>610</x>
+      <y>5</y>
+      <width>300</width>
+      <height>120</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>Embedded Display_51</name>
+      <file>Templates/Arc-detectot-control.bob</file>
+      <macros>
+        <INDEX>00001</INDEX>
+        <PREFIX>DTL-010</PREFIX>
+      </macros>
+      <x>915</x>
+      <y>5</y>
+      <width>300</width>
       <height>120</height>
     </widget>
   </widget>

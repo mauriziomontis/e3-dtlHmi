@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>Pump Control</name>
+  <name>Arc Test</name>
   <width>120</width>
   <height>120</height>
   <background_color>
@@ -87,7 +87,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>enable_5</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:OnStat</pv_name>
+      <pv_name>${PREFIX}:RFS-ADTT-${INDEX}:OnCmd-RB</pv_name>
       <x>60</x>
       <y>5</y>
       <width>45</width>
