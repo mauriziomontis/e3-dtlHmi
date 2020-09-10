@@ -731,16 +731,4 @@ print 'Hello'
       <height>205</height>
     </widget>
   </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_19</name>
-    <file>Templates/Line-valve-control.bob</file>
-    <macros>
-      <INDEX>001</INDEX>
-      <PREFIX>CWM-CWS04</PREFIX>
-    </macros>
-    <x>1053</x>
-    <y>835</y>
-    <width>80</width>
-    <height>205</height>
-  </widget>
 </display>
