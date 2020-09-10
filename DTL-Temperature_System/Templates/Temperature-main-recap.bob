@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Template Temperature recap</name>
+  <width>70</width>
+  <height>40</height>
+  <widget type="led" version="2.0.0">
+    <name>LED</name>
+    <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
+    <x>5</x>
+    <y>5</y>
+    <width>60</width>
+    <height>30</height>
+    <off_label>${SENSOR}</off_label>
+    <off_color>
+      <color name="OK" red="61" green="216" blue="61">
+      </color>
+    </off_color>
+    <on_label>${SENSOR}</on_label>
+    <on_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+  </widget>
+</display>

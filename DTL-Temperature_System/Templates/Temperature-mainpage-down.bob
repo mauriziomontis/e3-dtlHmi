@@ -47,6 +47,7 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED</name>
+    <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
     <width>40</width>
     <off_color>
       <color name="OK" red="61" green="216" blue="61">
