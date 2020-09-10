@@ -1,0 +1,1239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Valve YSV Device</name>
+  <width>740</width>
+  <height>740</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar_1</name>
+    <x>370</x>
+    <width>370</width>
+    <height>740</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>370</width>
+    <height>740</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>5</y>
+    <width>730</width>
+    <height>30</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>YSV-${INDEX}</text>
+      <x>10</x>
+      <y>5</y>
+      <width>715</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_3</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>145</y>
+    <width>360</width>
+    <height>205</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Commands</name>
+      <text>Commands</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Reset</name>
+      <text>Ilk Reset:</text>
+      <x>10</x>
+      <y>170</y>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Reset Command</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset PS</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-RstCmd</pv_name>
+      <text>Reset</text>
+      <x>100</x>
+      <y>170</y>
+      <width>250</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Start/Stop</name>
+      <text>Enable:</text>
+      <x>10</x>
+      <y>30</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb</pv_name>
+      <x>100</x>
+      <y>30</y>
+      <width>120</width>
+      <off_label>Enable</off_label>
+      <on_label>Enable</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_4</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Enb-RB</pv_name>
+      <x>230</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Limits</name>
+      <text>En Limits:</text>
+      <x>10</x>
+      <y>65</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>close lim enable</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseLimNotEnb</pv_name>
+      <x>100</x>
+      <y>65</y>
+      <width>60</width>
+      <off_label>Close</off_label>
+      <on_label>Close</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_5</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseLimNotEnb-RB</pv_name>
+      <x>160</x>
+      <y>65</y>
+      <width>60</width>
+      <height>30</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>open lim enable</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpenLimNotEnb</pv_name>
+      <x>230</x>
+      <y>65</y>
+      <width>60</width>
+      <off_label>Open</off_label>
+      <on_label>Open</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_6</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseLimNotEnb-RB</pv_name>
+      <x>290</x>
+      <y>65</y>
+      <width>60</width>
+      <height>30</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>mtc lim enable</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:MTC-NotEnb</pv_name>
+      <x>100</x>
+      <y>100</y>
+      <width>60</width>
+      <off_label>MTC</off_label>
+      <on_label>MTC</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_7</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:MTC-NotEnb-RB</pv_name>
+      <x>160</x>
+      <y>100</y>
+      <width>60</width>
+      <height>30</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>ilck lim enable</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-NotEnb</pv_name>
+      <x>230</x>
+      <y>100</y>
+      <width>60</width>
+      <off_label>ILCK</off_label>
+      <on_label>ILCK</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_8</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-NotEnb</pv_name>
+      <x>290</x>
+      <y>100</y>
+      <width>60</width>
+      <height>30</height>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Ilck hold</name>
+      <text>Ilck hold:</text>
+      <x>10</x>
+      <y>135</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Ilck hold</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-Hold</pv_name>
+      <x>100</x>
+      <y>135</y>
+      <width>120</width>
+      <off_label>Auto</off_label>
+      <on_label>Hold</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_15</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-Hold-RB</pv_name>
+      <x>230</x>
+      <y>135</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>Auto</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Hold</on_label>
+      <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_4</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>355</y>
+    <width>360</width>
+    <height>380</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Configuration</name>
+      <text>Configuration</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>H Lim</name>
+      <text>H Lim:</text>
+      <x>90</x>
+      <y>70</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>L Lim</name>
+      <text>L Lim:</text>
+      <x>90</x>
+      <y>100</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>LL Lim</name>
+      <text>LL Lim:</text>
+      <x>90</x>
+      <y>130</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>HH Lim</name>
+      <text>HH Lim:</text>
+      <x>90</x>
+      <y>40</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiHiLim</pv_name>
+      <x>150</x>
+      <y>40</y>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_2</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiLim</pv_name>
+      <x>150</x>
+      <y>70</y>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_3</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLim</pv_name>
+      <x>150</x>
+      <y>100</y>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_4</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLoLim</pv_name>
+      <x>150</x>
+      <y>130</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_1</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiHiLim-RB</pv_name>
+      <x>250</x>
+      <y>40</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_2</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiLim-RB</pv_name>
+      <x>250</x>
+      <y>70</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_3</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLim-RB</pv_name>
+      <x>250</x>
+      <y>100</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_4</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLoLim-RB</pv_name>
+      <x>250</x>
+      <y>130</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Thresholds</name>
+      <text>Thresholds</text>
+      <x>10</x>
+      <y>40</y>
+      <width>80</width>
+      <height>120</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>LL Lim_1</name>
+      <text>LL Lim:</text>
+      <x>90</x>
+      <y>200</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>HH Lim_6</name>
+      <text>HH Lim:</text>
+      <x>90</x>
+      <y>170</y>
+      <width>60</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_7</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiHiLimHyst</pv_name>
+      <x>150</x>
+      <y>170</y>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_10</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLoLimHyst</pv_name>
+      <x>150</x>
+      <y>200</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_5</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-HiHiLimHyst-RB</pv_name>
+      <x>250</x>
+      <y>170</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_8</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LoLoLimHyst-RB</pv_name>
+      <x>250</x>
+      <y>200</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Hysteresis</name>
+      <text>Hysteresis</text>
+      <x>10</x>
+      <y>170</y>
+      <width>80</width>
+      <height>60</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Upload Params</name>
+      <text>Upload Params:</text>
+      <x>10</x>
+      <y>340</y>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Upload Params Command</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset PS</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:UploadParametersS</pv_name>
+      <text>Upload</text>
+      <x>116</x>
+      <y>340</y>
+      <width>234</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Delay Time</name>
+      <text>Delay Tim:</text>
+      <x>10</x>
+      <y>240</y>
+      <width>140</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_11</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-DlyTim</pv_name>
+      <x>150</x>
+      <y>240</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_10</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-DlyTim-RB</pv_name>
+      <x>250</x>
+      <y>240</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle</name>
+      <x>90</x>
+      <y>40</y>
+      <width>1</width>
+      <height>115</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <x>90</x>
+      <y>170</y>
+      <width>1</width>
+      <height>55</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Limit Evaluation</name>
+      <text>Limit Evaluation:</text>
+      <x>10</x>
+      <y>270</y>
+      <width>140</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_12</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LimTyp</pv_name>
+      <x>150</x>
+      <y>270</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LimTyp-RB</pv_name>
+      <x>250</x>
+      <y>270</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Combination Logic</name>
+      <text>Combination Logic:</text>
+      <x>10</x>
+      <y>300</y>
+      <width>140</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_13</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LgcCmb</pv_name>
+      <x>150</x>
+      <y>300</y>
+      <height>30</height>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_12</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-LgcCmb-RB</pv_name>
+      <x>250</x>
+      <y>300</y>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_5</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>40</y>
+    <width>360</width>
+    <height>100</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Status</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Error Registry</name>
+      <text>Reg Err:</text>
+      <x>10</x>
+      <y>25</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:ErrReg</pv_name>
+      <x>100</x>
+      <y>25</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>TBD</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>TBD</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label>TBD</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>TBD</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Ok State</name>
+      <text>Ok State:</text>
+      <x>10</x>
+      <y>60</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_2</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-ErrReg</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>120</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>0</value>
+          <label>TBD</label>
+          <color>
+            <color name="Off" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>1</value>
+          <label>TBD</label>
+          <color>
+            <color name="On" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>2</value>
+          <label>TBD</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>TBD</fallback_label>
+      <fallback_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </fallback_color>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>OK status</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OkStat</pv_name>
+      <x>100</x>
+      <y>60</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>Gen</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>Gen</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_3</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Ilck-OkStat</pv_name>
+      <x>230</x>
+      <y>60</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>ILCK</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ILCK</on_label>
+      <square>true</square>
+      <labels_from_pv>true</labels_from_pv>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_8</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>375</x>
+    <y>250</y>
+    <width>360</width>
+    <height>65</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Switch</name>
+      <text>Switch</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Limit Switch</name>
+      <text>Lim Switch:</text>
+      <x>10</x>
+      <y>25</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_10</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:ClosedLim</pv_name>
+      <x>100</x>
+      <y>25</y>
+      <width>120</width>
+      <off_label>Closed</off_label>
+      <on_label>Closed</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>open limit</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpenedLim</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>120</width>
+      <off_label>Opened</off_label>
+      <on_label>Opened</on_label>
+      <show_led>false</show_led>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_9</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>375</x>
+    <y>40</y>
+    <width>360</width>
+    <height>205</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Position</name>
+      <text>Position</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Position</name>
+      <text>Position:</text>
+      <x>10</x>
+      <y>25</y>
+      <width>80</width>
+      <height>65</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Open command</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpenCmd</pv_name>
+      <x>100</x>
+      <y>25</y>
+      <width>120</width>
+      <off_label>Open</off_label>
+      <on_label>Open</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_9</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutOpenCmd-RB</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>120</width>
+      <height>30</height>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Open command_1</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseCmd</pv_name>
+      <x>100</x>
+      <y>60</y>
+      <width>120</width>
+      <off_label>Close</off_label>
+      <on_label>Close</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_10</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutCloseCmd-RB</pv_name>
+      <x>230</x>
+      <y>60</y>
+      <width>120</width>
+      <height>30</height>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_11</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Opened</pv_name>
+      <x>100</x>
+      <y>110</y>
+      <width>250</width>
+      <height>30</height>
+      <off_label>OPEN</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>OPEN</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Effetctive</name>
+      <text>Status:</text>
+      <x>10</x>
+      <y>110</y>
+      <width>80</width>
+      <height>65</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_12</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:Closed</pv_name>
+      <x>100</x>
+      <y>145</y>
+      <width>250</width>
+      <height>30</height>
+      <off_label>CLOSED</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>CLOSED</on_label>
+      <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1_10</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>375</x>
+    <y>320</y>
+    <width>360</width>
+    <height>415</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Info</name>
+      <text>Info</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Valve type</name>
+      <text>Valve Type:</text>
+      <x>10</x>
+      <y>25</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Valve Effect</name>
+      <text>Effect:</text>
+      <x>10</x>
+      <y>60</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Valve type</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:NOTyp</pv_name>
+      <x>100</x>
+      <y>25</y>
+      <width>120</width>
+      <off_label>NC</off_label>
+      <on_label>NO</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_13</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:NOTyp-RB</pv_name>
+      <x>230</x>
+      <y>25</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>NC</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>NO</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Remote reset</name>
+      <text>Rem Reset:</text>
+      <x>10</x>
+      <y>375</y>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>remote reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset PS</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:ErrRstCmd</pv_name>
+      <text>Reset</text>
+      <x>100</x>
+      <y>375</y>
+      <width>250</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Counter Reset</name>
+      <text>Count Res:</text>
+      <x>10</x>
+      <y>335</y>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Counter Reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset PS</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CntRstCmd</pv_name>
+      <text>Reset</text>
+      <x>100</x>
+      <y>335</y>
+      <width>250</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Valve type_1</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:SingleCmdTyp</pv_name>
+      <x>100</x>
+      <y>60</y>
+      <width>120</width>
+      <off_label>Double</off_label>
+      <on_label>Single</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Ilk OK status_14</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:SingleCmdTyp-RB</pv_name>
+      <x>230</x>
+      <y>60</y>
+      <width>120</width>
+      <height>30</height>
+      <off_label>Double</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Single</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>operation number</name>
+      <text>Op. Num:</text>
+      <x>10</x>
+      <y>105</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Operation error</name>
+      <text>Op. Error:</text>
+      <x>10</x>
+      <y>140</y>
+      <width>80</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_38</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpNm</pv_name>
+      <x>100</x>
+      <y>105</y>
+      <width>250</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_39</name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:ErrOpNm</pv_name>
+      <x>100</x>
+      <y>140</y>
+      <width>250</width>
+      <height>30</height>
+    </widget>
+  </widget>
+</display>

@@ -74,7 +74,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_26</name>
-            <file>Templates/Tank-valve-tcs-device2.bob</file>
+            <file>Templates/Tank-valve-ysv-device.bob</file>
             <macros>
               <INDEX>001</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -91,9 +91,9 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_30</name>
-            <file>Templates/Tank-valve-tcs-device2.bob</file>
+            <file>Templates/Tank-valve-ysv-device.bob</file>
             <macros>
-              <INDEX>001</INDEX>
+              <INDEX>002</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
             <x>10</x>
@@ -108,7 +108,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_31</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>001</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -125,7 +125,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_32</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>101</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -142,7 +142,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_33</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>201</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -159,7 +159,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_34</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>301</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -176,7 +176,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_35</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>401</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -193,7 +193,7 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_36</name>
-            <file>Templates/Tank-valve-tcs-device.bob</file>
+            <file>Templates/Tank-valve-tcv-device.bob</file>
             <macros>
               <INDEX>501</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
@@ -213,6 +213,5 @@ print 'Hello'
       <font family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
     </font>
-    <active_tab>4</active_tab>
   </widget>
 </display>
