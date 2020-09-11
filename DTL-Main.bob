@@ -70,6 +70,7 @@ print 'Hello'
     <name>Navigation</name>
     <x>10</x>
     <y>60</y>
+    <width>200</width>
     <height>900</height>
     <widget type="action_button" version="3.0.0">
       <name>Vacuum System</name>
@@ -80,9 +81,9 @@ print 'Hello'
           <description>Vacuum System</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>393</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -95,9 +96,9 @@ print 'Hello'
           <description>Cooling System</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>307</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -110,9 +111,9 @@ print 'Hello'
           <description>Temperature System</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>49</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -125,9 +126,9 @@ print 'Hello'
           <description>Steering System</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>135</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -140,9 +141,9 @@ print 'Hello'
           <description>Tuners System</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>221</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -155,18 +156,18 @@ print 'Hello'
           <description>Arc Detectors</description>
         </action>
       </actions>
-      <x>9</x>
+      <x>5</x>
       <y>479</y>
-      <width>240</width>
+      <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
     </widget>
     <widget type="digital_clock" version="2.0.0">
       <name>Digital Clock</name>
       <lcd_font>3</lcd_font>
-      <x>9</x>
+      <x>5</x>
       <y>779</y>
-      <width>240</width>
+      <width>150</width>
       <height>80</height>
       <date_visible>true</date_visible>
       <locale>en-EN</locale>
@@ -176,10 +177,10 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Temperature</name>
-    <x>330</x>
+    <x>405</x>
     <y>60</y>
     <width>770</width>
-    <height>900</height>
+    <height>750</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display</name>
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
@@ -1006,7 +1007,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>031</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -1019,7 +1020,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>032</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1032,7 +1033,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1045,7 +1046,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>033</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1058,7 +1059,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>200</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1071,7 +1072,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>001</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -1084,7 +1085,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>002</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1097,7 +1098,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>004</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1110,7 +1111,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>003</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1123,7 +1124,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>005</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1136,7 +1137,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>006</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1149,7 +1150,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>007</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1162,7 +1163,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>008</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1175,7 +1176,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>009</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1188,7 +1189,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>010</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1201,7 +1202,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>011</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -1214,7 +1215,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>012</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1227,7 +1228,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>014</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1240,7 +1241,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>013</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1253,7 +1254,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>015</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1266,7 +1267,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>016</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1279,7 +1280,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>017</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1292,7 +1293,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>018</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1305,7 +1306,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>019</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1318,7 +1319,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>020</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1331,7 +1332,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>021</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -1344,7 +1345,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>022</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1357,7 +1358,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>024</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1370,7 +1371,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>023</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1383,7 +1384,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>025</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1396,7 +1397,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>026</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1409,7 +1410,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>027</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1422,7 +1423,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>028</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1435,7 +1436,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>029</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1448,7 +1449,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>030</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-020</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1476,7 +1477,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>002</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1489,7 +1490,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>004</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1502,7 +1503,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>003</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1515,7 +1516,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>005</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1528,7 +1529,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>006</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1541,7 +1542,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>007</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1554,7 +1555,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>008</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1567,7 +1568,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>009</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1580,7 +1581,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>010</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1593,7 +1594,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>012</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1606,7 +1607,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>014</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1619,7 +1620,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>013</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1632,7 +1633,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>015</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1645,7 +1646,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>016</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1658,7 +1659,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>017</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1671,7 +1672,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>018</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1684,7 +1685,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>019</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1697,7 +1698,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>020</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1710,7 +1711,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>022</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1723,7 +1724,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>024</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1736,7 +1737,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>023</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1749,7 +1750,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>025</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1762,7 +1763,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>026</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1775,7 +1776,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>027</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1788,7 +1789,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>028</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1801,7 +1802,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1814,7 +1815,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>200</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1827,7 +1828,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>001</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-030</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -1881,7 +1882,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>002</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -1894,7 +1895,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>004</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -1907,7 +1908,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>003</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -1920,7 +1921,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>005</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -1933,7 +1934,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>006</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -1946,7 +1947,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>007</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -1959,7 +1960,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>008</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -1972,7 +1973,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>009</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -1985,7 +1986,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>010</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -1998,7 +1999,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>012</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -2011,7 +2012,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>014</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -2024,7 +2025,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>013</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -2037,7 +2038,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>015</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -2050,7 +2051,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>016</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -2063,7 +2064,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>017</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -2076,7 +2077,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>018</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -2089,7 +2090,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>019</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -2102,7 +2103,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>020</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -2115,7 +2116,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>022</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -2128,7 +2129,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>024</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -2141,7 +2142,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>023</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -2154,7 +2155,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>025</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -2167,7 +2168,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -2180,7 +2181,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>200</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -2193,7 +2194,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>001</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2221,7 +2222,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>011</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2234,7 +2235,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>021</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-040</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2247,7 +2248,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>002</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -2260,7 +2261,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>004</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -2273,7 +2274,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>003</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -2286,7 +2287,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>005</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -2299,7 +2300,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>006</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -2312,7 +2313,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>007</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -2325,7 +2326,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>008</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -2338,7 +2339,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>009</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -2351,7 +2352,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>010</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -2364,7 +2365,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>012</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -2377,7 +2378,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>014</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -2390,7 +2391,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>013</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -2403,7 +2404,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>015</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>335</x>
@@ -2416,7 +2417,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>016</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>400</x>
@@ -2429,7 +2430,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>017</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>465</x>
@@ -2442,7 +2443,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>018</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>530</x>
@@ -2455,7 +2456,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>019</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>595</x>
@@ -2468,7 +2469,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>020</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>660</x>
@@ -2481,7 +2482,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>022</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>145</x>
@@ -2494,7 +2495,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>200</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>275</x>
@@ -2507,7 +2508,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>210</x>
@@ -2520,7 +2521,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>001</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2548,7 +2549,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>011</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2561,7 +2562,7 @@ print 'Hello'
       <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
       <macros>
         <INDEX>021</INDEX>
-        <PREFIX>DTL-010</PREFIX>
+        <PREFIX>DTL-050</PREFIX>
         <SENSOR>TT-${INDEX}</SENSOR>
       </macros>
       <x>80</x>
@@ -2571,159 +2572,146 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Vacuum</name>
-    <x>1110</x>
-    <y>70</y>
-    <height>900</height>
-    <widget type="label" version="2.0.0">
-      <name>System Status_1</name>
-      <text>System Status</text>
-      <x>10</x>
-      <y>20</y>
-      <width>240</width>
-      <height>30</height>
-      <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_1</name>
-      <x>10</x>
-      <y>49</y>
-      <width>240</width>
-      <height>60</height>
-      <off_label>NOT OK</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>OK </on_label>
-      <square>true</square>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Tuners</name>
-    <x>1420</x>
-    <y>60</y>
-    <height>900</height>
-    <widget type="label" version="2.0.0">
-      <name>System Status_2</name>
-      <text>System Status</text>
-      <x>10</x>
-      <y>20</y>
-      <width>240</width>
-      <height>30</height>
-      <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_2</name>
-      <x>10</x>
-      <y>49</y>
-      <width>240</width>
-      <height>60</height>
-      <off_label>NOT OK</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>OK </on_label>
-      <square>true</square>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Cooling</name>
-    <x>1750</x>
-    <y>90</y>
-    <height>900</height>
-    <widget type="label" version="2.0.0">
-      <name>System Status_3</name>
-      <text>System Status</text>
-      <x>10</x>
-      <y>20</y>
-      <width>240</width>
-      <height>30</height>
-      <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_3</name>
-      <x>10</x>
-      <y>49</y>
-      <width>240</width>
-      <height>60</height>
-      <off_label>NOT OK</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>OK </on_label>
-      <square>true</square>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>RF</name>
-    <x>2060</x>
-    <y>100</y>
-    <height>900</height>
-    <widget type="label" version="2.0.0">
-      <name>System Status_4</name>
-      <text>System Status</text>
-      <x>10</x>
-      <y>20</y>
-      <width>240</width>
-      <height>30</height>
-      <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_4</name>
-      <x>10</x>
-      <y>49</y>
-      <width>240</width>
-      <height>60</height>
-      <off_label>NOT OK</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>OK </on_label>
-      <square>true</square>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
     <name>Systems Status</name>
-    <x>580</x>
-    <y>920</y>
-    <width>650</width>
-    <height>130</height>
+    <x>210</x>
+    <y>60</y>
+    <width>200</width>
+    <height>450</height>
     <widget type="led" version="2.0.0">
-      <name>LED_5</name>
-      <x>10</x>
-      <y>59</y>
-      <width>240</width>
-      <height>60</height>
-      <off_label>NOT OK</off_label>
+      <name>State Machines temperature</name>
+      <x>5</x>
+      <y>40</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>TEMPERATURES</off_label>
       <off_color>
         <color name="ERROR" red="252" green="13" blue="27">
         </color>
       </off_color>
-      <on_label>OK </on_label>
+      <on_label>TEMPERATURES</on_label>
       <square>true</square>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>System Status_5</name>
-      <text>System Status</text>
-      <x>10</x>
-      <y>30</y>
-      <width>240</width>
+      <name>State Machines</name>
+      <text>State Machines:</text>
+      <x>5</x>
+      <y>10</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>State Machines steering</name>
+      <x>5</x>
+      <y>85</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>STEERING</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>STEERING</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>State Machines tuners</name>
+      <x>5</x>
+      <y>130</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>TUNERS</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>TUNERS</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>State Machines cooling</name>
+      <x>5</x>
+      <y>175</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>COOLING</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>COOLING</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>State Machines vacuum</name>
+      <x>5</x>
+      <y>220</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>VACUUM</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>VACUUM</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>State Machines arcs</name>
+      <x>5</x>
+      <y>265</y>
+      <width>150</width>
+      <height>40</height>
+      <off_label>ARCS</off_label>
+      <off_color>
+        <color name="ERROR" red="252" green="13" blue="27">
+        </color>
+      </off_color>
+      <on_label>ARCS</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Actual Status</name>
+      <text>Actual Status:</text>
+      <x>5</x>
+      <y>335</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update</name>
+      <x>5</x>
+      <y>365</y>
+      <width>150</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Communications</name>
+    <x>210</x>
+    <y>600</y>
+    <width>200</width>
+    <height>360</height>
+    <widget type="label" version="2.0.0">
+      <name>System Status_6</name>
+      <text>TBD:</text>
+      <x>5</x>
+      <y>10</y>
+      <width>150</width>
       <height>30</height>
       <font>
         <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
