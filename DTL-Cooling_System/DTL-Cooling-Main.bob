@@ -258,11 +258,16 @@ print 'Hello'
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_11</name>
-      <pv_name>TBD</pv_name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSSyncCountDown</pv_name>
       <x>90</x>
       <y>178</y>
       <width>120</width>
       <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="label" version="2.0.0">
