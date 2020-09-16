@@ -200,9 +200,13 @@
       <width>60</width>
       <height>30</height>
       <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
+        <color name="ON" red="70" green="255" blue="70">
         </color>
       </off_color>
+      <on_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </on_color>
       <square>true</square>
     </widget>
     <widget type="bool_button" version="2.0.0">
@@ -217,15 +221,19 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_6</name>
-      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:CloseLimNotEnb-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OpenLimNotEnb-RB</pv_name>
       <x>290</x>
       <y>65</y>
       <width>60</width>
       <height>30</height>
       <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
+        <color name="ON" red="70" green="255" blue="70">
         </color>
       </off_color>
+      <on_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </on_color>
       <square>true</square>
     </widget>
     <widget type="bool_button" version="2.0.0">
@@ -246,9 +254,13 @@
       <width>60</width>
       <height>30</height>
       <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
+        <color name="ON" red="70" green="255" blue="70">
         </color>
       </off_color>
+      <on_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </on_color>
       <square>true</square>
     </widget>
     <widget type="bool_button" version="2.0.0">
@@ -269,9 +281,13 @@
       <width>60</width>
       <height>30</height>
       <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
+        <color name="ON" red="70" green="255" blue="70">
         </color>
       </off_color>
+      <on_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </on_color>
       <square>true</square>
     </widget>
     <widget type="label" version="2.0.0">

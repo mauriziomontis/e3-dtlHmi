@@ -120,7 +120,7 @@
     <widget type="label" version="2.0.0">
       <name>FIT-201</name>
       <text>FIT-${INDEX}</text>
-      <y>30</y>
+      <y>264</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -137,14 +137,14 @@
     <widget type="textupdate" version="2.0.0">
       <name>FIT-201_1</name>
       <pv_name>${PREFIX}:WtrC-FIT-${INDEX}:Flw</pv_name>
-      <y>55</y>
+      <y>289</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_23</name>
       <x>105</x>
-      <y>35</y>
+      <y>269</y>
       <width>1</width>
       <height>45</height>
       <line_width>2</line_width>
@@ -162,7 +162,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_24</name>
       <x>106</x>
-      <y>289</y>
+      <y>107</y>
       <width>35</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -179,8 +179,8 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>TT-202</name>
-      <text>TT-${INDEX}</text>
-      <y>249</y>
+      <text>TT-${INDEX_TT}</text>
+      <y>67</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -196,15 +196,15 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TT-202_1</name>
-      <pv_name>${PREFIX}:WtrC-TT-${INDEX}:AITmp</pv_name>
-      <y>274</y>
+      <pv_name>${PREFIX}:WtrC-TT-${INDEX_TT}:AITmp</pv_name>
+      <y>92</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_25</name>
       <x>105</x>
-      <y>254</y>
+      <y>72</y>
       <width>1</width>
       <height>45</height>
       <line_width>2</line_width>
@@ -222,7 +222,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_26</name>
       <x>106</x>
-      <y>354</y>
+      <y>199</y>
       <width>35</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -240,7 +240,7 @@
     <widget type="label" version="2.0.0">
       <name>PT-201</name>
       <text>PT-${INDEX_PT1}</text>
-      <y>314</y>
+      <y>159</y>
       <height>25</height>
       <font>
         <font name="MEDIUM-SANS-BOLD" family="Source Sans Pro" style="BOLD" size="18.0">
@@ -257,14 +257,14 @@
     <widget type="textupdate" version="2.0.0">
       <name>PT-201_1</name>
       <pv_name>${PREFIX}:WtrC-PT-${INDEX_PT1}:Prs</pv_name>
-      <y>339</y>
+      <y>184</y>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_27</name>
       <x>105</x>
-      <y>319</y>
+      <y>161</y>
       <width>1</width>
       <height>45</height>
       <line_width>2</line_width>
@@ -386,7 +386,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_30</name>
       <x>106</x>
-      <y>70</y>
+      <y>304</y>
       <width>35</width>
       <height>1</height>
       <line_width>2</line_width>
@@ -586,7 +586,7 @@
     <widget type="polyline" version="2.0.0">
       <name>Polyline_37</name>
       <x>140</x>
-      <y>362</y>
+      <y>207</y>
       <width>10</width>
       <height>1</height>
       <line_width>2</line_width>

@@ -143,6 +143,7 @@ print 'Hello'
       <INDEX>101</INDEX>
       <INDEX_PT1>101</INDEX_PT1>
       <INDEX_PT2>102</INDEX_PT2>
+      <INDEX_TT>102</INDEX_TT>
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>1</TANK>
     </macros>
@@ -159,6 +160,7 @@ print 'Hello'
       <INDEX>201</INDEX>
       <INDEX_PT1>201</INDEX_PT1>
       <INDEX_PT2>202</INDEX_PT2>
+      <INDEX_TT>202</INDEX_TT>
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>2</TANK>
     </macros>
@@ -175,6 +177,7 @@ print 'Hello'
       <INDEX>301</INDEX>
       <INDEX_PT1>301</INDEX_PT1>
       <INDEX_PT2>302</INDEX_PT2>
+      <INDEX_TT>302</INDEX_TT>
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>3</TANK>
     </macros>
@@ -191,6 +194,7 @@ print 'Hello'
       <INDEX>401</INDEX>
       <INDEX_PT1>401</INDEX_PT1>
       <INDEX_PT2>402</INDEX_PT2>
+      <INDEX_TT>402</INDEX_TT>
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>4</TANK>
     </macros>
@@ -207,6 +211,7 @@ print 'Hello'
       <INDEX>501</INDEX>
       <INDEX_PT1>501</INDEX_PT1>
       <INDEX_PT2>502</INDEX_PT2>
+      <INDEX_TT>502</INDEX_TT>
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>5</TANK>
     </macros>
@@ -340,6 +345,14 @@ print 'Hello'
             </color>
           </color>
         </state>
+        <state>
+          <value>0</value>
+          <label>INIT</label>
+          <color>
+            <color name="OFF" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
       </states>
       <fallback_label>ERROR</fallback_label>
     </widget>
@@ -354,9 +367,9 @@ print 'Hello'
       <states>
         <state>
           <value>-256</value>
-          <label>INIT</label>
+          <label>LOCAL</label>
           <color>
-            <color name="Off" red="90" green="110" blue="90">
+            <color name="WARNING" red="252" green="242" blue="17">
             </color>
           </color>
         </state>
