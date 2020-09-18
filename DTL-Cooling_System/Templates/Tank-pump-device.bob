@@ -325,218 +325,19 @@
       <str>PwrC-PSCH-01</str>
     </macros>
     <x>5</x>
-    <y>355</y>
+    <y>695</y>
     <width>360</width>
-    <height>380</height>
+    <height>40</height>
     <style>3</style>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
       </color>
     </background_color>
     <widget type="label" version="2.0.0">
-      <name>Configuration</name>
-      <text>Configuration</text>
-      <x>5</x>
-      <width>120</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="GROUP-TEXT" red="25" green="25" blue="25">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="RED-BORDER" red="150" green="8" blue="16">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>H Lim</name>
-      <text>H Lim:</text>
-      <x>90</x>
-      <y>70</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>L Lim</name>
-      <text>L Lim:</text>
-      <x>90</x>
-      <y>100</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>LL Lim</name>
-      <text>LL Lim:</text>
-      <x>90</x>
-      <y>130</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>HH Lim</name>
-      <text>HH Lim:</text>
-      <x>90</x>
-      <y>40</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLim</pv_name>
-      <x>150</x>
-      <y>40</y>
-      <height>30</height>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_2</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiLim</pv_name>
-      <x>150</x>
-      <y>70</y>
-      <height>30</height>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_3</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLim</pv_name>
-      <x>150</x>
-      <y>100</y>
-      <height>30</height>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_4</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLim</pv_name>
-      <x>150</x>
-      <y>130</y>
-      <height>30</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_1</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLim-RB</pv_name>
-      <x>250</x>
-      <y>40</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_2</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiLim-RB</pv_name>
-      <x>250</x>
-      <y>70</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_3</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLim-RB</pv_name>
-      <x>250</x>
-      <y>100</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_4</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLim-RB</pv_name>
-      <x>250</x>
-      <y>130</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Thresholds</name>
-      <text>Thresholds</text>
-      <x>10</x>
-      <y>40</y>
-      <width>80</width>
-      <height>120</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>LL Lim_1</name>
-      <text>LL Lim:</text>
-      <x>90</x>
-      <y>200</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>HH Lim_6</name>
-      <text>HH Lim:</text>
-      <x>90</x>
-      <y>170</y>
-      <width>60</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_7</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLimHyst</pv_name>
-      <x>150</x>
-      <y>170</y>
-      <height>30</height>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_10</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLimHyst</pv_name>
-      <x>150</x>
-      <y>200</y>
-      <height>30</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_5</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLimHyst-RB</pv_name>
-      <x>250</x>
-      <y>170</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_8</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLimHyst-RB</pv_name>
-      <x>250</x>
-      <y>200</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Hysteresis</name>
-      <text>Hysteresis</text>
-      <x>10</x>
-      <y>170</y>
-      <width>80</width>
-      <height>60</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
       <name>Upload Params</name>
       <text>Upload Params:</text>
       <x>10</x>
-      <y>340</y>
+      <y>5</y>
       <height>30</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="14.0">
@@ -558,111 +359,9 @@
       <pv_name>${PREFIX}:WtrC-P-${INDEX}:UploadParametersS</pv_name>
       <text>Upload</text>
       <x>116</x>
-      <y>340</y>
+      <y>5</y>
       <width>234</width>
       <tooltip></tooltip>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Delay Time</name>
-      <text>Delay Tim:</text>
-      <x>10</x>
-      <y>240</y>
-      <width>140</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_11</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-DlyTim</pv_name>
-      <x>150</x>
-      <y>240</y>
-      <height>30</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_10</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-DlyTim-RB</pv_name>
-      <x>250</x>
-      <y>240</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle</name>
-      <x>90</x>
-      <y>40</y>
-      <width>1</width>
-      <height>115</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="rectangle" version="2.0.0">
-      <name>Rectangle_1</name>
-      <x>90</x>
-      <y>170</y>
-      <width>1</width>
-      <height>55</height>
-      <line_width>0</line_width>
-      <background_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </background_color>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Limit Evaluation</name>
-      <text>Limit Evaluation:</text>
-      <x>10</x>
-      <y>270</y>
-      <width>140</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_12</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LimTyp</pv_name>
-      <x>150</x>
-      <y>270</y>
-      <height>30</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_11</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LimTyp-RB</pv_name>
-      <x>250</x>
-      <y>270</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Combination Logic</name>
-      <text>Combination Logic:</text>
-      <x>10</x>
-      <y>300</y>
-      <width>140</width>
-      <height>30</height>
-      <horizontal_alignment>2</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>HH Lim_13</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LgcCmb</pv_name>
-      <x>150</x>
-      <y>300</y>
-      <height>30</height>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_12</name>
-      <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LgcCmb-RB</pv_name>
-      <x>250</x>
-      <y>300</y>
-      <height>30</height>
-      <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -882,5 +581,459 @@
       <square>true</square>
       <labels_from_pv>true</labels_from_pv>
     </widget>
+  </widget>
+  <widget type="tabs" version="2.0.0">
+    <name>Tabs</name>
+    <tabs>
+      <tab>
+        <name>Config</name>
+        <children>
+          <widget type="label" version="2.0.0">
+            <name>Time</name>
+            <text>Time:</text>
+            <x>88</x>
+            <y>65</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Low Lim</name>
+            <text>Low Lim:</text>
+            <x>88</x>
+            <y>35</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Low Lim</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LFC-LoLim</pv_name>
+            <x>148</x>
+            <y>35</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Time</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LFC-Tim</pv_name>
+            <x>148</x>
+            <y>65</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Low Lim</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LFC-LoLim-RB</pv_name>
+            <x>248</x>
+            <y>35</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Time</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LFC-Tim-RB</pv_name>
+            <x>248</x>
+            <y>65</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>LFC</name>
+            <text>LFC</text>
+            <x>8</x>
+            <y>5</y>
+            <width>80</width>
+            <height>120</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="rectangle" version="2.0.0">
+            <name>Rectangle_4</name>
+            <x>88</x>
+            <y>30</y>
+            <width>1</width>
+            <height>70</height>
+            <line_width>0</line_width>
+            <background_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </background_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Time_1</name>
+            <text>Time:</text>
+            <x>88</x>
+            <y>165</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Low Lim</name>
+            <text>Low Lim:</text>
+            <x>88</x>
+            <y>135</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Low Lim</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LPIC-LoLim</pv_name>
+            <x>148</x>
+            <y>135</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>Time</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LPIC-Tim</pv_name>
+            <x>148</x>
+            <y>165</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Low Lim</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LPIC-LoLim-RB</pv_name>
+            <x>248</x>
+            <y>135</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Time</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:LPIC-Tim-RB</pv_name>
+            <x>248</x>
+            <y>165</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>LPIC</name>
+            <text>LPIC</text>
+            <x>8</x>
+            <y>105</y>
+            <width>80</width>
+            <height>120</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="rectangle" version="2.0.0">
+            <name>Rectangle_5</name>
+            <x>88</x>
+            <y>130</y>
+            <width>1</width>
+            <height>70</height>
+            <line_width>0</line_width>
+            <background_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </background_color>
+          </widget>
+        </children>
+      </tab>
+      <tab>
+        <name>Ilck Config</name>
+        <children>
+          <widget type="label" version="2.0.0">
+            <name>H Lim_1</name>
+            <text>H Lim:</text>
+            <x>88</x>
+            <y>35</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>L Lim_1</name>
+            <text>L Lim:</text>
+            <x>88</x>
+            <y>65</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>LL Lim_2</name>
+            <text>LL Lim:</text>
+            <x>88</x>
+            <y>95</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>HH Lim_1</name>
+            <text>HH Lim:</text>
+            <x>88</x>
+            <y>5</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_5</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLim</pv_name>
+            <x>148</x>
+            <y>5</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_8</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiLim</pv_name>
+            <x>148</x>
+            <y>35</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_9</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLim</pv_name>
+            <x>148</x>
+            <y>65</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_14</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLim</pv_name>
+            <x>148</x>
+            <y>95</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_6</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLim-RB</pv_name>
+            <x>248</x>
+            <y>5</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_7</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiLim-RB</pv_name>
+            <x>248</x>
+            <y>35</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_9</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLim-RB</pv_name>
+            <x>248</x>
+            <y>65</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_13</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLim-RB</pv_name>
+            <x>248</x>
+            <y>95</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Thresholds_1</name>
+            <text>Thresholds</text>
+            <x>8</x>
+            <y>5</y>
+            <width>80</width>
+            <height>120</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>LL Lim_3</name>
+            <text>LL Lim:</text>
+            <x>88</x>
+            <y>165</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>HH Lim_15</name>
+            <text>HH Lim:</text>
+            <x>88</x>
+            <y>135</y>
+            <width>60</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_16</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLimHyst</pv_name>
+            <x>148</x>
+            <y>135</y>
+            <height>30</height>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_17</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLimHyst</pv_name>
+            <x>148</x>
+            <y>165</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_14</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-HiHiLimHyst-RB</pv_name>
+            <x>248</x>
+            <y>135</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_15</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LoLoLimHyst-RB</pv_name>
+            <x>248</x>
+            <y>165</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Hysteresis_1</name>
+            <text>Hysteresis</text>
+            <x>8</x>
+            <y>135</y>
+            <width>80</width>
+            <height>60</height>
+            <horizontal_alignment>1</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Delay Time_1</name>
+            <text>Delay Tim:</text>
+            <x>8</x>
+            <y>205</y>
+            <width>140</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_18</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-DlyTim</pv_name>
+            <x>148</x>
+            <y>205</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_16</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-DlyTim-RB</pv_name>
+            <x>248</x>
+            <y>205</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="rectangle" version="2.0.0">
+            <name>Rectangle_2</name>
+            <x>88</x>
+            <y>5</y>
+            <width>1</width>
+            <height>115</height>
+            <line_width>0</line_width>
+            <background_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </background_color>
+          </widget>
+          <widget type="rectangle" version="2.0.0">
+            <name>Rectangle_3</name>
+            <x>88</x>
+            <y>135</y>
+            <width>1</width>
+            <height>55</height>
+            <line_width>0</line_width>
+            <background_color>
+              <color name="BLACK" red="0" green="0" blue="0">
+              </color>
+            </background_color>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Limit Evaluation_1</name>
+            <text>Limit Evaluation:</text>
+            <x>8</x>
+            <y>235</y>
+            <width>140</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_19</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LimTyp</pv_name>
+            <x>148</x>
+            <y>235</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_17</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LimTyp-RB</pv_name>
+            <x>248</x>
+            <y>235</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+          <widget type="label" version="2.0.0">
+            <name>Combination Logic_1</name>
+            <text>Combination Logic:</text>
+            <x>8</x>
+            <y>265</y>
+            <width>140</width>
+            <height>30</height>
+            <horizontal_alignment>2</horizontal_alignment>
+            <vertical_alignment>1</vertical_alignment>
+            <wrap_words>false</wrap_words>
+          </widget>
+          <widget type="textentry" version="3.0.0">
+            <name>HH Lim_20</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LgcCmb</pv_name>
+            <x>148</x>
+            <y>265</y>
+            <height>30</height>
+          </widget>
+          <widget type="textupdate" version="2.0.0">
+            <name>Text Update_18</name>
+            <pv_name>${PREFIX}:WtrC-P-${INDEX}:Ilck-LgcCmb-RB</pv_name>
+            <x>248</x>
+            <y>265</y>
+            <height>30</height>
+            <vertical_alignment>1</vertical_alignment>
+          </widget>
+        </children>
+      </tab>
+    </tabs>
+    <x>5</x>
+    <y>350</y>
+    <width>360</width>
+    <height>345</height>
+    <font>
+      <font family="Source Sans Pro" style="BOLD" size="18.0">
+      </font>
+    </font>
+    <active_tab>1</active_tab>
   </widget>
 </display>
