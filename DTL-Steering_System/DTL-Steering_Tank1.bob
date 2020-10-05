@@ -6,12 +6,10 @@
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1780</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -20,42 +18,41 @@
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Tank 1 - Steerers</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1570</x>
-    <y use_class="true">20</y>
+    <y>20</y>
     <width>200</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment use_class="true">2</horizontal_alignment>
-    <vertical_alignment use_class="true">2</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Chassis</name>
@@ -91,11 +88,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH1}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -103,11 +102,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_1</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH1}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -120,11 +121,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_2</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH2}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -132,11 +135,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_3</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH2}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -149,11 +154,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_4</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH3}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -161,11 +168,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_5</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH3}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -178,11 +187,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_6</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH4}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -190,11 +201,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_7</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH4}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -207,11 +220,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_8</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH5}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -219,11 +234,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_9</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH5}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -236,11 +253,13 @@
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_10</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH6}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -248,11 +267,13 @@
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_11</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH6}</INDEX>
+              <INDEX_ROW>001</INDEX_ROW>
+              <PREFIX_ROW>${PREFIX}</PREFIX_ROW>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -265,5 +286,6 @@
     <y>60</y>
     <width>1585</width>
     <height>620</height>
+    <active_tab>5</active_tab>
   </widget>
 </display>

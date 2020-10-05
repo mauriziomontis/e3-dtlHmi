@@ -56,7 +56,7 @@
         </font>
       </font>
       <background_color>
-        <color name="Write_Background" red="224" green="217" blue="202">
+        <color name="Write_Background" red="128" green="255" blue="255">
         </color>
       </background_color>
       <precision>3</precision>
@@ -178,7 +178,7 @@
     <style>3</style>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_4</name>
-      <pv_name>${subsec}:${device}-online</pv_name>
+      <pv_name>${PREFIX}:EMR-TT-${MOD_INDEX}:Online</pv_name>
       <x>10</x>
       <y>45</y>
       <width>120</width>
@@ -189,7 +189,7 @@
           <value>0</value>
           <label>Not Online</label>
           <color>
-            <color name="Off" red="90" green="110" blue="90">
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
@@ -197,20 +197,20 @@
           <value>1</value>
           <label>Online</label>
           <color>
-            <color name="On" red="70" green="255" blue="70">
+            <color name="On" red="0" green="255" blue="0">
             </color>
           </color>
         </state>
       </states>
       <fallback_label>ERROR</fallback_label>
       <fallback_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </fallback_color>
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_5</name>
-      <pv_name>${subsec}:${device}-operational</pv_name>
+      <pv_name>${PREFIX}:EMR-TT-${MOD_INDEX}:Op</pv_name>
       <x>175</x>
       <y>45</y>
       <width>120</width>
@@ -221,7 +221,7 @@
           <value>0</value>
           <label>Not Operational</label>
           <color>
-            <color name="Off" red="90" green="110" blue="90">
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
@@ -229,14 +229,14 @@
           <value>1</value>
           <label>Operational</label>
           <color>
-            <color name="On" red="70" green="255" blue="70">
+            <color name="On" red="0" green="255" blue="0">
             </color>
           </color>
         </state>
       </states>
       <fallback_label>ERROR</fallback_label>
       <fallback_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </fallback_color>
     </widget>
@@ -250,7 +250,7 @@
       <off_label>Over Lim</off_label>
       <on_label>Over Lim</on_label>
       <on_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <square>true</square>
@@ -265,7 +265,7 @@
       <off_label>Error</off_label>
       <on_label>Error</on_label>
       <on_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <square>true</square>
@@ -280,7 +280,7 @@
       <off_label>Under Lim</off_label>
       <on_label>Under Lim</on_label>
       <on_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <square>true</square>

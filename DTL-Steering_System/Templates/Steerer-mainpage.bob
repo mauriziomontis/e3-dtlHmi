@@ -62,7 +62,6 @@
     <y>30</y>
     <width>27</width>
     <square>true</square>
-    <labels_from_pv>true</labels_from_pv>
   </widget>
   <widget type="bool_button" version="2.0.0">
     <name>Boolean Button_1</name>
@@ -77,7 +76,7 @@
   </widget>
   <widget type="multi_state_led" version="2.0.0">
     <name>LED (Multi State)_2</name>
-    <pv_name>${subsec}:${device}:En</pv_name>
+    <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:En</pv_name>
     <x>70</x>
     <y>55</y>
     <width>27</width>
@@ -87,7 +86,7 @@
         <value>0</value>
         <label></label>
         <color>
-          <color name="Off" red="90" green="110" blue="90">
+          <color name="Off" red="60" green="100" blue="60">
           </color>
         </color>
       </state>
@@ -95,7 +94,7 @@
         <value>1</value>
         <label></label>
         <color>
-          <color name="On" red="70" green="255" blue="70">
+          <color name="On" red="0" green="255" blue="0">
           </color>
         </color>
       </state>
@@ -110,7 +109,7 @@
     </states>
     <fallback_label></fallback_label>
     <fallback_color>
-      <color name="MAJOR" red="252" green="13" blue="27">
+      <color name="MAJOR" red="255" green="0" blue="0">
       </color>
     </fallback_color>
   </widget>
@@ -123,7 +122,7 @@
         <description>Reset PS</description>
       </action>
     </actions>
-    <pv_name>${subsec}:${device}:Clr</pv_name>
+    <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Clr</pv_name>
     <text>Reset</text>
     <x>5</x>
     <y>175</y>
@@ -133,7 +132,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Current Measured</name>
-    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Cur</pv_name>
+    <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Cur</pv_name>
     <x>5</x>
     <y>130</y>
     <width>90</width>
@@ -141,7 +140,7 @@
   </widget>
   <widget type="textupdate" version="2.0.0">
     <name>Current Measured_3</name>
-    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol</pv_name>
+    <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Vol</pv_name>
     <x>5</x>
     <y>150</y>
     <width>90</width>

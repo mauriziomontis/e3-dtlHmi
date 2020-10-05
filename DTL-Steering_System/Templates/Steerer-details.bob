@@ -143,7 +143,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_3</name>
-      <pv_name>${PREFIX}ROW:PwrC-${INDEX}:OnEnCmd</pv_name>
+      <pv_name>${PREFIX_ROW}ROW:PwrC-${INDEX_ROW}:OnEnCmd</pv_name>
       <x>120</x>
       <y>40</y>
       <width>120</width>
@@ -151,7 +151,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>${PREFIX}ROW:PwrC-${INDEX}:OnEnCmd-RB</pv_name>
+      <pv_name>${PREFIX_ROW}ROW:PwrC-${INDEX_ROW}:OnEnCmd-RB</pv_name>
       <x>260</x>
       <y>40</y>
       <width>85</width>
@@ -292,7 +292,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Setpoint RB</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet-RB</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet-RB</pv_name>
       <x>110</x>
       <y>140</y>
       <width>235</width>
@@ -301,7 +301,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Current Measured</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Cur</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Cur</pv_name>
       <x>110</x>
       <y>175</y>
       <width>235</width>
@@ -330,7 +330,7 @@
       <height>55</height>
       <visible>false</visible>
       <rules>
-        <rule name="Slider-Wheels" prop_id="visible" out_exp="false">
+        <rule name="Slider-Wheels" out_exp="false" prop_id="visible">
           <exp bool_exp="pv0 == 1">
             <value>true</value>
           </exp>
@@ -340,7 +340,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Setpoint RB_5</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet.DRVL</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet.DRVL</pv_name>
       <x>190</x>
       <y>220</y>
       <width>60</width>
@@ -359,7 +359,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Setpoint RB_6</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet.DRVH</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet.DRVH</pv_name>
       <x>280</x>
       <y>220</y>
       <width>60</width>
@@ -425,7 +425,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Current Measured_3</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Vol</pv_name>
       <x>110</x>
       <y>40</y>
       <width>235</width>
@@ -444,7 +444,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Current Measured_4</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol.HOPR</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Vol.HOPR</pv_name>
       <x>110</x>
       <y>80</y>
       <width>235</width>
@@ -463,7 +463,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>MinVoltage</name>
-      <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:Vol.LOPR</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:Vol.LOPR</pv_name>
       <x>110</x>
       <y>125</y>
       <width>235</width>
@@ -537,7 +537,7 @@
           <value>0</value>
           <label>Off</label>
           <color>
-            <color name="Off" red="90" green="110" blue="90">
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
@@ -545,7 +545,7 @@
           <value>1</value>
           <label>On</label>
           <color>
-            <color name="On" red="70" green="255" blue="70">
+            <color name="On" red="0" green="255" blue="0">
             </color>
           </color>
         </state>
@@ -560,7 +560,7 @@
       </states>
       <fallback_label>ERROR</fallback_label>
       <fallback_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </fallback_color>
     </widget>
