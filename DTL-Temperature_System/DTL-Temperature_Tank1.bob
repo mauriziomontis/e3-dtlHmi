@@ -134,6 +134,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_6</name>
     <macros>
       <INDEX>007</INDEX>
+      <MOD_INDEX>004</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -145,6 +146,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_7</name>
     <macros>
       <INDEX>008</INDEX>
+      <MOD_INDEX>004</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -156,6 +158,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_8</name>
     <macros>
       <INDEX>009</INDEX>
+      <MOD_INDEX>005</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -167,6 +170,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_9</name>
     <macros>
       <INDEX>010</INDEX>
+      <MOD_INDEX>005</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -178,6 +182,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_10</name>
     <macros>
       <INDEX>011</INDEX>
+      <MOD_INDEX>006</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>390</y>
@@ -188,6 +193,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_11</name>
     <macros>
       <INDEX>012</INDEX>
+      <MOD_INDEX>006</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
@@ -199,6 +205,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_12</name>
     <macros>
       <INDEX>013</INDEX>
+      <MOD_INDEX>007</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
@@ -210,6 +217,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_13</name>
     <macros>
       <INDEX>014</INDEX>
+      <MOD_INDEX>007</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
@@ -221,6 +229,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_14</name>
     <macros>
       <INDEX>015</INDEX>
+      <MOD_INDEX>008</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
@@ -232,6 +241,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_15</name>
     <macros>
       <INDEX>016</INDEX>
+      <MOD_INDEX>008</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
@@ -243,6 +253,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_16</name>
     <macros>
       <INDEX>017</INDEX>
+      <MOD_INDEX>009</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -254,6 +265,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_17</name>
     <macros>
       <INDEX>018</INDEX>
+      <MOD_INDEX>009</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -265,6 +277,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_18</name>
     <macros>
       <INDEX>019</INDEX>
+      <MOD_INDEX>010</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -276,6 +289,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_19</name>
     <macros>
       <INDEX>020</INDEX>
+      <MOD_INDEX>010</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -287,6 +301,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_20</name>
     <macros>
       <INDEX>021</INDEX>
+      <MOD_INDEX>011</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>720</y>
@@ -297,6 +312,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_21</name>
     <macros>
       <INDEX>022</INDEX>
+      <MOD_INDEX>011</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
@@ -308,6 +324,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_22</name>
     <macros>
       <INDEX>023</INDEX>
+      <MOD_INDEX>012</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
@@ -319,6 +336,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_23</name>
     <macros>
       <INDEX>024</INDEX>
+      <MOD_INDEX>012</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
@@ -330,6 +348,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_24</name>
     <macros>
       <INDEX>025</INDEX>
+      <MOD_INDEX>013</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
@@ -341,6 +360,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_25</name>
     <macros>
       <INDEX>026</INDEX>
+      <MOD_INDEX>013</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
@@ -352,6 +372,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_26</name>
     <macros>
       <INDEX>027</INDEX>
+      <MOD_INDEX>014</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -363,6 +384,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_27</name>
     <macros>
       <INDEX>028</INDEX>
+      <MOD_INDEX>014</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -374,6 +396,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_28</name>
     <macros>
       <INDEX>029</INDEX>
+      <MOD_INDEX>015</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -385,6 +408,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_29</name>
     <macros>
       <INDEX>030</INDEX>
+      <MOD_INDEX>015</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -396,6 +420,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_30</name>
     <macros>
       <INDEX>031</INDEX>
+      <MOD_INDEX>016</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>1050</y>
@@ -406,6 +431,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_31</name>
     <macros>
       <INDEX>032</INDEX>
+      <MOD_INDEX>016</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
@@ -417,6 +443,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_32</name>
     <macros>
       <INDEX>033</INDEX>
+      <MOD_INDEX>017</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
@@ -428,6 +455,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_33</name>
     <macros>
       <INDEX>034</INDEX>
+      <MOD_INDEX>017</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
@@ -439,6 +467,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_34</name>
     <macros>
       <INDEX>035</INDEX>
+      <MOD_INDEX>018</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
@@ -450,6 +479,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_35</name>
     <macros>
       <INDEX>036</INDEX>
+      <MOD_INDEX>018</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
@@ -461,6 +491,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_36</name>
     <macros>
       <INDEX>037</INDEX>
+      <MOD_INDEX>019</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -472,6 +503,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_37</name>
     <macros>
       <INDEX>038</INDEX>
+      <MOD_INDEX>019</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -483,6 +515,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_38</name>
     <macros>
       <INDEX>039</INDEX>
+      <MOD_INDEX>020</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -494,6 +527,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_39</name>
     <macros>
       <INDEX>040</INDEX>
+      <MOD_INDEX>020</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -505,6 +539,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_40</name>
     <macros>
       <INDEX>041</INDEX>
+      <MOD_INDEX>021</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>1380</y>
@@ -515,6 +550,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_41</name>
     <macros>
       <INDEX>042</INDEX>
+      <MOD_INDEX>021</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
@@ -526,6 +562,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_42</name>
     <macros>
       <INDEX>043</INDEX>
+      <MOD_INDEX>022</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
@@ -537,6 +574,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_43</name>
     <macros>
       <INDEX>044</INDEX>
+      <MOD_INDEX>022</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
@@ -548,6 +586,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_44</name>
     <macros>
       <INDEX>045</INDEX>
+      <MOD_INDEX>023</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
@@ -559,6 +598,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_45</name>
     <macros>
       <INDEX>046</INDEX>
+      <MOD_INDEX>023</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
@@ -570,6 +610,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_46</name>
     <macros>
       <INDEX>047</INDEX>
+      <MOD_INDEX>024</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -581,6 +622,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_47</name>
     <macros>
       <INDEX>048</INDEX>
+      <MOD_INDEX>024</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -592,6 +634,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_48</name>
     <macros>
       <INDEX>049</INDEX>
+      <MOD_INDEX>025</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -603,6 +646,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_49</name>
     <macros>
       <INDEX>050</INDEX>
+      <MOD_INDEX>025</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -614,6 +658,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_50</name>
     <macros>
       <INDEX>051</INDEX>
+      <MOD_INDEX>026</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>1710</y>
@@ -623,7 +668,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_51</name>
     <macros>
-      <INDEX>051</INDEX>
+      <INDEX>052</INDEX>
+      <MOD_INDEX>026</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
@@ -634,7 +680,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_52</name>
     <macros>
-      <INDEX>052</INDEX>
+      <INDEX>053</INDEX>
+      <MOD_INDEX>027</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
@@ -645,7 +692,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_53</name>
     <macros>
-      <INDEX>053</INDEX>
+      <INDEX>054</INDEX>
+      <MOD_INDEX>027</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
@@ -657,6 +705,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_54</name>
     <macros>
       <INDEX>054</INDEX>
+      <MOD_INDEX>028</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
@@ -667,7 +716,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_55</name>
     <macros>
-      <INDEX>055</INDEX>
+      <INDEX>056</INDEX>
+      <MOD_INDEX>028</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
@@ -678,7 +728,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_56</name>
     <macros>
-      <INDEX>056</INDEX>
+      <INDEX>057</INDEX>
+      <MOD_INDEX>029</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
@@ -689,7 +740,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_57</name>
     <macros>
-      <INDEX>057</INDEX>
+      <INDEX>058</INDEX>
+      <MOD_INDEX>029</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
@@ -700,7 +752,8 @@ $(pv_value)</tooltip>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_58</name>
     <macros>
-      <INDEX>058</INDEX>
+      <INDEX>059</INDEX>
+      <MOD_INDEX>030</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
@@ -712,6 +765,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_59</name>
     <macros>
       <INDEX>060</INDEX>
+      <MOD_INDEX>030</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
@@ -723,6 +777,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_60</name>
     <macros>
       <INDEX>100</INDEX>
+      <MOD_INDEX>031</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <y>2040</y>
@@ -733,6 +788,7 @@ $(pv_value)</tooltip>
     <name>Embedded Display_61</name>
     <macros>
       <INDEX>200</INDEX>
+      <MOD_INDEX>031</MOD_INDEX>
     </macros>
     <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>

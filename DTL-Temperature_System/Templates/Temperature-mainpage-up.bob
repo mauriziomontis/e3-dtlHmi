@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
   <name>Template Temperature Up</name>
-  <width>40</width>
+  <width>45</width>
   <height>150</height>
   <widget type="label" version="2.0.0">
     <name>TT-001</name>
     <text>${sensor_name}</text>
-    <width>40</width>
+    <x>3</x>
+    <width>35</width>
     <height>16</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="12.0">
@@ -37,8 +38,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+    <x>3</x>
     <y>16</y>
-    <width>40</width>
+    <width>35</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
@@ -47,10 +49,11 @@
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
+    <x>3</x>
     <y>120</y>
-    <width>40</width>
+    <width>35</width>
     <off_color>
-      <color name="OK" red="61" green="216" blue="61">
+      <color name="OK" red="0" green="255" blue="0">
       </color>
     </off_color>
     <on_label>Err</on_label>
@@ -63,8 +66,9 @@
   <widget type="label" version="2.0.0">
     <name>Bypass</name>
     <text>Bypassed</text>
+    <x>3</x>
     <y>50</y>
-    <width>40</width>
+    <width>35</width>
     <height>70</height>
     <visible>false</visible>
     <font>

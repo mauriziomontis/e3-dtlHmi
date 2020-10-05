@@ -6,12 +6,10 @@
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1920</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -20,42 +18,41 @@
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Steering System</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y use_class="true">20</y>
+    <y>20</y>
     <width>200</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment use_class="true">2</horizontal_alignment>
-    <vertical_alignment use_class="true">2</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
@@ -274,12 +271,13 @@
     <height>280</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_4</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#5-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>20</x>
       <y>20</y>
       <width>100</width>
@@ -287,12 +285,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_5</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#7-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>130</x>
       <y>20</y>
       <width>100</width>
@@ -300,12 +299,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_6</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#9-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>240</x>
       <y>20</y>
       <width>100</width>
@@ -313,12 +313,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_7</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#11-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>350</x>
       <y>20</y>
       <width>100</width>
@@ -326,12 +327,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_8</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#21-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>460</x>
       <y>20</y>
       <width>100</width>
@@ -339,12 +341,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#23-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>570</x>
       <y>20</y>
       <width>100</width>
@@ -352,12 +355,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_10</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#27-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>680</x>
       <y>20</y>
       <width>100</width>
@@ -365,12 +369,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_11</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#29-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>790</x>
       <y>20</y>
       <width>100</width>
@@ -378,12 +383,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_12</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#43-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>900</x>
       <y>20</y>
       <width>100</width>
@@ -391,12 +397,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_13</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#45-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>1010</x>
       <y>20</y>
       <width>100</width>
@@ -404,12 +411,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_14</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#49-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>1120</x>
       <y>20</y>
       <width>100</width>
@@ -417,12 +425,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_15</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>DT#51-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>1230</x>
       <y>20</y>
       <width>100</width>
@@ -437,12 +446,13 @@
     <height>280</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_39</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#5-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>20</x>
       <y>20</y>
       <width>100</width>
@@ -450,12 +460,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_40</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#7-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>130</x>
       <y>20</y>
       <width>100</width>
@@ -463,12 +474,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_41</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#17-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>240</x>
       <y>20</y>
       <width>100</width>
@@ -476,12 +488,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_42</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#19-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>350</x>
       <y>20</y>
       <width>100</width>
@@ -489,12 +502,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_43</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#29-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>460</x>
       <y>20</y>
       <width>100</width>
@@ -502,12 +516,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_44</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>DT#31-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>570</x>
       <y>20</y>
       <width>100</width>
@@ -522,12 +537,13 @@
     <height>280</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_51</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>DT#6-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>20</x>
       <y>20</y>
       <width>100</width>
@@ -535,12 +551,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_52</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>DT#8-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>130</x>
       <y>20</y>
       <width>100</width>
@@ -548,12 +565,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_54</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>DT22-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>350</x>
       <y>20</y>
       <width>100</width>
@@ -561,12 +579,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_53</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>DT#20-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>240</x>
       <y>20</y>
       <width>100</width>
@@ -581,12 +600,13 @@
     <height>280</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_57</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>DT#4-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>20</x>
       <y>20</y>
       <width>100</width>
@@ -594,12 +614,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_58</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>DT#6-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>130</x>
       <y>20</y>
       <width>100</width>
@@ -607,12 +628,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_59</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>DT#16-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>240</x>
       <y>20</y>
       <width>100</width>
@@ -620,12 +642,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_60</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>DT#18-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>350</x>
       <y>20</y>
       <width>100</width>
@@ -640,12 +663,13 @@
     <height>280</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_61</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>DT#3-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>20</x>
       <y>20</y>
       <width>100</width>
@@ -653,12 +677,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_62</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>DT#5-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>130</x>
       <y>20</y>
       <width>100</width>
@@ -666,12 +691,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_64</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>DT#17-H</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>350</x>
       <y>20</y>
       <width>100</width>
@@ -679,12 +705,13 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_63</name>
-      <file>Templates/Steerer-mainpage.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>DT#15-V</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage.bob</file>
       <x>240</x>
       <y>20</y>
       <width>100</width>
@@ -699,12 +726,12 @@
     <height>1020</height>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_1</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>10</y>
       <width>310</width>
       <height>32</height>
@@ -712,12 +739,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_2</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>42</y>
       <width>310</width>
       <height>32</height>
@@ -725,12 +752,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_3</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>74</y>
       <width>310</width>
       <height>32</height>
@@ -738,12 +765,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_16</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>106</y>
       <width>310</width>
       <height>32</height>
@@ -751,12 +778,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_17</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>138</y>
       <width>310</width>
       <height>32</height>
@@ -764,12 +791,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_18</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>170</y>
       <width>310</width>
       <height>32</height>
@@ -777,12 +804,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_19</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>202</y>
       <width>310</width>
       <height>32</height>
@@ -790,12 +817,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_20</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>234</y>
       <width>310</width>
       <height>32</height>
@@ -803,12 +830,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_21</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>266</y>
       <width>310</width>
       <height>32</height>
@@ -816,12 +843,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_22</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>298</y>
       <width>310</width>
       <height>32</height>
@@ -829,12 +856,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_23</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>330</y>
       <width>310</width>
       <height>32</height>
@@ -842,12 +869,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_24</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>362</y>
       <width>310</width>
       <height>32</height>
@@ -855,12 +882,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_25</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>394</y>
       <width>310</width>
       <height>32</height>
@@ -868,12 +895,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_26</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>426</y>
       <width>310</width>
       <height>32</height>
@@ -881,12 +908,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_27</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>458</y>
       <width>310</width>
       <height>32</height>
@@ -894,12 +921,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_28</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>490</y>
       <width>310</width>
       <height>32</height>
@@ -907,12 +934,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_29</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>522</y>
       <width>310</width>
       <height>32</height>
@@ -920,12 +947,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_30</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>554</y>
       <width>310</width>
       <height>32</height>
@@ -933,12 +960,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_31</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>587</y>
       <width>310</width>
       <height>32</height>
@@ -946,12 +973,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_32</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>619</y>
       <width>310</width>
       <height>32</height>
@@ -959,12 +986,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_33</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>651</y>
       <width>310</width>
       <height>32</height>
@@ -972,12 +999,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_34</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>683</y>
       <width>310</width>
       <height>32</height>
@@ -985,12 +1012,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_35</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>715</y>
       <width>310</width>
       <height>32</height>
@@ -998,12 +1025,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_36</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>747</y>
       <width>310</width>
       <height>32</height>
@@ -1011,12 +1038,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_37</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>779</y>
       <width>310</width>
       <height>32</height>
@@ -1024,12 +1051,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_38</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>811</y>
       <width>310</width>
       <height>32</height>
@@ -1037,12 +1064,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_45</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>843</y>
       <width>310</width>
       <height>32</height>
@@ -1050,12 +1077,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_46</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>875</y>
       <width>310</width>
       <height>32</height>
@@ -1063,12 +1090,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_47</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
         <STEERER_POS>V</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>907</y>
       <width>310</width>
       <height>32</height>
@@ -1076,12 +1103,12 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_48</name>
-      <file>Templates/Steerer-mainpage-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
         <STEERER_POS>H</STEERER_POS>
       </macros>
+      <file>Templates/Steerer-mainpage-control.bob</file>
       <y>939</y>
       <width>310</width>
       <height>32</height>
@@ -1330,8 +1357,8 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Tank 1 Ok State</name>
-    <x>241</x>
-    <y>152</y>
+    <x>301</x>
+    <y>112</y>
     <width>75</width>
     <off_label>OK STATE</off_label>
     <on_label>OK STATE</on_label>
@@ -1339,8 +1366,8 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Tank 2 Ok State</name>
-    <x>661</x>
-    <y>152</y>
+    <x>715</x>
+    <y>112</y>
     <width>75</width>
     <off_label>OK STATE</off_label>
     <on_label>OK STATE</on_label>
@@ -1348,8 +1375,8 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Tank 1 Ok State_2</name>
-    <x>881</x>
-    <y>152</y>
+    <x>935</x>
+    <y>112</y>
     <width>75</width>
     <off_label>OK STATE</off_label>
     <on_label>OK STATE</on_label>
@@ -1357,8 +1384,8 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Tank 4 Ok State</name>
-    <x>1051</x>
-    <y>152</y>
+    <x>1111</x>
+    <y>112</y>
     <width>75</width>
     <off_label>OK STATE</off_label>
     <on_label>OK STATE</on_label>
@@ -1366,8 +1393,8 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Tank 5 Ok State</name>
-    <x>1221</x>
-    <y>152</y>
+    <x>1281</x>
+    <y>112</y>
     <width>75</width>
     <off_label>OK STATE</off_label>
     <on_label>OK STATE</on_label>
@@ -1389,7 +1416,7 @@
     <y>70</y>
     <width>160</width>
     <font>
-      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
+      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
   </widget>
@@ -1406,7 +1433,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>24V PS Ok Status</name>
-      <pv_name>DTL-010Row:CnPw-U-003:24VPS_OKStat</pv_name>
+      <pv_name>DTL-010ROW:CnPw-U-003:24VPS_OKStat</pv_name>
       <x>130</x>
       <y>15</y>
       <width>80</width>
@@ -1416,7 +1443,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>24V PS Ok Status</name>
-      <pv_name>DTL-030Row:CnPw-U-003:24VPS_OKStat</pv_name>
+      <pv_name>DTL-010ROW:CnPw-U-003:24VPS_OKStat</pv_name>
       <x>209</x>
       <y>15</y>
       <width>80</width>
@@ -1432,7 +1459,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Enable to operate ok status</name>
-      <pv_name>DTL-010Row:PwrC1-3:OnEn</pv_name>
+      <pv_name>DTL-010ROW:PwrC1-3:OnEn</pv_name>
       <x>130</x>
       <y>48</y>
       <width>80</width>
@@ -1442,7 +1469,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Enable to operate ok status</name>
-      <pv_name>DTL-030Row:PwrC1-2:OnEn</pv_name>
+      <pv_name>DTL-030ROW:PwrC1-2:OnEn</pv_name>
       <x>209</x>
       <y>48</y>
       <width>80</width>
@@ -1450,5 +1477,25 @@
       <on_label>Tank 4-5</on_label>
       <square>true</square>
     </widget>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_1</name>
+    <pv_name>DTL-010:PwrC-PSCV-001:TS_OkStat</pv_name>
+    <x>240</x>
+    <y>152</y>
+    <visible>false</visible>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_3</name>
+    <pv_name>DTL-010:PwrC-PSCH-001:TS_OkStat</pv_name>
+    <x>260</x>
+    <y>152</y>
+    <visible>false</visible>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
   </widget>
 </display>

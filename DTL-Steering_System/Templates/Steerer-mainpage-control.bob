@@ -22,7 +22,7 @@
   </widget>
   <widget type="scaledslider" version="2.0.0">
     <name>Steerer Slider</name>
-    <pv_name>${PREFIX}:BMD-C${STEERE_POS}-${INDEX}:CurSet</pv_name>
+    <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:CurSet</pv_name>
     <x>100</x>
     <width>210</width>
     <height>32</height>
@@ -49,11 +49,11 @@
     <height>32</height>
     <visible>false</visible>
     <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      <font family="Source Sans Pro" size="12.0" style="REGULAR">
       </font>
     </font>
     <rules>
-      <rule name="Slider-Wheel" prop_id="visible" out_exp="false">
+      <rule name="Slider-Wheel" out_exp="false" prop_id="visible">
         <exp bool_exp="pv0 == 1">
           <value>true</value>
         </exp>
