@@ -654,6 +654,42 @@
       <width>100</width>
       <height>200</height>
     </widget>
+    <widget type="led" version="2.0.0">
+      <name>Tank 1 Ok State_28</name>
+      <pv_name>DTL-030:PwrC-PSCV-001:TS_OkStat</pv_name>
+      <x>845</x>
+      <y>52</y>
+      <off_label>V</off_label>
+      <on_label>V</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Tank 1 Ok State_29</name>
+      <pv_name>DTL-030:PwrC-PSCH-001:TS_OkStat</pv_name>
+      <x>865</x>
+      <y>52</y>
+      <off_label>H</off_label>
+      <on_label>H</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Tank 1 Ok State_30</name>
+      <pv_name>DTL-030:PwrC-PSCV-002:TS_OkStat</pv_name>
+      <x>927</x>
+      <y>52</y>
+      <off_label>V</off_label>
+      <on_label>V</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Tank 1 Ok State_31</name>
+      <pv_name>DTL-030:PwrC-PSCH-002:TS_OkStat</pv_name>
+      <x>947</x>
+      <y>52</y>
+      <off_label>H</off_label>
+      <on_label>H</on_label>
+      <square>true</square>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Tank 5</name>
@@ -1483,7 +1519,6 @@
     <pv_name>DTL-010:PwrC-PSCV-001:TS_OkStat</pv_name>
     <x>240</x>
     <y>152</y>
-    <visible>false</visible>
     <off_label>V</off_label>
     <on_label>V</on_label>
     <square>true</square>
@@ -1493,7 +1528,258 @@
     <pv_name>DTL-010:PwrC-PSCH-001:TS_OkStat</pv_name>
     <x>260</x>
     <y>152</y>
-    <visible>false</visible>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_4</name>
+    <pv_name>DTL-010:PwrC-PSCV-002:TS_OkStat</pv_name>
+    <x>285</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_5</name>
+    <pv_name>DTL-010:PwrC-PSCH-002:TS_OkStat</pv_name>
+    <x>305</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_8</name>
+    <pv_name>DTL-010:PwrC-PSCV-003:TS_OkStat</pv_name>
+    <x>340</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_9</name>
+    <pv_name>DTL-010:PwrC-PSCH-003:TS_OkStat</pv_name>
+    <x>360</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_10</name>
+    <pv_name>DTL-010:PwrC-PSCV-004:TS_OkStat</pv_name>
+    <x>385</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_11</name>
+    <pv_name>DTL-010:PwrC-PSCH-004:TS_OkStat</pv_name>
+    <x>405</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_12</name>
+    <pv_name>DTL-010:PwrC-PSCV-005:TS_OkStat</pv_name>
+    <x>520</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_13</name>
+    <pv_name>DTL-010:PwrC-PSCH-005:TS_OkStat</pv_name>
+    <x>540</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_14</name>
+    <pv_name>DTL-010:PwrC-PSCV-006:TS_OkStat</pv_name>
+    <x>565</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_15</name>
+    <pv_name>DTL-010:PwrC-PSCH-006:TS_OkStat</pv_name>
+    <x>585</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_16</name>
+    <pv_name>DTL-020:PwrC-PSCV-001:TS_OkStat</pv_name>
+    <x>661</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_17</name>
+    <pv_name>DTL-020:PwrC-PSCH-001:TS_OkStat</pv_name>
+    <x>681</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_18</name>
+    <pv_name>DTL-020:PwrC-PSCV-002:TS_OkStat</pv_name>
+    <x>706</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_19</name>
+    <pv_name>DTL-020:PwrC-PSCH-002:TS_OkStat</pv_name>
+    <x>726</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_22</name>
+    <pv_name>DTL-020:PwrC-PSCV-003:TS_OkStat</pv_name>
+    <x>806</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_23</name>
+    <pv_name>DTL-020:PwrC-PSCH-003:TS_OkStat</pv_name>
+    <x>826</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_24</name>
+    <pv_name>DTL-030:PwrC-PSCV-001:TS_OkStat</pv_name>
+    <x>881</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_25</name>
+    <pv_name>DTL-030:PwrC-PSCH-001:TS_OkStat</pv_name>
+    <x>901</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_26</name>
+    <pv_name>DTL-030:PwrC-PSCV-002:TS_OkStat</pv_name>
+    <x>963</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_27</name>
+    <pv_name>DTL-030:PwrC-PSCH-002:TS_OkStat</pv_name>
+    <x>983</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_32</name>
+    <pv_name>DTL-040:PwrC-PSCV-001:TS_OkStat</pv_name>
+    <x>1051</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_33</name>
+    <pv_name>DTL-040:PwrC-PSCH-001:TS_OkStat</pv_name>
+    <x>1071</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_34</name>
+    <pv_name>DTL-040:PwrC-PSCV-002:TS_OkStat</pv_name>
+    <x>1133</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_35</name>
+    <pv_name>DTL-040:PwrC-PSCH-002:TS_OkStat</pv_name>
+    <x>1153</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_36</name>
+    <pv_name>DTL-050:PwrC-PSCV-001:TS_OkStat</pv_name>
+    <x>1221</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_37</name>
+    <pv_name>DTL-050:PwrC-PSCH-001:TS_OkStat</pv_name>
+    <x>1241</x>
+    <y>152</y>
+    <off_label>H</off_label>
+    <on_label>H</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_38</name>
+    <pv_name>DTL-050:PwrC-PSCV-002:TS_OkStat</pv_name>
+    <x>1303</x>
+    <y>152</y>
+    <off_label>V</off_label>
+    <on_label>V</on_label>
+    <square>true</square>
+  </widget>
+  <widget type="led" version="2.0.0">
+    <name>Tank 1 Ok State_39</name>
+    <pv_name>DTL-050:PwrC-PSCH-002:TS_OkStat</pv_name>
+    <x>1323</x>
+    <y>152</y>
     <off_label>H</off_label>
     <on_label>H</on_label>
     <square>true</square>
