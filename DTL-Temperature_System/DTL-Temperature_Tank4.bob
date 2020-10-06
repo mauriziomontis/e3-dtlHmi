@@ -12,16 +12,14 @@
   <widget type="rectangle" version="2.0.0">
     <name>Rectangle Template</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>3450</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
+    <height>50</height>
+    <line_width>0</line_width>
     <line_color>
       <color name="IO Line" red="0" green="32" blue="92">
       </color>
     </line_color>
-    <background_color use_class="true">
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -34,16 +32,16 @@ $(pv_value)</tooltip>
     <name>Label Template</name>
     <class>TITLE</class>
     <text>Tank 4 - Thermo Sensors</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
-    <width>376</width>
-    <height use_class="true">46</height>
+    <width>263</width>
+    <height>25</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <background_color>
@@ -51,10 +49,9 @@ $(pv_value)</tooltip>
       </color>
     </background_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
+    <vertical_alignment>1</vertical_alignment>
     <auto_size>true</auto_size>
-    <wrap_words use_class="true">false</wrap_words>
+    <wrap_words>false</wrap_words>
     <actions>
     </actions>
     <border_color>
@@ -64,20 +61,22 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>001</INDEX>
+      <MOD_INDEX>001</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <y>60</y>
     <width>345</width>
     <height>340</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_1</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>002</INDEX>
+      <MOD_INDEX>002</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
     <y>60</y>
     <width>345</width>
@@ -85,10 +84,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_2</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>003</INDEX>
+      <MOD_INDEX>002</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
     <y>60</y>
     <width>345</width>
@@ -96,10 +96,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_3</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>004</INDEX>
+      <MOD_INDEX>003</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
     <y>60</y>
     <width>345</width>
@@ -107,10 +108,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_4</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>005</INDEX>
+      <MOD_INDEX>003</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
     <y>60</y>
     <width>345</width>
@@ -118,10 +120,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_5</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>006</INDEX>
+      <MOD_INDEX>004</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
     <y>60</y>
     <width>345</width>
@@ -129,10 +132,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>007</INDEX>
+      <MOD_INDEX>004</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
     <y>60</y>
     <width>345</width>
@@ -140,10 +144,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_7</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>008</INDEX>
+      <MOD_INDEX>005</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
     <y>60</y>
     <width>345</width>
@@ -151,10 +156,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_8</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>009</INDEX>
+      <MOD_INDEX>005</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
     <y>60</y>
     <width>345</width>
@@ -162,10 +168,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>009</INDEX>
+      <MOD_INDEX>006</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
     <y>60</y>
     <width>345</width>
@@ -173,20 +180,22 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>011</INDEX>
+      <MOD_INDEX>006</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <y>390</y>
     <width>345</width>
     <height>340</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>012</INDEX>
+      <MOD_INDEX>007</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
     <y>390</y>
     <width>345</width>
@@ -194,10 +203,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>013</INDEX>
+      <MOD_INDEX>007</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
     <y>390</y>
     <width>345</width>
@@ -205,10 +215,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_13</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>014</INDEX>
+      <MOD_INDEX>008</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
     <y>390</y>
     <width>345</width>
@@ -216,10 +227,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_14</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>015</INDEX>
+      <MOD_INDEX>008</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
     <y>390</y>
     <width>345</width>
@@ -227,10 +239,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_15</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>016</INDEX>
+      <MOD_INDEX>009</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
     <y>390</y>
     <width>345</width>
@@ -238,10 +251,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_16</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>017</INDEX>
+      <MOD_INDEX>009</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
     <y>390</y>
     <width>345</width>
@@ -249,10 +263,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_17</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>018</INDEX>
+      <MOD_INDEX>010</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2415</x>
     <y>390</y>
     <width>345</width>
@@ -260,10 +275,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_18</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>019</INDEX>
+      <MOD_INDEX>010</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2760</x>
     <y>390</y>
     <width>345</width>
@@ -271,10 +287,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_19</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>020</INDEX>
+      <MOD_INDEX>011</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>3105</x>
     <y>390</y>
     <width>345</width>
@@ -282,20 +299,22 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_20</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>021</INDEX>
+      <MOD_INDEX>011</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <y>720</y>
     <width>345</width>
     <height>340</height>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_21</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>022</INDEX>
+      <MOD_INDEX>012</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>345</x>
     <y>720</y>
     <width>345</width>
@@ -303,10 +322,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_22</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>023</INDEX>
+      <MOD_INDEX>012</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>690</x>
     <y>720</y>
     <width>345</width>
@@ -314,10 +334,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_23</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>024</INDEX>
+      <MOD_INDEX>013</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1035</x>
     <y>720</y>
     <width>345</width>
@@ -325,10 +346,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_24</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>025</INDEX>
+      <MOD_INDEX>013</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1380</x>
     <y>720</y>
     <width>345</width>
@@ -336,10 +358,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_25</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>100</INDEX>
+      <MOD_INDEX>401</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>1725</x>
     <y>720</y>
     <width>345</width>
@@ -347,10 +370,11 @@ $(pv_value)</tooltip>
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_26</name>
-    <file>Templates/Temperature-sensor-details.bob</file>
     <macros>
       <INDEX>200</INDEX>
+      <MOD_INDEX>401</MOD_INDEX>
     </macros>
+    <file>Templates/Temperature-sensor-details.bob</file>
     <x>2070</x>
     <y>720</y>
     <width>345</width>
