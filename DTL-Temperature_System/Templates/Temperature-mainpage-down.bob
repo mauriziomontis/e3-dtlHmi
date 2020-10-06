@@ -38,8 +38,9 @@
   <widget type="textupdate" version="2.0.0">
     <name>Text Update</name>
     <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+    <x>10</x>
     <y>104</y>
-    <width>40</width>
+    <width>20</width>
     <font>
       <font family="Source Sans Pro" style="REGULAR" size="12.0">
       </font>
@@ -48,9 +49,9 @@
   <widget type="led" version="2.0.0">
     <name>LED</name>
     <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
-    <width>40</width>
+    <x>10</x>
     <off_color>
-      <color name="OK" red="61" green="216" blue="61">
+      <color name="OK" red="0" green="255" blue="0">
       </color>
     </off_color>
     <on_label>Err</on_label>
@@ -71,6 +72,10 @@
       <font family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
     </font>
+    <foreground_color>
+      <color name="MINOR" red="255" green="128" blue="0">
+      </color>
+    </foreground_color>
     <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rotation_step>1</rotation_step>
@@ -79,7 +84,7 @@
         <exp bool_exp="pv0 == 1">
           <value>true</value>
         </exp>
-        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TmpDis</pv_name>
+        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
       </rule>
     </rules>
   </widget>

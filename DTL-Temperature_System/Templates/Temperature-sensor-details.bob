@@ -37,6 +37,14 @@
     <width>305</width>
     <height>110</height>
     <style>3</style>
+    <rules>
+      <rule name="Bypass" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == 1">
+          <value>false</value>
+        </exp>
+        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+      </rule>
+    </rules>
     <widget type="label" version="2.0.0">
       <name>X Set Position Caption_5</name>
       <text>Temperature:</text>
@@ -144,7 +152,6 @@
       <x>10</x>
       <y>10</y>
       <width>70</width>
-      <height>40</height>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="16.0">
         </font>
@@ -156,7 +163,6 @@
       <x>125</x>
       <y>10</y>
       <width>175</width>
-      <height>40</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="16.0">
         </font>
@@ -293,6 +299,46 @@
       <width>285</width>
       <off_label>Bypass</off_label>
       <on_label>Bypass</on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>H1 Voltage_5</name>
+    <x>20</x>
+    <y>80</y>
+    <width>305</width>
+    <height>110</height>
+    <visible>false</visible>
+    <style>3</style>
+    <rules>
+      <rule name="Bypass" prop_id="visible" out_exp="false">
+        <exp bool_exp="pv0 == 1">
+          <value>true</value>
+        </exp>
+        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+      </rule>
+    </rules>
+    <widget type="label" version="2.0.0">
+      <name>Bypassed</name>
+      <text>Bypassed</text>
+      <x>10</x>
+      <y>20</y>
+      <width>285</width>
+      <height>70</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="MINOR" red="255" green="128" blue="0">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+      <border_color>
+        <color name="MINOR" red="255" green="128" blue="0">
+        </color>
+      </border_color>
     </widget>
   </widget>
 </display>
