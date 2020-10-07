@@ -1007,7 +1007,7 @@
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_15</name>
-      <pv_name>${PREFIX}:EMR-SM-${INDEX}.OFF</pv_name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:Pos</pv_name>
       <x>120</x>
       <y>40</y>
       <width>150</width>

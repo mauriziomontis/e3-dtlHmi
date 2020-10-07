@@ -775,7 +775,7 @@ print 'Hello'
       <pv_name>loc://slider(0)</pv_name>
       <y>5</y>
       <width>235</width>
-      <off_label>Slider</off_label>
+      <off_label>Text Entry</off_label>
       <on_label>Wheel</on_label>
       <show_led>false</show_led>
     </widget>
