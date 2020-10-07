@@ -26,64 +26,13 @@
     <corner_width>5</corner_width>
     <corner_height>5</corner_height>
   </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq</name>
-    <pv_name>${PREFIX}:RFLS-${INDEX_NUM1}:Drift</pv_name>
-    <x>25</x>
-    <y>175</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ATTENTION" red="252" green="242" blue="17">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_1</name>
-    <pv_name>${PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
-    <x>109</x>
-    <y>175</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ATTENTION" red="252" green="242" blue="17">
-      </color>
-    </bar_color>
-  </widget>
-  <widget type="linear-meter" version="2.0.0">
-    <name>Drift Freq_2</name>
-    <pv_name>${PREFIX}:RFLS-${INDEX_NUM2}:Drift</pv_name>
-    <x>203</x>
-    <y>175</y>
-    <width>70</width>
-    <height>50</height>
-    <level_low>-80.0</level_low>
-    <level_lolo>-90.0</level_lolo>
-    <minimum>-100.0</minimum>
-    <limits_from_pv>false</limits_from_pv>
-    <value_visible>false</value_visible>
-    <bar_color>
-      <color name="ATTENTION" red="252" green="242" blue="17">
-      </color>
-    </bar_color>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Tank 1_1</name>
     <text>${TANK}</text>
     <x>114</x>
     <y>160</y>
     <width>74</width>
-    <height>27</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -140,8 +89,8 @@
     <name>Tuner 3</name>
     <text>${TUNER_NUM3}</text>
     <x>202</x>
-    <width>150</width>
-    <height>27</height>
+    <width>151</width>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -152,8 +101,8 @@
     <name>Tuner 1</name>
     <text>${TUNER_NUM1}</text>
     <x>10</x>
-    <width>150</width>
-    <height>27</height>
+    <width>151</width>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -188,12 +137,33 @@
     <text>${TUNER_NUM2}</text>
     <x>106</x>
     <y>376</y>
-    <width>150</width>
-    <height>27</height>
+    <width>151</width>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
     <auto_size>true</auto_size>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Drift Freq_2</name>
+    <x>200</x>
+    <y>195</y>
+    <width>70</width>
+    <minimum>-100.0</minimum>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Drift Freq_3</name>
+    <x>108</x>
+    <y>195</y>
+    <width>70</width>
+    <minimum>-100.0</minimum>
+  </widget>
+  <widget type="progressbar" version="2.0.0">
+    <name>Drift Freq_4</name>
+    <x>9</x>
+    <y>195</y>
+    <width>70</width>
+    <minimum>-100.0</minimum>
   </widget>
 </display>
