@@ -526,7 +526,7 @@
     </widget>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_1</name>
-      <pv_name>${subsec}:${device}:En</pv_name>
+      <pv_name>${PREFIX}:BMD-C${STEERER_POS}-${INDEX}:En</pv_name>
       <x>120</x>
       <y>40</y>
       <width>225</width>
@@ -578,7 +578,6 @@
       </off_color>
       <on_label>OK</on_label>
       <square>true</square>
-      <labels_from_pv>true</labels_from_pv>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Thermal Switch</name>
@@ -603,7 +602,6 @@
       </off_color>
       <on_label>OK</on_label>
       <square>true</square>
-      <labels_from_pv>true</labels_from_pv>
     </widget>
   </widget>
 </display>

@@ -765,6 +765,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#5-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -778,6 +779,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#7-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -791,6 +793,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#9-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -804,6 +807,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#11-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -817,6 +821,7 @@
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#21-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -830,6 +835,7 @@
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#23-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -843,6 +849,7 @@
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#27-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -856,6 +863,7 @@
       <macros>
         <INDEX>004</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#29-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -869,6 +877,7 @@
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#43-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -882,6 +891,7 @@
       <macros>
         <INDEX>005</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#45-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -895,6 +905,7 @@
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#49-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -908,6 +919,7 @@
       <macros>
         <INDEX>006</INDEX>
         <PREFIX>DTL-010</PREFIX>
+        <STEERER>T1 DT#51-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -921,6 +933,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#5-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -934,6 +947,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#7-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -947,6 +961,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#17-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -960,6 +975,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#19-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -973,6 +989,7 @@
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#29-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -986,6 +1003,7 @@
       <macros>
         <INDEX>003</INDEX>
         <PREFIX>DTL-020</PREFIX>
+        <STEERER>T2 DT#31-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -999,6 +1017,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>T3 DT#6-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1012,6 +1031,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>T3 DT#8-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1025,6 +1045,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>T3 DT#20-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1038,6 +1059,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-030</PREFIX>
+        <STEERER>T3 DT#22-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1051,6 +1073,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>T4 DT#4-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1064,6 +1087,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>T4 DT#6-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1077,6 +1101,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>T4 DT#16-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1090,6 +1115,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-040</PREFIX>
+        <STEERER>T4 DT#18-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1103,6 +1129,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>T5 DT#3-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1116,6 +1143,7 @@
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>T5 DT#5-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1129,6 +1157,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>T5 DT#15-${STEERER_POS}</STEERER>
         <STEERER_POS>V</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1142,6 +1171,7 @@
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>DTL-050</PREFIX>
+        <STEERER>T5 DT#17-${STEERER_POS}</STEERER>
         <STEERER_POS>H</STEERER_POS>
       </macros>
       <file>Templates/Steerer-mainpage-control.bob</file>
@@ -1495,7 +1525,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Enable to operate ok status</name>
-      <pv_name>DTL-010ROW:PwrC1-3:OnEn</pv_name>
+      <pv_name>DTL-010ROW::PwrPsOnEn</pv_name>
       <x>130</x>
       <y>48</y>
       <width>80</width>
@@ -1505,7 +1535,7 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>Enable to operate ok status</name>
-      <pv_name>DTL-030ROW:PwrC1-2:OnEn</pv_name>
+      <pv_name>DTL-030ROW::PwrPsOnEn</pv_name>
       <x>209</x>
       <y>48</y>
       <width>80</width>

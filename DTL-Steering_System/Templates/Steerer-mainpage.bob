@@ -159,7 +159,6 @@
     </off_color>
     <on_label>Ok State</on_label>
     <square>true</square>
-    <labels_from_pv>true</labels_from_pv>
   </widget>
   <widget type="led" version="2.0.0">
     <name>LED_3</name>
@@ -174,6 +173,5 @@
     </off_color>
     <on_label>OK</on_label>
     <square>true</square>
-    <labels_from_pv>true</labels_from_pv>
   </widget>
 </display>

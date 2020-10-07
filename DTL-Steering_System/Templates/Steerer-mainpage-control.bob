@@ -11,10 +11,10 @@
   </actions>
   <widget type="label" version="2.0.0">
     <name>Steerer name</name>
-    <text>${PREFIX} PCS${STEERER_POS}-${INDEX}</text>
+    <text>${STEERER}</text>
     <height>32</height>
     <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
+      <font family="Source Sans Pro" style="BOLD" size="12.0">
       </font>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
@@ -38,6 +38,7 @@
         <pv_name>loc://slider</pv_name>
       </rule>
     </rules>
+    <increment>0.5</increment>
   </widget>
   <widget type="thumbwheel" version="2.0.0">
     <name>Steerer Wheel</name>
