@@ -165,7 +165,7 @@
       <off_label>hls</off_label>
       <on_label>hls</on_label>
       <on_color>
-        <color name="ATTENTION" red="252" green="242" blue="17">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <square>true</square>
@@ -181,7 +181,7 @@
       <off_label>lls</off_label>
       <on_label>lls</on_label>
       <on_color>
-        <color name="ATTENTION" red="252" green="242" blue="17">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </on_color>
       <square>true</square>
@@ -466,7 +466,7 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_41</name>
-      <text>NC Contacts</text>
+      <text>NO Contacts</text>
       <x>10</x>
       <y>105</y>
       <height>60</height>
