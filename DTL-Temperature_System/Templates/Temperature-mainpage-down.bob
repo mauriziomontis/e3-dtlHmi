@@ -4,17 +4,16 @@
   <width>40</width>
   <height>150</height>
   <widget type="label" version="2.0.0">
-    <name>TT-001</name>
-    <text>${sensor_name}</text>
-    <y>124</y>
+    <name>TT-001_1</name>
+    <text>${INDEX}</text>
+    <y>130</y>
     <width>40</width>
-    <height>16</height>
     <font>
       <font family="Source Sans Pro" style="BOLD" size="12.0">
       </font>
     </font>
     <horizontal_alignment>1</horizontal_alignment>
-    <actions>
+    <actions execute_as_one="true">
       <action type="open_display">
         <file>Temperature-sensor-details.bob</file>
         <target>standalone</target>
@@ -22,34 +21,52 @@
       </action>
     </actions>
   </widget>
-  <widget type="progressbar" version="2.0.0">
-    <name>Progress Bar</name>
-    <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
-    <x>10</x>
-    <y>30</y>
-    <width>20</width>
-    <height>70</height>
-    <fill_color>
-      <color name="PRIMARY" red="0" green="148" blue="202">
-      </color>
-    </fill_color>
-    <horizontal>false</horizontal>
-  </widget>
-  <widget type="textupdate" version="2.0.0">
-    <name>Text Update</name>
-    <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
-    <x>10</x>
-    <y>104</y>
-    <width>20</width>
-    <font>
-      <font family="Source Sans Pro" style="REGULAR" size="12.0">
-      </font>
-    </font>
+  <widget type="group" version="2.0.0">
+    <name>Group_1</name>
+    <y>35</y>
+    <width>40</width>
+    <height>95</height>
+    <style>3</style>
+    <widget type="tank" version="2.0.0">
+      <name>Tank_1</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
+      <width>40</width>
+      <height>95</height>
+      <rules>
+        <rule name="Bypass" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>false</value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_2</name>
+      <text>Bypassed</text>
+      <x>10</x>
+      <width>20</width>
+      <height>80</height>
+      <visible>false</visible>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rotation_step>1</rotation_step>
+      <rules>
+        <rule name="Bypass" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
   </widget>
   <widget type="led" version="2.0.0">
-    <name>LED</name>
+    <name>LED_1</name>
     <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
-    <x>10</x>
+    <y>10</y>
+    <width>40</width>
     <off_color>
       <color name="OK" red="0" green="255" blue="0">
       </color>
@@ -60,32 +77,5 @@
       </color>
     </on_color>
     <square>true</square>
-  </widget>
-  <widget type="label" version="2.0.0">
-    <name>Bypass</name>
-    <text>Bypassed</text>
-    <y>30</y>
-    <width>40</width>
-    <height>70</height>
-    <visible>false</visible>
-    <font>
-      <font family="Source Sans Pro" style="BOLD" size="16.0">
-      </font>
-    </font>
-    <foreground_color>
-      <color name="MINOR" red="255" green="128" blue="0">
-      </color>
-    </foreground_color>
-    <horizontal_alignment>1</horizontal_alignment>
-    <vertical_alignment>1</vertical_alignment>
-    <rotation_step>1</rotation_step>
-    <rules>
-      <rule name="Bypass" prop_id="visible" out_exp="false">
-        <exp bool_exp="pv0 == 1">
-          <value>true</value>
-        </exp>
-        <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
-      </rule>
-    </rules>
   </widget>
 </display>

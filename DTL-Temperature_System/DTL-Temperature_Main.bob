@@ -258,7 +258,7 @@ print 'Hello'
     <file>Templates/Temperature-mainpage-up.bob</file>
     <x>265</x>
     <y>100</y>
-    <width>39</width>
+    <width>40</width>
     <height>150</height>
     <border_width>1</border_width>
   </widget>
@@ -300,7 +300,7 @@ print 'Hello'
     <file>Templates/Temperature-mainpage-up.bob</file>
     <x>215</x>
     <y>100</y>
-    <width>41</width>
+    <width>40</width>
     <height>150</height>
     <border_width>1</border_width>
   </widget>

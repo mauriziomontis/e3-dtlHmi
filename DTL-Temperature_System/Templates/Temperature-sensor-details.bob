@@ -97,6 +97,7 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIHI</pv_name>
       <x>85</x>
       <y>40</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box</name>
@@ -116,6 +117,7 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LOW</pv_name>
       <x>85</x>
       <y>90</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_1</name>
@@ -155,6 +157,7 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIGH</pv_name>
       <x>85</x>
       <y>65</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_4</name>
@@ -182,6 +185,7 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LOLO</pv_name>
       <x>85</x>
       <y>115</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_5</name>
@@ -209,6 +213,7 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HYST</pv_name>
       <x>85</x>
       <y>140</y>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
