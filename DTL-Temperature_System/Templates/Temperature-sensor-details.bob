@@ -33,9 +33,9 @@
   <widget type="group" version="2.0.0">
     <name>H1 Voltage_2</name>
     <x>20</x>
-    <y>80</y>
+    <y>65</y>
     <width>305</width>
-    <height>110</height>
+    <height>165</height>
     <style>3</style>
     <rules>
       <rule name="Bypass" prop_id="visible" out_exp="false">
@@ -51,6 +51,10 @@
       <x>10</x>
       <y>10</y>
       <width>125</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="textupdate" version="2.0.0">
@@ -74,31 +78,31 @@
     </widget>
     <widget type="label" version="2.0.0">
       <name>X Set Position Caption_6</name>
-      <text>High Lim:</text>
+      <text>HH Lim:</text>
       <x>10</x>
-      <y>50</y>
-      <width>125</width>
+      <y>40</y>
+      <width>60</width>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="label" version="2.0.0">
       <name>X Set Position Caption_7</name>
-      <text>Low Lim:</text>
+      <text>L Lim:</text>
       <x>10</x>
-      <y>80</y>
+      <y>90</y>
       <width>125</width>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Text Entry</name>
-      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIGH</pv_name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIHI</pv_name>
       <x>85</x>
-      <y>50</y>
+      <y>40</y>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box</name>
-      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HSV</pv_name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HHSV</pv_name>
       <x>195</x>
-      <y>50</y>
+      <y>40</y>
       <height>20</height>
       <items>
         <item>NO_ALARM</item>
@@ -111,13 +115,13 @@
       <name>Text Entry_1</name>
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LOW</pv_name>
       <x>85</x>
-      <y>80</y>
+      <y>90</y>
     </widget>
     <widget type="combo" version="2.0.0">
       <name>Combo Box_1</name>
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LSV</pv_name>
       <x>195</x>
-      <y>80</y>
+      <y>90</y>
       <height>20</height>
       <items>
         <item>NO_ALARM</item>
@@ -129,7 +133,7 @@
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle</name>
       <x>10</x>
-      <y>40</y>
+      <y>35</y>
       <width>285</width>
       <height>1</height>
       <line_width>0</line_width>
@@ -138,13 +142,81 @@
         </color>
       </background_color>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_10</name>
+      <text>H Lim:</text>
+      <x>10</x>
+      <y>65</y>
+      <width>60</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_4</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HIGH</pv_name>
+      <x>85</x>
+      <y>65</y>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_4</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HSV</pv_name>
+      <x>195</x>
+      <y>65</y>
+      <height>20</height>
+      <items>
+        <item>NO_ALARM</item>
+        <item>MINOR</item>
+        <item>MAJOR</item>
+        <item>INVALID</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_11</name>
+      <text>LL Lim:</text>
+      <x>10</x>
+      <y>115</y>
+      <width>125</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_5</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LOLO</pv_name>
+      <x>85</x>
+      <y>115</y>
+    </widget>
+    <widget type="combo" version="2.0.0">
+      <name>Combo Box_5</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.LLSV</pv_name>
+      <x>195</x>
+      <y>115</y>
+      <height>20</height>
+      <items>
+        <item>NO_ALARM</item>
+        <item>MINOR</item>
+        <item>MAJOR</item>
+        <item>INVALID</item>
+      </items>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>X Set Position Caption_12</name>
+      <text>Hysteresis:</text>
+      <x>10</x>
+      <y>140</y>
+      <width>125</width>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Text Entry_6</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.HYST</pv_name>
+      <x>85</x>
+      <y>140</y>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
     <name>H1 Voltage_3</name>
     <x>20</x>
     <y>20</y>
     <width>305</width>
-    <height>50</height>
+    <height>40</height>
     <style>3</style>
     <widget type="label" version="2.0.0">
       <name>Label</name>
@@ -178,17 +250,16 @@
   <widget type="group" version="2.0.0">
     <name>H1 Voltage_4</name>
     <x>20</x>
-    <y>200</y>
+    <y>235</y>
     <width>305</width>
-    <height>120</height>
+    <height>85</height>
     <style>3</style>
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_4</name>
       <pv_name>${PREFIX}:EMR-TT-${MOD_INDEX}:Online</pv_name>
       <x>10</x>
-      <y>45</y>
+      <y>35</y>
       <width>120</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -218,9 +289,8 @@
       <name>LED (Multi State)_5</name>
       <pv_name>${PREFIX}:EMR-TT-${MOD_INDEX}:Op</pv_name>
       <x>175</x>
-      <y>45</y>
+      <y>35</y>
       <width>120</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -252,7 +322,6 @@
       <x>10</x>
       <y>10</y>
       <width>80</width>
-      <height>30</height>
       <off_label>Over Lim</off_label>
       <on_label>Over Lim</on_label>
       <on_color>
@@ -267,7 +336,6 @@
       <x>112</x>
       <y>10</y>
       <width>80</width>
-      <height>30</height>
       <off_label>Error</off_label>
       <on_label>Error</on_label>
       <on_color>
@@ -282,7 +350,6 @@
       <x>215</x>
       <y>10</y>
       <width>80</width>
-      <height>30</height>
       <off_label>Under Lim</off_label>
       <on_label>Under Lim</on_label>
       <on_color>
@@ -295,8 +362,9 @@
       <name>Boolean Button</name>
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
       <x>10</x>
-      <y>80</y>
+      <y>60</y>
       <width>285</width>
+      <height>20</height>
       <off_label>Bypass</off_label>
       <on_label>Bypass</on_label>
     </widget>

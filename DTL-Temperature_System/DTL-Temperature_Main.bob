@@ -146,9 +146,9 @@ print 'Hello'
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>60</y>
+    <y>340</y>
     <width>150</width>
-    <height>1020</height>
+    <height>740</height>
     <widget type="action_button" version="3.0.0">
       <name>Tank 1 Details</name>
       <actions>
@@ -2830,5 +2830,87 @@ print 'Hello'
     <width>40</width>
     <height>150</height>
     <border_width>1</border_width>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Interlocks</name>
+    <x>10</x>
+    <y>60</y>
+    <width>150</width>
+    <height>280</height>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>DTL-010:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>10</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 1</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>DTL-020:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>55</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 2</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>DTL-030:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>100</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 3</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>DTL-040:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>145</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 4</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 4</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>DTL-050:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>190</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 5</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 5</on_label>
+      <square>true</square>
+    </widget>
   </widget>
 </display>
