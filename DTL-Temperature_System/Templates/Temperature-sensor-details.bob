@@ -363,10 +363,22 @@
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
       <x>10</x>
       <y>60</y>
-      <width>285</width>
+      <width>135</width>
       <height>20</height>
       <off_label>Bypass</off_label>
       <on_label>Bypass</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.PROC</pv_name>
+      <x>160</x>
+      <y>60</y>
+      <width>135</width>
+      <height>20</height>
+      <off_label>Rearm</off_label>
+      <on_label>Rearm</on_label>
+      <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
