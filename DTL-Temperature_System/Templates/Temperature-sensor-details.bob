@@ -66,6 +66,7 @@
       </background_color>
       <precision>3</precision>
       <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
       <actions>
       </actions>
       <rules>
@@ -115,6 +116,7 @@
       <x>195</x>
       <y>40</y>
       <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <items>
         <item>NO_ALARM</item>
         <item>MINOR</item>
@@ -135,6 +137,7 @@
       <x>195</x>
       <y>90</y>
       <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <items>
         <item>NO_ALARM</item>
         <item>MINOR</item>
@@ -175,6 +178,7 @@
       <x>195</x>
       <y>65</y>
       <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <items>
         <item>NO_ALARM</item>
         <item>MINOR</item>
@@ -203,6 +207,7 @@
       <x>195</x>
       <y>115</y>
       <height>20</height>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <items>
         <item>NO_ALARM</item>
         <item>MINOR</item>
@@ -391,8 +396,16 @@
       <width>135</width>
       <height>20</height>
       <off_label>Rearm</off_label>
+      <off_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </off_color>
       <on_label>Rearm</on_label>
-      <show_led>false</show_led>
+      <on_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </on_color>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
       <mode>1</mode>
     </widget>
   </widget>

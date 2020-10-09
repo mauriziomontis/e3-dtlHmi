@@ -39,7 +39,23 @@
           </exp>
           <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
         </rule>
+        <rule name="Alarm Fill Color" prop_id="fill_color" out_exp="false">
+          <exp bool_exp="pv0 == 2">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 1">
+            <value>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.SEVR</pv_name>
+        </rule>
       </rules>
+      <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_2</name>
