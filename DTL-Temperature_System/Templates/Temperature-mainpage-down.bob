@@ -21,6 +21,22 @@
       </action>
     </actions>
   </widget>
+  <widget type="led" version="2.0.0">
+    <name>LED_1</name>
+    <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
+    <y>10</y>
+    <width>40</width>
+    <off_color>
+      <color name="OK" red="0" green="255" blue="0">
+      </color>
+    </off_color>
+    <on_label>Err</on_label>
+    <on_color>
+      <color name="ERROR" red="252" green="13" blue="27">
+      </color>
+    </on_color>
+    <square>true</square>
+  </widget>
   <widget type="group" version="2.0.0">
     <name>Group_1</name>
     <y>35</y>
@@ -77,21 +93,5 @@
       </rules>
       <border_alarm_sensitive>false</border_alarm_sensitive>
     </widget>
-  </widget>
-  <widget type="led" version="2.0.0">
-    <name>LED_1</name>
-    <pv_name>${PREFIX}:EMR-TT-${INDEX}:HwErrAlrm</pv_name>
-    <y>10</y>
-    <width>40</width>
-    <off_color>
-      <color name="OK" red="0" green="255" blue="0">
-      </color>
-    </off_color>
-    <on_label>Err</on_label>
-    <on_color>
-      <color name="ERROR" red="252" green="13" blue="27">
-      </color>
-    </on_color>
-    <square>true</square>
   </widget>
 </display>
