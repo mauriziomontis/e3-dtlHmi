@@ -12,6 +12,88 @@ print 'Hello'
       <pv_name>new-PV</pv_name>
     </script>
   </scripts>
+  <widget type="group" version="2.0.0">
+    <name>Interlocks</name>
+    <x>10</x>
+    <y>50</y>
+    <width>150</width>
+    <height>280</height>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>DTL-010:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>12</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 1</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 1</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_1</name>
+      <pv_name>DTL-020:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>57</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 2</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 2</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>DTL-030:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>102</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 3</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 3</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>DTL-040:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>147</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 4</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 4</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>DTL-050:EMR-Cav-001:WrtC_OkStatS</pv_name>
+      <x>5</x>
+      <y>192</y>
+      <width>100</width>
+      <height>40</height>
+      <off_label>TANK 5</off_label>
+      <off_color>
+        <color name="MAJOR" red="255" green="0" blue="0">
+        </color>
+      </off_color>
+      <on_label>TANK 5</on_label>
+      <square>true</square>
+    </widget>
+  </widget>
   <widget type="rectangle" version="2.0.0">
     <name>Tank 1_4</name>
     <x>200</x>
@@ -1128,20 +1210,6 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
-    <name>TT-100</name>
-    <macros>
-      <INDEX>100</INDEX>
-      <PREFIX>DTL-010</PREFIX>
-      <sensor_name>TT-${INDEX}</sensor_name>
-    </macros>
-    <file>Templates/Temperature-mainpage-up.bob</file>
-    <x>160</x>
-    <y>170</y>
-    <width>40</width>
-    <height>150</height>
-    <border_width>1</border_width>
-  </widget>
-  <widget type="embedded" version="2.0.0">
     <name>TT-200</name>
     <macros>
       <INDEX>200</INDEX>
@@ -1150,6 +1218,20 @@ print 'Hello'
     </macros>
     <file>Templates/Temperature-mainpage-up.bob</file>
     <x>1715</x>
+    <y>170</y>
+    <width>40</width>
+    <height>150</height>
+    <border_width>1</border_width>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>TT-100</name>
+    <macros>
+      <INDEX>100</INDEX>
+      <PREFIX>DTL-010</PREFIX>
+      <sensor_name>TT-${INDEX}</sensor_name>
+    </macros>
+    <file>Templates/Temperature-mainpage-up.bob</file>
+    <x>160</x>
     <y>170</y>
     <width>40</width>
     <height>150</height>
@@ -2656,7 +2738,7 @@ print 'Hello'
     <x>950</x>
     <y>745</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2830,87 +2912,5 @@ print 'Hello'
     <width>40</width>
     <height>150</height>
     <border_width>1</border_width>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Interlocks</name>
-    <x>10</x>
-    <y>60</y>
-    <width>150</width>
-    <height>280</height>
-    <widget type="led" version="2.0.0">
-      <name>LED</name>
-      <pv_name>DTL-010:EMR-Cav-001:WrtC_OkStatS</pv_name>
-      <x>5</x>
-      <y>10</y>
-      <width>100</width>
-      <height>40</height>
-      <off_label>TANK 1</off_label>
-      <off_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label>TANK 1</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_1</name>
-      <pv_name>DTL-020:EMR-Cav-001:WrtC_OkStatS</pv_name>
-      <x>5</x>
-      <y>55</y>
-      <width>100</width>
-      <height>40</height>
-      <off_label>TANK 2</off_label>
-      <off_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label>TANK 2</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_2</name>
-      <pv_name>DTL-030:EMR-Cav-001:WrtC_OkStatS</pv_name>
-      <x>5</x>
-      <y>100</y>
-      <width>100</width>
-      <height>40</height>
-      <off_label>TANK 3</off_label>
-      <off_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label>TANK 3</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_3</name>
-      <pv_name>DTL-040:EMR-Cav-001:WrtC_OkStatS</pv_name>
-      <x>5</x>
-      <y>145</y>
-      <width>100</width>
-      <height>40</height>
-      <off_label>TANK 4</off_label>
-      <off_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label>TANK 4</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_4</name>
-      <pv_name>DTL-050:EMR-Cav-001:WrtC_OkStatS</pv_name>
-      <x>5</x>
-      <y>190</y>
-      <width>100</width>
-      <height>40</height>
-      <off_label>TANK 5</off_label>
-      <off_color>
-        <color name="MAJOR" red="255" green="0" blue="0">
-        </color>
-      </off_color>
-      <on_label>TANK 5</on_label>
-      <square>true</square>
-    </widget>
   </widget>
 </display>
