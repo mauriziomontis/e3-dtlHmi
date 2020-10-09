@@ -61,13 +61,30 @@
         </font>
       </font>
       <background_color>
-        <color name="Write_Background" red="128" green="255" blue="255">
+        <color name="Background" red="255" green="255" blue="255">
         </color>
       </background_color>
       <precision>3</precision>
       <horizontal_alignment>1</horizontal_alignment>
       <actions>
       </actions>
+      <rules>
+        <rule name="Alarm Backgroud" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 2">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 1">
+            <value>
+              <color name="MINOR" red="255" green="128" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp.SEVR</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>X Set Position Caption_6</name>
