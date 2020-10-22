@@ -41,6 +41,26 @@
     <width>40</width>
     <height>95</height>
     <style>3</style>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Bypassed</text>
+      <x>10</x>
+      <width>20</width>
+      <height>80</height>
+      <visible>false</visible>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rotation_step>1</rotation_step>
+      <rules>
+        <rule name="Bypass" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == 1">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
     <widget type="tank" version="2.0.0">
       <name>Tank</name>
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp</pv_name>
@@ -70,26 +90,6 @@
         </rule>
       </rules>
       <border_alarm_sensitive>false</border_alarm_sensitive>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Label_1</name>
-      <text>Bypassed</text>
-      <x>10</x>
-      <width>20</width>
-      <height>80</height>
-      <visible>false</visible>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <rotation_step>1</rotation_step>
-      <rules>
-        <rule name="Bypass" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>true</value>
-          </exp>
-          <pv_name>${PREFIX}:EMR-TT-${INDEX}:TempDis</pv_name>
-        </rule>
-      </rules>
-      <border_width>1</border_width>
     </widget>
   </widget>
 </display>
