@@ -1159,7 +1159,7 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>TT-006</name>
     <macros>
-      <INDEX>003</INDEX>
+      <INDEX>006</INDEX>
       <PREFIX>DTL-010</PREFIX>
       <sensor_name>TT-${INDEX}</sensor_name>
     </macros>
@@ -2738,7 +2738,7 @@ print 'Hello'
     <x>950</x>
     <y>745</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>

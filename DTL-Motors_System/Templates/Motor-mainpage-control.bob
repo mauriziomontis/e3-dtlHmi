@@ -46,6 +46,7 @@
   </widget>
   <widget type="textentry" version="3.0.0">
     <name>Text Entry</name>
+    <pv_name>${PREFIX}:EMR-SM-${INDEX}.VAL</pv_name>
     <x>80</x>
     <width>155</width>
     <height>32</height>
@@ -55,6 +56,12 @@
           <value>false</value>
         </exp>
         <pv_name>loc://slider</pv_name>
+      </rule>
+      <rule name="Enabled" prop_id="enabled" out_exp="false">
+        <exp bool_exp="pv0 == 0">
+          <value>false</value>
+        </exp>
+        <pv_name>DTL:EMR-SM:EnCmd</pv_name>
       </rule>
     </rules>
   </widget>

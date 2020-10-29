@@ -336,6 +336,8 @@ print 'Hello'
     <name>Embedded Display</name>
     <macros>
       <INDEX>001</INDEX>
+      <INDEX_SW1>001</INDEX_SW1>
+      <INDEX_SW2>011</INDEX_SW2>
       <MOTOR_NUM>1</MOTOR_NUM>
       <PREFIX>DTL-010</PREFIX>
       <TANK_NUM>1</TANK_NUM>
@@ -350,6 +352,8 @@ print 'Hello'
     <name>Embedded Display_1</name>
     <macros>
       <INDEX>002</INDEX>
+      <INDEX_SW1>002</INDEX_SW1>
+      <INDEX_SW2>012</INDEX_SW2>
       <MOTOR_NUM>2</MOTOR_NUM>
       <PREFIX>DTL-010</PREFIX>
       <TANK_NUM>1</TANK_NUM>
@@ -364,6 +368,8 @@ print 'Hello'
     <name>Embedded Display_2</name>
     <macros>
       <INDEX>003</INDEX>
+      <INDEX_SW1>003</INDEX_SW1>
+      <INDEX_SW2>013</INDEX_SW2>
       <MOTOR_NUM>3</MOTOR_NUM>
       <PREFIX>DTL-010</PREFIX>
       <TANK_NUM>1</TANK_NUM>
@@ -378,6 +384,8 @@ print 'Hello'
     <name>Embedded Display_3</name>
     <macros>
       <INDEX>001</INDEX>
+      <INDEX_SW1>001</INDEX_SW1>
+      <INDEX_SW2>011</INDEX_SW2>
       <MOTOR_NUM>1</MOTOR_NUM>
       <PREFIX>DTL-020</PREFIX>
       <TANK_NUM>2</TANK_NUM>
@@ -392,6 +400,8 @@ print 'Hello'
     <name>Embedded Display_4</name>
     <macros>
       <INDEX>002</INDEX>
+      <INDEX_SW1>002</INDEX_SW1>
+      <INDEX_SW2>012</INDEX_SW2>
       <MOTOR_NUM>2</MOTOR_NUM>
       <PREFIX>DTL-020</PREFIX>
       <TANK_NUM>2</TANK_NUM>
@@ -406,6 +416,8 @@ print 'Hello'
     <name>Embedded Display_5</name>
     <macros>
       <INDEX>003</INDEX>
+      <INDEX_SW1>003</INDEX_SW1>
+      <INDEX_SW2>013</INDEX_SW2>
       <MOTOR_NUM>3</MOTOR_NUM>
       <PREFIX>DTL-020</PREFIX>
       <TANK_NUM>2</TANK_NUM>
@@ -420,6 +432,8 @@ print 'Hello'
     <name>Embedded Display_6</name>
     <macros>
       <INDEX>001</INDEX>
+      <INDEX_SW1>001</INDEX_SW1>
+      <INDEX_SW2>011</INDEX_SW2>
       <MOTOR_NUM>1</MOTOR_NUM>
       <PREFIX>DTL-030</PREFIX>
       <TANK_NUM>3</TANK_NUM>
@@ -434,6 +448,8 @@ print 'Hello'
     <name>Embedded Display_7</name>
     <macros>
       <INDEX>002</INDEX>
+      <INDEX_SW1>002</INDEX_SW1>
+      <INDEX_SW2>012</INDEX_SW2>
       <MOTOR_NUM>2</MOTOR_NUM>
       <PREFIX>DTL-030</PREFIX>
       <TANK_NUM>3</TANK_NUM>
@@ -448,6 +464,8 @@ print 'Hello'
     <name>Embedded Display_8</name>
     <macros>
       <INDEX>003</INDEX>
+      <INDEX_SW1>003</INDEX_SW1>
+      <INDEX_SW2>013</INDEX_SW2>
       <MOTOR_NUM>3</MOTOR_NUM>
       <PREFIX>DTL-030</PREFIX>
       <TANK_NUM>3</TANK_NUM>
@@ -462,6 +480,8 @@ print 'Hello'
     <name>Embedded Display_9</name>
     <macros>
       <INDEX>001</INDEX>
+      <INDEX_SW1>001</INDEX_SW1>
+      <INDEX_SW2>011</INDEX_SW2>
       <MOTOR_NUM>1</MOTOR_NUM>
       <PREFIX>DTL-040</PREFIX>
       <TANK_NUM>4</TANK_NUM>
@@ -476,6 +496,8 @@ print 'Hello'
     <name>Embedded Display_10</name>
     <macros>
       <INDEX>002</INDEX>
+      <INDEX_SW1>002</INDEX_SW1>
+      <INDEX_SW2>012</INDEX_SW2>
       <MOTOR_NUM>2</MOTOR_NUM>
       <PREFIX>DTL-040</PREFIX>
       <TANK_NUM>4</TANK_NUM>
@@ -490,6 +512,8 @@ print 'Hello'
     <name>Embedded Display_11</name>
     <macros>
       <INDEX>003</INDEX>
+      <INDEX_SW1>003</INDEX_SW1>
+      <INDEX_SW2>013</INDEX_SW2>
       <MOTOR_NUM>3</MOTOR_NUM>
       <PREFIX>DTL-040</PREFIX>
       <TANK_NUM>4</TANK_NUM>
@@ -504,6 +528,8 @@ print 'Hello'
     <name>Embedded Display_12</name>
     <macros>
       <INDEX>001</INDEX>
+      <INDEX_SW1>001</INDEX_SW1>
+      <INDEX_SW2>011</INDEX_SW2>
       <MOTOR_NUM>1</MOTOR_NUM>
       <PREFIX>DTL-050</PREFIX>
       <TANK_NUM>5</TANK_NUM>
@@ -518,6 +544,8 @@ print 'Hello'
     <name>Embedded Display_13</name>
     <macros>
       <INDEX>002</INDEX>
+      <INDEX_SW1>002</INDEX_SW1>
+      <INDEX_SW2>012</INDEX_SW2>
       <MOTOR_NUM>2</MOTOR_NUM>
       <PREFIX>DTL-050</PREFIX>
       <TANK_NUM>5</TANK_NUM>
@@ -532,6 +560,8 @@ print 'Hello'
     <name>Embedded Display_14</name>
     <macros>
       <INDEX>003</INDEX>
+      <INDEX_SW1>003</INDEX_SW1>
+      <INDEX_SW2>013</INDEX_SW2>
       <MOTOR_NUM>3</MOTOR_NUM>
       <PREFIX>DTL-050</PREFIX>
       <TANK_NUM>5</TANK_NUM>

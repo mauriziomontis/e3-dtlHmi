@@ -68,20 +68,21 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_24</name>
-      <pv_name>${PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-${INDEX_SW1}:24VPS_OnCmd</pv_name>
       <x>61</x>
       <y>20</y>
       <width>120</width>
+      <height>15</height>
       <off_label></off_label>
       <on_label></on_label>
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED_47</name>
-      <pv_name>${PREFIX}:EMR-GS-${INDEX}:24VPS_OnCmd-RB</pv_name>
+      <pv_name>${PREFIX}:EMR-GS-${INDEX_SW1}:24VPS_OnCmd-RB</pv_name>
       <x>186</x>
       <y>20</y>
       <width>80</width>
-      <height>30</height>
+      <height>15</height>
       <square>true</square>
     </widget>
     <widget type="led" version="2.0.0">
@@ -113,9 +114,8 @@
       <name>LED (Multi State)</name>
       <pv_name>${PREFIX}:EMR-GT-${INDEX}:ConnStat</pv_name>
       <x>61</x>
-      <y>125</y>
+      <y>145</y>
       <width>120</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -145,9 +145,8 @@
       <name>LED (Multi State)_2</name>
       <pv_name>${PREFIX}:EMR-GT-${INDEX}:HwOp</pv_name>
       <x>61</x>
-      <y>155</y>
+      <y>165</y>
       <width>120</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -319,14 +318,6 @@
         </font>
       </font>
     </widget>
-    <widget type="textentry" version="3.0.0">
-      <name>Text Entry</name>
-      <pv_name>$(PREFIX):EMR-SM-$(INDEX).DRBV</pv_name>
-      <x>61</x>
-      <y>98</y>
-      <width>120</width>
-      <precision>2</precision>
-    </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Enable</name>
       <pv_name>${PREFIX}:EMR-SM-${INDEX}.CNEN</pv_name>
@@ -349,6 +340,51 @@
           <pv_name>DTL:EMR-SM:EnCmd</pv_name>
         </rule>
       </rules>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_25</name>
+      <pv_name>${PREFIX}:EMR-GS-${INDEX_SW2}:24VPS_OnCmd</pv_name>
+      <x>61</x>
+      <y>35</y>
+      <width>120</width>
+      <height>15</height>
+      <off_label></off_label>
+      <on_label></on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_48</name>
+      <pv_name>${PREFIX}:EMR-GS-${INDEX_SW2}:24VPS_OnCmd-RB</pv_name>
+      <x>186</x>
+      <y>35</y>
+      <width>80</width>
+      <height>15</height>
+      <square>true</square>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>${PREFIX}:EMR-GT-${INDEX}:Pos</pv_name>
+      <x>61</x>
+      <y>125</y>
+      <width>120</width>
+      <background_color>
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>$(PREFIX):EMR-SM-$(INDEX).DRBV</pv_name>
+      <x>61</x>
+      <y>98</y>
+      <width>120</width>
+      <background_color>
+        <color name="BLACK-TEXT" red="255" green="255" blue="255">
+        </color>
+      </background_color>
+      <precision>3</precision>
+      <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
 </display>
