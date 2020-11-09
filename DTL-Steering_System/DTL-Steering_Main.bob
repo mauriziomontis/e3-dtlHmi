@@ -57,9 +57,9 @@
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>680</y>
+    <y>695</y>
     <width>150</width>
-    <height>400</height>
+    <height>376</height>
     <widget type="action_button" version="3.0.0">
       <name>Tank 1 Details</name>
       <actions>
@@ -1778,7 +1778,7 @@
     <x>10</x>
     <y>420</y>
     <width>150</width>
-    <height>145</height>
+    <height>135</height>
     <widget type="bool_button" version="2.0.0">
       <name>Temperarture Maintenance</name>
       <pv_name>DTL:PwrC:MaintenanceRst</pv_name>
@@ -1817,9 +1817,9 @@
   <widget type="group" version="2.0.0">
     <name>Auto Control</name>
     <x>10</x>
-    <y>570</y>
+    <y>555</y>
     <width>150</width>
-    <height>95</height>
+    <height>140</height>
     <widget type="bool_button" version="2.0.0">
       <name>Temperarture Fault_1</name>
       <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
@@ -1829,8 +1829,18 @@
       <off_label>MANUAL</off_label>
       <on_label>AUTO</on_label>
       <labels_from_pv>true</labels_from_pv>
+      <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Temperarture Fault_2</name>
+      <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
+      <x>5</x>
+      <y>62</y>
+      <height>40</height>
+      <off_label>Execute</off_label>
+      <on_label>Execute</on_label>
+      <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
-      <show_confirm_dialog>2</show_confirm_dialog>
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
     </widget>
   </widget>
