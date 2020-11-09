@@ -1833,7 +1833,7 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Temperarture Fault_2</name>
-      <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
+      <pv_name>DTL:PwrC-PSC:ExecuteCmd</pv_name>
       <x>5</x>
       <y>62</y>
       <height>40</height>
