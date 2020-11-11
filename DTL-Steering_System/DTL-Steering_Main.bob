@@ -57,9 +57,9 @@
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>695</y>
+    <y>729</y>
     <width>150</width>
-    <height>376</height>
+    <height>342</height>
     <widget type="action_button" version="3.0.0">
       <name>Tank 1 Details</name>
       <actions>
@@ -1423,12 +1423,21 @@
   </widget>
   <widget type="led" version="2.0.0">
     <name>Man/Auto Control</name>
-    <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
-    <x>470</x>
-    <y>70</y>
+    <pv_name>DTL:PwrC-PSC:AutoCmd-RB</pv_name>
+    <x>350</x>
+    <y>65</y>
     <width>100</width>
+    <height>30</height>
     <off_label>MANUAL</off_label>
+    <off_color>
+      <color name="On" red="0" green="255" blue="0">
+      </color>
+    </off_color>
     <on_label>AUTO</on_label>
+    <on_color>
+      <color name="Attention" red="255" green="160" blue="0">
+      </color>
+    </on_color>
     <square>true</square>
   </widget>
   <widget type="label" version="2.0.0">
@@ -1806,26 +1815,17 @@
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
     </widget>
   </widget>
-  <widget type="bool_button" version="2.0.0">
-    <name>Boolean Button</name>
-    <x>360</x>
-    <y>70</y>
-    <height>20</height>
-    <off_label>MANUAL</off_label>
-    <on_label>AUTO</on_label>
-  </widget>
   <widget type="group" version="2.0.0">
     <name>Auto Control</name>
     <x>10</x>
     <y>555</y>
     <width>150</width>
-    <height>140</height>
+    <height>174</height>
     <widget type="bool_button" version="2.0.0">
       <name>Temperarture Fault_1</name>
       <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
       <x>5</x>
       <y>12</y>
-      <height>40</height>
       <off_label>MANUAL</off_label>
       <on_label>AUTO</on_label>
       <labels_from_pv>true</labels_from_pv>
@@ -1833,15 +1833,41 @@
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Temperarture Fault_2</name>
-      <pv_name>DTL:PwrC-PSC:ExecuteCmd</pv_name>
+      <pv_name>DTL:PwrC-PSC:OpRun</pv_name>
       <x>5</x>
-      <y>62</y>
-      <height>40</height>
-      <off_label>Execute</off_label>
-      <on_label>Execute</on_label>
+      <y>65</y>
+      <off_label>Start Op</off_label>
+      <on_label>Start Op</on_label>
       <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
-      <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
+      <show_confirm_dialog>2</show_confirm_dialog>
+      <confirm_message>Are your sure you want to START Operations?</confirm_message>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Temperarture Fault_3</name>
+      <pv_name>DTL:PwrC-PSC:OpStop</pv_name>
+      <x>5</x>
+      <y>100</y>
+      <off_label>Stop Op</off_label>
+      <on_label>Stop Op</on_label>
+      <labels_from_pv>true</labels_from_pv>
+      <mode>1</mode>
+      <show_confirm_dialog>2</show_confirm_dialog>
+      <confirm_message>Are your sure you want to STOP Operations?</confirm_message>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_10</name>
+      <x>5</x>
+      <y>55</y>
+      <height>1</height>
+      <line_color>
+        <color red="0" green="51" blue="51">
+        </color>
+      </line_color>
+      <background_color>
+        <color red="0" green="51" blue="51">
+        </color>
+      </background_color>
     </widget>
   </widget>
   <widget type="led" version="2.0.0">
