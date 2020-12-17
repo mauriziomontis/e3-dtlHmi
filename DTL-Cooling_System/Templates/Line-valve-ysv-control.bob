@@ -67,14 +67,14 @@
     </widget>
     <widget type="led" version="2.0.0">
       <name>enable_7</name>
-      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OutCloseCmd-RB</pv_name>
+      <pv_name>${PREFIX}:WtrC-YSV-${INDEX}:OkStat</pv_name>
       <x>5</x>
       <y>5</y>
       <width>60</width>
       <height>18</height>
       <off_label>Status</off_label>
       <off_color>
-        <color name="MAJOR" red="252" green="13" blue="27">
+        <color name="MAJOR" red="255" green="0" blue="0">
         </color>
       </off_color>
       <on_label>Status</on_label>
@@ -281,7 +281,7 @@
           </exp>
           <exp bool_exp="pv0 == 0 &amp;&amp; pv1 == 0">
             <value>
-              <color name="Attention" red="252" green="242" blue="17">
+              <color name="Attention" red="255" green="160" blue="0">
               </color>
             </value>
           </exp>
