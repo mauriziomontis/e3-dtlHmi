@@ -570,7 +570,7 @@ print 'Hello'
       <name>Boolean Button_1</name>
       <pv_name>DTL:WtrC:OpRun</pv_name>
       <x>5</x>
-      <y>132</y>
+      <y>155</y>
       <width>105</width>
       <height>20</height>
       <off_label>Start Operation</off_label>
@@ -582,13 +582,36 @@ print 'Hello'
       <name>Boolean Button_2</name>
       <pv_name>DTL:WtrC:OpStop</pv_name>
       <x>5</x>
-      <y>159</y>
+      <y>179</y>
       <width>105</width>
       <height>20</height>
       <off_label>Stop Operation</off_label>
       <on_label>Stop Operation</on_label>
       <show_led>false</show_led>
       <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_3</name>
+      <pv_name>DTL:WtrC:OpRun</pv_name>
+      <x>65</x>
+      <y>122</y>
+      <width>50</width>
+      <height>20</height>
+      <off_label>Done</off_label>
+      <on_label>Done</on_label>
+      <show_led>false</show_led>
+      <mode>1</mode>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <text>Confirm Op?</text>
+      <x>2</x>
+      <y>122</y>
+      <width>63</width>
+      <font>
+        <font family="Liberation Sans" style="REGULAR" size="10.0">
+        </font>
+      </font>
+      <vertical_alignment>1</vertical_alignment>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
