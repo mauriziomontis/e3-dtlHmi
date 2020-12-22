@@ -15,12 +15,10 @@ print 'Hello'
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1920</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -29,42 +27,41 @@ print 'Hello'
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Water Cooling System</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y use_class="true">20</y>
+    <y>20</y>
     <width>200</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment use_class="true">2</horizontal_alignment>
-    <vertical_alignment use_class="true">2</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
@@ -126,10 +123,10 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display</name>
-    <file>Templates/Main-line-mainpage.bob</file>
     <macros>
       <PREFIX>CWM-CWS04</PREFIX>
     </macros>
+    <file>Templates/Main-line-mainpage.bob</file>
     <x>990</x>
     <y>80</y>
     <width>900</width>
@@ -137,7 +134,6 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_6</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
       <DTL_PREFIX>DTL-010</DTL_PREFIX>
       <INDEX>101</INDEX>
@@ -147,6 +143,7 @@ print 'Hello'
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>1</TANK>
     </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
     <x>20</x>
     <y>565</y>
     <width>370</width>
@@ -154,7 +151,6 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_9</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
       <DTL_PREFIX>020</DTL_PREFIX>
       <INDEX>201</INDEX>
@@ -164,6 +160,7 @@ print 'Hello'
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>2</TANK>
     </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
     <x>395</x>
     <y>565</y>
     <width>370</width>
@@ -171,7 +168,6 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_10</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
       <DTL_PREFIX>030</DTL_PREFIX>
       <INDEX>301</INDEX>
@@ -181,6 +177,7 @@ print 'Hello'
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>3</TANK>
     </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
     <x>770</x>
     <y>565</y>
     <width>370</width>
@@ -188,7 +185,6 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_11</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
       <DTL_PREFIX>040</DTL_PREFIX>
       <INDEX>401</INDEX>
@@ -198,6 +194,7 @@ print 'Hello'
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>4</TANK>
     </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
     <x>1145</x>
     <y>565</y>
     <width>370</width>
@@ -205,7 +202,6 @@ print 'Hello'
   </widget>
   <widget type="embedded" version="2.0.0">
     <name>Embedded Display_12</name>
-    <file>Templates/Tank-line-mainpage.bob</file>
     <macros>
       <DTL_PREFIX>050</DTL_PREFIX>
       <INDEX>501</INDEX>
@@ -215,6 +211,7 @@ print 'Hello'
       <PREFIX>CWM-CWS04</PREFIX>
       <TANK>5</TANK>
     </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
     <x>1520</x>
     <y>565</y>
     <width>370</width>
@@ -309,7 +306,7 @@ print 'Hello'
           <value>-8926</value>
           <label>ACK</label>
           <color>
-            <color name="Off" red="90" green="110" blue="90">
+            <color name="Off" red="60" green="100" blue="60">
             </color>
           </color>
         </state>
@@ -317,7 +314,7 @@ print 'Hello'
           <value>-8909</value>
           <label>DONE</label>
           <color>
-            <color name="On" red="70" green="255" blue="70">
+            <color name="On" red="0" green="255" blue="0">
             </color>
           </color>
         </state>
@@ -325,7 +322,7 @@ print 'Hello'
           <value>7117</value>
           <label>START SYNC</label>
           <color>
-            <color name="Attention" red="252" green="242" blue="17">
+            <color name="Attention" red="255" green="160" blue="0">
             </color>
           </color>
         </state>
@@ -385,7 +382,7 @@ print 'Hello'
           <value>-222</value>
           <label>DATA ALIGN</label>
           <color>
-            <color name="Attention" red="252" green="242" blue="17">
+            <color name="Attention" red="255" green="160" blue="0">
             </color>
           </color>
         </state>
@@ -459,7 +456,6 @@ print 'Hello'
     <widget type="label" version="2.0.0">
       <name>Status_1</name>
       <text>Status</text>
-      <y>5</y>
       <width>125</width>
       <height>40</height>
       <font>
@@ -506,13 +502,93 @@ print 'Hello'
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
-      <pv_name>TBD</pv_name>
+      <pv_name>DTL:WtrC:StateMachineD</pv_name>
       <x>10</x>
-      <y>45</y>
+      <y>30</y>
       <width>90</width>
-      <height>50</height>
+      <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <text>Status Label</text>
+      <x>10</x>
+      <y>55</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <rules>
+        <rule name="StateMachineCode" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INIT</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OPERATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL:WtrC:StateMachine</pv_name>
+        </rule>
+      </rules>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button</name>
+      <pv_name>DTL:WtrC:AutoCmd</pv_name>
+      <x>2</x>
+      <y>95</y>
+      <width>60</width>
+      <height>15</height>
+      <off_label>MAN</off_label>
+      <on_label>AUTO</on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>DTL:WtrC:AutoCmd-RB</pv_name>
+      <x>65</x>
+      <y>95</y>
+      <width>50</width>
+      <height>15</height>
+      <on_label>AUTO</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_1</name>
+      <pv_name>DTL:WtrC:OpRun</pv_name>
+      <x>5</x>
+      <y>132</y>
+      <width>105</width>
+      <height>20</height>
+      <off_label>Start Operation</off_label>
+      <on_label>Start Operation</on_label>
+      <show_led>false</show_led>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_2</name>
+      <pv_name>DTL:WtrC:OpStop</pv_name>
+      <x>5</x>
+      <y>159</y>
+      <width>105</width>
+      <height>20</height>
+      <off_label>Stop Operation</off_label>
+      <on_label>Stop Operation</on_label>
+      <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -550,22 +626,22 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_1</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_2</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>101</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <x>90</x>
       <y>5</y>
       <width>80</width>
@@ -573,11 +649,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_3</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>201</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <x>180</x>
       <y>5</y>
       <width>80</width>
@@ -585,11 +661,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_4</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>301</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <x>270</x>
       <y>5</y>
       <width>80</width>
@@ -597,11 +673,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_5</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>401</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <x>360</x>
       <y>5</y>
       <width>80</width>
@@ -609,11 +685,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_7</name>
-      <file>Templates/Line-pump-control.bob</file>
       <macros>
         <INDEX>501</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-pump-control.bob</file>
       <x>450</x>
       <y>5</y>
       <width>80</width>
@@ -655,22 +731,22 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_8</name>
-      <file>Templates/Line-valve-ysv-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-ysv-control.bob</file>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_13</name>
-      <file>Templates/Line-valve-ysv-control.bob</file>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-ysv-control.bob</file>
       <x>97</x>
       <y>5</y>
       <width>80</width>
@@ -678,11 +754,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_14</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>194</x>
       <y>5</y>
       <width>80</width>
@@ -690,11 +766,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_15</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>101</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>291</x>
       <y>5</y>
       <width>80</width>
@@ -702,11 +778,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_16</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>201</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>388</x>
       <y>5</y>
       <width>80</width>
@@ -714,11 +790,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_17</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>301</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>485</x>
       <y>5</y>
       <width>80</width>
@@ -726,11 +802,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_18</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>401</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>582</x>
       <y>5</y>
       <width>80</width>
@@ -738,11 +814,11 @@ print 'Hello'
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_20</name>
-      <file>Templates/Line-valve-tcv-control.bob</file>
       <macros>
         <INDEX>501</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
+      <file>Templates/Line-valve-tcv-control.bob</file>
       <x>680</x>
       <y>5</y>
       <width>80</width>
