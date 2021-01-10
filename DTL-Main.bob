@@ -15,12 +15,10 @@ print 'Hello'
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1920</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -29,49 +27,48 @@ print 'Hello'
     <name>TITLE</name>
     <class>TITLE</class>
     <text>DTL Main Control System</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y use_class="true">20</y>
+    <y>20</y>
     <width>200</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment use_class="true">2</horizontal_alignment>
-    <vertical_alignment use_class="true">2</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
     <x>10</x>
-    <y>60</y>
+    <y>321</y>
     <width>200</width>
-    <height>900</height>
+    <height>589</height>
     <widget type="action_button" version="3.0.0">
       <name>Vacuum System</name>
       <actions>
@@ -82,7 +79,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>393</y>
+      <y>290</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -97,7 +94,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>307</y>
+      <y>220</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -112,7 +109,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>49</y>
+      <y>10</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -127,7 +124,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>135</y>
+      <y>80</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -142,7 +139,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>221</y>
+      <y>150</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -157,7 +154,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>479</y>
+      <y>360</y>
       <width>150</width>
       <height>60</height>
       <tooltip>$(actions)</tooltip>
@@ -166,7 +163,7 @@ print 'Hello'
       <name>Digital Clock</name>
       <lcd_font>3</lcd_font>
       <x>5</x>
-      <y>779</y>
+      <y>460</y>
       <width>150</width>
       <height>80</height>
       <date_visible>true</date_visible>
@@ -176,2421 +173,1029 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Temperature</name>
-    <x>405</x>
-    <y>60</y>
-    <width>770</width>
-    <height>750</height>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_1</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>002</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_2</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>004</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_3</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>003</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_4</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>005</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_5</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>006</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Temperature tank 1</name>
-      <text>TANK 1</text>
-      <x>5</x>
-      <y>5</y>
-      <width>72</width>
-      <height>245</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_12</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>007</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_13</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>008</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_14</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>009</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_15</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>010</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>5</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_16</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>011</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_17</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>012</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_18</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>014</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_19</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>013</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_20</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>015</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_21</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>016</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_22</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>017</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_23</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>018</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_24</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>019</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_25</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>020</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>40</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_26</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>021</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_27</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>022</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_28</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>024</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_29</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>023</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_30</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>025</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_31</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>026</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_32</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>027</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_33</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>028</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_34</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>029</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_35</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>030</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>75</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_36</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>031</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_37</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>032</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_38</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>034</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_39</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>033</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_40</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>035</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_41</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>036</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_42</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>037</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_43</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>038</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_44</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>039</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_45</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>040</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>110</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_46</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>041</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_47</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>042</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_48</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>044</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_49</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>043</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_50</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>045</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_51</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>046</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_52</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>047</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_53</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>048</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_54</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>049</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_55</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>050</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>145</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_56</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>051</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_57</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>052</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_58</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>054</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_59</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>053</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_60</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>055</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_61</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>056</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_62</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>057</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_63</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>058</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_64</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>059</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_65</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>060</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>180</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_66</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>215</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_67</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>215</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_68</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>031</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>355</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_69</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>032</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>355</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_70</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>355</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_71</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>033</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>355</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_72</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>200</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>355</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_78</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_79</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>002</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_80</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>004</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_81</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>003</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_82</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>005</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_83</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>006</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_84</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>007</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_85</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>008</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_86</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>009</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_87</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>010</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>250</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_88</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>011</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_89</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>012</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_90</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>014</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_91</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>013</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_92</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>015</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_93</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>016</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_94</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>017</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_95</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>018</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_96</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>019</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_97</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>020</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>285</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_98</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>021</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_99</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>022</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_100</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>024</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_101</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>023</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_102</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>025</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_103</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>026</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_104</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>027</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_105</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>028</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_106</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>029</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_107</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>030</INDEX>
-        <PREFIX>DTL-020</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>320</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Temperature tank 2</name>
-      <text>TANK 2</text>
-      <x>5</x>
-      <y>250</y>
-      <width>72</width>
-      <height>140</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_196</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>002</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_197</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>004</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_198</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>003</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_199</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>005</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_200</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>006</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_201</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>007</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_202</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>008</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_203</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>009</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_204</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>010</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_205</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>012</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_206</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>014</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_207</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>013</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_208</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>015</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_209</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>016</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_210</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>017</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_211</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>018</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_212</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>019</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_213</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>020</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_214</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>022</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_215</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>024</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_216</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>023</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_217</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>025</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_218</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>026</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_219</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>027</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_220</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>028</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_221</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_222</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>200</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_223</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>DTL-030</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>390</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Temperature tank 3</name>
-      <text>TANK 3</text>
-      <x>5</x>
-      <y>390</y>
-      <width>72</width>
-      <height>105</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_224</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>011</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>425</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_225</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>021</INDEX>
-        <PREFIX>DTL-010</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>460</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_226</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>002</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_227</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>004</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_228</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>003</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_229</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>005</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_230</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>006</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_231</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>007</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_232</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>008</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_233</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>009</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_234</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>010</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_235</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>012</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_236</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>014</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_237</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>013</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_238</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>015</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_239</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>016</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_240</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>017</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_241</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>018</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_242</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>019</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_243</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>020</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_244</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>022</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_245</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>024</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_246</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>023</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_247</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>025</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_248</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_249</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>200</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_253</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>495</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Temperature tank 4</name>
-      <text>TANK 4</text>
-      <x>5</x>
-      <y>495</y>
-      <width>72</width>
-      <height>105</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_254</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>011</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>530</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_255</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>021</INDEX>
-        <PREFIX>DTL-040</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>565</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_256</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>002</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_257</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>004</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_258</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>003</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_259</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>005</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_260</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>006</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_261</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>007</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_262</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>008</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_263</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>009</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_264</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>010</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_265</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>012</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_266</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>014</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_267</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>013</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_268</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>015</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>335</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_269</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>016</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>400</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_270</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>017</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>465</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_271</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>018</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>530</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_272</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>019</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>595</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_273</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>020</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>660</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_274</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>022</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>145</x>
-      <y>670</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_275</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>200</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>275</x>
-      <y>670</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_276</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>100</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>210</x>
-      <y>670</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_283</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>001</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>600</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Temperature tank 5</name>
-      <text>TANK 5</text>
-      <x>5</x>
-      <y>600</y>
-      <width>72</width>
-      <height>105</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_284</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>011</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>635</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-    <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_285</name>
-      <file>DTL-Temperature_System/Templates/Temperature-main-recap.bob</file>
-      <macros>
-        <INDEX>021</INDEX>
-        <PREFIX>DTL-050</PREFIX>
-        <SENSOR>TT-${INDEX}</SENSOR>
-      </macros>
-      <x>80</x>
-      <y>670</y>
-      <width>70</width>
-      <height>40</height>
-    </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Systems Status</name>
+    <name>Orchestration</name>
     <x>210</x>
     <y>60</y>
-    <width>200</width>
-    <height>450</height>
-    <widget type="led" version="2.0.0">
-      <name>State Machines temperature</name>
+    <width>554</width>
+    <height>850</height>
+    <widget type="label" version="2.0.0">
+      <name>Main System</name>
+      <text>Main System:</text>
+      <x>5</x>
+      <y>10</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Arc Detection_1</name>
+      <text>Actual Status</text>
       <x>5</x>
       <y>40</y>
       <width>150</width>
       <height>40</height>
-      <off_label>TEMPERATURES</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>TEMPERATURES</on_label>
-      <square>true</square>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
     </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_22</name>
+      <pv_name>DTL::StateMachine</pv_name>
+      <x>160</x>
+      <y>40</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>orchestration</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>40</y>
+      <width>287</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 101">
+            <value>STAND-BY</value>
+          </exp>
+          <exp bool_exp="pv0 == 202">
+            <value>RF CONDITIONING</value>
+          </exp>
+          <exp bool_exp="pv0 == 303">
+            <value>RF START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 404">
+            <value>READY FOR OPERATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 505">
+            <value>NO ACCELERATED BEAM</value>
+          </exp>
+          <exp bool_exp="pv0 == 606">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 101">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 202">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 303">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 404">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 505">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 606">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Actual Status</name>
+      <text>Map:</text>
+      <x>5</x>
+      <y>100</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_3</name>
+      <text>INITIALIZATION</text>
+      <x>188</x>
+      <y>139</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_9</name>
+      <text>MAINTENANCE</text>
+      <x>372</x>
+      <y>139</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 606">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_4</name>
+      <text>STAND-BY</text>
+      <x>188</x>
+      <y>245</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 101">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_6</name>
+      <text>RF START-UP</text>
+      <x>372</x>
+      <y>352</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 303">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_7</name>
+      <text>READY FOR OPERATION</text>
+      <x>372</x>
+      <y>459</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 404">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_5</name>
+      <text>RF CONDITIONING</text>
+      <x>188</x>
+      <y>352</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 202">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_8</name>
+      <text>NO BEAM ACCELERATION</text>
+      <x>5</x>
+      <y>352</y>
+      <width>140</width>
+      <height>60</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <background_color>
+        <color name="Button_Background" red="210" green="210" blue="210">
+        </color>
+      </background_color>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="ActiveStage" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 505">
+            <value>
+              <color name="OK" red="0" green="255" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL::StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>2</border_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_2</name>
+      <x>220</x>
+      <y>205</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_3</name>
+      <x>292</x>
+      <y>218</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_4</name>
+      <x>292</x>
+      <y>328</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_5</name>
+      <x>220</x>
+      <y>310</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_6</name>
+      <x>335</x>
+      <y>159</y>
+      <width>20</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_7</name>
+      <x>345</x>
+      <y>180</y>
+      <width>20</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_3</name>
+      <x>335</x>
+      <y>178</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="5.0">
+        </point>
+        <point x="10.0" y="10.0">
+        </point>
+        <point x="10.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_4</name>
+      <x>215</x>
+      <y>226</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="7.5" y="12.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_8</name>
+      <x>287</x>
+      <y>205</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="12.0">
+        </point>
+        <point x="15.0" y="12.0">
+        </point>
+        <point x="7.5" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_1</name>
+      <x>355</x>
+      <y>156</y>
+      <width>16</width>
+      <height>10</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="10.0">
+        </point>
+        <point x="10.0" y="5.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_5</name>
+      <x>215</x>
+      <y>331</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="7.5" y="12.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_9</name>
+      <x>287</x>
+      <y>315</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="12.0">
+        </point>
+        <point x="15.0" y="12.0">
+        </point>
+        <point x="7.5" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_8</name>
+      <x>479</x>
+      <y>435</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_9</name>
+      <x>407</x>
+      <y>417</y>
+      <width>5</width>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_10</name>
+      <x>402</x>
+      <y>438</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="7.5" y="12.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_11</name>
+      <x>474</x>
+      <y>422</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="12.0">
+        </point>
+        <point x="15.0" y="12.0">
+        </point>
+        <point x="7.5" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_10</name>
+      <x>50</x>
+      <y>260</y>
+      <width>130</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_11</name>
+      <x>50</x>
+      <y>260</y>
+      <width>5</width>
+      <height>75</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_12</name>
+      <x>45</x>
+      <y>335</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="7.5" y="12.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_12</name>
+      <x>100</x>
+      <y>280</y>
+      <width>80</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_13</name>
+      <x>100</x>
+      <y>285</y>
+      <width>5</width>
+      <height>60</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_13</name>
+      <x>175</x>
+      <y>278</y>
+      <width>10</width>
+      <height>41</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="0.0" y="10.0">
+        </point>
+        <point x="10.0" y="5.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_15</name>
+      <x>335</x>
+      <y>248</y>
+      <width>90</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_16</name>
+      <x>425</x>
+      <y>210</y>
+      <width>5</width>
+      <height>43</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_15</name>
+      <x>420</x>
+      <y>202</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="12.0">
+        </point>
+        <point x="15.0" y="12.0">
+        </point>
+        <point x="7.5" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_18</name>
+      <x>335</x>
+      <y>269</y>
+      <width>130</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_19</name>
+      <x>461</x>
+      <y>269</y>
+      <width>5</width>
+      <height>75</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_16</name>
+      <x>456</x>
+      <y>338</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="0.0">
+        </point>
+        <point x="15.0" y="0.0">
+        </point>
+        <point x="7.5" y="12.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_20</name>
+      <x>344</x>
+      <y>285</y>
+      <width>80</width>
+      <height>5</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_21</name>
+      <x>419</x>
+      <y>285</y>
+      <width>5</width>
+      <height>60</height>
+      <line_width>1</line_width>
+    </widget>
+    <widget type="polygon" version="2.0.0">
+      <name>Polygon_19</name>
+      <x>334</x>
+      <y>283</y>
+      <width>15</width>
+      <height>12</height>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
+      <points>
+        <point x="0.0" y="5.0">
+        </point>
+        <point x="10.0" y="10.0">
+        </point>
+        <point x="10.0" y="0.0">
+        </point>
+      </points>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Command</name>
+      <text>Command:</text>
+      <x>5</x>
+      <y>501</y>
+      <width>150</width>
+      <height>30</height>
+      <font>
+        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        </font>
+      </font>
+    </widget>
+    <widget type="choice" version="2.0.0">
+      <name>Choice Button</name>
+      <pv_name>DTL::Operation</pv_name>
+      <x>5</x>
+      <y>531</y>
+      <width>160</width>
+      <height>220</height>
+      <horizontal>false</horizontal>
+      <items>
+        <item>INITIALIZATION</item>
+        <item>STAND-BY</item>
+        <item>RF CONDITIONING</item>
+        <item>RF START-UP</item>
+        <item>READY FOR OPERATION</item>
+        <item>NO BEAM ACCELERATION</item>
+        <item>MAINTENANCE</item>
+      </items>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>PLC Communication</name>
+    <x>10</x>
+    <y>60</y>
+    <width>200</width>
+    <height>250</height>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Status</text>
+      <y>5</y>
+      <width>125</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Countdown</name>
+      <text>Countdown:</text>
+      <y>178</y>
+      <width>80</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="REGULAR" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_11</name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSSyncCountDown</pv_name>
+      <x>100</x>
+      <y>178</y>
+      <width>65</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Syncronization</name>
+      <text>Data Sync</text>
+      <y>138</y>
+      <width>125</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)</name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSCommMsg</pv_name>
+      <x>100</x>
+      <y>45</y>
+      <width>65</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>-8926</value>
+          <label>ACK</label>
+          <color>
+            <color name="Off" red="60" green="100" blue="60">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-8909</value>
+          <label>DONE</label>
+          <color>
+            <color name="On" red="0" green="255" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7117</value>
+          <label>START SYNC</label>
+          <color>
+            <color name="Attention" red="255" green="160" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7227</value>
+          <label>COMM RESET</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>7337</value>
+          <label>COMM RESET</label>
+          <color>
+            <color name="ATTENTION" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>0</value>
+          <label>INIT</label>
+          <color>
+            <color name="OFF" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+    </widget>
+    <widget type="multi_state_led" version="2.0.0">
+      <name>LED (Multi State)_1</name>
+      <pv_name>CWM-CWS04:Ctrl-Intf-001:PLCCommMsg</pv_name>
+      <x>100</x>
+      <y>109</y>
+      <width>65</width>
+      <height>30</height>
+      <square>true</square>
+      <states>
+        <state>
+          <value>-256</value>
+          <label>LOCAL</label>
+          <color>
+            <color name="WARNING" red="252" green="242" blue="17">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-239</value>
+          <label>CHECK CONN</label>
+          <color>
+            <color name="OFF" red="90" green="110" blue="90">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-222</value>
+          <label>DATA ALIGN</label>
+          <color>
+            <color name="Attention" red="255" green="160" blue="0">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-205</value>
+          <label>ALIGN DONE</label>
+          <color>
+            <color name="ON" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+        <state>
+          <value>-188</value>
+          <label>REMOTE</label>
+          <color>
+            <color name="ON" red="70" green="255" blue="70">
+            </color>
+          </color>
+        </state>
+      </states>
+      <fallback_label>ERROR</fallback_label>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture</name>
+      <file>Images/epics-logo.png</file>
+      <y>45</y>
+      <width>88</width>
+      <height>45</height>
+    </widget>
+    <widget type="picture" version="2.0.0">
+      <name>Picture_1</name>
+      <file>Images//siemens-logo-200.png</file>
+      <y>109</y>
+      <width>90</width>
+      <height>29</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Remote control popup</name>
+      <text>REMOTE CONTROL</text>
+      <y>159</y>
+      <width>205</width>
+      <height>30</height>
+      <visible>false</visible>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="20.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GREEN" red="61" green="216" blue="61">
+        </color>
+      </foreground_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="Visible" prop_id="visible" out_exp="false">
+          <exp bool_exp="pv0 == -188">
+            <value>true</value>
+          </exp>
+          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>DTL System</name>
+    <x>764</x>
+    <y>60</y>
+    <width>470</width>
+    <height>739</height>
     <widget type="label" version="2.0.0">
       <name>State Machines</name>
       <text>State Machines:</text>
@@ -2603,120 +1208,1315 @@ print 'Hello'
         </font>
       </font>
     </widget>
-    <widget type="led" version="2.0.0">
-      <name>State Machines steering</name>
-      <x>5</x>
-      <y>85</y>
-      <width>150</width>
-      <height>40</height>
-      <off_label>STEERING</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>STEERING</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>State Machines tuners</name>
-      <x>5</x>
-      <y>130</y>
-      <width>150</width>
-      <height>40</height>
-      <off_label>TUNERS</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>TUNERS</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>State Machines cooling</name>
-      <x>5</x>
-      <y>175</y>
-      <width>150</width>
-      <height>40</height>
-      <off_label>COOLING</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>COOLING</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>State Machines vacuum</name>
-      <x>5</x>
-      <y>220</y>
-      <width>150</width>
-      <height>40</height>
-      <off_label>VACUUM</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>VACUUM</on_label>
-      <square>true</square>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>State Machines arcs</name>
-      <x>5</x>
-      <y>265</y>
-      <width>150</width>
-      <height>40</height>
-      <off_label>ARCS</off_label>
-      <off_color>
-        <color name="ERROR" red="252" green="13" blue="27">
-        </color>
-      </off_color>
-      <on_label>ARCS</on_label>
-      <square>true</square>
-    </widget>
     <widget type="label" version="2.0.0">
-      <name>Actual Status</name>
-      <text>Actual Status:</text>
+      <name>Temperatures</name>
+      <text>TEMPERATURES:</text>
       <x>5</x>
-      <y>335</y>
+      <y>40</y>
       <width>150</width>
-      <height>30</height>
+      <height>200</height>
       <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
-        </font>
-      </font>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update</name>
-      <x>5</x>
-      <y>365</y>
-      <width>150</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <border_width>1</border_width>
     </widget>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Communications</name>
-    <x>210</x>
-    <y>600</y>
-    <width>200</width>
-    <height>360</height>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_13</name>
+      <pv_name>DTL-010:EMR-TT:StateMachine</pv_name>
+      <x>160</x>
+      <y>40</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
     <widget type="label" version="2.0.0">
-      <name>System Status_6</name>
-      <text>TBD:</text>
-      <x>5</x>
-      <y>10</y>
-      <width>150</width>
-      <height>30</height>
+      <name>temperature tank1 state machine</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>40</y>
+      <width>200</width>
+      <height>40</height>
       <font>
-        <font family="Digital Readout Thick Upright Regular" style="BOLD" size="16.0">
+        <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-010:EMR-TT:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-010:EMR-TT:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank2 state machine_1</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>80</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-020:EMR-TT:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-020:EMR-TT:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_14</name>
+      <pv_name>DTL-020:EMR-TT:StateMachine</pv_name>
+      <x>160</x>
+      <y>80</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_15</name>
+      <pv_name>DTL-030:EMR-TT:StateMachine</pv_name>
+      <x>160</x>
+      <y>120</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank3 state machine_2</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>120</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-030:EMR-TT:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-030:EMR-TT:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank4 state machine_3</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>160</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-040:EMR-TT:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-040:EMR-TT:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_16</name>
+      <pv_name>DTL-040:EMR-TT:StateMachine</pv_name>
+      <x>160</x>
+      <y>160</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_17</name>
+      <pv_name>DTL-050:EMR-TT:StateMachine</pv_name>
+      <x>160</x>
+      <y>200</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank5 state machine_4</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>200</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-050:EMR-TT:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-050:EMR-TT:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Cooling</name>
+      <text>COOLING:</text>
+      <x>5</x>
+      <y>250</y>
+      <width>150</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_18</name>
+      <pv_name>DTL:WtrC:StateMachine</pv_name>
+      <x>160</x>
+      <y>250</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank1 state machine_4</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>250</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-010:EMR-TT:DTL:WtrC:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-010:EMR-TT:DTL:WtrC:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Steerer</name>
+      <text>STEERERS:</text>
+      <x>5</x>
+      <y>365</y>
+      <width>150</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_19</name>
+      <pv_name>DTL:PwrC:StateMachine</pv_name>
+      <x>160</x>
+      <y>365</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank1 state machine_5</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>365</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL:PwrC:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL:PwrC:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Tuners</name>
+      <text>TUNERS:</text>
+      <x>5</x>
+      <y>484</y>
+      <width>150</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_20</name>
+      <pv_name>DTL:MC-MCU:StateMachine</pv_name>
+      <x>160</x>
+      <y>484</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank1 state machine_6</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>484</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL:MC-MCU:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL:MC-MCU:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Arc Detection</name>
+      <text>ARC DETECTION:</text>
+      <x>5</x>
+      <y>599</y>
+      <width>150</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Text Update_21</name>
+      <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+      <x>160</x>
+      <y>599</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>temperature tank1 state machine_7</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>599</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="Background" red="255" green="255" blue="255">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="255" green="0" blue="0">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="255" green="160" blue="0">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control</name>
+      <pv_name>DTL:WtrC:AutoCmd</pv_name>
+      <x>105</x>
+      <y>300</y>
+      <height>20</height>
+      <off_label>MAN</off_label>
+      <on_label>AUTO</on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED</name>
+      <pv_name>DTL:WtrC:AutoCmd-RB</pv_name>
+      <x>5</x>
+      <y>300</y>
+      <width>100</width>
+      <off_label>Auto Control</off_label>
+      <off_color>
+        <color name="OK" red="0" green="255" blue="0">
+        </color>
+      </off_color>
+      <on_label>Auto Control</on_label>
+      <on_color>
+        <color name="Attention" red="255" green="160" blue="0">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_1</name>
+      <pv_name>DTL:WtrC:TestDone</pv_name>
+      <x>5</x>
+      <y>325</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Test Done</off_label>
+      <on_label>Test Done</on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_2</name>
+      <pv_name>DTL:PwrC-PSC:AutoCmd-RB</pv_name>
+      <x>5</x>
+      <y>415</y>
+      <width>100</width>
+      <height>45</height>
+      <off_label>Auto Control</off_label>
+      <off_color>
+        <color name="OK" red="0" green="255" blue="0">
+        </color>
+      </off_color>
+      <on_label>Auto Control</on_label>
+      <on_color>
+        <color name="Attention" red="255" green="160" blue="0">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_2</name>
+      <pv_name>DTL:PwrC-PSC:AutoCmd</pv_name>
+      <x>105</x>
+      <y>415</y>
+      <height>45</height>
+      <off_label>MAN</off_label>
+      <on_label>AUTO</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_3</name>
+      <pv_name>DTL:WtrC:OpRun</pv_name>
+      <x>226</x>
+      <y>300</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Start Operation</off_label>
+      <on_label>Start Operation</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_4</name>
+      <pv_name>DTL:WtrC:OpStop</pv_name>
+      <x>226</x>
+      <y>325</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Stop Operation</off_label>
+      <on_label>Stop Operation</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_5</name>
+      <pv_name>DTL:PwrC-PSC:OpRun</pv_name>
+      <x>225</x>
+      <y>415</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Start Operation</off_label>
+      <on_label>Start Operation</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_6</name>
+      <pv_name>DTL:PwrC-PSC:OpStop</pv_name>
+      <x>225</x>
+      <y>440</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Stop Operation</off_label>
+      <on_label>Stop Operation</on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_3</name>
+      <pv_name>DTL:MC-MCU:AutoCmd-RB</pv_name>
+      <x>5</x>
+      <y>533</y>
+      <width>100</width>
+      <height>45</height>
+      <off_label>Auto Control</off_label>
+      <off_color>
+        <color name="OK" red="0" green="255" blue="0">
+        </color>
+      </off_color>
+      <on_label>Auto Control</on_label>
+      <on_color>
+        <color name="Attention" red="255" green="160" blue="0">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_7</name>
+      <pv_name>DTL:MC-MCU:AutoCmd</pv_name>
+      <x>105</x>
+      <y>533</y>
+      <height>45</height>
+      <off_label>MAN</off_label>
+      <on_label>AUTO</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_8</name>
+      <pv_name>DTL:MC-MCU:OpRun</pv_name>
+      <x>225</x>
+      <y>533</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Start Operation</off_label>
+      <on_label>Start Operation</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_9</name>
+      <pv_name>DTL:MC-MCU:OpStop</pv_name>
+      <x>225</x>
+      <y>558</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Stop Operation</off_label>
+      <on_label>Stop Operation</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_10</name>
+      <pv_name>DTL:RFS-AD:AutoCmd</pv_name>
+      <x>105</x>
+      <y>646</y>
+      <height>20</height>
+      <off_label>MAN</off_label>
+      <on_label>AUTO</on_label>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>LED_4</name>
+      <pv_name>DTL:RFS-AD:AutoCmd-RB</pv_name>
+      <x>5</x>
+      <y>646</y>
+      <width>100</width>
+      <off_label>Auto Control</off_label>
+      <off_color>
+        <color name="OK" red="0" green="255" blue="0">
+        </color>
+      </off_color>
+      <on_label>Auto Control</on_label>
+      <on_color>
+        <color name="Attention" red="255" green="160" blue="0">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_11</name>
+      <pv_name>DTL:RFS-AD:TestDone</pv_name>
+      <x>5</x>
+      <y>671</y>
+      <width>200</width>
+      <height>20</height>
+      <off_label>Test Done</off_label>
+      <on_label>Test Done</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_12</name>
+      <pv_name>DTL:RFS-AD:OpRun</pv_name>
+      <x>226</x>
+      <y>646</y>
+      <width>200</width>
+      <height>45</height>
+      <off_label>Start Operation</off_label>
+      <on_label>Start Operation</on_label>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Fault and Maintenance Resets</name>
+    <x>764</x>
+    <y>799</y>
+    <width>616</width>
+    <height>111</height>
+    <widget type="label" version="2.0.0">
+      <name>Tuners_2</name>
+      <text>COOLING</text>
+      <x>5</x>
+      <y>12</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Tuners_3</name>
+      <text>STEERERS</text>
+      <x>112</x>
+      <y>12</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Tuners_4</name>
+      <text>TUNERS</text>
+      <x>219</x>
+      <y>12</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Tuners_5</name>
+      <text>ARC DET</text>
+      <x>327</x>
+      <y>12</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_27</name>
+      <pv_name>DTL:WtrC:FaultRst</pv_name>
+      <x>5</x>
+      <y>36</y>
+      <height>20</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_28</name>
+      <pv_name>DTL:WtrC:MaintenanceRst</pv_name>
+      <x>5</x>
+      <y>58</y>
+      <height>20</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_29</name>
+      <pv_name>DTL:PwrC:FaultRst</pv_name>
+      <x>112</x>
+      <y>36</y>
+      <height>20</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_30</name>
+      <pv_name>DTL:PwrC:MaintenanceRst</pv_name>
+      <x>112</x>
+      <y>58</y>
+      <height>20</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_31</name>
+      <pv_name>DTL:MC-MCU:FaultRst</pv_name>
+      <x>219</x>
+      <y>36</y>
+      <height>20</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_32</name>
+      <pv_name>DTL:MC-MCU:MaintenanceRst</pv_name>
+      <x>219</x>
+      <y>58</y>
+      <height>20</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_33</name>
+      <pv_name>DTL:RFS-AD:FaultRstRst</pv_name>
+      <x>327</x>
+      <y>36</y>
+      <height>20</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_34</name>
+      <pv_name>DTL:RFS-AD:MaintenanceRst</pv_name>
+      <x>327</x>
+      <y>58</y>
+      <height>20</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Tuners_6</name>
+      <text>TEMP</text>
+      <x>439</x>
+      <y>12</y>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_35</name>
+      <pv_name>DTL:EMR-TT:FaultRst</pv_name>
+      <x>438</x>
+      <y>36</y>
+      <height>20</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Automatic Control_36</name>
+      <pv_name>DTL:EMR-TT:MaintenanceRst</pv_name>
+      <x>438</x>
+      <y>58</y>
+      <height>20</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
     </widget>
   </widget>
 </display>
