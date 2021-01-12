@@ -177,7 +177,7 @@ print 'Hello'
     <x>210</x>
     <y>60</y>
     <width>554</width>
-    <height>850</height>
+    <height>739</height>
     <widget type="label" version="2.0.0">
       <name>Main System</name>
       <text>Main System:</text>
@@ -933,7 +933,7 @@ print 'Hello'
       <name>Command</name>
       <text>Command:</text>
       <x>5</x>
-      <y>501</y>
+      <y>438</y>
       <width>150</width>
       <height>30</height>
       <font>
@@ -945,7 +945,7 @@ print 'Hello'
       <name>Choice Button</name>
       <pv_name>DTL::Operation</pv_name>
       <x>5</x>
-      <y>531</y>
+      <y>468</y>
       <width>160</width>
       <height>220</height>
       <horizontal>false</horizontal>
@@ -961,7 +961,7 @@ print 'Hello'
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>PLC Communication</name>
+    <name>Skid PLC Communication</name>
     <x>10</x>
     <y>60</y>
     <width>200</width>
@@ -2359,9 +2359,9 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Fault and Maintenance Resets</name>
-    <x>764</x>
+    <x>210</x>
     <y>799</y>
-    <width>616</width>
+    <width>1024</width>
     <height>111</height>
     <widget type="label" version="2.0.0">
       <name>Tuners_2</name>
