@@ -323,7 +323,7 @@ print 'Hello'
     <x>195</x>
     <y>60</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1450,7 +1450,7 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>TT-006_1</name>
     <macros>
-      <INDEX>003</INDEX>
+      <INDEX>006</INDEX>
       <PREFIX>DTL-020</PREFIX>
       <sensor_name>TT-${INDEX}</sensor_name>
     </macros>
@@ -1495,7 +1495,7 @@ print 'Hello'
     <x>195</x>
     <y>405</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1925,7 +1925,7 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>TT-006_2</name>
     <macros>
-      <INDEX>003</INDEX>
+      <INDEX>006</INDEX>
       <PREFIX>DTL-030</PREFIX>
       <sensor_name>TT-${INDEX}</sensor_name>
     </macros>
@@ -1970,7 +1970,7 @@ print 'Hello'
     <x>1150</x>
     <y>405</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2009,7 +2009,7 @@ print 'Hello'
     <name>TT-007_2</name>
     <macros>
       <INDEX>007</INDEX>
-      <PREFIX>DTL-010</PREFIX>
+      <PREFIX>DTL-030</PREFIX>
       <sensor_name>TT-${INDEX}</sensor_name>
     </macros>
     <file>Templates/Temperature-mainpage-up.bob</file>
@@ -2330,7 +2330,7 @@ print 'Hello'
   <widget type="embedded" version="2.0.0">
     <name>TT-006_3</name>
     <macros>
-      <INDEX>003</INDEX>
+      <INDEX>006</INDEX>
       <PREFIX>DTL-040</PREFIX>
       <sensor_name>TT-${INDEX}</sensor_name>
     </macros>
@@ -2361,7 +2361,7 @@ print 'Hello'
     <x>195</x>
     <y>745</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2738,7 +2738,7 @@ print 'Hello'
     <x>950</x>
     <y>745</y>
     <width>61</width>
-    <height>30</height>
+    <height>32</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
