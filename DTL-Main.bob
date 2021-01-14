@@ -1245,6 +1245,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1299,7 +1300,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1331,6 +1332,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1385,7 +1387,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1439,6 +1441,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1493,7 +1496,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1525,6 +1528,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1579,7 +1583,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1633,6 +1637,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1687,7 +1692,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1745,6 +1750,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1799,7 +1805,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1857,6 +1863,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -1911,7 +1918,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -1969,6 +1976,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -2023,7 +2031,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -2081,6 +2089,7 @@ print 'Hello'
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
       </font>
+      <transparent>false</transparent>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
       <rules>
@@ -2135,7 +2144,7 @@ print 'Hello'
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="OK" red="0" green="255" blue="0">
               </color>
             </value>
           </exp>
@@ -2423,6 +2432,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_28</name>
@@ -2432,6 +2442,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_29</name>
@@ -2441,6 +2452,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_30</name>
@@ -2450,6 +2462,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_31</name>
@@ -2459,6 +2472,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_32</name>
@@ -2468,6 +2482,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_33</name>
@@ -2477,6 +2492,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_34</name>
@@ -2486,6 +2502,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Tuners_6</name>
@@ -2508,6 +2525,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Automatic Control_36</name>
@@ -2517,6 +2535,7 @@ print 'Hello'
       <height>20</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
+      <mode>1</mode>
     </widget>
   </widget>
 </display>

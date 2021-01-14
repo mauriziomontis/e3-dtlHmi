@@ -323,7 +323,7 @@ print 'Hello'
     <x>195</x>
     <y>60</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1493,9 +1493,9 @@ print 'Hello'
     <name>Tank 2</name>
     <text>Tank 2</text>
     <x>195</x>
-    <y>405</y>
+    <y>410</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -1968,9 +1968,9 @@ print 'Hello'
     <name>Tank 3</name>
     <text>Tank 3</text>
     <x>1150</x>
-    <y>405</y>
+    <y>410</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2359,9 +2359,9 @@ print 'Hello'
     <name>Tank 4</name>
     <text>Tank 4</text>
     <x>195</x>
-    <y>745</y>
+    <y>750</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2736,9 +2736,9 @@ print 'Hello'
     <name>Tank 5</name>
     <text>Tank 5</text>
     <x>950</x>
-    <y>745</y>
+    <y>750</y>
     <width>61</width>
-    <height>32</height>
+    <height>30</height>
     <font>
       <font family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
@@ -2920,29 +2920,25 @@ print 'Hello'
     <width>150</width>
     <height>145</height>
     <widget type="bool_button" version="2.0.0">
-      <name>Temperarture Maintenance</name>
+      <name>Maintenance Reset</name>
       <pv_name>DTL:EMR-TT:MaintenanceRst</pv_name>
       <x>5</x>
       <y>57</y>
       <height>40</height>
       <off_label>Maintenance Reset</off_label>
       <on_label>Maintenance Reset</on_label>
-      <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
-      <show_confirm_dialog>2</show_confirm_dialog>
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
     </widget>
     <widget type="bool_button" version="2.0.0">
-      <name>Temperarture Fault</name>
+      <name>Fault Reset</name>
       <pv_name>DTL:EMR-TT:FaultRst</pv_name>
       <x>5</x>
       <y>12</y>
       <height>40</height>
       <off_label>Fault Reset</off_label>
       <on_label>Fault Reset</on_label>
-      <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
-      <show_confirm_dialog>2</show_confirm_dialog>
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
     </widget>
   </widget>
@@ -2957,6 +2953,8 @@ print 'Hello'
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="Code Text" prop_id="text" out_exp="false">
@@ -2978,7 +2976,7 @@ print 'Hello'
         <exp bool_exp="pv0 == 50">
           <value>FAILURE</value>
         </exp>
-        <exp bool_exp="PV0 == 60">
+        <exp bool_exp="pv0 == 60">
           <value>MAINTENANCE</value>
         </exp>
         <pv_name>DTL-010:EMR-TT:StateMachine</pv_name>
@@ -3011,13 +3009,15 @@ print 'Hello'
     <name>Label_2</name>
     <text>Code not Mapped</text>
     <x>300</x>
-    <y>405</y>
+    <y>410</y>
     <width>200</width>
     <height>30</height>
     <font>
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="Code Text" prop_id="text" out_exp="false">
@@ -3039,7 +3039,7 @@ print 'Hello'
         <exp bool_exp="pv0 == 50">
           <value>FAILURE</value>
         </exp>
-        <exp bool_exp="PV0 == 60">
+        <exp bool_exp="pv0 == 60">
           <value>MAINTENANCE</value>
         </exp>
         <pv_name>DTL-020:EMR-TT:StateMachine</pv_name>
@@ -3072,13 +3072,15 @@ print 'Hello'
     <name>Label_3</name>
     <text>Code not Mapped</text>
     <x>300</x>
-    <y>745</y>
+    <y>750</y>
     <width>200</width>
     <height>30</height>
     <font>
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="Code Text" prop_id="text" out_exp="false">
@@ -3100,7 +3102,7 @@ print 'Hello'
         <exp bool_exp="pv0 == 50">
           <value>FAILURE</value>
         </exp>
-        <exp bool_exp="PV0 == 60">
+        <exp bool_exp="pv0 == 60">
           <value>MAINTENANCE</value>
         </exp>
         <pv_name>DTL-040:EMR-TT:StateMachine</pv_name>
@@ -3133,13 +3135,15 @@ print 'Hello'
     <name>Label_4</name>
     <text>Code not Mapped</text>
     <x>1255</x>
-    <y>405</y>
+    <y>410</y>
     <width>200</width>
     <height>30</height>
     <font>
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="Code Text" prop_id="text" out_exp="false">
@@ -3161,7 +3165,7 @@ print 'Hello'
         <exp bool_exp="pv0 == 50">
           <value>FAILURE</value>
         </exp>
-        <exp bool_exp="PV0 == 60">
+        <exp bool_exp="pv0 == 60">
           <value>MAINTENANCE</value>
         </exp>
         <pv_name>DTL-030:EMR-TT:StateMachine</pv_name>
@@ -3194,13 +3198,15 @@ print 'Hello'
     <name>Label_5</name>
     <text>Code not Mapped</text>
     <x>1055</x>
-    <y>745</y>
+    <y>750</y>
     <width>200</width>
     <height>30</height>
     <font>
       <font family="Liberation Sans" style="BOLD" size="14.0">
       </font>
     </font>
+    <transparent>false</transparent>
+    <horizontal_alignment>1</horizontal_alignment>
     <vertical_alignment>1</vertical_alignment>
     <rules>
       <rule name="Code Text" prop_id="text" out_exp="false">
@@ -3222,7 +3228,7 @@ print 'Hello'
         <exp bool_exp="pv0 == 50">
           <value>FAILURE</value>
         </exp>
-        <exp bool_exp="PV0 == 60">
+        <exp bool_exp="pv0 == 60">
           <value>MAINTENANCE</value>
         </exp>
         <pv_name>DTL-050:EMR-TT:StateMachine</pv_name>
