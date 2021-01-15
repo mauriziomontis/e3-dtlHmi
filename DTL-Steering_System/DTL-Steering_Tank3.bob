@@ -15,12 +15,10 @@ print 'Hello'
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
-    <x use_class="true">0</x>
-    <y use_class="true">0</y>
     <width>1780</width>
-    <height use_class="true">50</height>
-    <line_width use_class="true">0</line_width>
-    <background_color use_class="true">
+    <height>50</height>
+    <line_width>0</line_width>
+    <background_color>
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -29,68 +27,41 @@ print 'Hello'
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Tank 3 - Steerers</text>
-    <x use_class="true">20</x>
+    <x use_class="true">0</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height use_class="true">50</height>
+    <height>50</height>
     <font use_class="true">
-      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
+      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="HEADER-TEXT" red="0" green="0" blue="0">
+      <color name="Text" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <horizontal_alignment use_class="true">0</horizontal_alignment>
-    <vertical_alignment use_class="true">1</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
+    <vertical_alignment>1</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1570</x>
-    <y use_class="true">20</y>
+    <y>20</y>
     <width>200</width>
-    <height use_class="true">30</height>
-    <font use_class="true">
-      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
+    <height>30</height>
+    <font>
+      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
       </font>
     </font>
-    <foreground_color use_class="true">
+    <foreground_color>
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment use_class="true">2</horizontal_alignment>
-    <vertical_alignment use_class="true">2</vertical_alignment>
-    <wrap_words use_class="true">false</wrap_words>
-  </widget>
-  <widget type="group" version="2.0.0">
-    <name>Chassis</name>
-    <x>10</x>
-    <y>60</y>
-    <width>150</width>
-    <height>630</height>
-    <widget type="led" version="2.0.0">
-      <name>Chassis 3</name>
-      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd-RB</pv_name>
-      <x>5</x>
-      <y>9</y>
-      <width>100</width>
-      <height>50</height>
-      <square>true</square>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Chassis 3</name>
-      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd</pv_name>
-      <x>12</x>
-      <y>19</y>
-      <width>85</width>
-      <off_label>Chassis 3</off_label>
-      <on_label>Chassis 3</on_label>
-      <show_led>false</show_led>
-    </widget>
+    <horizontal_alignment>2</horizontal_alignment>
+    <vertical_alignment>2</vertical_alignment>
+    <wrap_words>false</wrap_words>
   </widget>
   <widget type="tabs" version="2.0.0">
     <name>Tank3</name>
@@ -100,11 +71,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH1}</INDEX>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -112,11 +83,11 @@ print 'Hello'
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_1</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH1}</INDEX>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -129,11 +100,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_2</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH2}</INDEX>
               <STEERER_POS>V</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>20</x>
             <y>40</y>
             <width>750</width>
@@ -141,11 +112,11 @@ print 'Hello'
           </widget>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_3</name>
-            <file>Templates/Steerer-details.bob</file>
             <macros>
               <INDEX>${INDEX_CH2}</INDEX>
               <STEERER_POS>H</STEERER_POS>
             </macros>
+            <file>Templates/Steerer-details.bob</file>
             <x>810</x>
             <y>40</y>
             <width>750</width>
@@ -158,5 +129,107 @@ print 'Hello'
     <y>60</y>
     <width>1585</width>
     <height>630</height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Chassis</name>
+    <x>10</x>
+    <y>60</y>
+    <width>150</width>
+    <height>630</height>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 1</name>
+      <pv_name>DTL-010ROW:PwrC-001:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>9</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 1_1</name>
+      <pv_name>DTL-010ROW:PwrC-001:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>19</y>
+      <width>85</width>
+      <off_label>Chassis 1</off_label>
+      <on_label>Chassis 1</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 2</name>
+      <pv_name>DTL-010ROW:PwrC-002:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>71</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 1_2</name>
+      <pv_name>DTL-010ROW:PwrC-002:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>81</y>
+      <width>85</width>
+      <off_label>Chassis 2</off_label>
+      <on_label>Chassis 2</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 3</name>
+      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>131</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 3_1</name>
+      <pv_name>DTL-010ROW:PwrC-003:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>141</y>
+      <width>85</width>
+      <off_label>Chassis 3</off_label>
+      <on_label>Chassis 3</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 4</name>
+      <pv_name>DTL-030ROW:PwrC-001:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>191</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 4_1</name>
+      <pv_name>DTL-030ROW:PwrC-001:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>201</y>
+      <width>85</width>
+      <off_label>Chassis 4</off_label>
+      <on_label>Chassis 4</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Chassis 5</name>
+      <pv_name>DTL-030ROW:PwrC-002:OnEnCmd-RB</pv_name>
+      <x>5</x>
+      <y>251</y>
+      <width>100</width>
+      <height>50</height>
+      <square>true</square>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Chassis 5_1</name>
+      <pv_name>DTL-030ROW:PwrC-002:OnEnCmd</pv_name>
+      <x>12</x>
+      <y>261</y>
+      <width>85</width>
+      <off_label>Chassis 5</off_label>
+      <on_label>Chassis 5</on_label>
+      <show_led>false</show_led>
+    </widget>
   </widget>
 </display>

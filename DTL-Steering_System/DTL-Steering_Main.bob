@@ -1796,7 +1796,6 @@
       <height>40</height>
       <off_label>Maintenance Reset</off_label>
       <on_label>Maintenance Reset</on_label>
-      <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
       <show_confirm_dialog>2</show_confirm_dialog>
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>
@@ -1809,7 +1808,6 @@
       <height>40</height>
       <off_label>Fault Reset</off_label>
       <on_label>Fault Reset</on_label>
-      <labels_from_pv>true</labels_from_pv>
       <mode>1</mode>
       <show_confirm_dialog>2</show_confirm_dialog>
       <confirm_message>Are your sure you want to RESET Maintenance Status?</confirm_message>

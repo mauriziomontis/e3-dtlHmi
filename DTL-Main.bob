@@ -2209,12 +2209,12 @@ print 'Hello'
       <y>415</y>
       <width>100</width>
       <height>45</height>
-      <off_label>Auto Control</off_label>
+      <off_label>MANUAL</off_label>
       <off_color>
         <color name="OK" red="0" green="255" blue="0">
         </color>
       </off_color>
-      <on_label>Auto Control</on_label>
+      <on_label>AUTO</on_label>
       <on_color>
         <color name="Attention" red="255" green="160" blue="0">
         </color>
@@ -2277,12 +2277,12 @@ print 'Hello'
       <y>533</y>
       <width>100</width>
       <height>45</height>
-      <off_label>Auto Control</off_label>
+      <off_label>MANUAL</off_label>
       <off_color>
         <color name="OK" red="0" green="255" blue="0">
         </color>
       </off_color>
-      <on_label>Auto Control</on_label>
+      <on_label>AUTO</on_label>
       <on_color>
         <color name="Attention" red="255" green="160" blue="0">
         </color>
