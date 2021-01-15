@@ -252,9 +252,8 @@
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_1</name>
       <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp-Desc</pv_name>
-      <x>125</x>
+      <x>85</x>
       <y>10</y>
-      <width>175</width>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="16.0">
         </font>
@@ -265,6 +264,35 @@
       </background_color>
       <show_units>false</show_units>
       <horizontal_alignment>1</horizontal_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Label_1</name>
+      <x>200</x>
+      <y>10</y>
+      <width>90</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="TempType" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value></value>
+          </exp>
+          <exp bool_exp="pv0 == 1">
+            <value>Steerer</value>
+          </exp>
+          <exp bool_exp="pv0 == 2">
+            <value>BPM</value>
+          </exp>
+          <exp bool_exp="pv0 == 3">
+            <value>PMQ</value>
+          </exp>
+          <pv_name>${PREFIX}:EMR-TT-${INDEX}:Temp-Pos</pv_name>
+        </rule>
+      </rules>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
