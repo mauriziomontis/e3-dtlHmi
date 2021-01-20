@@ -6,10 +6,12 @@
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
     <width>1920</width>
-    <height>50</height>
-    <line_width>0</line_width>
-    <background_color>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -18,41 +20,42 @@
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Steering System</text>
-    <x use_class="true">0</x>
+    <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height>50</height>
+    <height use_class="true">50</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y>20</y>
+    <y use_class="true">20</y>
     <width>200</width>
-    <height>30</height>
-    <font>
-      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment>2</horizontal_alignment>
-    <vertical_alignment>2</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
@@ -1275,12 +1278,13 @@
     <name>Slider/Wheels</name>
     <x>1435</x>
     <y>60</y>
-    <width>144</width>
-    <height>95</height>
+    <width>135</width>
+    <height>70</height>
     <widget type="bool_button" version="2.0.0">
       <name>Control wheel/slider</name>
       <pv_name>loc://slider(0)</pv_name>
-      <y>15</y>
+      <y>5</y>
+      <height>25</height>
       <off_label>Slider</off_label>
       <on_label>Wheels</on_label>
       <show_led>false</show_led>
@@ -1346,26 +1350,6 @@
       </color>
     </background_color>
   </widget>
-  <widget type="polygon" version="2.0.0">
-    <name>Polygon_1</name>
-    <x>1410</x>
-    <y>146</y>
-    <width>45</width>
-    <height>30</height>
-    <line_width>0</line_width>
-    <background_color>
-      <color name="BLACK" red="0" green="0" blue="0">
-      </color>
-    </background_color>
-    <points>
-      <point x="0.0" y="0.0">
-      </point>
-      <point x="0.0" y="30.0">
-      </point>
-      <point x="30.0" y="15.0">
-      </point>
-    </points>
-  </widget>
   <widget type="label" version="2.0.0">
     <name>Tank 1</name>
     <text>Tank 1</text>
@@ -1430,12 +1414,12 @@
     <height>30</height>
     <off_label>MANUAL</off_label>
     <off_color>
-      <color name="On" red="0" green="255" blue="0">
+      <color name="On" red="70" green="255" blue="70">
       </color>
     </off_color>
     <on_label>AUTO</on_label>
     <on_color>
-      <color name="Attention" red="255" green="160" blue="0">
+      <color name="Attention" red="252" green="242" blue="17">
       </color>
     </on_color>
     <square>true</square>
@@ -1447,7 +1431,7 @@
     <y>70</y>
     <width>250</width>
     <font>
-      <font name="Default Bold" family="Liberation Sans" style="BOLD" size="14.0">
+      <font name="Default Bold" family="Source Sans Pro" style="BOLD" size="16.0">
       </font>
     </font>
   </widget>
@@ -2161,5 +2145,181 @@
       </font>
     </font>
     <horizontal_alignment>2</horizontal_alignment>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Zero Current</name>
+    <x>1435</x>
+    <y>130</y>
+    <width>135</width>
+    <height>70</height>
+    <widget type="action_button" version="3.0.0">
+      <name>Zero Current</name>
+      <actions execute_as_one="true">
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CV-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CV-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CH-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CH-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CV-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CV-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CH-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CH-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CV-003:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CV-003:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CH-003:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CH-003:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CV-004:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CV-004:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CH-004:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CH-004:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CV-005:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CV-005:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-010:BMD-CH-006:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-010:BMD-CH-006:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CV-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CV-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CH-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CH-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CV-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CV-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CH-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CH-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CV-003:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CV-003:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-020:BMD-CH-003:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-020:BMD-CH-003:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-030:BMD-CV-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-030:BMD-CV-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-030:BMD-CH-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-030:BMD-CH-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-030:BMD-CV-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-030:BMD-CV-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-030:BMD-CH-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-030:BMD-CH-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-040:BMD-CV-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-040:BMD-CV-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-040:BMD-CH-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-040:BMD-CH-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-040:BMD-CV-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-040:BMD-CV-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-040:BMD-CH-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-040:BMD-CH-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-050:BMD-CV-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-050:BMD-CV-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-050:BMD-CH-001:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-050:BMD-CH-001:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-050:BMD-CV-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-050:BMD-CV-002:CurSet</description>
+        </action>
+        <action type="write_pv">
+          <pv_name>DTL-050:BMD-CH-002:CurSet</pv_name>
+          <value>0</value>
+          <description>DTL-050:BMD-CH-002:CurSet</description>
+        </action>
+      </actions>
+      <text>Zero Current</text>
+      <y>5</y>
+      <height>25</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+  </widget>
+  <widget type="polygon" version="2.0.0">
+    <name>Polygon_1</name>
+    <x>1410</x>
+    <y>146</y>
+    <width>45</width>
+    <height>30</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="BLACK" red="0" green="0" blue="0">
+      </color>
+    </background_color>
+    <points>
+      <point x="0.0" y="0.0">
+      </point>
+      <point x="0.0" y="30.0">
+      </point>
+      <point x="30.0" y="15.0">
+      </point>
+    </points>
   </widget>
 </display>
