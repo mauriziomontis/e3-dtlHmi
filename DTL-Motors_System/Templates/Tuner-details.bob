@@ -1024,6 +1024,7 @@
         </color>
       </background_color>
       <precision>3</precision>
+      <show_units>false</show_units>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="multi_state_led" version="2.0.0">
