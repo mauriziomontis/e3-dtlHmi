@@ -502,7 +502,7 @@ print 'Hello'
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
-      <pv_name>DTL:WtrC:StateMachineD</pv_name>
+      <pv_name>CWM-CWS04::StateMachine</pv_name>
       <x>10</x>
       <y>30</y>
       <width>90</width>
@@ -542,13 +542,13 @@ print 'Hello'
           <exp bool_exp="pv0 == 60">
             <value>MAINTENANCE</value>
           </exp>
-          <pv_name>DTL:WtrC:StateMachine</pv_name>
+          <pv_name>CWM-CWS04::StateMachine</pv_name>
         </rule>
       </rules>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button</name>
-      <pv_name>DTL:WtrC:AutoCmd</pv_name>
+      <pv_name>CWM-CWS04::AutoCmd</pv_name>
       <x>2</x>
       <y>95</y>
       <width>60</width>
@@ -558,7 +558,7 @@ print 'Hello'
     </widget>
     <widget type="led" version="2.0.0">
       <name>LED</name>
-      <pv_name>DTL:WtrC:AutoCmd-RB</pv_name>
+      <pv_name>CWM-CWS04::AutoCmd-RB</pv_name>
       <x>65</x>
       <y>95</y>
       <width>50</width>
@@ -568,7 +568,7 @@ print 'Hello'
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_1</name>
-      <pv_name>DTL:WtrC:OpRun</pv_name>
+      <pv_name>CWM-CWS04::OpRun</pv_name>
       <x>5</x>
       <y>155</y>
       <width>105</width>
@@ -580,7 +580,7 @@ print 'Hello'
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_2</name>
-      <pv_name>DTL:WtrC:OpStop</pv_name>
+      <pv_name>CWM-CWS04::OpStop</pv_name>
       <x>5</x>
       <y>179</y>
       <width>105</width>
@@ -592,7 +592,7 @@ print 'Hello'
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_3</name>
-      <pv_name>DTL:WtrC:OpRun</pv_name>
+      <pv_name>CWM-CWS04::OpRun</pv_name>
       <x>65</x>
       <y>122</y>
       <width>50</width>
