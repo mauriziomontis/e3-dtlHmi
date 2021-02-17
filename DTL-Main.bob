@@ -15,10 +15,12 @@ print 'Hello'
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
     <width>1920</width>
-    <height>50</height>
-    <line_width>0</line_width>
-    <background_color>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -27,41 +29,42 @@ print 'Hello'
     <name>TITLE</name>
     <class>TITLE</class>
     <text>DTL Main Control System</text>
-    <x use_class="true">0</x>
+    <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height>50</height>
+    <height use_class="true">50</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y>20</y>
+    <y use_class="true">20</y>
     <width>200</width>
-    <height>30</height>
-    <font>
-      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment>2</horizontal_alignment>
-    <vertical_alignment>2</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
@@ -257,43 +260,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 101">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 202">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 303">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 404">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 505">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 606">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -326,7 +329,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -336,7 +339,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -357,7 +360,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -367,7 +370,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 606">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -388,7 +391,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -398,7 +401,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 101">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -419,7 +422,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -429,7 +432,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 303">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -450,7 +453,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -460,7 +463,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 404">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -481,7 +484,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -491,7 +494,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 202">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -512,7 +515,7 @@ print 'Hello'
         </font>
       </font>
       <background_color>
-        <color name="Button_Background" red="210" green="210" blue="210">
+        <color name="Button_Background" red="236" green="236" blue="236">
         </color>
       </background_color>
       <transparent>false</transparent>
@@ -522,7 +525,7 @@ print 'Hello'
         <rule name="ActiveStage" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 505">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
@@ -581,11 +584,6 @@ print 'Hello'
       <y>178</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="5.0">
         </point>
@@ -594,6 +592,11 @@ print 'Hello'
         <point x="10.0" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_4</name>
@@ -601,11 +604,6 @@ print 'Hello'
       <y>226</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -614,6 +612,11 @@ print 'Hello'
         <point x="7.5" y="12.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_8</name>
@@ -621,11 +624,6 @@ print 'Hello'
       <y>205</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.0">
         </point>
@@ -634,6 +632,11 @@ print 'Hello'
         <point x="7.5" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_1</name>
@@ -641,11 +644,6 @@ print 'Hello'
       <y>156</y>
       <width>16</width>
       <height>10</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -654,6 +652,11 @@ print 'Hello'
         <point x="10.0" y="5.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_5</name>
@@ -661,11 +664,6 @@ print 'Hello'
       <y>331</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -674,6 +672,11 @@ print 'Hello'
         <point x="7.5" y="12.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_9</name>
@@ -681,11 +684,6 @@ print 'Hello'
       <y>315</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.0">
         </point>
@@ -694,6 +692,11 @@ print 'Hello'
         <point x="7.5" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_8</name>
@@ -715,11 +718,6 @@ print 'Hello'
       <y>438</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -728,6 +726,11 @@ print 'Hello'
         <point x="7.5" y="12.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="polygon" version="2.0.0">
       <name>Polygon_11</name>
@@ -735,11 +738,6 @@ print 'Hello'
       <y>422</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.0">
         </point>
@@ -748,6 +746,11 @@ print 'Hello'
         <point x="7.5" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_10</name>
@@ -771,11 +774,6 @@ print 'Hello'
       <y>335</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -784,6 +782,11 @@ print 'Hello'
         <point x="7.5" y="12.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_12</name>
@@ -807,11 +810,6 @@ print 'Hello'
       <y>278</y>
       <width>10</width>
       <height>41</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -820,6 +818,11 @@ print 'Hello'
         <point x="10.0" y="5.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_15</name>
@@ -843,11 +846,6 @@ print 'Hello'
       <y>202</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.0">
         </point>
@@ -856,6 +854,11 @@ print 'Hello'
         <point x="7.5" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_18</name>
@@ -879,11 +882,6 @@ print 'Hello'
       <y>338</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
@@ -892,6 +890,11 @@ print 'Hello'
         <point x="7.5" y="12.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_20</name>
@@ -915,11 +918,6 @@ print 'Hello'
       <y>283</y>
       <width>15</width>
       <height>12</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color red="30" green="144" blue="255">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="5.0">
         </point>
@@ -928,6 +926,11 @@ print 'Hello'
         <point x="10.0" y="0.0">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color red="30" green="144" blue="255">
+        </color>
+      </line_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Command</name>
@@ -1049,7 +1052,7 @@ print 'Hello'
           <value>-8926</value>
           <label>ACK</label>
           <color>
-            <color name="Off" red="60" green="100" blue="60">
+            <color name="Off" red="90" green="110" blue="90">
             </color>
           </color>
         </state>
@@ -1057,7 +1060,7 @@ print 'Hello'
           <value>-8909</value>
           <label>DONE</label>
           <color>
-            <color name="On" red="0" green="255" blue="0">
+            <color name="On" red="70" green="255" blue="70">
             </color>
           </color>
         </state>
@@ -1065,7 +1068,7 @@ print 'Hello'
           <value>7117</value>
           <label>START SYNC</label>
           <color>
-            <color name="Attention" red="255" green="160" blue="0">
+            <color name="Attention" red="252" green="242" blue="17">
             </color>
           </color>
         </state>
@@ -1125,7 +1128,7 @@ print 'Hello'
           <value>-222</value>
           <label>DATA ALIGN</label>
           <color>
-            <color name="Attention" red="255" green="160" blue="0">
+            <color name="Attention" red="252" green="242" blue="17">
             </color>
           </color>
         </state>
@@ -1276,43 +1279,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -1363,43 +1366,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -1472,43 +1475,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -1559,43 +1562,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -1668,43 +1671,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -1730,7 +1733,7 @@ print 'Hello'
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_18</name>
-      <pv_name>DTL:WtrC:StateMachine</pv_name>
+      <pv_name>CWM-CWS04::StateMachine</pv_name>
       <x>160</x>
       <y>250</y>
       <width>60</width>
@@ -1776,52 +1779,52 @@ print 'Hello'
           <exp bool_exp="pv0 == 60">
             <value>MAINTENANCE</value>
           </exp>
-          <pv_name>DTL-010:EMR-TT:DTL:WtrC:StateMachine</pv_name>
+          <pv_name>CWM-CWS04::StateMachine</pv_name>
         </rule>
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
-          <pv_name>DTL-010:EMR-TT:DTL:WtrC:StateMachine</pv_name>
+          <pv_name>CWM-CWS04::StateMachine</pv_name>
         </rule>
       </rules>
       <border_width>1</border_width>
@@ -1894,43 +1897,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -2007,43 +2010,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -2120,43 +2123,43 @@ print 'Hello'
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 10">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 20">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 30">
             <value>
-              <color name="Background" red="255" green="255" blue="255">
+              <color name="Background" red="220" green="225" blue="221">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 40">
             <value>
-              <color name="OK" red="0" green="255" blue="0">
+              <color name="OK" red="61" green="216" blue="61">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 50">
             <value>
-              <color name="MAJOR" red="255" green="0" blue="0">
+              <color name="MAJOR" red="252" green="13" blue="27">
               </color>
             </value>
           </exp>
           <exp bool_exp="pv0 == 60">
             <value>
-              <color name="Attention" red="255" green="160" blue="0">
+              <color name="Attention" red="252" green="242" blue="17">
               </color>
             </value>
           </exp>
@@ -2182,12 +2185,12 @@ print 'Hello'
       <width>100</width>
       <off_label>Auto Control</off_label>
       <off_color>
-        <color name="OK" red="0" green="255" blue="0">
+        <color name="OK" red="61" green="216" blue="61">
         </color>
       </off_color>
       <on_label>Auto Control</on_label>
       <on_color>
-        <color name="Attention" red="255" green="160" blue="0">
+        <color name="Attention" red="252" green="242" blue="17">
         </color>
       </on_color>
       <square>true</square>
@@ -2211,12 +2214,12 @@ print 'Hello'
       <height>45</height>
       <off_label>MANUAL</off_label>
       <off_color>
-        <color name="OK" red="0" green="255" blue="0">
+        <color name="OK" red="61" green="216" blue="61">
         </color>
       </off_color>
       <on_label>AUTO</on_label>
       <on_color>
-        <color name="Attention" red="255" green="160" blue="0">
+        <color name="Attention" red="252" green="242" blue="17">
         </color>
       </on_color>
       <square>true</square>
@@ -2279,12 +2282,12 @@ print 'Hello'
       <height>45</height>
       <off_label>MANUAL</off_label>
       <off_color>
-        <color name="OK" red="0" green="255" blue="0">
+        <color name="OK" red="61" green="216" blue="61">
         </color>
       </off_color>
       <on_label>AUTO</on_label>
       <on_color>
-        <color name="Attention" red="255" green="160" blue="0">
+        <color name="Attention" red="252" green="242" blue="17">
         </color>
       </on_color>
       <square>true</square>
@@ -2335,12 +2338,12 @@ print 'Hello'
       <width>100</width>
       <off_label>Auto Control</off_label>
       <off_color>
-        <color name="OK" red="0" green="255" blue="0">
+        <color name="OK" red="61" green="216" blue="61">
         </color>
       </off_color>
       <on_label>Auto Control</on_label>
       <on_color>
-        <color name="Attention" red="255" green="160" blue="0">
+        <color name="Attention" red="252" green="242" blue="17">
         </color>
       </on_color>
       <square>true</square>

@@ -15,10 +15,12 @@ print 'Hello'
   <widget type="rectangle" version="2.0.0">
     <name>TITLE-BAR</name>
     <class>TITLE-BAR</class>
+    <x use_class="true">0</x>
+    <y use_class="true">0</y>
     <width>1920</width>
-    <height>50</height>
-    <line_width>0</line_width>
-    <background_color>
+    <height use_class="true">50</height>
+    <line_width use_class="true">0</line_width>
+    <background_color use_class="true">
       <color name="PRIMARY-HEADER-BACKGROUND" red="151" green="188" blue="202">
       </color>
     </background_color>
@@ -27,41 +29,42 @@ print 'Hello'
     <name>TITLE</name>
     <class>TITLE</class>
     <text>Water Cooling System</text>
-    <x use_class="true">0</x>
+    <x use_class="true">20</x>
     <y use_class="true">0</y>
     <width>1500</width>
-    <height>50</height>
+    <height use_class="true">50</height>
     <font use_class="true">
-      <font name="Header 1" family="Liberation Sans" style="BOLD" size="22.0">
+      <font name="Header 1" family="Source Sans Pro" style="BOLD_ITALIC" size="36.0">
       </font>
     </font>
     <foreground_color use_class="true">
-      <color name="Text" red="0" green="0" blue="0">
+      <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
     <transparent use_class="true">true</transparent>
-    <vertical_alignment>1</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">0</horizontal_alignment>
+    <vertical_alignment use_class="true">1</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="label" version="2.0.0">
     <name>Label</name>
     <class>SUBTITLE</class>
     <text>DTL Control System</text>
     <x>1700</x>
-    <y>20</y>
+    <y use_class="true">20</y>
     <width>200</width>
-    <height>30</height>
-    <font>
-      <font name="Header 2" family="Liberation Sans" style="BOLD" size="18.0">
+    <height use_class="true">30</height>
+    <font use_class="true">
+      <font name="Header 2" family="Source Sans Pro" style="BOLD_ITALIC" size="21.0">
       </font>
     </font>
-    <foreground_color>
+    <foreground_color use_class="true">
       <color name="HEADER-TEXT" red="0" green="0" blue="0">
       </color>
     </foreground_color>
-    <horizontal_alignment>2</horizontal_alignment>
-    <vertical_alignment>2</vertical_alignment>
-    <wrap_words>false</wrap_words>
+    <horizontal_alignment use_class="true">2</horizontal_alignment>
+    <vertical_alignment use_class="true">2</vertical_alignment>
+    <wrap_words use_class="true">false</wrap_words>
   </widget>
   <widget type="group" version="2.0.0">
     <name>Navigation</name>
@@ -306,7 +309,7 @@ print 'Hello'
           <value>-8926</value>
           <label>ACK</label>
           <color>
-            <color name="Off" red="60" green="100" blue="60">
+            <color name="Off" red="90" green="110" blue="90">
             </color>
           </color>
         </state>
@@ -314,7 +317,7 @@ print 'Hello'
           <value>-8909</value>
           <label>DONE</label>
           <color>
-            <color name="On" red="0" green="255" blue="0">
+            <color name="On" red="70" green="255" blue="70">
             </color>
           </color>
         </state>
@@ -322,7 +325,7 @@ print 'Hello'
           <value>7117</value>
           <label>START SYNC</label>
           <color>
-            <color name="Attention" red="255" green="160" blue="0">
+            <color name="Attention" red="252" green="242" blue="17">
             </color>
           </color>
         </state>
@@ -382,7 +385,7 @@ print 'Hello'
           <value>-222</value>
           <label>DATA ALIGN</label>
           <color>
-            <color name="Attention" red="255" green="160" blue="0">
+            <color name="Attention" red="252" green="242" blue="17">
             </color>
           </color>
         </state>
@@ -509,6 +512,77 @@ print 'Hello'
       <height>25</height>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>CWM-CWS04::StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="OK" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>CWM-CWS04::StateMachine</pv_name>
+        </rule>
+      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Label_1</name>
