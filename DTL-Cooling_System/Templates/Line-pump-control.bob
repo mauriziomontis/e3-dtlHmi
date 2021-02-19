@@ -49,6 +49,7 @@
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>stop_1</name>
@@ -64,6 +65,7 @@
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+      <mode>1</mode>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -153,6 +155,7 @@
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>stop</name>
@@ -168,6 +171,7 @@
         <font family="Source Sans Pro" style="REGULAR" size="10.0">
         </font>
       </font>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>enable_5</name>

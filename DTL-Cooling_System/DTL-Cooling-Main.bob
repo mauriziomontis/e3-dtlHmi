@@ -85,7 +85,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>20</y>
+      <y>15</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -102,7 +102,7 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>75</y>
+      <y>65</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
@@ -119,58 +119,41 @@ print 'Hello'
         </action>
       </actions>
       <x>5</x>
-      <y>135</y>
+      <y>115</y>
+      <height>40</height>
+      <tooltip>$(actions)</tooltip>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Heat Details</name>
+      <actions>
+        <action type="open_display">
+          <file>DTL-Cooling-Heat-Details.bob</file>
+          <macros>
+            <PREFIX>CWM-CWS04</PREFIX>
+          </macros>
+          <target>window</target>
+          <description>Heat Details</description>
+        </action>
+      </actions>
+      <x>5</x>
+      <y>165</y>
       <height>40</height>
       <tooltip>$(actions)</tooltip>
     </widget>
   </widget>
   <widget type="embedded" version="2.0.0">
-    <name>Embedded Display</name>
+    <name>Main</name>
     <macros>
       <PREFIX>CWM-CWS04</PREFIX>
     </macros>
     <file>Templates/Main-line-mainpage.bob</file>
-    <x>990</x>
-    <y>80</y>
+    <x>980</x>
+    <y>40</y>
     <width>900</width>
-    <height>445</height>
+    <height>490</height>
   </widget>
   <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_6</name>
-    <macros>
-      <DTL_PREFIX>DTL-010</DTL_PREFIX>
-      <INDEX>101</INDEX>
-      <INDEX_PT1>101</INDEX_PT1>
-      <INDEX_PT2>102</INDEX_PT2>
-      <INDEX_TT>102</INDEX_TT>
-      <PREFIX>CWM-CWS04</PREFIX>
-      <TANK>1</TANK>
-    </macros>
-    <file>Templates/Tank-line-mainpage.bob</file>
-    <x>20</x>
-    <y>565</y>
-    <width>370</width>
-    <height>495</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_9</name>
-    <macros>
-      <DTL_PREFIX>020</DTL_PREFIX>
-      <INDEX>201</INDEX>
-      <INDEX_PT1>201</INDEX_PT1>
-      <INDEX_PT2>202</INDEX_PT2>
-      <INDEX_TT>202</INDEX_TT>
-      <PREFIX>CWM-CWS04</PREFIX>
-      <TANK>2</TANK>
-    </macros>
-    <file>Templates/Tank-line-mainpage.bob</file>
-    <x>395</x>
-    <y>565</y>
-    <width>370</width>
-    <height>495</height>
-  </widget>
-  <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_10</name>
+    <name>Tank3</name>
     <macros>
       <DTL_PREFIX>030</DTL_PREFIX>
       <INDEX>301</INDEX>
@@ -187,7 +170,41 @@ print 'Hello'
     <height>495</height>
   </widget>
   <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_11</name>
+    <name>Tank1</name>
+    <macros>
+      <DTL_PREFIX>DTL-010</DTL_PREFIX>
+      <INDEX>101</INDEX>
+      <INDEX_PT1>101</INDEX_PT1>
+      <INDEX_PT2>102</INDEX_PT2>
+      <INDEX_TT>102</INDEX_TT>
+      <PREFIX>CWM-CWS04</PREFIX>
+      <TANK>1</TANK>
+    </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
+    <x>20</x>
+    <y>565</y>
+    <width>370</width>
+    <height>495</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Tank2</name>
+    <macros>
+      <DTL_PREFIX>020</DTL_PREFIX>
+      <INDEX>201</INDEX>
+      <INDEX_PT1>201</INDEX_PT1>
+      <INDEX_PT2>202</INDEX_PT2>
+      <INDEX_TT>202</INDEX_TT>
+      <PREFIX>CWM-CWS04</PREFIX>
+      <TANK>2</TANK>
+    </macros>
+    <file>Templates/Tank-line-mainpage.bob</file>
+    <x>395</x>
+    <y>565</y>
+    <width>370</width>
+    <height>495</height>
+  </widget>
+  <widget type="embedded" version="2.0.0">
+    <name>Tank4</name>
     <macros>
       <DTL_PREFIX>040</DTL_PREFIX>
       <INDEX>401</INDEX>
@@ -204,7 +221,7 @@ print 'Hello'
     <height>495</height>
   </widget>
   <widget type="embedded" version="2.0.0">
-    <name>Embedded Display_12</name>
+    <name>Tank5</name>
     <macros>
       <DTL_PREFIX>050</DTL_PREFIX>
       <INDEX>501</INDEX>
@@ -221,36 +238,15 @@ print 'Hello'
     <height>495</height>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>PLC Communication</name>
+    <name>PLC Comm</name>
     <x>160</x>
     <y>60</y>
-    <width>250</width>
+    <width>165</width>
     <height>250</height>
-    <widget type="label" version="2.0.0">
-      <name>Status</name>
-      <text>Status</text>
-      <y>5</y>
-      <width>125</width>
-      <height>40</height>
-      <font>
-        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="GROUP-TEXT" red="25" green="25" blue="25">
-        </color>
-      </foreground_color>
-      <background_color>
-        <color name="RED-BORDER" red="150" green="8" blue="16">
-        </color>
-      </background_color>
-      <vertical_alignment>1</vertical_alignment>
-      <wrap_words>false</wrap_words>
-    </widget>
     <widget type="label" version="2.0.0">
       <name>Countdown</name>
       <text>Countdown:</text>
-      <y>178</y>
+      <y>140</y>
       <width>80</width>
       <height>30</height>
       <font>
@@ -264,8 +260,7 @@ print 'Hello'
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_11</name>
       <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSSyncCountDown</pv_name>
-      <x>90</x>
-      <y>178</y>
+      <y>165</y>
       <width>120</width>
       <height>30</height>
       <font>
@@ -278,9 +273,8 @@ print 'Hello'
     <widget type="label" version="2.0.0">
       <name>Syncronization</name>
       <text>Data Sync</text>
-      <y>138</y>
+      <y>125</y>
       <width>125</width>
-      <height>40</height>
       <font>
         <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
         </font>
@@ -299,10 +293,8 @@ print 'Hello'
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)</name>
       <pv_name>CWM-CWS04:Ctrl-Intf-001:EPICSCommMsg</pv_name>
-      <x>100</x>
       <y>45</y>
       <width>105</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -359,10 +351,8 @@ print 'Hello'
     <widget type="multi_state_led" version="2.0.0">
       <name>LED (Multi State)_1</name>
       <pv_name>CWM-CWS04:Ctrl-Intf-001:PLCCommMsg</pv_name>
-      <x>100</x>
-      <y>109</y>
+      <y>95</y>
       <width>105</width>
-      <height>30</height>
       <square>true</square>
       <states>
         <state>
@@ -411,23 +401,23 @@ print 'Hello'
     <widget type="picture" version="2.0.0">
       <name>Picture</name>
       <file>../Images/epics-logo.png</file>
-      <y>45</y>
-      <width>88</width>
-      <height>45</height>
+      <y>15</y>
+      <width>69</width>
+      <height>25</height>
     </widget>
     <widget type="picture" version="2.0.0">
       <name>Picture_1</name>
       <file>../Images/siemens-logo-200.png</file>
-      <y>109</y>
-      <width>90</width>
+      <y>70</y>
+      <width>55</width>
       <height>29</height>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Remote control popup</name>
       <text>REMOTE CONTROL</text>
       <y>159</y>
-      <width>205</width>
-      <height>30</height>
+      <width>139</width>
+      <height>46</height>
       <visible>false</visible>
       <font>
         <font family="Source Sans Pro" style="BOLD" size="20.0">
@@ -475,33 +465,6 @@ print 'Hello'
       </background_color>
       <vertical_alignment>1</vertical_alignment>
       <wrap_words>false</wrap_words>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>Remote control popup_1</name>
-      <text>REMOTE CONTROL</text>
-      <y>159</y>
-      <width>205</width>
-      <height>30</height>
-      <visible>false</visible>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="20.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="GREEN" red="61" green="216" blue="61">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <rules>
-        <rule name="Visible" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == -188">
-            <value>true</value>
-          </exp>
-          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
-        </rule>
-      </rules>
-      <border_width>1</border_width>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Text Update_12</name>
@@ -690,39 +653,12 @@ print 'Hello'
   </widget>
   <widget type="group" version="2.0.0">
     <name>Pumps Controls</name>
-    <x>410</x>
+    <x>330</x>
     <y>60</y>
-    <width>570</width>
+    <width>650</width>
     <height>250</height>
-    <widget type="label" version="2.0.0">
-      <name>Remote control popup_2</name>
-      <text>REMOTE CONTROL</text>
-      <y>159</y>
-      <width>205</width>
-      <height>30</height>
-      <visible>false</visible>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="20.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="GREEN" red="61" green="216" blue="61">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <rules>
-        <rule name="Visible" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == -188">
-            <value>true</value>
-          </exp>
-          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
-        </rule>
-      </rules>
-      <border_width>1</border_width>
-    </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_1</name>
+      <name>P001</name>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -733,61 +669,73 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_2</name>
+      <name>P101</name>
       <macros>
         <INDEX>101</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
       <file>Templates/Line-pump-control.bob</file>
-      <x>90</x>
+      <x>176</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_3</name>
+      <name>P201</name>
       <macros>
         <INDEX>201</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
       <file>Templates/Line-pump-control.bob</file>
-      <x>180</x>
+      <x>264</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_4</name>
+      <name>P301</name>
       <macros>
         <INDEX>301</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
       <file>Templates/Line-pump-control.bob</file>
-      <x>270</x>
+      <x>352</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_5</name>
+      <name>P401</name>
       <macros>
         <INDEX>401</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
       <file>Templates/Line-pump-control.bob</file>
-      <x>360</x>
+      <x>440</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_7</name>
+      <name>P501</name>
       <macros>
         <INDEX>501</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
       </macros>
       <file>Templates/Line-pump-control.bob</file>
-      <x>450</x>
+      <x>528</x>
+      <y>5</y>
+      <width>80</width>
+      <height>205</height>
+    </widget>
+    <widget type="embedded" version="2.0.0">
+      <name>P002</name>
+      <macros>
+        <INDEX>002</INDEX>
+        <PREFIX>CWM-CWS04</PREFIX>
+      </macros>
+      <file>Templates/Line-pump-control.bob</file>
+      <x>88</x>
       <y>5</y>
       <width>80</width>
       <height>205</height>
@@ -799,35 +747,8 @@ print 'Hello'
     <y>310</y>
     <width>810</width>
     <height>250</height>
-    <widget type="label" version="2.0.0">
-      <name>Remote control popup_3</name>
-      <text>REMOTE CONTROL</text>
-      <y>159</y>
-      <width>205</width>
-      <height>30</height>
-      <visible>false</visible>
-      <font>
-        <font family="Source Sans Pro" style="BOLD" size="20.0">
-        </font>
-      </font>
-      <foreground_color>
-        <color name="GREEN" red="61" green="216" blue="61">
-        </color>
-      </foreground_color>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <rules>
-        <rule name="Visible" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == -188">
-            <value>true</value>
-          </exp>
-          <pv_name>${PREFIX}:Ctrl-Intf-001:PLCCommMsg</pv_name>
-        </rule>
-      </rules>
-      <border_width>1</border_width>
-    </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_8</name>
+      <name>YSV001</name>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -838,7 +759,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_13</name>
+      <name>YSV002</name>
       <macros>
         <INDEX>002</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -850,7 +771,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_14</name>
+      <name>TCV001</name>
       <macros>
         <INDEX>001</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -862,7 +783,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_15</name>
+      <name>TCV101</name>
       <macros>
         <INDEX>101</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -874,7 +795,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_16</name>
+      <name>TCV201</name>
       <macros>
         <INDEX>201</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -886,7 +807,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_17</name>
+      <name>TCV301</name>
       <macros>
         <INDEX>301</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -898,7 +819,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_18</name>
+      <name>TCV401</name>
       <macros>
         <INDEX>401</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>
@@ -910,7 +831,7 @@ print 'Hello'
       <height>205</height>
     </widget>
     <widget type="embedded" version="2.0.0">
-      <name>Embedded Display_20</name>
+      <name>TCV501</name>
       <macros>
         <INDEX>501</INDEX>
         <PREFIX>CWM-CWS04</PREFIX>

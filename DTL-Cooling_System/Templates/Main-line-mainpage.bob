@@ -103,18 +103,18 @@
       <y>50</y>
       <width>1</width>
       <height>165</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <line_style>1</line_style>
       <points>
         <point x="0.0" y="165.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_32</name>
@@ -130,17 +130,17 @@
       <y>193</y>
       <width>1</width>
       <height>27</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="27.000000000000004">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_120</name>
@@ -148,17 +148,17 @@
       <y>269</y>
       <width>1</width>
       <height>17</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="17.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_31</name>
@@ -174,18 +174,18 @@
       <y>218</y>
       <width>750</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <line_style>1</line_style>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="750.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_118</name>
@@ -193,17 +193,17 @@
       <y>284</y>
       <width>600</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="600.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Chiller Weter ESS</name>
@@ -242,18 +242,18 @@
       <y>194</y>
       <width>1</width>
       <height>25</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <line_style>1</line_style>
       <points>
         <point x="0.0" y="25.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_108</name>
@@ -261,17 +261,17 @@
       <y>194</y>
       <width>1</width>
       <height>90</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="90.00000000000001">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>PLATE HEAT EXCHANGER V_1</name>
@@ -357,17 +357,17 @@
       <y>219</y>
       <width>1</width>
       <height>12</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.000000000000002">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_106</name>
@@ -375,17 +375,17 @@
       <y>272</y>
       <width>1</width>
       <height>12</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="12.000000000000002">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_103</name>
@@ -393,17 +393,17 @@
       <y>314</y>
       <width>69</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="151.34" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>YSV-002_1</name>
@@ -479,17 +479,17 @@
       <x>559</x>
       <y>270</y>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="100.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PT-024_1</name>
@@ -515,17 +515,17 @@
       <y>271</y>
       <width>1</width>
       <height>40</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="40.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>PT-024</name>
@@ -540,17 +540,17 @@
       <x>740</x>
       <y>270</y>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="100.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>TT-022_1</name>
@@ -583,17 +583,17 @@
       <x>588</x>
       <y>192</y>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="100.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_93</name>
@@ -601,17 +601,17 @@
       <y>186</y>
       <width>35</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="35.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="polyline" version="2.0.0">
       <name>Polyline_92</name>
@@ -619,17 +619,17 @@
       <y>151</y>
       <width>1</width>
       <height>45</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="PRIMARY" red="0" green="148" blue="202">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="45.00000000000001">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="PRIMARY" red="0" green="148" blue="202">
+        </color>
+      </line_color>
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>FIT-001_1</name>
@@ -663,17 +663,17 @@
       <y>103</y>
       <width>15</width>
       <height>58</height>
-      <line_width>1</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="4.672656769448139" y="58.56396484375">
         </point>
       </points>
+      <line_width>1</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="ellipse" version="2.0.0">
       <name>Ellipse_1</name>
@@ -698,18 +698,18 @@
       <y>136</y>
       <width>862</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
-      <line_style>1</line_style>
       <points>
         <point x="0.0" y="0.0">
         </point>
         <point x="861.9999999999998" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
+      <line_style>1</line_style>
     </widget>
     <widget type="ellipse" version="2.0.0">
       <name>Ellipse</name>
@@ -734,17 +734,17 @@
       <y>59</y>
       <width>105</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="98.0" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_37</name>
@@ -764,17 +764,17 @@
       <y>129</y>
       <width>848</width>
       <height>1</height>
-      <line_width>2</line_width>
-      <line_color>
-        <color name="BLACK" red="0" green="0" blue="0">
-        </color>
-      </line_color>
       <points>
         <point x="847.9999999999999" y="0.0">
         </point>
         <point x="0.0" y="0.0">
         </point>
       </points>
+      <line_width>2</line_width>
+      <line_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </line_color>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_33</name>
@@ -850,58 +850,63 @@
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_4</name>
-      <file>Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>011</INDEX>
       </macros>
+      <file>Line-temperature-overflow.bob</file>
       <x>65</x>
       <y>20</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_5</name>
-      <file>Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>012</INDEX>
       </macros>
+      <file>Line-temperature-overflow.bob</file>
       <x>65</x>
       <y>40</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_6</name>
-      <file>Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>022</INDEX>
       </macros>
+      <file>Line-temperature-overflow.bob</file>
       <x>180</x>
       <y>20</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_7</name>
-      <file>Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>021</INDEX>
       </macros>
+      <file>Line-temperature-overflow.bob</file>
       <x>180</x>
       <y>40</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_8</name>
-      <file>Line-temperature-overflow.bob</file>
       <macros>
         <INDEX>031</INDEX>
       </macros>
+      <file>Line-temperature-overflow.bob</file>
       <x>295</x>
       <y>20</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="label" version="2.0.0">
       <name>SKID</name>
@@ -910,19 +915,21 @@
       <y>20</y>
       <width>40</width>
       <height>80</height>
+      <visible>false</visible>
       <horizontal_alignment>1</horizontal_alignment>
       <vertical_alignment>1</vertical_alignment>
     </widget>
     <widget type="embedded" version="2.0.0">
       <name>Embedded Display_9</name>
-      <file>Line-flux-overflow.bob</file>
       <macros>
         <INDEX>001</INDEX>
       </macros>
+      <file>Line-flux-overflow.bob</file>
       <x>65</x>
       <y>70</y>
       <width>120</width>
       <height>20</height>
+      <visible>false</visible>
     </widget>
     <widget type="rectangle" version="2.0.0">
       <name>Rectangle_23</name>
@@ -930,6 +937,7 @@
       <y>20</y>
       <width>2</width>
       <height>80</height>
+      <visible>false</visible>
       <line_width>0</line_width>
       <background_color>
         <color name="PRIMARY" red="0" green="148" blue="202">

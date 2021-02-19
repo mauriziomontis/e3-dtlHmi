@@ -133,6 +133,7 @@
       <off_label>ILCK</off_label>
       <on_label>ILCK</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_1</name>
@@ -174,6 +175,7 @@
       <off_label>Auto</off_label>
       <on_label>Hold</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_2</name>
@@ -215,6 +217,7 @@
       <off_label>Start</off_label>
       <on_label>Start</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_3</name>
@@ -225,6 +228,7 @@
       <off_label>Stop</off_label>
       <on_label>Stop</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="bool_button" version="2.0.0">
       <name>Boolean Button_4</name>
@@ -235,6 +239,7 @@
       <off_label>Enable</off_label>
       <on_label>Enable</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_4</name>
@@ -269,6 +274,7 @@
       <off_label>LFC</off_label>
       <on_label>LFC</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_5</name>
@@ -298,6 +304,7 @@
       <off_label>LPIC</off_label>
       <on_label>LPIC</on_label>
       <show_led>false</show_led>
+      <mode>1</mode>
     </widget>
     <widget type="led" version="2.0.0">
       <name>Ilk OK status_6</name>

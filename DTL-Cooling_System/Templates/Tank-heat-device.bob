@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<display version="2.0.0">
+  <name>Heat Device</name>
+  <width>740</width>
+  <height>840</height>
+  <background_color>
+    <color red="220" green="220" blue="220">
+    </color>
+  </background_color>
+  <actions>
+  </actions>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar_1</name>
+    <x>370</x>
+    <width>370</width>
+    <height>840</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="rectangle" version="2.0.0">
+    <name>BGGrey03-titlebar</name>
+    <width>370</width>
+    <height>840</height>
+    <line_width>0</line_width>
+    <background_color>
+      <color name="GROUP-BORDER" red="150" green="155" blue="151">
+      </color>
+    </background_color>
+    <corner_width>10</corner_width>
+    <corner_height>10</corner_height>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Title</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>5</y>
+    <width>730</width>
+    <height>30</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>EH-${INDEX}</text>
+      <x>10</x>
+      <y>5</y>
+      <width>715</width>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Commands</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>145</y>
+    <width>360</width>
+    <height>305</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Commands</name>
+      <text>Commands</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Enable</name>
+      <text>Enable Cmd:</text>
+      <x>10</x>
+      <y>30</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Boolean Button_4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:Enb</pv_name>
+      <x>120</x>
+      <y>30</y>
+      <width>90</width>
+      <off_label>Enable</off_label>
+      <on_label>Enable</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Remote Start</name>
+      <text>Remote Start:</text>
+      <x>10</x>
+      <y>70</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Remote Start</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:StartCmd</pv_name>
+      <x>120</x>
+      <y>70</y>
+      <width>90</width>
+      <off_label>Start</off_label>
+      <on_label>Start</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Remote Stop</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:StopCmd</pv_name>
+      <x>120</x>
+      <y>105</y>
+      <width>90</width>
+      <off_label>Stop</off_label>
+      <on_label>Stop</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Remote Stop</name>
+      <text>Remote Stop:</text>
+      <x>10</x>
+      <y>105</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Counter Reset</name>
+      <text>Cnt Reset:</text>
+      <x>9</x>
+      <y>210</y>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Counter Reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset Counter</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-HE-${INDEX}:CntRstCmd</pv_name>
+      <text>Counter Reset</text>
+      <x>120</x>
+      <y>210</y>
+      <width>230</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Error Reset</name>
+      <text>Err Reset:</text>
+      <x>9</x>
+      <y>250</y>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="action_button" version="3.0.0">
+      <name>Error Reset</name>
+      <actions>
+        <action type="write_pv">
+          <pv_name>${pv_name}</pv_name>
+          <value>0</value>
+          <description>Reset Error</description>
+        </action>
+      </actions>
+      <pv_name>${PREFIX}:WtrC-HE-${INDEX}:ErrRstCmd</pv_name>
+      <text>Err Reset</text>
+      <x>120</x>
+      <y>250</y>
+      <width>230</width>
+      <tooltip></tooltip>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Man Mode</name>
+      <text>Manual Mode:</text>
+      <x>10</x>
+      <y>150</y>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Man Mode</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-ManOn</pv_name>
+      <x>120</x>
+      <y>150</y>
+      <width>90</width>
+      <off_label>Manual</off_label>
+      <on_label>Manual</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Man Power On</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-ManPwrMod</pv_name>
+      <x>220</x>
+      <y>150</y>
+      <width>120</width>
+      <height>30</height>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Enable</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:Enb-RB</pv_name>
+      <x>220</x>
+      <y>30</y>
+      <width>120</width>
+      <height>30</height>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Status EWH</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>456</y>
+    <width>360</width>
+    <height>370</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status</name>
+      <text>Status EWH</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 1</name>
+      <text>Elem 1:</text>
+      <x>6</x>
+      <y>64</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 1</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E1-OkStat</pv_name>
+      <x>62</x>
+      <y>64</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 1</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E1-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>64</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 2</name>
+      <text>Elem 2:</text>
+      <x>6</x>
+      <y>94</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 2</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E2-OkStat</pv_name>
+      <x>62</x>
+      <y>94</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 2</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E2-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>94</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 3</name>
+      <text>Elem 3:</text>
+      <x>6</x>
+      <y>124</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 3</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E3-OkStat</pv_name>
+      <x>62</x>
+      <y>124</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 3</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E3-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>124</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 4</name>
+      <text>Elem 4:</text>
+      <x>6</x>
+      <y>154</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E4-OkStat</pv_name>
+      <x>62</x>
+      <y>154</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E4-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>154</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 5</name>
+      <text>Elem 5:</text>
+      <x>6</x>
+      <y>184</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 5</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E5-OkStat</pv_name>
+      <x>62</x>
+      <y>184</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 5</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E5-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>184</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 6</name>
+      <text>Elem 6:</text>
+      <x>6</x>
+      <y>214</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 6</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E6-OkStat</pv_name>
+      <x>62</x>
+      <y>214</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 6</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E6-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>214</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 7</name>
+      <text>Elem 7:</text>
+      <x>6</x>
+      <y>244</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 7</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E7-OkStat</pv_name>
+      <x>62</x>
+      <y>244</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 7</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E7-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>244</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 8</name>
+      <text>Elem 8:</text>
+      <x>6</x>
+      <y>274</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 8</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E8-OkStat</pv_name>
+      <x>62</x>
+      <y>274</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 8</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E8-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>274</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Element 9</name>
+      <text>Elem 9:</text>
+      <x>6</x>
+      <y>304</y>
+      <width>50</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E9-OkStat</pv_name>
+      <x>62</x>
+      <y>304</y>
+      <width>60</width>
+      <height>30</height>
+      <off_label>Not OK</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>OK</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Element 9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E9-OutOn-RB</pv_name>
+      <x>127</x>
+      <y>304</y>
+      <width>40</width>
+      <height>30</height>
+      <off_label>OFF</off_label>
+      <off_color>
+        <color name="LED-RED-OFF" red="110" green="101" blue="90">
+        </color>
+      </off_color>
+      <on_label>ON</on_label>
+      <square>true</square>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 1</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E1-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>64</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 1_9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E1-OnNm</pv_name>
+      <x>230</x>
+      <y>64</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 1_10</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E1-OpTim</pv_name>
+      <x>294</x>
+      <y>64</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 2</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E2-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>94</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 2</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E2-OnNm</pv_name>
+      <x>230</x>
+      <y>94</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 2</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E2-OpTim</pv_name>
+      <x>294</x>
+      <y>94</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 3</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E3-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>124</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 3</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E3-OnNm</pv_name>
+      <x>230</x>
+      <y>124</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 3</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E3-OpTim</pv_name>
+      <x>294</x>
+      <y>124</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E4-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>154</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E4-OnNm</pv_name>
+      <x>230</x>
+      <y>154</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 4</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E4-OpTim</pv_name>
+      <x>294</x>
+      <y>154</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 5</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E5-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>184</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 5</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E5-OnNm</pv_name>
+      <x>230</x>
+      <y>184</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 5</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E5-OpTim</pv_name>
+      <x>294</x>
+      <y>184</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 6</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E6-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>214</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 6</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E6-OnNm</pv_name>
+      <x>230</x>
+      <y>214</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 6</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E6-OpTim</pv_name>
+      <x>294</x>
+      <y>214</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 7</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E7-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>244</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 7</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E7-OnNm</pv_name>
+      <x>230</x>
+      <y>244</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 7</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E7-OpTim</pv_name>
+      <x>294</x>
+      <y>244</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 8</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E8-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>269</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 8</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E8-OnNm</pv_name>
+      <x>230</x>
+      <y>269</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 8</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E8-OpTim</pv_name>
+      <x>294</x>
+      <y>269</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E9-ErrOffNm</pv_name>
+      <x>167</x>
+      <y>299</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E9-OnNm</pv_name>
+      <x>230</x>
+      <y>299</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Element 9</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:E9-OpTim</pv_name>
+      <x>294</x>
+      <y>299</y>
+      <width>60</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Error Operation Number</name>
+      <text>Err Op#</text>
+      <x>167</x>
+      <y>31</y>
+      <width>60</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ON Command Number</name>
+      <text>On Cmd#</text>
+      <x>227</x>
+      <y>31</y>
+      <width>60</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Operation Time</name>
+      <text>Op Tim</text>
+      <x>294</x>
+      <y>31</y>
+      <width>60</width>
+      <height>30</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD" size="16.0">
+        </font>
+      </font>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Controls</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>375</x>
+    <y>40</y>
+    <width>360</width>
+    <height>590</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Controls</name>
+      <text>Controls</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>HH Lim_40</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:PwrMod-Def</pv_name>
+      <x>150</x>
+      <y>30</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Power Monulation Level</name>
+      <text>Pwr Mod Level:</text>
+      <x>10</x>
+      <y>30</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Temperature Setpoint</name>
+      <text>Temp Setpoint:</text>
+      <x>10</x>
+      <y>80</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Temperature</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-TmpSP</pv_name>
+      <x>150</x>
+      <y>80</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Proportional Component</name>
+      <text>Prop Component:</text>
+      <x>10</x>
+      <y>110</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Proportional Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-PropOn</pv_name>
+      <x>150</x>
+      <y>110</y>
+      <width>90</width>
+      <off_label>Prop</off_label>
+      <on_label>Prop</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Integral Component</name>
+      <text>Int Component:</text>
+      <x>10</x>
+      <y>140</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Integral Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-IntgOm</pv_name>
+      <x>150</x>
+      <y>140</y>
+      <width>90</width>
+      <off_label>Intg</off_label>
+      <on_label>Intg</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Derivative Component</name>
+      <text>Dev Component:</text>
+      <x>10</x>
+      <y>170</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Derivative Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-DevOm</pv_name>
+      <x>150</x>
+      <y>170</y>
+      <width>90</width>
+      <off_label>Dev</off_label>
+      <on_label>Dev</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Reverse Operation</name>
+      <text>Reverse Op:</text>
+      <x>10</x>
+      <y>200</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Reverse Operation</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-DevOm</pv_name>
+      <x>150</x>
+      <y>200</y>
+      <width>90</width>
+      <off_label>Reverse</off_label>
+      <on_label>Reverse</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Error DeadBand Width</name>
+      <text>DBW Error:</text>
+      <x>10</x>
+      <y>235</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Error DeadBand</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-ErrDBW</pv_name>
+      <x>150</x>
+      <y>235</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Threshold</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-LoLim</pv_name>
+      <x>150</x>
+      <y>491</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Threshold</name>
+      <text>Threshold:</text>
+      <x>10</x>
+      <y>491</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Timeout</name>
+      <text>Timeout:</text>
+      <x>10</x>
+      <y>521</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Timeout</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-Tim</pv_name>
+      <x>150</x>
+      <y>521</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Control Not Enabled</name>
+      <text>Control:</text>
+      <x>10</x>
+      <y>551</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Control Not Enabled</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-NotEnb</pv_name>
+      <x>150</x>
+      <y>551</y>
+      <width>90</width>
+      <off_label>Not Enabled</off_label>
+      <on_label>Not Enabled</on_label>
+      <show_led>false</show_led>
+    </widget>
+    <widget type="rectangle" version="2.0.0">
+      <name>Rectangle_1</name>
+      <x>62</x>
+      <y>502</y>
+      <width>1</width>
+      <height>70</height>
+      <line_width>0</line_width>
+      <background_color>
+        <color name="BLACK" red="0" green="0" blue="0">
+        </color>
+      </background_color>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Low Flow</name>
+      <text>Low Flw</text>
+      <x>1</x>
+      <y>505</y>
+      <width>60</width>
+      <height>60</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Gain</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Gain</pv_name>
+      <x>150</x>
+      <y>265</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Feed Forward</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-FeedFwd</pv_name>
+      <x>150</x>
+      <y>295</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Intg Time</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Ti</pv_name>
+      <x>150</x>
+      <y>325</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Dev Time</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Td</pv_name>
+      <x>150</x>
+      <y>355</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Time Lag</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-TimLag</pv_name>
+      <x>150</x>
+      <y>385</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Feed Forward</name>
+      <text>Feed Forward:</text>
+      <x>10</x>
+      <y>295</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Intg Time</name>
+      <text>Intg Time:</text>
+      <x>10</x>
+      <y>325</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Dev Time</name>
+      <text>Dev Time:</text>
+      <x>10</x>
+      <y>355</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Time Lag</name>
+      <text>Time Lag:</text>
+      <x>10</x>
+      <y>385</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Gain</name>
+      <text>Gain:</text>
+      <x>10</x>
+      <y>265</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Out Low Limit</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-OutLoLim</pv_name>
+      <x>150</x>
+      <y>425</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="textentry" version="3.0.0">
+      <name>Out High Limit</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-OutHiLim</pv_name>
+      <x>150</x>
+      <y>455</y>
+      <width>90</width>
+      <height>30</height>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Out High Limit</name>
+      <text>Out High Lim:</text>
+      <x>10</x>
+      <y>455</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>Out Low Limit</name>
+      <text>Out Low Lim:</text>
+      <x>10</x>
+      <y>425</y>
+      <width>130</width>
+      <height>30</height>
+      <horizontal_alignment>2</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Power Modulation</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:OutPwrMod</pv_name>
+      <x>255</x>
+      <y>30</y>
+      <width>90</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Temperature</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Tmp</pv_name>
+      <x>255</x>
+      <y>80</y>
+      <width>90</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Out Low Limit</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-OutLoLimStat</pv_name>
+      <x>255</x>
+      <y>425</y>
+      <width>90</width>
+      <height>30</height>
+      <on_label>LOW LIM</on_label>
+      <on_color>
+        <color name="WARNING" red="252" green="242" blue="17">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Out High Limit</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-OutHiLimStat</pv_name>
+      <x>255</x>
+      <y>455</y>
+      <width>90</width>
+      <height>30</height>
+      <on_color>
+        <color name="WARNING" red="252" green="242" blue="17">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Proportional Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-PropOn-RB</pv_name>
+      <x>255</x>
+      <y>110</y>
+      <width>90</width>
+      <height>30</height>
+      <on_label>LOW LIM</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Integral Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-IntgOn-RB</pv_name>
+      <x>255</x>
+      <y>140</y>
+      <width>90</width>
+      <height>30</height>
+      <on_label>LOW LIM</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Derivative Component</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-DevOn-RB</pv_name>
+      <x>255</x>
+      <y>170</y>
+      <width>90</width>
+      <height>30</height>
+      <on_label>LOW LIM</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Reverse Operation</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-RevOp-RB</pv_name>
+      <x>255</x>
+      <y>200</y>
+      <width>90</width>
+      <height>30</height>
+      <on_label>LOW LIM</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Error DeadBand</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-ErrDBW-RB</pv_name>
+      <x>255</x>
+      <y>235</y>
+      <width>90</width>
+      <height>30</height>
+      <vertical_alignment>1</vertical_alignment>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Gain</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Gain-RB</pv_name>
+      <x>255</x>
+      <y>265</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Feed Forward</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-FeedFwd-RB</pv_name>
+      <x>255</x>
+      <y>295</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Intg Time</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Ti-RB</pv_name>
+      <x>255</x>
+      <y>325</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Dev Time</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-Td-RB</pv_name>
+      <x>255</x>
+      <y>355</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Time Lag</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:FBL-TimLag-RB</pv_name>
+      <x>255</x>
+      <y>385</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Control Not Enabled</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-NotEnb-RB</pv_name>
+      <x>255</x>
+      <y>551</y>
+      <width>90</width>
+      <height>30</height>
+      <on_color>
+        <color name="WARNING" red="252" green="242" blue="17">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Timeout</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-Tim-RB</pv_name>
+      <x>255</x>
+      <y>521</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Threshold</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:LFC-LoLim-RB</pv_name>
+      <x>255</x>
+      <y>491</y>
+      <width>90</width>
+      <height>30</height>
+      <wrap_words>false</wrap_words>
+    </widget>
+  </widget>
+  <widget type="group" version="2.0.0">
+    <name>Status</name>
+    <macros>
+      <str>PwrC-PSCH-01</str>
+    </macros>
+    <x>5</x>
+    <y>40</y>
+    <width>360</width>
+    <height>100</height>
+    <style>3</style>
+    <background_color>
+      <color name="BACKGROUND" red="220" green="225" blue="221">
+      </color>
+    </background_color>
+    <widget type="label" version="2.0.0">
+      <name>Status_1</name>
+      <text>Status</text>
+      <x>5</x>
+      <width>120</width>
+      <height>40</height>
+      <font>
+        <font family="Source Sans Pro" style="BOLD_ITALIC" size="18.0">
+        </font>
+      </font>
+      <foreground_color>
+        <color name="GROUP-TEXT" red="25" green="25" blue="25">
+        </color>
+      </foreground_color>
+      <background_color>
+        <color name="RED-BORDER" red="150" green="8" blue="16">
+        </color>
+      </background_color>
+      <vertical_alignment>1</vertical_alignment>
+      <wrap_words>false</wrap_words>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Out of Service</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:QB-EnbStat</pv_name>
+      <x>195</x>
+      <y>30</y>
+      <width>150</width>
+      <height>30</height>
+      <off_label>Out of Service</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Out of ServiceN</on_label>
+      <on_color>
+        <color name="MAJOR" red="252" green="13" blue="27">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Aggregated Enable Conditions</name>
+      <pv_name>${PREFIX}:WtrC-HE-${INDEX}:TotEnb</pv_name>
+      <x>10</x>
+      <y>30</y>
+      <width>150</width>
+      <height>30</height>
+      <off_label>Aggreg En Cond</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Aggreg En Cond</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Total OK Status</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:OkStat</pv_name>
+      <x>10</x>
+      <y>60</y>
+      <width>150</width>
+      <height>30</height>
+      <off_label>Total OK Stat</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Total OK Stat</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+    <widget type="led" version="2.0.0">
+      <name>Total ON Status</name>
+      <pv_name>${PREFIX}:WtrC-EH-${INDEX}:OnStat</pv_name>
+      <x>195</x>
+      <y>60</y>
+      <width>150</width>
+      <height>30</height>
+      <off_label>Total ON Stat</off_label>
+      <off_color>
+        <color name="OFF" red="90" green="110" blue="90">
+        </color>
+      </off_color>
+      <on_label>Total ON Stat</on_label>
+      <on_color>
+        <color name="ON" red="70" green="255" blue="70">
+        </color>
+      </on_color>
+      <square>true</square>
+    </widget>
+  </widget>
+</display>

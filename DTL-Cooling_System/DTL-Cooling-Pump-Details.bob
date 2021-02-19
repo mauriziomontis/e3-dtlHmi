@@ -74,12 +74,24 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_26</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>001</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
+            <y>10</y>
+            <width>370</width>
+            <height>760</height>
+          </widget>
+          <widget type="embedded" version="2.0.0">
+            <name>Embedded Display_32</name>
+            <macros>
+              <INDEX>002</INDEX>
+              <PREFIX>CWM-CWS04</PREFIX>
+            </macros>
+            <file>Templates/Tank-pump-device.bob</file>
+            <x>415</x>
             <y>10</y>
             <width>370</width>
             <height>760</height>
@@ -91,11 +103,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_27</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>101</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
             <y>10</y>
             <width>370</width>
@@ -108,11 +120,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_28</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>201</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
             <y>10</y>
             <width>370</width>
@@ -125,11 +137,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_29</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>301</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
             <y>10</y>
             <width>370</width>
@@ -142,11 +154,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_30</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>401</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
             <y>10</y>
             <width>370</width>
@@ -159,11 +171,11 @@ print 'Hello'
         <children>
           <widget type="embedded" version="2.0.0">
             <name>Embedded Display_31</name>
-            <file>Templates/Tank-pump-device.bob</file>
             <macros>
               <INDEX>501</INDEX>
               <PREFIX>CWM-CWS04</PREFIX>
             </macros>
+            <file>Templates/Tank-pump-device.bob</file>
             <x>10</x>
             <y>10</y>
             <width>370</width>
