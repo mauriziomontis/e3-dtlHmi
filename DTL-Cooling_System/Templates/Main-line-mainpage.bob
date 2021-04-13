@@ -2,7 +2,7 @@
 <display version="2.0.0">
   <name>Main Line</name>
   <width>900</width>
-  <height>445</height>
+  <height>480</height>
   <background_color>
     <color red="220" green="220" blue="220">
     </color>
@@ -12,7 +12,7 @@
   <widget type="rectangle" version="2.0.0">
     <name>BGGrey03-titlebar</name>
     <width>900</width>
-    <height>445</height>
+    <height>480</height>
     <line_width>0</line_width>
     <background_color>
       <color name="GROUP-BORDER" red="150" green="155" blue="151">
@@ -73,7 +73,7 @@
     <x>5</x>
     <y>40</y>
     <width>890</width>
-    <height>400</height>
+    <height>435</height>
     <style>3</style>
     <background_color>
       <color name="BACKGROUND" red="220" green="225" blue="221">
