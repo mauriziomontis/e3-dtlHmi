@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <display version="2.0.0">
-  <name>DTL Main</name>
+  <name>DTL Main - 1</name>
   <width>1920</width>
   <height>1080</height>
   <scripts>
@@ -77,7 +77,7 @@ print 'Hello'
       <actions>
         <action type="open_display">
           <file></file>
-          <target>replace</target>
+          <target>tab</target>
           <description>Vacuum System</description>
         </action>
       </actions>
@@ -152,7 +152,7 @@ print 'Hello'
       <actions>
         <action type="open_display">
           <file>DTL-Arc_System/DTL-Arc-Main.bob</file>
-          <target>replace</target>
+          <target>tab</target>
           <description>Arc Detectors</description>
         </action>
       </actions>
@@ -1806,9 +1806,9 @@ print 'Hello'
       <name>Arc Detection</name>
       <text>ARC DETECTION:</text>
       <x>5</x>
-      <y>599</y>
+      <y>386</y>
       <width>150</width>
-      <height>40</height>
+      <height>202</height>
       <font>
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -1819,9 +1819,9 @@ print 'Hello'
     </widget>
     <widget type="textupdate" version="2.0.0">
       <name>Arc Detection</name>
-      <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+      <pv_name>DTL-010:RFS-AD:StateMachine</pv_name>
       <x>160</x>
-      <y>599</y>
+      <y>386</y>
       <width>60</width>
       <height>40</height>
       <horizontal_alignment>1</horizontal_alignment>
@@ -1829,10 +1829,10 @@ print 'Hello'
       <border_width>1</border_width>
     </widget>
     <widget type="label" version="2.0.0">
-      <name>temperature tank1 state machine_7</name>
+      <name>arc detection tank1 state machine</name>
       <text>Default Value</text>
       <x>225</x>
-      <y>599</y>
+      <y>386</y>
       <width>200</width>
       <height>40</height>
       <font>
@@ -1865,7 +1865,7 @@ print 'Hello'
           <exp bool_exp="pv0 == 60">
             <value>MAINTENANCE</value>
           </exp>
-          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+          <pv_name>DTL-010:RFS-AD:StateMachine</pv_name>
         </rule>
         <rule name="State Machine BG" prop_id="background_color" out_exp="false">
           <exp bool_exp="pv0 == 0">
@@ -1910,7 +1910,7 @@ print 'Hello'
               </color>
             </value>
           </exp>
-          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
+          <pv_name>DTL-010:RFS-AD:StateMachine</pv_name>
         </rule>
       </rules>
       <border_width>1</border_width>
@@ -1920,7 +1920,7 @@ print 'Hello'
       <pv_name>DTL:WtrC:AutoCmd</pv_name>
       <x>105</x>
       <y>300</y>
-      <height>20</height>
+      <height>45</height>
       <off_label>MAN</off_label>
       <on_label>AUTO</on_label>
     </widget>
@@ -1930,6 +1930,7 @@ print 'Hello'
       <x>5</x>
       <y>300</y>
       <width>100</width>
+      <height>45</height>
       <off_label>Auto Control</off_label>
       <off_color>
         <color name="OK" red="61" green="216" blue="61">
@@ -1946,8 +1947,8 @@ print 'Hello'
       <name>Cooling Automatic Control</name>
       <pv_name>DTL:WtrC:TestDone</pv_name>
       <x>5</x>
-      <y>325</y>
-      <width>200</width>
+      <y>352</y>
+      <width>421</width>
       <height>20</height>
       <off_label>Test Done</off_label>
       <on_label>Test Done</on_label>
@@ -1976,8 +1977,8 @@ print 'Hello'
       <name>Cooling Automatic Control</name>
       <pv_name>DTL:RFS-AD:AutoCmd</pv_name>
       <x>105</x>
-      <y>646</y>
-      <height>20</height>
+      <y>600</y>
+      <height>45</height>
       <off_label>MAN</off_label>
       <on_label>AUTO</on_label>
     </widget>
@@ -1985,8 +1986,9 @@ print 'Hello'
       <name>Arc Detection</name>
       <pv_name>DTL:RFS-AD:AutoCmd-RB</pv_name>
       <x>5</x>
-      <y>646</y>
+      <y>600</y>
       <width>100</width>
+      <height>45</height>
       <off_label>Auto Control</off_label>
       <off_color>
         <color name="OK" red="61" green="216" blue="61">
@@ -2003,8 +2005,8 @@ print 'Hello'
       <name>Arc Detection Automatic Control</name>
       <pv_name>DTL:RFS-AD:TestDone</pv_name>
       <x>5</x>
-      <y>671</y>
-      <width>200</width>
+      <y>652</y>
+      <width>421</width>
       <height>20</height>
       <off_label>Test Done</off_label>
       <on_label>Test Done</on_label>
@@ -2013,156 +2015,417 @@ print 'Hello'
       <name>Arc Detection Automatic Control</name>
       <pv_name>DTL:RFS-AD:OpRun</pv_name>
       <x>226</x>
-      <y>646</y>
+      <y>600</y>
       <width>200</width>
       <height>45</height>
       <off_label>Start Operation</off_label>
       <on_label>Start Operation</on_label>
     </widget>
+    <widget type="label" version="2.0.0">
+      <name>arc detection tank2 state machine</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>427</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-020:RFS-AD:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="OK" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-020:RFS-AD:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Arc Detection</name>
+      <pv_name>DTL-020:RFS-AD:StateMachine</pv_name>
+      <x>160</x>
+      <y>427</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Arc Detection</name>
+      <pv_name>DTL-030:RFS-AD:StateMachine</pv_name>
+      <x>160</x>
+      <y>467</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>arc detection tank3 state machine</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>467</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-030:RFS-AD:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="OK" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-030:RFS-AD:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Arc Detection</name>
+      <pv_name>DTL-040:RFS-AD:StateMachine</pv_name>
+      <x>160</x>
+      <y>508</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>arc detection tank4 state machine</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>508</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-040:RFS-AD:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="OK" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-040:RFS-AD:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>arc detection tank5 state machine</name>
+      <text>Default Value</text>
+      <x>225</x>
+      <y>548</y>
+      <width>200</width>
+      <height>40</height>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <transparent>false</transparent>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <rules>
+        <rule name="State Machine Code" prop_id="text" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>INITIALIZATION</value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>SELF-CHECK</value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>IDLE</value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>START-UP</value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>READY FOR OP</value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>FAILURE</value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>MAINTENANCE</value>
+          </exp>
+          <pv_name>DTL-050:RFS-AD:StateMachine</pv_name>
+        </rule>
+        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 10">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 20">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 30">
+            <value>
+              <color name="Background" red="220" green="225" blue="221">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 40">
+            <value>
+              <color name="OK" red="61" green="216" blue="61">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 50">
+            <value>
+              <color name="MAJOR" red="252" green="13" blue="27">
+              </color>
+            </value>
+          </exp>
+          <exp bool_exp="pv0 == 60">
+            <value>
+              <color name="Attention" red="252" green="242" blue="17">
+              </color>
+            </value>
+          </exp>
+          <pv_name>DTL-050:RFS-AD:StateMachine</pv_name>
+        </rule>
+      </rules>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="textupdate" version="2.0.0">
+      <name>Arc Detection</name>
+      <pv_name>DTL-050:RFS-AD:StateMachine</pv_name>
+      <x>160</x>
+      <y>548</y>
+      <width>60</width>
+      <height>40</height>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
   </widget>
   <widget type="group" version="2.0.0">
-    <name>Fault and Maintenance Resets</name>
-    <x>210</x>
-    <y>799</y>
-    <width>1024</width>
-    <height>111</height>
+    <name>Fault and Maintenance</name>
+    <x>1700</x>
+    <y>60</y>
+    <width>210</width>
+    <height>739</height>
     <widget type="label" version="2.0.0">
-      <name>COOLING</name>
-      <text>COOLING</text>
-      <x>5</x>
-      <y>12</y>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>STEERERS</name>
-      <text>STEERERS</text>
-      <x>112</x>
-      <y>12</y>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>TUNERS</name>
-      <text>TUNERS</text>
-      <x>219</x>
-      <y>12</y>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>ARC DET</name>
-      <text>ARC DET</text>
-      <x>327</x>
-      <y>12</y>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Cooling Fault Reset</name>
-      <pv_name>DTL:WtrC:FaultRst</pv_name>
-      <x>5</x>
-      <y>36</y>
-      <height>20</height>
-      <off_label>Fault</off_label>
-      <on_label>Fault</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Cooling Maintenance Reset</name>
-      <pv_name>DTL:WtrC:MaintenanceRst</pv_name>
-      <x>5</x>
-      <y>58</y>
-      <height>20</height>
-      <off_label>Maintenance</off_label>
-      <on_label>Maintenance</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Steerers Fault Reset</name>
-      <pv_name>DTL:PwrC:FaultRst</pv_name>
-      <x>112</x>
-      <y>36</y>
-      <height>20</height>
-      <off_label>Fault</off_label>
-      <on_label>Fault</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Steerers Maintenance Reset</name>
-      <pv_name>DTL:PwrC:MaintenanceRst</pv_name>
-      <x>112</x>
-      <y>58</y>
-      <height>20</height>
-      <off_label>Maintenance</off_label>
-      <on_label>Maintenance</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Tuners  Fault Reset</name>
-      <pv_name>DTL:MC-MCU:FaultRst</pv_name>
-      <x>219</x>
-      <y>36</y>
-      <height>20</height>
-      <off_label>Fault</off_label>
-      <on_label>Fault</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Tuners Maintenance Reset</name>
-      <pv_name>DTL:MC-MCU:MaintenanceRst</pv_name>
-      <x>219</x>
-      <y>58</y>
-      <height>20</height>
-      <off_label>Maintenance</off_label>
-      <on_label>Maintenance</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Arc Det Fault Reset</name>
-      <pv_name>DTL:RFS-AD:FaultRstRst</pv_name>
-      <x>327</x>
-      <y>36</y>
-      <height>20</height>
-      <off_label>Fault</off_label>
-      <on_label>Fault</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Tuners Maintenance Reset</name>
-      <pv_name>DTL:RFS-AD:MaintenanceRst</pv_name>
-      <x>327</x>
-      <y>58</y>
-      <height>20</height>
-      <off_label>Maintenance</off_label>
-      <on_label>Maintenance</on_label>
-      <mode>1</mode>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>TEMP</name>
-      <text>TEMP</text>
-      <x>439</x>
-      <y>12</y>
+      <name>TEMPERATURES</name>
+      <text>TEMPERATURES</text>
+      <x>10</x>
+      <y>10</y>
+      <width>150</width>
       <font>
         <font family="Liberation Sans" style="BOLD" size="14.0">
         </font>
@@ -2174,9 +2437,10 @@ print 'Hello'
     <widget type="bool_button" version="2.0.0">
       <name>Temperature Fault Reset</name>
       <pv_name>DTL:EMR-TT:FaultRst</pv_name>
-      <x>438</x>
-      <y>36</y>
-      <height>20</height>
+      <x>10</x>
+      <y>34</y>
+      <width>150</width>
+      <height>45</height>
       <off_label>Fault</off_label>
       <on_label>Fault</on_label>
       <mode>1</mode>
@@ -2184,9 +2448,154 @@ print 'Hello'
     <widget type="bool_button" version="2.0.0">
       <name>Temperature Maintenance Reset</name>
       <pv_name>DTL:EMR-TT:MaintenanceRst</pv_name>
-      <x>438</x>
-      <y>58</y>
-      <height>20</height>
+      <x>10</x>
+      <y>80</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Cooling Fault Reset</name>
+      <pv_name>DTL:WtrC:FaultRst</pv_name>
+      <x>10</x>
+      <y>163</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Cooling Maintenance Reset</name>
+      <pv_name>DTL:WtrC:MaintenanceRst</pv_name>
+      <x>10</x>
+      <y>209</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>COOLING</name>
+      <text>COOLING</text>
+      <x>10</x>
+      <y>140</y>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>STEERERS</name>
+      <text>STEERERS</text>
+      <x>10</x>
+      <y>270</y>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Steerers Fault Reset</name>
+      <pv_name>DTL:PwrC:FaultRst</pv_name>
+      <x>10</x>
+      <y>294</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Steerers Maintenance Reset</name>
+      <pv_name>DTL:PwrC:MaintenanceRst</pv_name>
+      <x>10</x>
+      <y>340</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>TUNERS</name>
+      <text>TUNERS</text>
+      <x>10</x>
+      <y>400</y>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Tuners  Fault Reset</name>
+      <pv_name>DTL:MC-MCU:FaultRst</pv_name>
+      <x>10</x>
+      <y>425</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Tuners Maintenance Reset</name>
+      <pv_name>DTL:MC-MCU:MaintenanceRst</pv_name>
+      <x>10</x>
+      <y>471</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Maintenance</off_label>
+      <on_label>Maintenance</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="label" version="2.0.0">
+      <name>ARC DET</name>
+      <text>ARC DET</text>
+      <x>10</x>
+      <y>530</y>
+      <width>150</width>
+      <font>
+        <font family="Liberation Sans" style="BOLD" size="14.0">
+        </font>
+      </font>
+      <horizontal_alignment>1</horizontal_alignment>
+      <vertical_alignment>1</vertical_alignment>
+      <border_width>1</border_width>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Arc Det Fault Reset</name>
+      <pv_name>DTL:RFS-AD:FaultRstRst</pv_name>
+      <x>10</x>
+      <y>554</y>
+      <width>150</width>
+      <height>45</height>
+      <off_label>Fault</off_label>
+      <on_label>Fault</on_label>
+      <mode>1</mode>
+    </widget>
+    <widget type="bool_button" version="2.0.0">
+      <name>Tuners Maintenance Reset</name>
+      <pv_name>DTL:RFS-AD:MaintenanceRst</pv_name>
+      <x>10</x>
+      <y>600</y>
+      <width>150</width>
+      <height>45</height>
       <off_label>Maintenance</off_label>
       <on_label>Maintenance</on_label>
       <mode>1</mode>
@@ -2715,119 +3124,6 @@ print 'Hello'
       </rules>
       <border_width>1</border_width>
     </widget>
-    <widget type="label" version="2.0.0">
-      <name>Arc Detection_2</name>
-      <text>ARC DETECTION:</text>
-      <x>5</x>
-      <y>599</y>
-      <width>150</width>
-      <height>40</height>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="textupdate" version="2.0.0">
-      <name>Text Update_31</name>
-      <pv_name>DTL:RFS-AD:StateMachine</pv_name>
-      <x>160</x>
-      <y>599</y>
-      <width>60</width>
-      <height>40</height>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <border_width>1</border_width>
-    </widget>
-    <widget type="label" version="2.0.0">
-      <name>temperature tank1 state machine_11</name>
-      <text>Default Value</text>
-      <x>225</x>
-      <y>599</y>
-      <width>200</width>
-      <height>40</height>
-      <font>
-        <font family="Liberation Sans" style="BOLD" size="14.0">
-        </font>
-      </font>
-      <transparent>false</transparent>
-      <horizontal_alignment>1</horizontal_alignment>
-      <vertical_alignment>1</vertical_alignment>
-      <rules>
-        <rule name="State Machine Code" prop_id="text" out_exp="false">
-          <exp bool_exp="pv0 == 0">
-            <value>INITIALIZATION</value>
-          </exp>
-          <exp bool_exp="pv0 == 10">
-            <value>SELF-CHECK</value>
-          </exp>
-          <exp bool_exp="pv0 == 20">
-            <value>IDLE</value>
-          </exp>
-          <exp bool_exp="pv0 == 30">
-            <value>START-UP</value>
-          </exp>
-          <exp bool_exp="pv0 == 40">
-            <value>READY FOR OP</value>
-          </exp>
-          <exp bool_exp="pv0 == 50">
-            <value>FAILURE</value>
-          </exp>
-          <exp bool_exp="pv0 == 60">
-            <value>MAINTENANCE</value>
-          </exp>
-          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
-        </rule>
-        <rule name="State Machine BG" prop_id="background_color" out_exp="false">
-          <exp bool_exp="pv0 == 0">
-            <value>
-              <color name="Background" red="220" green="225" blue="221">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 10">
-            <value>
-              <color name="Background" red="220" green="225" blue="221">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 20">
-            <value>
-              <color name="Background" red="220" green="225" blue="221">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 30">
-            <value>
-              <color name="Background" red="220" green="225" blue="221">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 40">
-            <value>
-              <color name="OK" red="61" green="216" blue="61">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 50">
-            <value>
-              <color name="MAJOR" red="252" green="13" blue="27">
-              </color>
-            </value>
-          </exp>
-          <exp bool_exp="pv0 == 60">
-            <value>
-              <color name="Attention" red="252" green="242" blue="17">
-              </color>
-            </value>
-          </exp>
-          <pv_name>DTL:RFS-AD:StateMachine</pv_name>
-        </rule>
-      </rules>
-      <border_width>1</border_width>
-    </widget>
     <widget type="led" version="2.0.0">
       <name>Steerers</name>
       <pv_name>DTL:PwrC-PSC:AutoCmd-RB</pv_name>
@@ -2923,53 +3219,6 @@ print 'Hello'
       <height>20</height>
       <off_label>Stop Operation</off_label>
       <on_label>Stop Operation</on_label>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Automatic Control_23</name>
-      <pv_name>DTL:RFS-AD:AutoCmd</pv_name>
-      <x>105</x>
-      <y>646</y>
-      <height>20</height>
-      <off_label>MAN</off_label>
-      <on_label>AUTO</on_label>
-    </widget>
-    <widget type="led" version="2.0.0">
-      <name>LED_7</name>
-      <pv_name>DTL:RFS-AD:AutoCmd-RB</pv_name>
-      <x>5</x>
-      <y>646</y>
-      <width>100</width>
-      <off_label>Auto Control</off_label>
-      <off_color>
-        <color name="OK" red="61" green="216" blue="61">
-        </color>
-      </off_color>
-      <on_label>Auto Control</on_label>
-      <on_color>
-        <color name="Attention" red="252" green="242" blue="17">
-        </color>
-      </on_color>
-      <square>true</square>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Automatic Control_24</name>
-      <pv_name>DTL:RFS-AD:TestDone</pv_name>
-      <x>5</x>
-      <y>671</y>
-      <width>200</width>
-      <height>20</height>
-      <off_label>Test Done</off_label>
-      <on_label>Test Done</on_label>
-    </widget>
-    <widget type="bool_button" version="2.0.0">
-      <name>Automatic Control_25</name>
-      <pv_name>DTL:RFS-AD:OpRun</pv_name>
-      <x>226</x>
-      <y>646</y>
-      <width>200</width>
-      <height>45</height>
-      <off_label>Start Operation</off_label>
-      <on_label>Start Operation</on_label>
     </widget>
     <widget type="label" version="2.0.0">
       <name>Tuners</name>
