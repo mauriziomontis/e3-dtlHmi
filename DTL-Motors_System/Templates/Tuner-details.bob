@@ -393,7 +393,7 @@
           <description>Write PV</description>
         </action>
       </actions>
-      <pv_name>${PREFIX}:EMR-SM-${INDEX}:Drv-Rst</pv_name>
+      <pv_name>${PREFIX}:MC-MCU-${INDEX}:Drv-Rst</pv_name>
       <text>Driver Reset</text>
       <x>485</x>
       <y>80</y>
