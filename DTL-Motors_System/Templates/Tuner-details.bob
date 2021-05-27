@@ -200,6 +200,12 @@
           </exp>
           <pv_name>loc://wheel</pv_name>
         </rule>
+        <rule name="Enable" prop_id="enabled" out_exp="false">
+          <exp bool_exp="pv0 == 0">
+            <value>false</value>
+          </exp>
+          <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+        </rule>
       </rules>
     </widget>
     <widget type="action_button" version="3.0.0">
@@ -714,7 +720,7 @@
       <off_label>Miss</off_label>
       <on_label>Miss</on_label>
       <on_color>
-        <color name="WARNING" red="252" green="242" blue="17">
+        <color name="ERROR" red="252" green="13" blue="27">
         </color>
       </on_color>
       <square>true</square>
@@ -762,7 +768,7 @@
       <off_label>Prbl</off_label>
       <on_label>Prbl</on_label>
       <on_color>
-        <color name="WARNING" red="252" green="242" blue="17">
+        <color name="OK" red="61" green="216" blue="61">
         </color>
       </on_color>
       <square>true</square>
@@ -832,14 +838,6 @@
       <x>230</x>
       <y>10</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>KI</name>
@@ -857,14 +855,6 @@
       <x>230</x>
       <y>40</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>KD</name>
@@ -882,14 +872,6 @@
       <x>230</x>
       <y>70</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Integrative Factor_2</name>
@@ -897,14 +879,6 @@
       <x>400</x>
       <y>10</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="textentry" version="3.0.0">
       <name>Derivative Factor_1</name>
@@ -912,14 +886,6 @@
       <x>400</x>
       <y>40</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>High operator range</name>
@@ -957,14 +923,6 @@
       <x>575</x>
       <y>10</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
     <widget type="label" version="2.0.0">
       <name>PID Low Limit</name>
@@ -982,14 +940,6 @@
       <x>575</x>
       <y>40</y>
       <height>30</height>
-      <rules>
-        <rule name="Wheel" prop_id="visible" out_exp="false">
-          <exp bool_exp="pv0 == 1">
-            <value>false</value>
-          </exp>
-          <pv_name>loc://wheel</pv_name>
-        </rule>
-      </rules>
     </widget>
   </widget>
   <widget type="group" version="2.0.0">
@@ -1156,5 +1106,30 @@
       </on_color>
       <square>true</square>
     </widget>
+  </widget>
+  <widget type="multi_state_led" version="2.0.0">
+    <name>LED (Multi State)_1</name>
+    <x>750</x>
+    <y>470</y>
+    <width>1</width>
+    <height>1</height>
+    <states>
+      <state>
+        <value>0</value>
+        <label>State 1</label>
+        <color>
+          <color name="Off" red="90" green="110" blue="90">
+          </color>
+        </color>
+      </state>
+      <state>
+        <value>1</value>
+        <label>State 2</label>
+        <color>
+          <color name="On" red="70" green="255" blue="70">
+          </color>
+        </color>
+      </state>
+    </states>
   </widget>
 </display>
