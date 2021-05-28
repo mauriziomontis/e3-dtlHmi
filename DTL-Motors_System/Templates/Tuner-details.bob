@@ -201,10 +201,11 @@
           <pv_name>loc://wheel</pv_name>
         </rule>
         <rule name="Enable" prop_id="enabled" out_exp="false">
-          <exp bool_exp="pv0 == 0">
+          <exp bool_exp="pv0 == 0 || pv1 == 1">
             <value>false</value>
           </exp>
           <pv_name>DTL:EMR-SM:EnCmd</pv_name>
+          <pv_name>${PREFIX}:EMR-GT-${INDEX}:Err-Alrm</pv_name>
         </rule>
       </rules>
     </widget>
